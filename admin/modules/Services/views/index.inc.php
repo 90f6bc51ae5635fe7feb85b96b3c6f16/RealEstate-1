@@ -1,7 +1,7 @@
 <?php 
 require_once('../models/ServicesModel.php');  
 
-$path = "Services/views/";
+$path = "modules/Services/views/";
  
 $services_model = new ServicesModel;   
 

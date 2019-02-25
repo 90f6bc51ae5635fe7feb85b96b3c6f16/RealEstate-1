@@ -1,21 +1,21 @@
 <?PHP
  
- if($page=="Types"){
+ if($content=="Types" || $content=="" ){
 
-    require_once("../modules/Types/views/");
+    require_once("modules/Types/views/index.inc.php");
    
-   }else if($page=="Product"){
+   }else if($content=="Product"){
    
-      require_once("../modules/Product/views/");
+      require_once("modules/Product/views/index.inc.php");
    
-   }else if($page=="News"){
+   }else if($content=="News"){
    
-      require_once("../modules/News/views/");
+      require_once("modules/News/views/index.inc.php");
    
-   }else if($page=="Services"){
+   }else if($content=="Services"){
    
-      require_once("modules/Services/views/");
+      require_once("modules/Services/views/index.inc.php");
    
    }
 
-// ?>
+?>

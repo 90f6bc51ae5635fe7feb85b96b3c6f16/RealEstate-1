@@ -18,7 +18,7 @@
         </li>
 
         <li>
-            <a href="?content=Types">
+            <a href="index.php?content=Types">
                 <div <? if($page=="Types"){echo "class='menu-active'";}else{echo "class='menu'";}?> >
                     <span style="padding-top: 5px; font-size: 15px;">
                         Types
@@ -28,7 +28,7 @@
         </li>
 
         <li>
-            <a href="?content=Product">
+            <a href="index.php?content=Product">
                 <div <? if($page=="Product"){echo "class='menu-active'";}else{echo "class='menu'";}?> >
                     <span style="padding-top: 5px; font-size: 15px;">
                         Product
@@ -38,7 +38,7 @@
         </li>
 
         <li>
-            <a href="?content=News">
+            <a href="index.php?content=News">
                 <div <? if($page=="News"){echo "class='menu-active'";}else{echo "class='menu'";}?> >
                     <span style="padding-top: 5px; font-size: 15px;">
                         News
@@ -48,7 +48,7 @@
         </li>
 
         <li>
-            <a href="?content0=Services">
+            <a href="index.php?content=Services">
                 <div <? if($page=="Services"){echo "class='menu-active'";}else{echo "class='menu'";}?> >
                     <span style="padding-top: 5px; font-size: 15px;">
                         Services

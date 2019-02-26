@@ -5,7 +5,7 @@ abstract class BaseModel{
     
     protected $host="localhost";
 	protected $username="root";
-	protected $password="root1234";
+	protected $password="root123456";
     protected $db_name="revel_soft_real_estate";
 
 	function __construct(){

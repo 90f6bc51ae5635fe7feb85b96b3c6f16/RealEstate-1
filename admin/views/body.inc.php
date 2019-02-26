@@ -16,6 +16,10 @@
    
       require_once("modules/contact/views/index.inc.php");
    
+   }else if($content=="contact_us"){
+   
+      require_once("modules/contact_us/views/index.inc.php");
+   
    }else if($content=="Services"){
    
       require_once("modules/Services/views/index.inc.php");

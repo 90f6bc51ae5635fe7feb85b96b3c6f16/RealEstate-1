@@ -67,5 +67,15 @@
             </a>
         </li>
 
+        <li>
+            <a href="index.php?content=contact_us">
+                <div <? if($page=="contact_us"){echo "class='menu-active'";}else{echo "class='menu'";}?> >
+                    <span style="padding-top: 5px; font-size: 15px;">
+                        Contact Us
+                    </span>
+                </div>
+            </a>
+        </li>
+
     </ul>
 </div>

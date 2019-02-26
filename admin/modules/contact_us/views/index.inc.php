@@ -1,11 +1,11 @@
 <?php
 date_default_timezone_set("Asia/Bangkok");
-require_once('../models/Contact_usModel.php');
+require_once('../models/ContactUsModel.php');
 
 $path = "modules/contact_us/views/";
 $img_path = "../img_upload/contact_us/";
 
-$contact_us_model = new Contact_us;
+$contact_us_model = new ContactUsModel;
 $contact_us = $contact_us_model -> getContact_us();
 
 // echo "<pre>";
@@ -49,13 +49,6 @@ $id =($_GET['id']);
         $data['contact_us_address_4'] = $_POST['contact_us_address_4'];
         $data['contact_us_fax'] = $_POST['contact_us_fax'];
         $data['contact_us_email'] = $_POST['contact_us_email'];
-        $data['contact_us_carry_title'] = $_POST['contact_us_carry_title'];
-        $data['contact_us_carry_detail'] = $_POST['contact_us_carry_detail'];
-        $data['contact_us_taxi_title'] = $_POST['contact_us_taxi_title'];
-        $data['contact_us_taxi_detail'] = $_POST['contact_us_taxi_detail'];
-        $data['contact_us_car_titel'] = $_POST['contact_us_car_titel'];
-        $data['contact_us_car_detail'] = $_POST['contact_us_car_detail'];
-        $data['contact_us_map'] = $_POST['contact_us_map'];
 
 
         $target_dir = "../img_upload/contact_us/";
@@ -166,22 +159,6 @@ $id =($_GET['id']);
         $data['contact_us_address_4'] = $_POST['contact_us_address_4'];
         $data['contact_us_fax'] = $_POST['contact_us_fax'];
         $data['contact_us_email'] = $_POST['contact_us_email'];
-        $data['contact_us_carry_title_th'] = $_POST['contact_us_carry_title_th'];
-        $data['contact_us_carry_detail_th'] = $_POST['contact_us_carry_detail_th'];
-        $data['contact_us_taxi_title_th'] = $_POST['contact_us_taxi_title_th'];
-        $data['contact_us_taxi_detail_th'] = $_POST['contact_us_taxi_detail_th'];
-        $data['contact_us_car_titel_th'] = $_POST['contact_us_car_titel_th'];
-        $data['contact_us_car_detail_th'] = $_POST['contact_us_car_detail_th'];
-        $data['contact_us_carry_title_en'] = $_POST['contact_us_carry_title_en'];
-        $data['contact_us_carry_detail_en'] = $_POST['contact_us_carry_detail_en'];
-        $data['contact_us_taxi_title_en'] = $_POST['contact_us_taxi_title_en'];
-        $data['contact_us_taxi_detail_en'] = $_POST['contact_us_taxi_detail_en'];
-        $data['contact_us_car_titel_en'] = $_POST['contact_us_car_titel_en'];
-        $data['contact_us_car_detail_en'] = $_POST['contact_us_car_detail_en'];
-        $data['contact_us_map'] = $_POST['contact_us_map'];
-        $data['contact_us_map_latitude'] = $_POST['contact_us_map_latitude'];
-        $data['contact_us_map_longitude'] = $_POST['contact_us_map_longitude'];
-
 
         $target_dir = "../img_upload/contact_us/";
 

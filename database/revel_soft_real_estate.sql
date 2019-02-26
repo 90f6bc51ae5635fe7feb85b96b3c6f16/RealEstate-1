@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 26, 2019 at 07:05 AM
+-- Generation Time: Feb 26, 2019 at 08:18 AM
 -- Server version: 5.7.17-log
 -- PHP Version: 5.6.30
 
@@ -27,16 +27,35 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `tb_contact` (
-  `contact_id` int(11) NOT NULL,
-  `contact_firstname` varchar(100) NOT NULL,
-  `contact_lastname` varchar(100) NOT NULL,
-  `contact_email` varchar(100) NOT NULL,
-  `contact_tel` varchar(20) NOT NULL,
-  `contact_country` char(3) NOT NULL,
-  `contact_type_id` int(11) NOT NULL,
-  `contact_title_id` int(11) NOT NULL,
-  `contact_text` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `contact_id` int(5) NOT NULL,
+  `contact_title_id` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `contact_firstname` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `contact_lastname` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `contact_email` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `contact_tel` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `contact_country` char(3) COLLATE utf8_unicode_ci NOT NULL,
+  `contact_type_id` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `contact_text` text COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_contact_head`
+--
+
+CREATE TABLE `tb_contact_head` (
+  `contact_head_id` int(5) NOT NULL,
+  `contact_head_detail_th` text COLLATE utf8_unicode_ci NOT NULL,
+  `contact_head_detail_en` text COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `tb_contact_head`
+--
+
+INSERT INTO `tb_contact_head` (`contact_head_id`, `contact_head_detail_th`, `contact_head_detail_en`) VALUES
+(1, 'ขอต้อรับเข้าสู่ไทยเเลนด์', 'สวัสดีครับท่านผู้ชม');
 
 -- --------------------------------------------------------
 
@@ -45,9 +64,18 @@ CREATE TABLE `tb_contact` (
 --
 
 CREATE TABLE `tb_contact_title` (
-  `contact_title_id` int(11) NOT NULL,
-  `contact_title_name` varchar(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `contact_title_id` int(5) NOT NULL,
+  `contact_title_name_th` varchar(300) COLLATE utf8_unicode_ci NOT NULL,
+  `contact_title_name_en` varchar(300) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `tb_contact_title`
+--
+
+INSERT INTO `tb_contact_title` (`contact_title_id`, `contact_title_name_th`, `contact_title_name_en`) VALUES
+(1, 'กหดหกด', 'หกดหกดหกด'),
+(2, 'ฟหกฟหกฟห', 'กฟหกฟหกฟห');
 
 -- --------------------------------------------------------
 
@@ -56,9 +84,18 @@ CREATE TABLE `tb_contact_title` (
 --
 
 CREATE TABLE `tb_contact_type` (
-  `contact_type_id` int(11) NOT NULL,
-  `contact_type_name` varchar(200) NOT NULL
+  `contact_type_id` int(5) NOT NULL,
+  `contact_type_name_th` varchar(200) NOT NULL,
+  `contact_type_name_en` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tb_contact_type`
+--
+
+INSERT INTO `tb_contact_type` (`contact_type_id`, `contact_type_name_th`, `contact_type_name_en`) VALUES
+(1, 'หกดหกดหก', 'ดหกดหกดหกด'),
+(2, 'ฟหกฟหกฟหกฟหก', 'ฟหกฟหกฟหกฟหกฟหก');
 
 -- --------------------------------------------------------
 
@@ -67,12 +104,32 @@ CREATE TABLE `tb_contact_type` (
 --
 
 CREATE TABLE `tb_contact_us` (
-  `contact_us_id` int(11) NOT NULL,
-  `contact_us_address` text NOT NULL,
-  `contact_us_phone` varchar(50) NOT NULL,
-  `contact_us_mobie` varchar(50) NOT NULL,
-  `contact_us_email` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `contact_us_id` int(5) NOT NULL,
+  `contact_us_title_en` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `contact_us_title_th` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `contact_us_sub_title_en` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
+  `contact_us_sub_title_th` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
+  `contact_us_facebook` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `contact_us_tel` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `contact_us_address_en` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
+  `contact_us_address_th` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
+  `contact_us_address_1_en` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `contact_us_address_1_th` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `contact_us_address_2_en` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `contact_us_address_2_th` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `contact_us_address_3_en` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `contact_us_address_3_th` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `contact_us_address_4` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `contact_us_fax` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `contact_us_email` varchar(100) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `tb_contact_us`
+--
+
+INSERT INTO `tb_contact_us` (`contact_us_id`, `contact_us_title_en`, `contact_us_title_th`, `contact_us_sub_title_en`, `contact_us_sub_title_th`, `contact_us_facebook`, `contact_us_tel`, `contact_us_address_en`, `contact_us_address_th`, `contact_us_address_1_en`, `contact_us_address_1_th`, `contact_us_address_2_en`, `contact_us_address_2_th`, `contact_us_address_3_en`, `contact_us_address_3_th`, `contact_us_address_4`, `contact_us_fax`, `contact_us_email`) VALUES
+(8, 'real_estatedasdasdasd', '', '', '', 'https://www.facebook.com/real', '00000000000000000', 'hfghfghfghfghfg', 'thfghfghfg', 'Nai Muang', 'ต.ในเมือง', 'Muang', 'อ.เมือง', 'Nakhornratchasima ', 'จ.นครราชสีมา ', '30000', '0000000000', 'real@hotmail.com');
 
 -- --------------------------------------------------------
 
@@ -523,6 +580,12 @@ ALTER TABLE `tb_contact`
   ADD PRIMARY KEY (`contact_id`);
 
 --
+-- Indexes for table `tb_contact_head`
+--
+ALTER TABLE `tb_contact_head`
+  ADD PRIMARY KEY (`contact_head_id`);
+
+--
 -- Indexes for table `tb_contact_title`
 --
 ALTER TABLE `tb_contact_title`
@@ -533,6 +596,12 @@ ALTER TABLE `tb_contact_title`
 --
 ALTER TABLE `tb_contact_type`
   ADD PRIMARY KEY (`contact_type_id`);
+
+--
+-- Indexes for table `tb_contact_us`
+--
+ALTER TABLE `tb_contact_us`
+  ADD PRIMARY KEY (`contact_us_id`);
 
 --
 -- Indexes for table `tb_country`
@@ -599,15 +668,30 @@ ALTER TABLE `tb_user_type`
 --
 
 --
+-- AUTO_INCREMENT for table `tb_contact`
+--
+ALTER TABLE `tb_contact`
+  MODIFY `contact_id` int(5) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `tb_contact_head`
+--
+ALTER TABLE `tb_contact_head`
+  MODIFY `contact_head_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
 -- AUTO_INCREMENT for table `tb_contact_title`
 --
 ALTER TABLE `tb_contact_title`
-  MODIFY `contact_title_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `contact_title_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `tb_contact_type`
 --
 ALTER TABLE `tb_contact_type`
-  MODIFY `contact_type_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `contact_type_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT for table `tb_contact_us`
+--
+ALTER TABLE `tb_contact_us`
+  MODIFY `contact_us_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `tb_furniture`
 --

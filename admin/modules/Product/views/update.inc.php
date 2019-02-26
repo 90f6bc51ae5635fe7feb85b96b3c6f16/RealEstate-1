@@ -61,21 +61,34 @@
                     <input type="hidden"  id="product_id" name="product_id" value="<?php echo $product['product_id']; ?>" />
                     <input type="hidden"  id="product_img_o" name="product_img_o" value="<?php echo  $product['product_img'] ;?>" />
                     <div class="row"> 
-
-                        <div class="col-lg-3">
-                            <div class="form-group">
+                            <div class="col-lg-6">
+                                <div class="form-group">
                                 <label>ชื่อสินค้า <font color="#F00"><b>*</b></font></label>
                                 <input id="product_name" name="product_name" class="form-control" value="<?php echo $product['product_name'];?>" >
                             </div>
                         </div>
-
-                        <div class="col-lg-3">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>ประเภท <font color="#F00"><b>*</b></font></label>
+                                <select class="form-control  custom-select" id="product_types_id" name="product_types_id">
+                                <? for ($i=0; $i < count($type); $i++) {  ?>
+                                <option <?php if($product['product_types_id']==$type[$i]['product_types_id']){ echo "selected";}  ?> value="<? echo $type[$i]['product_types_id'];?>">
+                                <? echo $type[$i]['product_types_name'];?>
+                                </option>
+                                <? }?>
+                                </select>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
                             <div class="form-group">
                                 <label>ราคาสินค้า <font color="#F00"><b>*</b></font></label>
                                 <input id="product_price" name="product_price" class="form-control" value="<?php echo $product['product_price'];?>" >
                             </div>
                         </div>   
-                        
                     </div> 
 
                     <div class="row">

@@ -24,9 +24,11 @@ class ProductModel extends BaseModel{
     }
    
     function getProductByID($id){
-        $sql = " SELECT * 
-        FROM tb_product
-        WHERE product_id = '$id' 
+        $sql = " SELECT * FROM `tb_product` 
+        LEFT JOIN tb_product_types ON tb_product.product_types_id = tb_product_types.product_types_id 
+        WHERE 1
+        ORDER BY tb_product.product_id
+
         ";
 
         if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
@@ -46,7 +48,7 @@ class ProductModel extends BaseModel{
         product_name='".$data['product_name']."', 
         product_price='".$data['product_price']."', 
         product_detail='".$data['product_detail']."',
-        types_id='".$data['types_id']."' 
+        product_types_id='".$data['product_types_id']."' 
         WHERE product_id = $id "; 
 
         if (mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
@@ -62,14 +64,14 @@ class ProductModel extends BaseModel{
         product_name, 
         product_price, 
         product_detail,
-        types_id 
+        product_types_id 
         ) 
         VALUES ('". 
         $data['product_img']."','".
         $data['product_name']."','". 
         $data['product_price']."','". 
         $data['product_detail']."' ,'".
-        $data['types_id']."'
+        $data['product_types_id']."'
         )";
     if (mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
         return mysqli_insert_id(static::$db);

@@ -1,26 +1,41 @@
 <script>
     function check(){
-        var types_name = document.getElementById("types_name").value;
+        var product_types_name = document.getElementById("product_types_name").value;
 
-        types_name = $.trim(types_name);
-        types_detail = $.trim(	types_detail);
+        product_types_name = $.trim(product_types_name);
+        product_types_detail = $.trim(	product_types_detail);
         
-        if(types_name.length == 0){
+        if(product_types_name.length == 0){
             alert("กรุณากรอกชื่อเทรนด์สินค้า");
-            document.getElementById("types_name").focus();
+            document.getElementById("product_types_name").focus();
             return false;
-        }else if(types_detail.length == 0){
+        }else if(product_types_detail.length == 0){
             alert("กรุณากรอกรายละเอียดสินค้า");
-            document.getElementById("types_detail").focus();
+            document.getElementById("product_types_detail").focus();
             return false;
-        }else if(types_detail.length == 0){
+        }else if(product_types_detail.length == 0){
             alert("กรุณากรอกราคาสินค้า");
-            document.getElementById("types_price").focus();
+            document.getElementById("product_types_price").focus();
             return false;
         }else{
             return true;
         }
     }
+
+    //---------ฟังชั่นแสดงรูป----------------
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            $('#_img').attr('src', e.target.result);
+        }
+        reader.readAsDataURL(input.files[0]);
+        }else{
+            $('#_img').attr('src',   '../img_upload/Types/default.png');
+        }
+    }
+
+
 </script>
 
 <div class="row">
@@ -46,7 +61,7 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label>ชื่อประเภทสินค้า <font color="#F00"><b>*</b></font></label>
-                            <input id="types_name" name="types_name" class="form-control"  >
+                            <input id="product_types_name" name="product_types_name" class="form-control"  >
                         </div>
                     </div>   
 
@@ -54,8 +69,8 @@
                         <div class="col-lg-3">
                             <div class="form-group" >
                                 <label>รูปประเภทสินค้า </label>
-                                <img id="img_types_img" src="../img_upload/default.png" class="img-fluid shadows hoverable"  > 
-                                <input accept=".jpg , .png" type="file" id="types_img" name="types_img" class="form-control" style="" onChange="readURL(this,'types_img');">
+                                <img id="img_product_types_img" src="../img_upload/default.png" class="img-fluid shadows hoverable"  > 
+                                <input accept=".jpg , .png" type="file" id="product_types_img" name="product_types_img" class="form-control" style="" onChange="readURL(this,'product_types_img');">
                             </div>
                         </div> 
                     </div>

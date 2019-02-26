@@ -1,9 +1,12 @@
 <?php 
-require_once('../models/ProductModel.php');  
+require_once('../models/ProductModel.php'); 
+require_once('../models/TypesModel.php'); 
+
 
 $path = "modules/Product/views/";
  
-$product_model = new ProductModel;   
+$product_model = new ProductModel;
+$product_types_model = new TypesModel;   
 
 date_default_timezone_set("Asia/Bangkok");
 $d1=date("d");
@@ -18,11 +21,12 @@ $target_dir = "../img_upload/product/";
 
 $product_id = $_GET['id'];
 if($_GET['action'] == 'insert'){   
-    
+    $type = $product_types_model->getTypesBy();
     require_once($path.'insert.inc.php');
 
-}else if ($_GET['action'] == 'update'){  
+}else if ($_GET['action'] == 'update'){ 
 
+    $type = $product_types_model->getTypesBy();
     $product = $product_model->getproductByID($product_id);  
     require_once($path.'update.inc.php');
 
@@ -46,7 +50,8 @@ if($_GET['action'] == 'insert'){
     $check = true;
     $data = [];  
     $data['product_img'] = $_POST['product_img'];   
-    $data['product_name'] = $_POST['product_name'];     
+    $data['product_name'] = $_POST['product_name'];
+    $data['product_types_id'] = $_POST['product_types_id'];
     $data['product_detail'] = $_POST['product_detail'];    
     $data['product_price'] = $_POST['product_price'];    
 
@@ -138,7 +143,7 @@ if($_GET['action'] == 'insert'){
             $check_result = $product_model->updateProductByID($product_id,$data);
             if($check_result!=false){
                 ?>
-                <script>window.location="index.php?content=product&action=update&id=<?PHP echo $product_id;?>"</script>
+                <script>window.location="index.php?content=P-++++roduct&action=update&id=<?PHP echo $product_id;?>"</script>
                 <?php
             }else{
                 ?>  <script> window.history.back(); </script> <?php

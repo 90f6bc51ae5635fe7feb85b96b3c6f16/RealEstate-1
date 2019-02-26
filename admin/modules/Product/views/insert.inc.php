@@ -55,7 +55,13 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label>ประเภท <font color="#F00"><b>*</b></font></label>
-                            <input id="types_id" name="types_id" class="form-control"  >
+                            <select class="form-control  custom-select" id="product_types_id" name="product_types_id">
+                                <? for ($i=0; $i < count($type); $i++) {  ?>
+                                <option selected value="<? echo $type[$i]['product_types_id'];?>">
+                                <? echo $type[$i]['product_types_name'];?>
+                                </option>
+                                <? }?>
+                            </select>
                         </div>
                     </div>   
 

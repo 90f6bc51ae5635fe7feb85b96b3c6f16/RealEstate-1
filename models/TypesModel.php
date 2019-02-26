@@ -11,7 +11,7 @@ class TypesModel extends BaseModel{
 
     function getTypesBy(){
         $sql = "SELECT * 
-        FROM tb_types 
+        FROM tb_product_types 
         ";
         if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
             $data = [];
@@ -25,8 +25,8 @@ class TypesModel extends BaseModel{
    
     function getTypesByID($id){
         $sql = " SELECT * 
-        FROM tb_types
-        WHERE types_id = '$id' 
+        FROM tb_product_types
+        WHERE product_types_id = '$id' 
         ";
 
         if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
@@ -41,10 +41,10 @@ class TypesModel extends BaseModel{
     
     function updateTypesByID($id,$data = []){
         
-        $sql = " UPDATE tb_types SET  
-        types_img = '".$data['types_img']."',
-        types_name='".$data['types_name']."'
-        WHERE types_id = $id "; 
+        $sql = " UPDATE tb_product_types SET  
+        product_types_img = '".$data['product_types_img']."',
+        product_types_name='".$data['product_types_name']."'
+        WHERE product_types_id = $id "; 
 
         if (mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
             return true;
@@ -54,13 +54,13 @@ class TypesModel extends BaseModel{
     }
 
     function insertTypes($data=[]){
-        $sql = " INSERT INTO tb_types( 
-        types_img,
-        types_name
+        $sql = " INSERT INTO tb_product_types( 
+        product_types_img,
+        product_types_name
         ) 
         VALUES ('". 
-        $data['types_img']."','".
-        $data['types_name']."'
+        $data['product_types_img']."','".
+        $data['product_types_name']."'
         )";
     if (mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
         return mysqli_insert_id(static::$db);
@@ -71,7 +71,8 @@ class TypesModel extends BaseModel{
 
 
 function deleteTypesByID($id){
-    $sql = "DELETE FROM tb_types WHERE types_id = '$id' ";
+    $sql = "DELETE FROM tb_product_types 
+    WHERE product_types_id = '$id' ";
     mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT); 
 }
 

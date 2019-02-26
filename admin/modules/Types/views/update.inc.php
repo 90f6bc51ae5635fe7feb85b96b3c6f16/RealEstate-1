@@ -2,21 +2,21 @@
     function check(){
 
 
-        var types_name = document.getElementById("types_name").value; 
+        var product_types_name = document.getElementById("product_types_name").value; 
  
         
-        types_name = $.trim(types_name); 
-        types_detail = $.trim(types_detail); 
+        product_types_name = $.trim(product_types_name); 
+        product_types_detail = $.trim(product_types_detail); 
         
-        if(types_name.length == 0){
+        if(product_types_name.length == 0){
             alert("กรุณากรอกชื่อเทรนด์สินค้า");
-            document.getElementById("types_name").focus();
+            document.getElementById("product_types_name").focus();
             return false; 
         }else{
             return true;
         }
     }
-
+    //---------ฟังชั่นแสดงรูป----------------
     function readURL(input,id) {
         if (input.files && input.files[0]) {
             var reader = new FileReader();
@@ -25,7 +25,7 @@
             }
             reader.readAsDataURL(input.files[0]);
         }else{
-            $('#img_'+id).attr('src', '../img_upload/types/default.png');
+            $('#img_'+id).attr('src', '../img_upload/Types/default.png');
         }
     }
 
@@ -47,14 +47,14 @@
             <!-- /.panel-heading -->
             <div class="panel-body">
                 <form role="form" method="post" onsubmit="return check();" action="index.php?content=Types&action=edit" enctype="multipart/form-data">
-                    <input type="hidden"  id="types_id" name="types_id" value="<?php echo $types['types_id']; ?>" />
-                    <input type="hidden"  id="types_img_o" name="types_img_o" value="<?php echo  $types['types_img'] ;?>" />
+                    <input type="hidden"  id="product_types_id" name="product_types_id" value="<?php echo $product_types['product_types_id']; ?>" />
+                    <input type="hidden"  id="product_types_img_o" name="product_types_img_o" value="<?php echo  $product_types['product_types_img'] ;?>" />
 
                     <div class="row">
                         <div class="col-lg-3">
                             <div class="form-group">
-                                <label>ชื่อสินค้า <font color="#F00"><b>*</b></font></label>
-                                <input id="types_name" name="types_name" class="form-control" value="<?php echo $types['types_name'];?>" >
+                                <label>ชื่อ <font color="#F00"><b>*</b></font></label>
+                                <input id="product_types_name" name="product_types_name" class="form-control" value="<?php echo $product_types['product_types_name'];?>" >
                             </div>
                         </div>                        
                     </div> 
@@ -62,22 +62,13 @@
                     <div class="row">
                         <div class="col-lg-3">
                             <div class="form-group" >
-                                <label>รูปเทรนด์สินค้า </label>
-                                <img id="img_types_img" src="../img_upload/types/<?php echo $types['types_img']; ?>" class="img-fluid shadows hoverable"  > 
-                                <input accept=".jpg , .png" type="file" id="types_img" name="types_img" class="form-control" style="" onChange="readURL(this,'types_img');">
+                                <label>รูป </label>
+                                <img id="img_product_types_img" src="../img_upload/product_types/<?php echo $product_types['product_types_img']; ?>" class="img-fluid shadows hoverable"  > 
+                                <input accept=".jpg , .png" type="file" id="product_types_img" name="product_types_img" class="form-control" style="" onChange="readURL(this,'product_types_img');">
                             </div>
                         </div> 
                     </div>
                     
-                    <div class="row">    
-                        <div class="col-lg-12">
-                            <div class="form-group">
-                                <label>รายละเอียด </label> 
-                                <textarea id="types_detail" name="types_detail" class="form-control" style="min-height: 200px;"/><?php echo $types['types_detail'];?></textarea>
-                            </div>
-                        </div> 
-                    </div> 
-
                     <div align="right">
                         <button type="button" class="btn btn-default" onclick="window.location='?content=Types';" >ย้อนกลับ</button>
                         <button type="reset" class="btn btn-primary">ล้างข้อมูล</button>

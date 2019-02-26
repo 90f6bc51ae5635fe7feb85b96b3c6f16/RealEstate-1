@@ -24,6 +24,10 @@
    
       require_once("modules/about_us/views/index.inc.php");
    
+   }else if($content=="company_profile"){
+   
+      require_once("modules/company_profile/views/index.inc.php");
+   
    }else if($content=="Services"){
    
       require_once("modules/Services/views/index.inc.php");

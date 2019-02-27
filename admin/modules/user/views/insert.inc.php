@@ -88,7 +88,7 @@
 
         <div class="col-lg-3">
             <div class="form-group" align="center">
-                <img id="img_user" src="../template/backend/images/user/default.png" class="example-avater"> 
+                <img id="img_user" src="../img_upload/user/default.png" class="example-avater"> 
                 <input accept=".jpg , .png" type="file" id="user_image" name="user_image" class="form-control" style="margin: 14px 0 0 0 ;" onChange="readURL(this);">
             </div>
         </div>

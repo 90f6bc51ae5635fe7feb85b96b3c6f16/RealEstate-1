@@ -18,7 +18,7 @@
                 <div class="col-lg-12">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h2>  </h2>
+                            <h2> </h2>
                         </div>
                         <div class="col-lg-6">
                             <button type="submit" name="" id="" class="btn btn-warning btn-xs float-right"
@@ -29,17 +29,24 @@
                         <label> </label>
                         <div class="row">
                             <div class="col-lg-6">
-                            <font color="#F00"><b>TH</b></font>
-                            <input id="product_header_th" name="product_header_th"value="<?PHP echo $product_header[0]['product_header_th'];?>" class="form-control" />
-                                <textarea class="form-control " id="product_header_detail_en"  name="product_header_detail_en"  rows="5"><?PHP echo $product_header[0]['product_header_detail_en'];?></textarea>
-                            </div>
-                            <div class="col-lg-6">
-                            <font color="#F00"><b>EN</b></font>
-                            <input id="product_header_en" name="product_header_en"value="<?PHP echo $product_header[0]['product_header_en'];?>" class="form-control" />
+                                <font color="#F00"><b>TH</b></font>
+                                <input id="product_header_th" name="product_header_th"
+                                    value="<?PHP echo $product_header[0]['product_header_th'];?>"
+                                    class="form-control" />
 
                                 <textarea class="form-control " id="product_header_detail_th"
                                     name="product_header_detail_th"
                                     rows="5"><?PHP echo $product_header[0]['product_header_detail_th'];?></textarea>
+                            </div>
+                            <div class="col-lg-6">
+                                <font color="#F00"><b>EN</b></font>
+                                <input id="product_header_en" name="product_header_en"
+                                    value="<?PHP echo $product_header[0]['product_header_en'];?>"
+                                    class="form-control" />
+                                <textarea class="form-control " id="product_header_detail_en"
+                                    name="product_header_detail_en"
+                                    rows="5"><?PHP echo $product_header[0]['product_header_detail_en'];?></textarea>
+
                             </div>
                         </div>
                     </div>

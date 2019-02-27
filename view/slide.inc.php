@@ -16,7 +16,7 @@ $home_slide = $home_slide_model-> getProductBy();
                 <div>
                     <?PHP echo $home_slide[$i]['product_name'];?>
                 </div>
-                <div class="slide-product_detail">
+                <div class="slide-product-detail">
                     <?PHP echo $home_slide[$i]['product_detail'];?>
                 </div>
                 <div class="row">
@@ -43,9 +43,9 @@ $home_slide = $home_slide_model-> getProductBy();
     background-color: chocolate;
     /* background-image: url('img_upload/product/27022019115248-2201201916461622012019164616749792239.jpg'); */
 }
-.slide-product_detail {
+.slide-product-detail {
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }

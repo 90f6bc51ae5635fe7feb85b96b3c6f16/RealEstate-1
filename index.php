@@ -1,3 +1,8 @@
+<?PHP
+if(isset($_COOKIE['language'])){
+    $lng = $_COOKIE['language'];
+}
+?>
 <!DOCTYPE html>
 <html>
     <head>

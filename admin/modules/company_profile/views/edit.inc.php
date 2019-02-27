@@ -20,7 +20,7 @@ function readURL(input) {
             <div class="row">
                 <div class="col-lg-6">
                     <h1>
-                        หน้าแก้ไขข้อมูล About us
+                        หน้าแก้ไขข้อมูล Profile 
                         <?PHP echo $company_profile[$id]['company_profile_title_en'];  ?>
                     </h1>
                 </div>
@@ -59,7 +59,7 @@ function readURL(input) {
 
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <label>About Title EN <font color="#F00"><b>*</b></font></label>
+                                <label>Profile Title EN <font color="#F00"><b>*</b></font></label>
                                 <input id="company_profile_title_en" name="company_profile_title_en" class="form-control"
                                     value="<?PHP echo $company_profile[$id]['company_profile_title_en'];?>" />
                             </div>
@@ -67,7 +67,7 @@ function readURL(input) {
 
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <label>About Title TH <font color="#F00"><b>*</b></font></label>
+                                <label>Profile Title TH <font color="#F00"><b>*</b></font></label>
                                 <input id="company_profile_title_th" name="company_profile_title_th" class="form-control"
                                     value="<?PHP echo $company_profile[$id]['company_profile_title_th'];?>" />
                             </div>
@@ -75,15 +75,75 @@ function readURL(input) {
 
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <label>About Sub Title EN<font color="#F00"><b>*</b></font></label>
-                                <textarea class="form-control " id="company_profile_sub_title_en" name="company_profile_sub_title_en"rows="8"><?PHP echo $company_profile[$id]['company_profile_sub_title_en'];?></textarea>
+                                <label>Profile Sub Title EN<font color="#F00"><b>*</b></font></label>
+                                <textarea class="form-control " id="company_profile_sub_title_en" name="company_profile_sub_title_en"rows="4"><?PHP echo $company_profile[$id]['company_profile_sub_title_en'];?></textarea>
                             </div>
                         </div>
 
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <label>About Sub Title TH<font color="#F00"><b>*</b></font></label>
-                                <textarea class="form-control " id="company_profile_sub_title_th" name="company_profile_sub_title_th"rows="8"><?PHP echo $company_profile[$id]['company_profile_sub_title_th'];?></textarea>
+                                <label>Profile Sub Title TH<font color="#F00"><b>*</b></font></label>
+                                <textarea class="form-control " id="company_profile_sub_title_th" name="company_profile_sub_title_th"rows="4"><?PHP echo $company_profile[$id]['company_profile_sub_title_th'];?></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>Vision Title EN <font color="#F00"><b>*</b></font></label>
+                                <input id="company_profile_vision_en" name="company_profile_vision_en" class="form-control"
+                                    value="<?PHP echo $company_profile[$id]['company_profile_vision_en'];?>" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>Vision Title TH <font color="#F00"><b>*</b></font></label>
+                                <input id="company_profile_vision_th" name="company_profile_vision_th" class="form-control"
+                                    value="<?PHP echo $company_profile[$id]['company_profile_vision_th'];?>" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>Vision Sub Title EN<font color="#F00"><b>*</b></font></label>
+                                <textarea class="form-control " id="company_profile_vision_detail_en" name="company_profile_vision_detail_en"rows="4"><?PHP echo $company_profile[$id]['company_profile_vision_detail_en'];?></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>Vision Sub Title TH<font color="#F00"><b>*</b></font></label>
+                                <textarea class="form-control " id="company_profile_vision_detail_th" name="company_profile_vision_detail_th"rows="4"><?PHP echo $company_profile[$id]['company_profile_vision_detail_th'];?></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>Mission Title EN <font color="#F00"><b>*</b></font></label>
+                                <input id="company_profile_mission_en" name="company_profile_mission_en" class="form-control"
+                                    value="<?PHP echo $company_profile[$id]['company_profile_mission_en'];?>" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>Mission Title TH <font color="#F00"><b>*</b></font></label>
+                                <input id="company_profile_mission_th" name="company_profile_mission_th" class="form-control"
+                                    value="<?PHP echo $company_profile[$id]['company_profile_mission_th'];?>" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>Mission Sub Title EN<font color="#F00"><b>*</b></font></label>
+                                <textarea class="form-control " id="company_profile_mission_detail_en" name="company_profile_mission_detail_en"rows="4"><?PHP echo $company_profile[$id]['company_profile_mission_detail_en'];?></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>Mission Sub Title TH<font color="#F00"><b>*</b></font></label>
+                                <textarea class="form-control " id="company_profile_mission_detail_th" name="company_profile_mission_detail_th"rows="4"><?PHP echo $company_profile[$id]['company_profile_mission_detail_th'];?></textarea>
                             </div>
                         </div>
 

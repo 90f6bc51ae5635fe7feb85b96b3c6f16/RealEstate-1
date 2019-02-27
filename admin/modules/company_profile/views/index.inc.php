@@ -45,6 +45,14 @@ $id =($_GET['id']);
         $data['company_profile_sub_title_en'] = $_POST['company_profile_sub_title_en'];
         $data['company_profile_title_th'] = $_POST['company_profile_title_th'];
         $data['company_profile_sub_title_th'] = $_POST['company_profile_sub_title_th'];
+        $data['company_profile_vision_th'] = $_POST['company_profile_vision_th'];
+        $data['company_profile_vision_en'] = $_POST['company_profile_vision_en'];
+        $data['company_profile_vision_detail_th'] = $_POST['company_profile_vision_detail_th'];
+        $data['company_profile_vision_detail_en'] = $_POST['company_profile_vision_detail_en'];
+        $data['company_profile_mission_th'] = $_POST['company_profile_mission_th'];
+        $data['company_profile_mission_en'] = $_POST['company_profile_mission_en'];
+        $data['company_profile_mission_detail_th'] = $_POST['company_profile_mission_detail_th'];
+        $data['company_profile_mission_detail_en'] = $_POST['company_profile_mission_detail_en'];
 
         //------------------ฟังชั่นแก้ไขรูป--------------------
         if($_FILES['company_profile_img']['name'] == ""){

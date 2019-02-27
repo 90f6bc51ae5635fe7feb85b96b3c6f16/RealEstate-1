@@ -91,7 +91,7 @@
             <a href="index.php?content=company_profile">
                 <div <? if($page=="company_profile"){echo "class='menu-active'";}else{echo "class='menu'";}?> >
                     <span style="padding-top: 5px; font-size: 15px;">
-                    company_profile
+                    Company Profile
                     </span>
                 </div>
             </a>

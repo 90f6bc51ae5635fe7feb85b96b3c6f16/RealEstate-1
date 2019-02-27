@@ -1,9 +1,9 @@
 <?php 
-require_once('../models/NewsModel.php');  
+require_once('../models/newsModel.php');  
 
-$path = "modules/News/views/";
+$path = "modules/news/views/";
  
-$news_model = new NewsModel;   
+$news_model = new newsModel;   
 
 date_default_timezone_set("Asia/Bangkok");
 $d1=date("d");
@@ -14,7 +14,7 @@ $d5=date("i");
 $d6=date("s");
 $date="$d1$d2$d3$d4$d5$d6";
 
-$target_dir = "../img_upload/News/";
+$target_dir = "../img_upload/news/";
 
 $news_id = $_GET['id'];
 if($_GET['action'] == 'insert'){   
@@ -23,13 +23,13 @@ if($_GET['action'] == 'insert'){
 
 }else if ($_GET['action'] == 'update'){  
 
-    $news = $news_model->getNewsByID($news_id);  
+    $news = $news_model->getnewsByID($news_id);  
     require_once($path.'update.inc.php');
 
 
 }else if ($_GET['action'] == 'delete'){ 
 
-    $news = $news_model->getNewsByID($news_id); 
+    $news = $news_model->getnewsByID($news_id); 
     if($news['news_img']!=""){
         $target_file = $target_dir .$news['news_img'];
         if (file_exists($target_file)) {
@@ -38,7 +38,7 @@ if($_GET['action'] == 'insert'){
     }
     $news_model->deletenewsByID($news_id); 
     ?>
-    <script>window.location="index.php?content=News"</script>
+    <script>window.location="index.php?content=news"</script>
     <?php
     
 }else if ($_GET['action'] == 'add'){
@@ -82,7 +82,7 @@ if($_GET['action'] == 'insert'){
         $check_result = $news_model->insertnews($data);
         if($check_result!=false){   
             ?>
-            <script>window.location="index.php?content=News"</script>
+            <script>window.location="index.php?content=news"</script>
             <?php
         }else{
             ?>  <script> window.history.back(); </script> <?php
@@ -133,10 +133,10 @@ if($_GET['action'] == 'insert'){
         if($check == false){
             ?>  <script>  alert('<?php echo $error_msg; ?>'); window.history.back(); </script>  <?php
         }else{
-            $check_result = $news_model->updateNewsByID($news_id,$data);
+            $check_result = $news_model->updatenewsByID($news_id,$data);
             if($check_result!=false){
                 ?>
-                <script>window.location="index.php?content=News&action=update&id=<?PHP echo $news_id;?>"</script>
+                <script>window.location="index.php?content=news&action=update&id=<?PHP echo $news_id;?>"</script>
                 <?php
             }else{
                 ?>  <script> window.history.back(); </script> <?php
@@ -144,7 +144,7 @@ if($_GET['action'] == 'insert'){
         } 
      
 }else {
-    $news = $news_model->getNewsBy();
+    $news = $news_model->getnewsBy();
     require_once($path.'view.inc.php');
 }
 ?>

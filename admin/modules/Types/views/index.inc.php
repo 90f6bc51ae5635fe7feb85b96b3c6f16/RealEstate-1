@@ -1,7 +1,7 @@
 <?php 
 require_once('../models/TypesModel.php');  
 
-$path = "modules/Types/views/";
+$path = "modules/types/views/";
  
 $product_types_model = new TypesModel;   
 
@@ -14,7 +14,7 @@ $d5=date("i");
 $d6=date("s");
 $date="$d1$d2$d3$d4$d5$d6";
 
-$target_dir = "../img_upload/Types/";
+$target_dir = "../img_upload/types/";
 
 $product_types_id = $_GET['id'];
 if($_GET['action'] == 'insert'){   
@@ -38,7 +38,7 @@ if($_GET['action'] == 'insert'){
     }
     $product_types_model->deleteTypesByID($product_types_id); 
     ?>
-    <script>window.location="index.php?content=Types"</script>
+    <script>window.location="index.php?content=types"</script>
     <?php
     
 }else if ($_GET['action'] == 'add'){
@@ -46,9 +46,10 @@ if($_GET['action'] == 'insert'){
     $check = true;
     $data = [];  
     $data['product_types_img'] = $_POST['product_types_img'];   
-    $data['product_types_name'] = $_POST['product_types_name'];     
+    $data['product_types_name_th'] = $_POST['product_types_name_th'];     
+    $data['product_types_name_en'] = $_POST['product_types_name_en'];     
 
-    $input_image = array("product_types_img");
+        $input_image = array("product_types_img");
 
     for($i = 0;$i<count($input_image);$i++){
         if($_FILES[$input_image[$i]]['name'] == ""){
@@ -81,7 +82,7 @@ if($_GET['action'] == 'insert'){
         $check_result = $product_types_model->insertTypes($data);
         if($check_result!=false){   
             ?>
-            <script>window.location="index.php?content=Types"</script>
+            <script>window.location="index.php?content=types"</script>
             <?php
         }else{
             ?>  <script> window.history.back(); </script> <?php
@@ -93,7 +94,8 @@ if($_GET['action'] == 'insert'){
         $check = true;
         $data = [];  
         $data['product_types_img'] = $_POST['product_types_img'];   
-        $data['product_types_name'] = $_POST['product_types_name'];    
+        $data['product_types_name_th'] = $_POST['product_types_name_th'];    
+        $data['product_types_name_en'] = $_POST['product_types_name_en'];    
 
         $input_image = array("product_types_img");
 
@@ -134,7 +136,7 @@ if($_GET['action'] == 'insert'){
             $check_result = $product_types_model->updateTypesByID($product_types_id,$data);
             if($check_result!=false){
                 ?>
-                <script>window.location="index.php?content=Types&action=update&id=<?PHP echo $product_types_id;?>"</script>
+                <script>window.location="index.php?content=types&action=update&id=<?PHP echo $product_types_id;?>"</script>
                 <?php
             }else{
                 ?>  <script> window.history.back(); </script> <?php

@@ -1,7 +1,7 @@
 <?php 
 require_once('../models/ServicesModel.php');  
 
-$path = "modules/Services/views/";
+$path = "modules/services/views/";
  
 $services_model = new ServicesModel;   
 
@@ -14,7 +14,7 @@ $d5=date("i");
 $d6=date("s");
 $date="$d1$d2$d3$d4$d5$d6";
 
-$target_dir = "../img_upload/Services/";
+$target_dir = "../img_upload/services/";
 
 $services_id = $_GET['id'];
 if($_GET['action'] == 'insert'){   
@@ -36,9 +36,9 @@ if($_GET['action'] == 'insert'){
             unlink($target_file);
         } 
     }
-    $services_model->deleteservicesByID($services_id); 
+    $services_model->deleteServicesByID($services_id); 
     ?>
-    <script>window.location="index.php?content=Services"</script>
+    <script>window.location="index.php?content=services"</script>
     <?php
     
 }else if ($_GET['action'] == 'add'){
@@ -79,10 +79,10 @@ if($_GET['action'] == 'insert'){
     if($check == false){
         ?>  <script>  alert('<?php echo $error_msg; ?>'); window.history.back(); </script>  <?php
     }else{
-        $check_result = $services_model->insertservices($data);
+        $check_result = $services_model->insertServices($data);
         if($check_result!=false){   
             ?>
-            <script>window.location="index.php?content=Services"</script>
+            <script>window.location="index.php?content=services"</script>
             <?php
         }else{
             ?>  <script> window.history.back(); </script> <?php
@@ -136,7 +136,7 @@ if($_GET['action'] == 'insert'){
             $check_result = $services_model->updateServicesByID($services_id,$data);
             if($check_result!=false){
                 ?>
-                <script>window.location="index.php?content=Services&action=update&id=<?PHP echo $services_id;?>"</script>
+                <script>window.location="index.php?content=services&action=update&id=<?PHP echo $services_id;?>"</script>
                 <?php
             }else{
                 ?>  <script> window.history.back(); </script> <?php

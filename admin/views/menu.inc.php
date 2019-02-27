@@ -18,8 +18,8 @@
         </li>
 
         <li>
-            <a href="index.php?content=Types">
-                <div <? if($page=="Types"){echo "class='menu-active'";}else{echo "class='menu'";}?> >
+            <a href="index.php?content=types">
+                <div <? if($page=="types"){echo "class='menu-active'";}else{echo "class='menu'";}?> >
                     <span style="padding-top: 5px; font-size: 15px;">
                         Types
                     </span>
@@ -28,8 +28,8 @@
         </li>
 
         <li>
-            <a href="index.php?content=Product">
-                <div <? if($page=="Product"){echo "class='menu-active'";}else{echo "class='menu'";}?> >
+            <a href="index.php?content=product">
+                <div <? if($page=="product"){echo "class='menu-active'";}else{echo "class='menu'";}?> >
                     <span style="padding-top: 5px; font-size: 15px;">
                         Product
                     </span>
@@ -38,18 +38,18 @@
         </li>
 
         <li>
-            <a href="index.php?content=News">
-                <div <? if($page=="News"){echo "class='menu-active'";}else{echo "class='menu'";}?> >
+            <a href="index.php?content=news">
+                <div <? if($page=="news"){echo "class='menu-active'";}else{echo "class='menu'";}?> >
                     <span style="padding-top: 5px; font-size: 15px;">
-                        News
+                        news
                     </span>
                 </div>
             </a>
         </li>
 
         <li>
-            <a href="index.php?content=Services">
-                <div <? if($page=="Services"){echo "class='menu-active'";}else{echo "class='menu'";}?> >
+            <a href="index.php?content=services">
+                <div <? if($page=="services"){echo "class='menu-active'";}else{echo "class='menu'";}?> >
                     <span style="padding-top: 5px; font-size: 15px;">
                         Services
                     </span>

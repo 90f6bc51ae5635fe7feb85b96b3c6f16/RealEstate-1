@@ -4,7 +4,7 @@
      <h1>ระบบจัดการข่าวสาร</h1>
      <h2>เพิ่ม ลบ เเก้ไข ข่าวสาร</h2> 
      <div align=right>
-      <a href="?content=News&action=insert">
+      <a href="?content=news&action=insert">
         <input class="button" type="submit" value="เพิ่ม">
       </a>
     </div> 
@@ -14,7 +14,7 @@
       <tr>
         <th>#</th>
         <th width="20%">รูปภาพ</th>    
-        <th width="20%">ชื่อข่าว</th>    
+        <th width="20%">ชื่อ</th>    
         <th>เเก้ไข</th>
         <th>ลบ</th>
       </tr>
@@ -27,7 +27,7 @@
           <td><?php echo $i+1; ?></td> 
           <td>
             <div align="center">
-              <img  class="img-fluid" src="../img_upload/News/<?php if($news[$i]['news_img'] != "") echo $news[$i]['news_img']; else echo "default.png" ?>" height="72" width="auto"/>  
+              <img  class="img-fluid" src="../img_upload/news/<?php if($news[$i]['news_img'] != "") echo $news[$i]['news_img']; else echo "default.png" ?>" height="72" width="auto"/>  
             </div>
           </td>  
           <td>
@@ -35,12 +35,12 @@
           </td> 
 
           <td> 
-            <a href="?content=News&action=update&id=<?php echo $news[$i]['news_id'];?>" style="font-size: 20px;">
+            <a href="?content=news&action=update&id=<?php echo $news[$i]['news_id'];?>" style="font-size: 20px;">
               <i class="fa fa-pencil-square-o" aria-hidden="true" ></i>
             </a> 
           </td> 
           <td>  
-            <a href="?content=News&action=delete&id=<?php echo $news[$i]['news_id'];?>" onclick="return confirm('คุณต้องการลบรูปสไลด์?'
+            <a href="?content=news&action=delete&id=<?php echo $news[$i]['news_id'];?>" onclick="return confirm('คุณต้องการลบ?'
             );" style="color:red; font-size: 20px;">
               <i class="fa fa-times" aria-hidden="true"></i>
             </a> 

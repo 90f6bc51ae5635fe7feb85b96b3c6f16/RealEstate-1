@@ -3,7 +3,7 @@ require_once('../models/ProductModel.php');
 require_once('../models/TypesModel.php'); 
 
 
-$path = "modules/Product/views/";
+$path = "modules/product/views/";
  
 $product_model = new ProductModel;
 $product_types_model = new TypesModel;   
@@ -42,7 +42,7 @@ if($_GET['action'] == 'insert'){
     }
     $product_model->deleteProductByID($product_id); 
     ?>
-    <script>window.location="index.php?content=Product"</script>
+    <script>window.location="index.php?content=product"</script>
     <?php
     
 }else if ($_GET['action'] == 'add'){
@@ -88,7 +88,7 @@ if($_GET['action'] == 'insert'){
         $check_result = $product_model->insertproduct($data);
         if($check_result!=false){   
             ?>
-            <script>window.location="index.php?content=Product"</script>
+            <script>window.location="index.php?content=product"</script>
             <?php
         }else{
             ?>  <script> window.history.back(); </script> <?php

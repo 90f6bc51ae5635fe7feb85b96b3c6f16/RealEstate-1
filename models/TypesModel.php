@@ -43,7 +43,8 @@ class TypesModel extends BaseModel{
         
         $sql = " UPDATE tb_product_types SET  
         product_types_img = '".$data['product_types_img']."',
-        product_types_name='".$data['product_types_name']."'
+        product_types_name_th='".$data['product_types_name_th']."',
+        product_types_name_en='".$data['product_types_name_en']."'
         WHERE product_types_id = $id "; 
 
         if (mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
@@ -56,11 +57,13 @@ class TypesModel extends BaseModel{
     function insertTypes($data=[]){
         $sql = " INSERT INTO tb_product_types( 
         product_types_img,
-        product_types_name
+        product_types_name_th,
+        product_types_name_en
         ) 
         VALUES ('". 
         $data['product_types_img']."','".
-        $data['product_types_name']."'
+        $data['product_types_name_th']."','".
+        $data['product_types_name_en']."'
         )";
     if (mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
         return mysqli_insert_id(static::$db);
@@ -70,14 +73,10 @@ class TypesModel extends BaseModel{
 }
 
 
-function deleteTypesByID($id){
-    $sql = "DELETE FROM tb_product_types 
-    WHERE product_types_id = '$id' ";
-    mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT); 
-}
-
-
-
-
+    function deleteTypesByID($id){
+        $sql = "DELETE FROM tb_product_types 
+        WHERE product_types_id = '$id' ";
+        mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT); 
+    }
 }
 ?>

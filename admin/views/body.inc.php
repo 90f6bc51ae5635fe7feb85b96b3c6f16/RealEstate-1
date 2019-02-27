@@ -32,10 +32,18 @@
    
       require_once("modules/agent/views/index.inc.php");
    
+   }else if($content=="user"){
+   
+      require_once("modules/user/views/index.inc.php");
+   
    }else if($content=="Services"){
    
       require_once("modules/Services/views/index.inc.php");
    
+   }else {
+      
+      require_once("modules/Types/views/index.inc.php");
+
    }
 
 ?>

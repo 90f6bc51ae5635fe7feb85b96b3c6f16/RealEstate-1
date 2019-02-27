@@ -63,13 +63,13 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <label>ชื่อ <font color="#F00"><b>*</b></font></label>
+                                <label>ชื่อ <font color="#F00"><b>TH</b></font></label>
                                 <input id="product_types_name_th" name="product_types_name_th" class="form-control" value="<?php echo $product_types['product_types_name_th'];?>" >
                             </div>
                         </div>                        
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <label>ชื่อ <font color="#F00"><b>*</b></font></label>
+                                <label>ชื่อ <font color="#F00"><b>EN</b></font></label>
                                 <input id="product_types_name_en" name="product_types_name_en" class="form-control" value="<?php echo $product_types['product_types_name_en'];?>" >
                             </div>
                         </div>                        

@@ -1,14 +1,13 @@
 <?php 
+date_default_timezone_set("Asia/Bangkok");
 require_once('../models/ProductModel.php'); 
 require_once('../models/TypesModel.php'); 
-
 
 $path = "modules/product/views/";
  
 $product_model = new ProductModel;
-$product_types_model = new TypesModel;   
+$product_types_model = new TypesModel;  
 
-date_default_timezone_set("Asia/Bangkok");
 $d1=date("d");
 $d2=date("m");
 $d3=date("Y");
@@ -27,7 +26,7 @@ if($_GET['action'] == 'insert'){
 }else if ($_GET['action'] == 'update'){ 
 
     $type = $product_types_model->getTypesBy();
-    $product = $product_model->getproductByID($product_id);  
+    $product = $product_model->getProductByID($product_id);  
     require_once($path.'update.inc.php');
 
 
@@ -85,7 +84,7 @@ if($_GET['action'] == 'insert'){
     if($check == false){
         ?>  <script>  alert('<?php echo $error_msg; ?>'); window.history.back(); </script>  <?php
     }else{
-        $check_result = $product_model->insertproduct($data);
+        $check_result = $product_model->insertProduct($data);
         if($check_result!=false){   
             ?>
             <script>window.location="index.php?content=product"</script>

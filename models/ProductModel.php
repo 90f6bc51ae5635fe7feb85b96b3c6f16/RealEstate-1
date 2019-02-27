@@ -10,8 +10,11 @@ class ProductModel extends BaseModel{
     }
 
     function getProductBy(){
-        $sql = "SELECT * 
-        FROM tb_product 
+        $sql = "SELECT * FROM `tb_product` 
+        LEFT JOIN tb_product_types 
+        ON tb_product.product_types_id = tb_product_types.product_types_id 
+        WHERE 1
+        ORDER BY tb_product.product_id
         ";
         if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
             $data = [];
@@ -25,10 +28,10 @@ class ProductModel extends BaseModel{
    
     function getProductByID($id){
         $sql = " SELECT * FROM `tb_product` 
-        LEFT JOIN tb_product_types ON tb_product.product_types_id = tb_product_types.product_types_id 
+        LEFT JOIN tb_product_types 
+        ON tb_product.product_types_id = tb_product_types.product_types_id 
         WHERE 1
         ORDER BY tb_product.product_id
-
         ";
 
         if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {

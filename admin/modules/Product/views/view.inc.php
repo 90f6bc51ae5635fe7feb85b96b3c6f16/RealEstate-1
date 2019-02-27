@@ -14,8 +14,10 @@
       <tr>
         <th>#</th>
         <th width="20%">รูปภาพ</th>    
-        <th width="20%">ชื่อสินค้า</th>    
-        <th width="20%">ประเภท</th>    
+        <th width="20%">ชื่อสินค้า TH</th>    
+        <th width="20%">ชื่อสินค้า EN</th>    
+        <th width="20%">ประเภท TH</th>    
+        <th width="20%">ประเภท EN</th>    
         <th width="20%">ราคา</th>    
         <th>เเก้ไข</th>
         <th>ลบ</th>
@@ -33,10 +35,16 @@
             </div>
           </td>  
           <td>
-          <?php echo $product[$i]['product_name'];?>
+          <?php echo $product[$i]['product_name_th'];?>
           </td> 
           <td>
-          <?php echo $product[$i]['product_name'];?>
+          <?php echo $product[$i]['product_name_en'];?>
+          </td> 
+          <td>
+          <?php echo $product[$i]['product_types_name_th'];?>
+          </td> 
+          <td>
+          <?php echo $product[$i]['product_types_name_en'];?>
           </td> 
           <td>
           <?php echo $product[$i]['product_price'];?>

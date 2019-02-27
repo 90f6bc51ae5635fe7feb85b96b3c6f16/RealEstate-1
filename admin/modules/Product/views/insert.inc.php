@@ -66,34 +66,40 @@
             <!-- /.panel-heading -->
             <div class="panel-body">
                 <form role="form" method="post" onsubmit="return check();" action="index.php?content=product&action=add" enctype="multipart/form-data">
-                     
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <label>ชื่อ<font color="#F00"><b>*</b></font></label>
-                            <input id="product_name" name="product_name" class="form-control"  >
+                    <div class="row">  
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>ชื่อ<font color="#F00"><b>TH</b></font></label>
+                                <input id="product_name_th" name="product_name_th" class="form-control"  >
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>ชื่อ<font color="#F00"><b>EN</b></font></label>
+                                <input id="product_name_en" name="product_name_en" class="form-control"  >
+                            </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <label>ประเภท <font color="#F00"><b>*</b></font></label>
-                            <select class="form-control  custom-select" id="product_types_id" name="product_types_id">
-                                <? for ($i=0; $i < count($type); $i++) {  ?>
-                                <option selected value="<? echo $type[$i]['product_types_id'];?>">
-                                <? echo $type[$i]['product_types_name'];?>
-                                </option>
-                                <? }?>
-                            </select>
-                        </div>
-                    </div>   
-
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <label> ราคา <font color="#F00"><b>*</b></font></label>
-                            <input id="product_price" name="product_price" class="form-control"  >
-                        </div>
-                    </div>    
-
+                    <div class="row">  
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>ประเภท <font color="#F00"><b>*</b></font></label>
+                                <select class="form-control  custom-select" id="product_types_id" name="product_types_id">
+                                    <? for ($i=0; $i < count($type); $i++) {  ?>
+                                    <option selected value="<? echo $type[$i]['product_types_id'];?>">
+                                    <? echo $type[$i]['product_types_name_th'];?>
+                                    </option>
+                                    <? }?>
+                                </select>
+                            </div>
+                        </div>   
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label> ราคา <font color="#F00"><b>*</b></font></label>
+                                <input id="product_price" name="product_price" class="form-control"  >
+                            </div>
+                        </div>    
+                    </div>
 
                     <div class="row">
                         <div class="col-lg-3">
@@ -108,8 +114,16 @@
                     <div class="row">  
                         <div class="col-lg-12">
                             <div class="form-group">
-                                <label>รายละเอียด<font color="#F00"><b>*</b></font></label>
-                                <Textarea id="product_detail" name="product_detail" class="form-control" style=""  > </Textarea>
+                                <label>รายละเอียด<font color="#F00"><b>TH</b></font></label>
+                                <Textarea id="product_detail_th" name="product_detail_th" class="form-control" style=""  > </Textarea>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="row">  
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label>รายละเอียด<font color="#F00"><b>EN</b></font></label>
+                                <Textarea id="product_detail_en" name="product_detail_en" class="form-control" style=""  > </Textarea>
                             </div>
                         </div>    
                     </div>

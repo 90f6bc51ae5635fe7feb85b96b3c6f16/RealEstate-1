@@ -97,5 +97,15 @@
             </a>
         </li>
 
+        <li>
+            <a href="index.php?content=agent">
+                <div <? if($page=="agent"){echo "class='menu-active'";}else{echo "class='menu'";}?> >
+                    <span style="padding-top: 5px; font-size: 15px;">
+                    Agent
+                    </span>
+                </div>
+            </a>
+        </li>
+
     </ul>
 </div>

@@ -28,6 +28,10 @@
    
       require_once("modules/company_profile/views/index.inc.php");
    
+   }else if($content=="agent"){
+   
+      require_once("modules/agent/views/index.inc.php");
+   
    }else if($content=="Services"){
    
       require_once("modules/Services/views/index.inc.php");

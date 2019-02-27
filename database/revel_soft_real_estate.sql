@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 26, 2019 at 08:18 AM
+-- Generation Time: Feb 27, 2019 at 03:46 AM
 -- Server version: 5.7.17-log
 -- PHP Version: 5.6.30
 
@@ -19,6 +19,102 @@ SET time_zone = "+00:00";
 --
 -- Database: `revel_soft_real_estate`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_about_us`
+--
+
+CREATE TABLE `tb_about_us` (
+  `about_us_id` int(5) NOT NULL,
+  `about_us_title_en` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `about_us_sub_title_en` text COLLATE utf8_unicode_ci NOT NULL,
+  `about_us_title_th` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `about_us_sub_title_th` text COLLATE utf8_unicode_ci NOT NULL,
+  `about_us_img` varchar(200) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `tb_about_us`
+--
+
+INSERT INTO `tb_about_us` (`about_us_id`, `about_us_title_en`, `about_us_sub_title_en`, `about_us_title_th`, `about_us_sub_title_th`, `about_us_img`) VALUES
+(1, 'asdasdasd', 'dfgsrdtawerhtaertje5styrtysbtryenery', 'กหดฟหกฟหกฟห', 'หกดไำพฟ้ิภะภำืะฟำถะั', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_agent`
+--
+
+CREATE TABLE `tb_agent` (
+  `agent_id` int(5) NOT NULL,
+  `agent_name_en` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `agent_name_th` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `agent_img` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `agent_detail_th` text COLLATE utf8_unicode_ci NOT NULL,
+  `agent_detail_en` text COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `tb_agent`
+--
+
+INSERT INTO `tb_agent` (`agent_id`, `agent_name_en`, `agent_name_th`, `agent_img`, `agent_detail_th`, `agent_detail_en`) VALUES
+(2, 'Deliicious Foods a sadasd', 'อาหารอร่อย  sdasdas', '27022019100455270220191004551502020389.jpg', 'สด สะอาด อร่อย ปลอดภัยd s dasd asd', 'We\'ve scoured the planetda  dasdas dasda sda '),
+(5, 'asda', 'asd', '270220191004492702201910044958807138.jpg', 'asdasdasd', 'sdasdasdasdasdasdasd');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_agent_head`
+--
+
+CREATE TABLE `tb_agent_head` (
+  `agent_head_id` int(5) NOT NULL,
+  `agent_head_title_en` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `agent_head_sub_title_en` text COLLATE utf8_unicode_ci NOT NULL,
+  `agent_head_title_th` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `agent_head_sub_title_th` text COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `tb_agent_head`
+--
+
+INSERT INTO `tb_agent_head` (`agent_head_id`, `agent_head_title_en`, `agent_head_sub_title_en`, `agent_head_title_th`, `agent_head_sub_title_th`) VALUES
+(1, 'FACILITIES', 'dasdasdasdasdsasdasdasd', 'สิ่งอำนวยความสะดวก', 'asdasdasasdasdasdasdasd');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_company_profile`
+--
+
+CREATE TABLE `tb_company_profile` (
+  `company_profile_id` int(5) NOT NULL,
+  `company_profile_title_en` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `company_profile_sub_title_en` text COLLATE utf8_unicode_ci NOT NULL,
+  `company_profile_title_th` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `company_profile_sub_title_th` text COLLATE utf8_unicode_ci NOT NULL,
+  `company_profile_vision_th` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `company_profile_vision_en` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `company_profile_vision_detail_th` text COLLATE utf8_unicode_ci NOT NULL,
+  `company_profile_vision_detail_en` text COLLATE utf8_unicode_ci NOT NULL,
+  `company_profile_mission_th` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `company_profile_mission_en` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `company_profile_mission_detail_th` text COLLATE utf8_unicode_ci NOT NULL,
+  `company_profile_mission_detail_en` text COLLATE utf8_unicode_ci NOT NULL,
+  `company_profile_img` varchar(200) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `tb_company_profile`
+--
+
+INSERT INTO `tb_company_profile` (`company_profile_id`, `company_profile_title_en`, `company_profile_sub_title_en`, `company_profile_title_th`, `company_profile_sub_title_th`, `company_profile_vision_th`, `company_profile_vision_en`, `company_profile_vision_detail_th`, `company_profile_vision_detail_en`, `company_profile_mission_th`, `company_profile_mission_en`, `company_profile_mission_detail_th`, `company_profile_mission_detail_en`, `company_profile_img`) VALUES
+(0, 'profile', 'safegsdfgsdfgsdfgsdfgsdfgdfgf', '-hv,^][ibKym', 'gsdtfgdfgsdfgsdfgtrsd', '3วิสัยทัศน์', 'Vision ', 'ชื่อย่อยวิสัยทัศน์\r\nd', '4dfsdgadgsdfgsdfgdsfgdfgsdfg', 'หน้าที่', 'Mission ', 'dfasdfsdafsadfasdfsdfas', 'fssdafadfasdfasdfasdf', '26022019162311260220191623111232915682.jpg');
 
 -- --------------------------------------------------------
 
@@ -548,7 +644,8 @@ CREATE TABLE `tb_user` (
 --
 
 INSERT INTO `tb_user` (`user_id`, `user_type_id`, `user_firstname`, `user_lastname`, `user_phone`, `user_email`, `user_facebook`, `user_line`, `user_username`, `user_password`, `user_address`, `user_district`, `user_amphur`, `user_province`, `user_zipcode`, `user_image`) VALUES
-(4, 2, 'ทดลอง', 'ทดลอง', '0859589654', 'test@gmail.com', 'www.facebook.com/test', '085-958-9654', 'admin', '123456', '698', 'ในเมือง', 'เมืองนครราชสีมา', 'นครราชสีมา', '30000', '25012019143620-24012019112916240120191129161102358359.jpg');
+(4, 2, 'ทดลอง', 'ทดลอง', '0859589654', 'test@gmail.com', 'www.facebook.com/test', '085-958-9654', 'admin', '123456', '698', 'ในเมือง', 'เมืองนครราชสีมา', 'นครราชสีมา', '30000', '25012019143620-24012019112916240120191129161102358359.jpg'),
+(5, 1, 'asd', 'asdasd', 'asdasd', 'asdas', 'das', 'das', 'root', 'root123456', 'dasdasd', 'dasdasd', 'das', 'dasdas', 'asdasdasd', '27022019104335-48052436_1896837297097519_7126811084484247552_n.jpg');
 
 -- --------------------------------------------------------
 
@@ -572,6 +669,30 @@ INSERT INTO `tb_user_type` (`user_type_id`, `user_type_name`) VALUES
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `tb_about_us`
+--
+ALTER TABLE `tb_about_us`
+  ADD PRIMARY KEY (`about_us_id`);
+
+--
+-- Indexes for table `tb_agent`
+--
+ALTER TABLE `tb_agent`
+  ADD PRIMARY KEY (`agent_id`);
+
+--
+-- Indexes for table `tb_agent_head`
+--
+ALTER TABLE `tb_agent_head`
+  ADD PRIMARY KEY (`agent_head_id`);
+
+--
+-- Indexes for table `tb_company_profile`
+--
+ALTER TABLE `tb_company_profile`
+  ADD PRIMARY KEY (`company_profile_id`);
 
 --
 -- Indexes for table `tb_contact`
@@ -668,6 +789,21 @@ ALTER TABLE `tb_user_type`
 --
 
 --
+-- AUTO_INCREMENT for table `tb_about_us`
+--
+ALTER TABLE `tb_about_us`
+  MODIFY `about_us_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `tb_agent`
+--
+ALTER TABLE `tb_agent`
+  MODIFY `agent_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT for table `tb_agent_head`
+--
+ALTER TABLE `tb_agent_head`
+  MODIFY `agent_head_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
 -- AUTO_INCREMENT for table `tb_contact`
 --
 ALTER TABLE `tb_contact`
@@ -731,7 +867,7 @@ ALTER TABLE `tb_services`
 -- AUTO_INCREMENT for table `tb_user`
 --
 ALTER TABLE `tb_user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `tb_user_type`
 --

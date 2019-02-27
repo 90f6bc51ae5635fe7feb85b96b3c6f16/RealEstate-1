@@ -36,7 +36,7 @@
    
       require_once("modules/user/views/index.inc.php");
    
-   }else if($content=="Services"){
+   }else if($content=="services"){
    
       require_once("modules/services/views/index.inc.php");
    

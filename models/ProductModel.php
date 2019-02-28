@@ -139,6 +139,7 @@ class ProductModel extends BaseModel{
         $data['location_id']."' ,'".
         $data['product_types_id']."'
         )";
+        echo $sql;
     if (mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
         return mysqli_insert_id(static::$db);
    }else {

@@ -101,15 +101,21 @@ if($_GET['action'] == 'insert'){
     } 
 
     if($check == false){
-        ?>  <script>  alert('<?php echo $error_msg; ?>'); window.history.back(); </script>  <?php
+        ?>  <script> 
+         alert('<?php echo $error_msg; ?>'); window.history.back(); 
+        </script>  <?php
     }else{
         $check_result = $product_model->insertProduct($data);
         if($check_result!=false){   
             ?>
-            <script>window.location="index.php?content=product"</script>
+            <script>
+            window.location="index.php?content=product"
+            </script>
             <?php
         }else{
-            ?>  <script> window.history.back(); </script> <?php
+            ?>  <script> 
+            window.history.back(); 
+            </script> <?php
         }
     }  
     

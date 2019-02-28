@@ -12,14 +12,12 @@
 }
 body {
     font-family: 'Kanit-Light';
-    font-size: 1.2rem;
+    font-size: 1em;
 }
 footer{
     padding: 5% 15%;
 }
-.navbar {
-    padding: 2% 15%;
-}
+
 .navbar-brand{
     background-color: #000;
     color: #fff !important;

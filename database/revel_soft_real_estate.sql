@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 28, 2019 at 03:32 AM
+-- Generation Time: Feb 28, 2019 at 04:22 AM
 -- Server version: 5.7.17-log
 -- PHP Version: 5.6.30
 
@@ -19,6 +19,103 @@ SET time_zone = "+00:00";
 --
 -- Database: `revel_soft_real_estate`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_about_us`
+--
+
+CREATE TABLE `tb_about_us` (
+  `about_us_id` int(5) NOT NULL,
+  `about_us_title_en` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `about_us_sub_title_en` text COLLATE utf8_unicode_ci NOT NULL,
+  `about_us_title_th` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `about_us_sub_title_th` text COLLATE utf8_unicode_ci NOT NULL,
+  `about_us_img` varchar(200) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `tb_about_us`
+--
+
+INSERT INTO `tb_about_us` (`about_us_id`, `about_us_title_en`, `about_us_sub_title_en`, `about_us_title_th`, `about_us_sub_title_th`, `about_us_img`) VALUES
+(1, 'asdasdasd', 'dfgsrdtawerhtaertje5styrtysbtryenery', 'กหดฟหกฟหกฟห', 'หกดไำพฟ้ิภะภำืะฟำถะั', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_agent`
+--
+
+CREATE TABLE `tb_agent` (
+  `agent_id` int(5) NOT NULL,
+  `agent_name_en` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `agent_name_th` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `agent_img` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `agent_detail_th` text COLLATE utf8_unicode_ci NOT NULL,
+  `agent_detail_en` text COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `tb_agent`
+--
+
+INSERT INTO `tb_agent` (`agent_id`, `agent_name_en`, `agent_name_th`, `agent_img`, `agent_detail_th`, `agent_detail_en`) VALUES
+(2, 'Deliicious Foods a sadasd', 'อาหารอร่อย  sdasdas', '280220191035302802201910353050115942.png', 'สด สะอาด อร่อย ปลอดภัยd s dasd asd', 'We\'ve scoured the planetda  dasdas dasda sda '),
+(5, 'asda', 'asd', '28022019103537280220191035371907149302.jpg', 'asdasdasd', 'sdasdasdasdasdasdasd'),
+(7, 'Deliicious Foods a sadasd', 'อาหารอร่อย  sdasdas', '2802201910360628022019103606958300776.jpg', 'asdasdasdasdasdasdasdasdasdasdasdasdasdasdasd', 'asdasdasdasdasdasdasdasdasdasdasdasdasdasdasd');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_agent_head`
+--
+
+CREATE TABLE `tb_agent_head` (
+  `agent_head_id` int(5) NOT NULL,
+  `agent_head_title_en` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `agent_head_sub_title_en` text COLLATE utf8_unicode_ci NOT NULL,
+  `agent_head_title_th` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `agent_head_sub_title_th` text COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `tb_agent_head`
+--
+
+INSERT INTO `tb_agent_head` (`agent_head_id`, `agent_head_title_en`, `agent_head_sub_title_en`, `agent_head_title_th`, `agent_head_sub_title_th`) VALUES
+(1, 'FACILITIES', 'dasdasdasdasdsasdasdasd', 'สิ่งอำนวยความสะดวก', 'asdasdasasdasdasdasdasd');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_company_profile`
+--
+
+CREATE TABLE `tb_company_profile` (
+  `company_profile_id` int(5) NOT NULL,
+  `company_profile_title_en` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `company_profile_sub_title_en` text COLLATE utf8_unicode_ci NOT NULL,
+  `company_profile_title_th` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `company_profile_sub_title_th` text COLLATE utf8_unicode_ci NOT NULL,
+  `company_profile_vision_th` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `company_profile_vision_en` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `company_profile_vision_detail_th` text COLLATE utf8_unicode_ci NOT NULL,
+  `company_profile_vision_detail_en` text COLLATE utf8_unicode_ci NOT NULL,
+  `company_profile_mission_th` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `company_profile_mission_en` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `company_profile_mission_detail_th` text COLLATE utf8_unicode_ci NOT NULL,
+  `company_profile_mission_detail_en` text COLLATE utf8_unicode_ci NOT NULL,
+  `company_profile_img` varchar(200) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `tb_company_profile`
+--
+
+INSERT INTO `tb_company_profile` (`company_profile_id`, `company_profile_title_en`, `company_profile_sub_title_en`, `company_profile_title_th`, `company_profile_sub_title_th`, `company_profile_vision_th`, `company_profile_vision_en`, `company_profile_vision_detail_th`, `company_profile_vision_detail_en`, `company_profile_mission_th`, `company_profile_mission_en`, `company_profile_mission_detail_th`, `company_profile_mission_detail_en`, `company_profile_img`) VALUES
+(0, 'profile', 'safegsdfgsdfgsdfgsdfgsdfgdfgf', '-hv,^][ibKym', 'gsdtfgdfgsdfgsdfgtrsd', '3วิสัยทัศน์', 'Vision ', 'ชื่อย่อยวิสัยทัศน์\r\nd', '4dfsdgadgsdfgsdfgdsfgdfgsdfg', 'หน้าที่', 'Mission ', 'dfasdfsdafsadfasdfsdfas', 'fssdafadfasdfasdfasdf', '26022019162311260220191623111232915682.jpg');
 
 -- --------------------------------------------------------
 
@@ -55,7 +152,7 @@ CREATE TABLE `tb_contact_head` (
 --
 
 INSERT INTO `tb_contact_head` (`contact_head_id`, `contact_head_detail_th`, `contact_head_detail_en`) VALUES
-(1, 'ขอต้อรับเข้าสู่ไทยเเลนด์', 'สวัสดีครับท่านผู้ชม');
+(1, 'sdfsdf', 'easfasdf');
 
 -- --------------------------------------------------------
 
@@ -429,6 +526,7 @@ CREATE TABLE `tb_highlight` (
   `highlight_id` int(11) NOT NULL,
   `highlight_name_th` varchar(100) NOT NULL,
   `highlight_name_en` varchar(100) NOT NULL,
+  `highlight_name` varchar(100) NOT NULL,
   `highlight_img` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -510,6 +608,42 @@ INSERT INTO `tb_product` (`product_id`, `product_types_id`, `furniture_id`, `loc
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tb_product_detail`
+--
+
+CREATE TABLE `tb_product_detail` (
+  `product_detail_id` int(11) NOT NULL,
+  `product_id` int(11) NOT NULL,
+  `product_type_id` int(11) NOT NULL,
+  `product_detail_Location` text NOT NULL,
+  `product_detail_bedroom` varchar(2) NOT NULL,
+  `product_detail_bathroom` varchar(2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_product_header`
+--
+
+CREATE TABLE `tb_product_header` (
+  `product_header_id` int(5) NOT NULL,
+  `product_header_th` varchar(200) NOT NULL,
+  `product_header_en` varchar(200) NOT NULL,
+  `product_header_detail_th` text NOT NULL,
+  `product_header_detail_en` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tb_product_header`
+--
+
+INSERT INTO `tb_product_header` (`product_header_id`, `product_header_th`, `product_header_en`, `product_header_detail_th`, `product_header_detail_en`) VALUES
+(1, 'บีบีซี เวิลด์ นิวส์ ', ' Donald J. Trump', 'ช่องรายการถูกส่งสัญญาณโดย Red Bee Media จากสถานีหลัก ณ The Broadcast Centre ซึ่งเป็นส่วนหนึ่งของ BBC Media Village และส่วนหนึ่งของ BBC White City ที่ White City ในลอนดอนตะวันตก โดยมีห้องส่งจาก BBC Television Centre ที่อยู่ในบริเวณเดียวกัน BBC World News มีห้องข่าวแยกออกจากห้องข่าวของ BBC News ห้องข่าวนี้ส่งสัญญาณตั้งแต่เวลา 05.00 น. ถึง 00.30 น. (เวลาสหราชอาณาจักร) ทุกๆ วันจันทร์ถึงศุกร์ และตั้งแต่ 06.00 น. ถึง 00.30 น. ในวันเสาร์และอาทิตย์ ส่วนในเวลา 01.00 น. ถึง 05.00 น. จะส่งสัญญาณจากห้องส่งภายในสหราชอาณาจักร หรือ BBC News', '\nThe channel is broadcast by Red Bee Media from the main station at The Broadcast Center, which is part of the BBC Media Village and part of BBC White City at White City in West London. With a room sent from the BBC Television Center in the same area. BBC World News has a news room separated from the BBC News newsroom. Until Friday and from 06.00 hrs to 00.30 hrs. On Saturdays and Sundays. At 01.00 hrs.\n');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tb_product_types`
 --
 
@@ -581,7 +715,8 @@ CREATE TABLE `tb_user` (
 --
 
 INSERT INTO `tb_user` (`user_id`, `user_type_id`, `user_firstname`, `user_lastname`, `user_phone`, `user_email`, `user_facebook`, `user_line`, `user_username`, `user_password`, `user_address`, `user_district`, `user_amphur`, `user_province`, `user_zipcode`, `user_image`) VALUES
-(4, 2, 'ทดลอง', 'ทดลอง', '0859589654', 'test@gmail.com', 'www.facebook.com/test', '085-958-9654', 'admin', '123456', '698', 'ในเมือง', 'เมืองนครราชสีมา', 'นครราชสีมา', '30000', '25012019143620-24012019112916240120191129161102358359.jpg');
+(4, 2, 'ทดลอง', 'ทดลอง', '0859589654', 'test@gmail.com', 'www.facebook.com/test', '085-958-9654', 'admin', '123456', '698', 'ในเมือง', 'เมืองนครราชสีมา', 'นครราชสีมา', '30000', '25012019143620-24012019112916240120191129161102358359.jpg'),
+(5, 1, 'asd', 'asdasd', 'asdasd', 'asdas', 'das', 'das', 'root', 'root123456', 'dasdasd', 'dasdasd', 'das', 'dasdas', 'asdasdasd', '27022019104335-48052436_1896837297097519_7126811084484247552_n.jpg');
 
 -- --------------------------------------------------------
 
@@ -605,6 +740,30 @@ INSERT INTO `tb_user_type` (`user_type_id`, `user_type_name`) VALUES
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `tb_about_us`
+--
+ALTER TABLE `tb_about_us`
+  ADD PRIMARY KEY (`about_us_id`);
+
+--
+-- Indexes for table `tb_agent`
+--
+ALTER TABLE `tb_agent`
+  ADD PRIMARY KEY (`agent_id`);
+
+--
+-- Indexes for table `tb_agent_head`
+--
+ALTER TABLE `tb_agent_head`
+  ADD PRIMARY KEY (`agent_head_id`);
+
+--
+-- Indexes for table `tb_company_profile`
+--
+ALTER TABLE `tb_company_profile`
+  ADD PRIMARY KEY (`company_profile_id`);
 
 --
 -- Indexes for table `tb_contact`
@@ -673,6 +832,18 @@ ALTER TABLE `tb_product`
   ADD PRIMARY KEY (`product_id`);
 
 --
+-- Indexes for table `tb_product_detail`
+--
+ALTER TABLE `tb_product_detail`
+  ADD PRIMARY KEY (`product_detail_id`);
+
+--
+-- Indexes for table `tb_product_header`
+--
+ALTER TABLE `tb_product_header`
+  ADD PRIMARY KEY (`product_header_id`);
+
+--
 -- Indexes for table `tb_product_types`
 --
 ALTER TABLE `tb_product_types`
@@ -701,6 +872,21 @@ ALTER TABLE `tb_user_type`
 --
 
 --
+-- AUTO_INCREMENT for table `tb_about_us`
+--
+ALTER TABLE `tb_about_us`
+  MODIFY `about_us_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `tb_agent`
+--
+ALTER TABLE `tb_agent`
+  MODIFY `agent_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+--
+-- AUTO_INCREMENT for table `tb_agent_head`
+--
+ALTER TABLE `tb_agent_head`
+  MODIFY `agent_head_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
 -- AUTO_INCREMENT for table `tb_contact`
 --
 ALTER TABLE `tb_contact`
@@ -726,45 +912,20 @@ ALTER TABLE `tb_contact_type`
 ALTER TABLE `tb_contact_us`
   MODIFY `contact_us_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
--- AUTO_INCREMENT for table `tb_furniture`
---
-ALTER TABLE `tb_furniture`
-  MODIFY `furniture_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
---
 -- AUTO_INCREMENT for table `tb_highlight`
 --
 ALTER TABLE `tb_highlight`
   MODIFY `highlight_id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `tb_location`
+-- AUTO_INCREMENT for table `tb_product_detail`
 --
-ALTER TABLE `tb_location`
-  MODIFY `location_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT for table `tb_news`
---
-ALTER TABLE `tb_news`
-  MODIFY `news_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
---
--- AUTO_INCREMENT for table `tb_product`
---
-ALTER TABLE `tb_product`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
---
--- AUTO_INCREMENT for table `tb_product_types`
---
-ALTER TABLE `tb_product_types`
-  MODIFY `product_types_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
---
--- AUTO_INCREMENT for table `tb_services`
---
-ALTER TABLE `tb_services`
-  MODIFY `services_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+ALTER TABLE `tb_product_detail`
+  MODIFY `product_detail_id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `tb_user`
 --
 ALTER TABLE `tb_user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `tb_user_type`
 --

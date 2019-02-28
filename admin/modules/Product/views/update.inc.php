@@ -101,10 +101,10 @@
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>Location </label>
-                                <select class="form-control  custom-select" id="product_types_id" name="product_types_id">
+                                <select class="form-control  custom-select" id="location_id" name="location_id">
                                     <? for ($i=0; $i < count($type); $i++) {  ?>
-                                    <option selected value="<? echo $type[$i]['product_types_id'];?>">
-                                    <? echo $type[$i]['product_types_name_th'];?>
+                                    <option selected value="<? echo $type[$i]['location_id'];?>">
+                                    <? echo $type[$i]['location_name_th'];?>
                                     </option>
                                     <? }?>
                                 </select>
@@ -113,10 +113,10 @@
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>Furniture </label>
-                                <select class="form-control  custom-select" id="product_types_id" name="product_types_id">
+                                <select class="form-control  custom-select" id="furniture_id" name="furniture_id">
                                     <? for ($i=0; $i < count($type); $i++) {  ?>
-                                    <option selected value="<? echo $type[$i]['product_types_id'];?>">
-                                    <? echo $type[$i]['product_types_name_th'];?>
+                                    <option selected value="<? echo $type[$i]['furniture_id'];?>">
+                                    <? echo $type[$i]['furniture_name_th'];?>
                                     </option>
                                     <? }?>
                                 </select>
@@ -128,13 +128,13 @@
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>NO. of Bedroom </label>
-                                <input id="product_name_th" name="product_name_th" class="form-control"  value="<?php echo $product['product_price'];?>" >
+                                <input id="	product_bedroom" name="	product_bedroom" class="form-control"  value="<?php echo $product['product_bedroom'];?>" >
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>No. of Bathroom </label>
-                                <input id="product_name_en" name="product_name_en" class="form-control"  value="<?php echo $product['product_price'];?>" >
+                                <input id="	product_bathroom" name="	product_bathroom" class="form-control"  value="<?php echo $product['product_bedroom'];?>" >
                             </div>
                         </div>
                     </div>

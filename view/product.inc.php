@@ -18,18 +18,49 @@ $product = $product_model->getProductBy();
         </div>
 
         <div class="row">
-        <?PHP for($i=0;$i<count($product );$i++){ ?> 
-                <div class="col-md-4">
-                <img src="img_upload/product/<?PHP echo $product[$i]['product_img'];?>" style="width: 90%;" alt="<?PHP echo $product[$i]['product_name'];?>">
+            <?PHP for($i=0;$i<count($product );$i++){ ?>
+            <div class="col-md-4">
+                <img src="img_upload/product/<?PHP echo $product[$i]['product_img'];?>" style="width: 90%;"
+                    alt="<?PHP echo $product[$i]['product_name'];?>">
                 <div class="text-regular" style="padding-top: 48px;">
-                <?PHP echo $product[$i]['product_name'];?>
-                <?PHP echo $product[$i]['product_name'];?>
+                    <div class="product-product-name">
+                        <?PHP echo $product[$i]['product_name'];?>
+                    </div>
+                    <div class="product-product-detail">
+                        <?PHP echo $product[$i]['product_detail'];?>
+                    </div>
                 </div>
                 <div class="text-regular" style="padding: 16px 0px; color: #c6c6c6;">
-                <?php echo number_format($product[$i]['product_price']); ?> ฿
+                <button type="button" class="btn btn-outline-success">Success</button>
+
+                
+                <button class="btn btn-primary" type="submit"><?php echo number_format($product[$i]['product_price'],2); ?></button>
+
+                    
                 </div>
             </div>
             <?PHP } ?>
         </div>
     </div>
 </div>
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=K2D:300');
+
+.product-product-detail {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-family: 'K2D', sans-serif;
+}
+
+.product-product-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+</style>

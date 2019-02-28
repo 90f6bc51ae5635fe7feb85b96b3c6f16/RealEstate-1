@@ -1,6 +1,6 @@
 <?PHP 
-require_once('models/SettingModel.php');    
-$setting_model = new SettingModel;   
+require_once('models/AboutUsModel.php');    
+$setting_model = new AboutUsModel;   
 $setting = $setting_model->getSettingByID('1'); 
 ?>
 <footer>

@@ -70,6 +70,8 @@ if($_GET['action'] == 'insert'){
     $data['product_detail_en'] = $_POST['product_detail_en'];
     $data['product_bedroom'] = $_POST['product_bedroom'];
     $data['product_bathroom'] = $_POST['product_bathroom'];
+    $data['product_latitude'] = $_POST['product_latitude'];
+    $data['product_longitude'] = $_POST['product_longitude'];
 
     $input_image = array("product_img");
 
@@ -138,6 +140,8 @@ window.location = "index.php?content=product"
         $data['product_detail_en'] = $_POST['product_detail_en'];
         $data['product_bedroom'] = $_POST['product_bedroom'];
         $data['product_bathroom'] = $_POST['product_bathroom'];
+        $data['product_latitude'] = $_POST['product_latitude'];
+        $data['product_longitude'] = $_POST['product_longitude'];
     
         $input_image = array("product_img");
 

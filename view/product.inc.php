@@ -6,6 +6,8 @@ $product_header = $product_model-> getProductHeaderBy();
 require_once('models/ProductModel.php');    
 $product_model = new ProductModel;   
 $product = $product_model->getProductBy(); 
+// print_r($product);
+
 ?>
 
 <div style="padding: 5% 10%;">
@@ -21,13 +23,13 @@ $product = $product_model->getProductBy();
             <?PHP for($i=0;$i<count($product );$i++){ ?>
             <div class="col-md-4">
                 <img src="img_upload/product/<?PHP echo $product[$i]['product_img'];?>" style="width: 90%;"
-                    alt="<?PHP echo $product[$i]['product_name'];?>">
+                    alt="<?PHP echo $product[$i]['product_name_th'];?>">
                 <div class="text-regular" style="padding-top: 48px;">
                     <div class="product-product-name">
-                        <?PHP echo $product[$i]['product_name'];?>
+                        <?PHP echo $product[$i]['product_name_th'];?>
                     </div>
                     <div class="product-product-detail">
-                        <?PHP echo $product[$i]['product_detail'];?>
+                        <?PHP echo $product[$i]['product_detail_th'];?>
                     </div>
                 </div>
                 <div class="text-regular" style="padding: 16px 0px; color: #c6c6c6;">

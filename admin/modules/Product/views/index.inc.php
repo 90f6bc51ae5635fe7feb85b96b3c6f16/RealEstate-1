@@ -194,7 +194,7 @@ window.location = "index.php?content=product"
 }else {
     $product = $product_model->getProductBy();
     $product_header = $product_model->getProductHeaderBy();
-    print_r($product_header);
+    // print_r($product_header);
     require_once($path.'view.inc.php');
 }
 ?>

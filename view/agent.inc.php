@@ -37,12 +37,12 @@ $agent_slide = $agent_slide_model-> getagent();
 
 <style>
 .slide-background-img {
-    background-color: chocolate;
+    /* background-color: chocolate; */
     /* background-image: url('img_upload/agent/27022019115248-2201201916461622012019164616749792239.jpg'); */
 }
 .slide-agent-detail {
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }

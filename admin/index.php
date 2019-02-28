@@ -25,10 +25,13 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Real Estate</title>
+
 		<script src="../template/js/jquery-2.2.0.min.js" type="text/javascript"></script>
 		<!-- Simple-Sidebar CSS -->
 		<link href="../template/css/simple-sidebar.css" rel="stylesheet">
 		<link href="../template/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- Bootstrap Core CSS -->
 		<link rel="stylesheet" type="text/css" media="screen" 
 		href="../template/bootstrap/css/bootstrap.min.css" />

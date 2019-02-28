@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 27, 2019 at 10:38 AM
+-- Generation Time: Feb 28, 2019 at 03:32 AM
 -- Server version: 5.7.17-log
 -- PHP Version: 5.6.30
 
@@ -19,102 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `revel_soft_real_estate`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tb_about_us`
---
-
-CREATE TABLE `tb_about_us` (
-  `about_us_id` int(5) NOT NULL,
-  `about_us_title_en` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
-  `about_us_sub_title_en` text COLLATE utf8_unicode_ci NOT NULL,
-  `about_us_title_th` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
-  `about_us_sub_title_th` text COLLATE utf8_unicode_ci NOT NULL,
-  `about_us_img` varchar(200) COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Dumping data for table `tb_about_us`
---
-
-INSERT INTO `tb_about_us` (`about_us_id`, `about_us_title_en`, `about_us_sub_title_en`, `about_us_title_th`, `about_us_sub_title_th`, `about_us_img`) VALUES
-(1, 'asdasdasd', 'dfgsrdtawerhtaertje5styrtysbtryenery', 'กหดฟหกฟหกฟห', 'หกดไำพฟ้ิภะภำืะฟำถะั', '');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tb_agent`
---
-
-CREATE TABLE `tb_agent` (
-  `agent_id` int(5) NOT NULL,
-  `agent_name_en` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
-  `agent_name_th` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
-  `agent_img` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
-  `agent_detail_th` text COLLATE utf8_unicode_ci NOT NULL,
-  `agent_detail_en` text COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Dumping data for table `tb_agent`
---
-
-INSERT INTO `tb_agent` (`agent_id`, `agent_name_en`, `agent_name_th`, `agent_img`, `agent_detail_th`, `agent_detail_en`) VALUES
-(2, 'Deliicious Foods a sadasd', 'อาหารอร่อย  sdasdas', '27022019100455270220191004551502020389.jpg', 'สด สะอาด อร่อย ปลอดภัยd s dasd asd', 'We\'ve scoured the planetda  dasdas dasda sda '),
-(5, 'asda', 'asd', '270220191004492702201910044958807138.jpg', 'asdasdasd', 'sdasdasdasdasdasdasd');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tb_agent_head`
---
-
-CREATE TABLE `tb_agent_head` (
-  `agent_head_id` int(5) NOT NULL,
-  `agent_head_title_en` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
-  `agent_head_sub_title_en` text COLLATE utf8_unicode_ci NOT NULL,
-  `agent_head_title_th` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
-  `agent_head_sub_title_th` text COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Dumping data for table `tb_agent_head`
---
-
-INSERT INTO `tb_agent_head` (`agent_head_id`, `agent_head_title_en`, `agent_head_sub_title_en`, `agent_head_title_th`, `agent_head_sub_title_th`) VALUES
-(1, 'FACILITIES', 'dasdasdasdasdsasdasdasd', 'สิ่งอำนวยความสะดวก', 'asdasdasasdasdasdasdasd');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tb_company_profile`
---
-
-CREATE TABLE `tb_company_profile` (
-  `company_profile_id` int(5) NOT NULL,
-  `company_profile_title_en` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
-  `company_profile_sub_title_en` text COLLATE utf8_unicode_ci NOT NULL,
-  `company_profile_title_th` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
-  `company_profile_sub_title_th` text COLLATE utf8_unicode_ci NOT NULL,
-  `company_profile_vision_th` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
-  `company_profile_vision_en` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
-  `company_profile_vision_detail_th` text COLLATE utf8_unicode_ci NOT NULL,
-  `company_profile_vision_detail_en` text COLLATE utf8_unicode_ci NOT NULL,
-  `company_profile_mission_th` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
-  `company_profile_mission_en` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
-  `company_profile_mission_detail_th` text COLLATE utf8_unicode_ci NOT NULL,
-  `company_profile_mission_detail_en` text COLLATE utf8_unicode_ci NOT NULL,
-  `company_profile_img` varchar(200) COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Dumping data for table `tb_company_profile`
---
-
-INSERT INTO `tb_company_profile` (`company_profile_id`, `company_profile_title_en`, `company_profile_sub_title_en`, `company_profile_title_th`, `company_profile_sub_title_th`, `company_profile_vision_th`, `company_profile_vision_en`, `company_profile_vision_detail_th`, `company_profile_vision_detail_en`, `company_profile_mission_th`, `company_profile_mission_en`, `company_profile_mission_detail_th`, `company_profile_mission_detail_en`, `company_profile_img`) VALUES
-(0, 'profile', 'safegsdfgsdfgsdfgsdfgsdfgdfgf', '-hv,^][ibKym', 'gsdtfgdfgsdfgsdfgtrsd', '3วิสัยทัศน์', 'Vision ', 'ชื่อย่อยวิสัยทัศน์\r\nd', '4dfsdgadgsdfgsdfgdsfgdfgsdfg', 'หน้าที่', 'Mission ', 'dfasdfsdafsadfasdfsdfas', 'fssdafadfasdfasdfasdf', '26022019162311260220191623111232915682.jpg');
 
 -- --------------------------------------------------------
 
@@ -151,7 +55,7 @@ CREATE TABLE `tb_contact_head` (
 --
 
 INSERT INTO `tb_contact_head` (`contact_head_id`, `contact_head_detail_th`, `contact_head_detail_en`) VALUES
-(1, '', '');
+(1, 'ขอต้อรับเข้าสู่ไทยเเลนด์', 'สวัสดีครับท่านผู้ชม');
 
 -- --------------------------------------------------------
 
@@ -504,8 +408,16 @@ INSERT INTO `tb_country` (`ct_code`, `ct_nameENG`, `ct_nameTHA`, `code`) VALUES
 
 CREATE TABLE `tb_furniture` (
   `furniture_id` int(11) NOT NULL,
-  `furniture_name` varchar(50) NOT NULL
+  `furniture_name_th` varchar(100) NOT NULL,
+  `furniture_name_en` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tb_furniture`
+--
+
+INSERT INTO `tb_furniture` (`furniture_id`, `furniture_name_th`, `furniture_name_en`) VALUES
+(1, 'axx', 'aszz');
 
 -- --------------------------------------------------------
 
@@ -515,9 +427,29 @@ CREATE TABLE `tb_furniture` (
 
 CREATE TABLE `tb_highlight` (
   `highlight_id` int(11) NOT NULL,
-  `highlight_name` varchar(100) NOT NULL,
+  `highlight_name_th` varchar(100) NOT NULL,
+  `highlight_name_en` varchar(100) NOT NULL,
   `highlight_img` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_location`
+--
+
+CREATE TABLE `tb_location` (
+  `location_id` int(11) NOT NULL,
+  `location_name_th` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `location_name_en` varchar(100) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `tb_location`
+--
+
+INSERT INTO `tb_location` (`location_id`, `location_name_th`, `location_name_en`) VALUES
+(1, 'ssss', 'sssssssxxxxx');
 
 -- --------------------------------------------------------
 
@@ -527,18 +459,23 @@ CREATE TABLE `tb_highlight` (
 
 CREATE TABLE `tb_news` (
   `news_id` int(11) NOT NULL,
-  `news_name` varchar(200) NOT NULL,
+  `news_name_th` varchar(200) NOT NULL,
+  `news_name_en` varchar(200) NOT NULL,
   `news_date` date NOT NULL,
   `news_img` text NOT NULL,
-  `news_detail` text NOT NULL
+  `news_detail_th` text NOT NULL,
+  `news_detail_en` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tb_news`
 --
 
-INSERT INTO `tb_news` (`news_id`, `news_name`, `news_date`, `news_img`, `news_detail`) VALUES
-(1, 'zxczzxczxcccc', '0000-00-00', '26022019093326-office.jpg', '');
+INSERT INTO `tb_news` (`news_id`, `news_name_th`, `news_name_en`, `news_date`, `news_img`, `news_detail_th`, `news_detail_en`) VALUES
+(2, 'ฟฟฟฟ', '0', '0000-00-00', '27022019095503-office.jpg', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaa', '0'),
+(3, 'กกก11', 'aaww', '0000-00-00', '27022019143152-apartment.jpg', 'cccc', ' wwwwwqqqq'),
+(5, 'dddddd', 'ddddddddddddddd', '0000-00-00', '27022019152203-apartment.jpg', ' sssssssssss', ' sseeeeeeeeeeeeeee'),
+(6, 'eeeeeeeeeeeeeeeeeeeeeeeee', 'eeeeeeeeeeeeeeeeeeeeeeee', '0000-00-00', '27022019152219-condominium.jpg', ' eeerrrrrrrrrrr', ' rrtttttttttttttttttt');
 
 -- --------------------------------------------------------
 
@@ -549,59 +486,26 @@ INSERT INTO `tb_news` (`news_id`, `news_name`, `news_date`, `news_img`, `news_de
 CREATE TABLE `tb_product` (
   `product_id` int(11) NOT NULL,
   `product_types_id` int(11) NOT NULL,
-  `product_name` varchar(200) NOT NULL,
+  `furniture_id` int(11) NOT NULL,
+  `location_id` int(11) NOT NULL,
+  `product_name_th` varchar(200) NOT NULL,
+  `product_name_en` varchar(200) NOT NULL,
   `product_price` int(100) NOT NULL,
   `product_img` text NOT NULL,
-  `product_detail` text NOT NULL
+  `product_detail_th` text NOT NULL,
+  `product_detail_en` text NOT NULL,
+  `product_bedroom` varchar(10) NOT NULL,
+  `product_bathroom` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tb_product`
 --
 
-INSERT INTO `tb_product` (`product_id`, `product_types_id`, `product_name`, `product_price`, `product_img`, `product_detail`) VALUES
-(7, 0, '“ใหม่ สุคนธวา” โชว์อกตู้ม ทวงคืนบัลลังก์ความเซ็กซี่', 2000000, '27022019115222-1302201915513413022019155134181137308.jpg', 'เมื่อหลายปีก่อน “ใหม่ สุคนธวา” คือตัวแม่เรื่องความเซ็กซี่ ไม่ว่าเธอจะทำอะไรมักจะได้รับการจับตามองจากหนุ่มๆ เพราะความสวย ความอึ๋ม ที่โดดเด่นมากกว่าดาราสาวสวยหลายๆ คน แต่ระยะหลังนี้ความเซ็กซี่ของเธอเริ่มลดลง ด้วยหน้าที่การงานที่โตขึ้น\n\nมาวันนี้ “ใหม่ สุคนธวา” ขอเอาใจแฟนๆ ที่คิดถึง  โชว์ความอึ๋มทะลุจอ ด้วยบิกินี่ทูพีชลายเสือสุดเซ็กซี่ พร้อมแคปชั่นชวนฮาว่า\n\n“จะเป็นไรไหม ถ้า ใหม่ สุคนธวา จะมาทวงบัลลังก์ความเซ็กซี่ ด้วยภาพย่างกุ้งแบบนี้? ดาราคนอื่นถ่ายบิกินี่แบบสวยๆ ดีๆ กันหมด แต่ ใหม่ สุคนธวา จะถ่ายทั้งที ก็ขอคงคาแรกเตอร์สายกินนิดนึงนะคะ 55”\n\nเห็นแบบนี้แล้วอยากจะบอกสาวเจ้าเหลือเกินว่า จะอึ๋มแบบฮาๆ หรือ อึ๋มแบบจัดเต็ม เหล่าแฟนๆ ก็พร้อมรอชม ขอแค่เป็น “ใหม่ สุคนธวา” อวดแบบไหนก็ติดตราตรึงใจ'),
-(8, 6, '“ใหม่ สุคนธวา” โชว์อกตู้ม ทวงคืนบัลลังก์ความเซ็กซี่', 0, '27022019115241-22012019163415220120191634157046188.jpg', 'เมื่อหลายปีก่อน “ใหม่ สุคนธวา” คือตัวแม่เรื่องความเซ็กซี่ ไม่ว่าเธอจะทำอะไรมักจะได้รับการจับตามองจากหนุ่มๆ เพราะความสวย ความอึ๋ม ที่โดดเด่นมากกว่าดาราสาวสวยหลายๆ คน แต่ระยะหลังนี้ความเซ็กซี่ของเธอเริ่มลดลง ด้วยหน้าที่การงานที่โตขึ้น\n\nมาวันนี้ “ใหม่ สุคนธวา” ขอเอาใจแฟนๆ ที่คิดถึง  โชว์ความอึ๋มทะลุจอ ด้วยบิกินี่ทูพีชลายเสือสุดเซ็กซี่ พร้อมแคปชั่นชวนฮาว่า\n\n“จะเป็นไรไหม ถ้า ใหม่ สุคนธวา จะมาทวงบัลลังก์ความเซ็กซี่ ด้วยภาพย่างกุ้งแบบนี้? ดาราคนอื่นถ่ายบิกินี่แบบสวยๆ ดีๆ กันหมด แต่ ใหม่ สุคนธวา จะถ่ายทั้งที ก็ขอคงคาแรกเตอร์สายกินนิดนึงนะคะ 55”\n\nเห็นแบบนี้แล้วอยากจะบอกสาวเจ้าเหลือเกินว่า จะอึ๋มแบบฮาๆ หรือ อึ๋มแบบจัดเต็ม เหล่าแฟนๆ ก็พร้อมรอชม ขอแค่เป็น “ใหม่ สุคนธวา” อวดแบบไหนก็ติดตราตรึงใจ'),
-(9, 6, '“ใหม่ สุคนธวา” โชว์อกตู้ม ทวงคืนบัลลังก์ความเซ็กซี่', 0, '27022019115248-2201201916461622012019164616749792239.jpg', ' เมื่อหลายปีก่อน “ใหม่ สุคนธวา” คือตัวแม่เรื่องความเซ็กซี่ ไม่ว่าเธอจะทำอะไรมักจะได้รับการจับตามองจากหนุ่มๆ เพราะความสวย ความอึ๋ม ที่โดดเด่นมากกว่าดาราสาวสวยหลายๆ คน แต่ระยะหลังนี้ความเซ็กซี่ของเธอเริ่มลดลง ด้วยหน้าที่การงานที่โตขึ้น\n\nมาวันนี้ “ใหม่ สุคนธวา” ขอเอาใจแฟนๆ ที่คิดถึง  โชว์ความอึ๋มทะลุจอ ด้วยบิกินี่ทูพีชลายเสือสุดเซ็กซี่ พร้อมแคปชั่นชวนฮาว่า\n\n“จะเป็นไรไหม ถ้า ใหม่ สุคนธวา จะมาทวงบัลลังก์ความเซ็กซี่ ด้วยภาพย่างกุ้งแบบนี้? ดาราคนอื่นถ่ายบิกินี่แบบสวยๆ ดีๆ กันหมด แต่ ใหม่ สุคนธวา จะถ่ายทั้งที ก็ขอคงคาแรกเตอร์สายกินนิดนึงนะคะ 55”\n\nเห็นแบบนี้แล้วอยากจะบอกสาวเจ้าเหลือเกินว่า จะอึ๋มแบบฮาๆ หรือ อึ๋มแบบจัดเต็ม เหล่าแฟนๆ ก็พร้อมรอชม ขอแค่เป็น “ใหม่ สุคนธวา” อวดแบบไหนก็ติดตราตรึงใจ'),
-(10, 6, '“ใหม่ สุคนธวา” โชว์อกตู้ม ทวงคืนบัลลังก์ความเซ็กซี่', 0, '27022019115254-25022019102712250220191027121105551250.jpg', 'เมื่อหลายปีก่อน “ใหม่ สุคนธวา” คือตัวแม่เรื่องความเซ็กซี่ ไม่ว่าเธอจะทำอะไรมักจะได้รับการจับตามองจากหนุ่มๆ เพราะความสวย ความอึ๋ม ที่โดดเด่นมากกว่าดาราสาวสวยหลายๆ คน แต่ระยะหลังนี้ความเซ็กซี่ของเธอเริ่มลดลง ด้วยหน้าที่การงานที่โตขึ้น\n\nมาวันนี้ “ใหม่ สุคนธวา” ขอเอาใจแฟนๆ ที่คิดถึง  โชว์ความอึ๋มทะลุจอ ด้วยบิกินี่ทูพีชลายเสือสุดเซ็กซี่ พร้อมแคปชั่นชวนฮาว่า\n\n“จะเป็นไรไหม ถ้า ใหม่ สุคนธวา จะมาทวงบัลลังก์ความเซ็กซี่ ด้วยภาพย่างกุ้งแบบนี้? ดาราคนอื่นถ่ายบิกินี่แบบสวยๆ ดีๆ กันหมด แต่ ใหม่ สุคนธวา จะถ่ายทั้งที ก็ขอคงคาแรกเตอร์สายกินนิดนึงนะคะ 55”\n\nเห็นแบบนี้แล้วอยากจะบอกสาวเจ้าเหลือเกินว่า จะอึ๋มแบบฮาๆ หรือ อึ๋มแบบจัดเต็ม เหล่าแฟนๆ ก็พร้อมรอชม ขอแค่เป็น “ใหม่ สุคนธวา” อวดแบบไหนก็ติดตราตรึงใจ'),
-(11, 6, '“ใหม่ สุคนธวา” โชว์อกตู้ม ทวงคืนบัลลังก์ความเซ็กซี่', 0, '27022019115301-250220191031432502201910314383105868.jpg', 'เมื่อหลายปีก่อน “ใหม่ สุคนธวา” คือตัวแม่เรื่องความเซ็กซี่ ไม่ว่าเธอจะทำอะไรมักจะได้รับการจับตามองจากหนุ่มๆ เพราะความสวย ความอึ๋ม ที่โดดเด่นมากกว่าดาราสาวสวยหลายๆ คน แต่ระยะหลังนี้ความเซ็กซี่ของเธอเริ่มลดลง ด้วยหน้าที่การงานที่โตขึ้น\n\nมาวันนี้ “ใหม่ สุคนธวา” ขอเอาใจแฟนๆ ที่คิดถึง  โชว์ความอึ๋มทะลุจอ ด้วยบิกินี่ทูพีชลายเสือสุดเซ็กซี่ พร้อมแคปชั่นชวนฮาว่า\n\n“จะเป็นไรไหม ถ้า ใหม่ สุคนธวา จะมาทวงบัลลังก์ความเซ็กซี่ ด้วยภาพย่างกุ้งแบบนี้? ดาราคนอื่นถ่ายบิกินี่แบบสวยๆ ดีๆ กันหมด แต่ ใหม่ สุคนธวา จะถ่ายทั้งที ก็ขอคงคาแรกเตอร์สายกินนิดนึงนะคะ 55”\n\nเห็นแบบนี้แล้วอยากจะบอกสาวเจ้าเหลือเกินว่า จะอึ๋มแบบฮาๆ หรือ อึ๋มแบบจัดเต็ม เหล่าแฟนๆ ก็พร้อมรอชม ขอแค่เป็น “ใหม่ สุคนธวา” อวดแบบไหนก็ติดตราตรึงใจ'),
-(12, 0, '“ใหม่ สุคนธวา” โชว์อกตู้ม ทวงคืนบัลลังก์ความเซ็กซี่', 0, '27022019143250-25022019102712250220191027121105551250.jpg', 'เมื่อหลายปีก่อน “ใหม่ สุคนธวา” คือตัวแม่เรื่องความเซ็กซี่ ไม่ว่าเธอจะทำอะไรมักจะได้รับการจับตามองจากหนุ่มๆ เพราะความสวย ความอึ๋ม ที่โดดเด่นมากกว่าดาราสาวสวยหลายๆ คน แต่ระยะหลังนี้ความเซ็กซี่ของเธอเริ่มลดลง ด้วยหน้าที่การงานที่โตขึ้น  มาวันนี้ “ใหม่ สุคนธวา” ขอเอาใจแฟนๆ ที่คิดถึง  โชว์ความอึ๋มทะลุจอ ด้วยบิกินี่ทูพีชลายเสือสุดเซ็กซี่ พร้อมแคปชั่นชวนฮาว่า  “จะเป็นไรไหม ถ้า ใหม่ สุคนธวา จะมาทวงบัลลังก์ความเซ็กซี่ ด้วยภาพย่างกุ้งแบบนี้? ดาราคนอื่นถ่ายบิกินี่แบบสวยๆ ดีๆ กันหมด แต่ ใหม่ สุคนธวา จะถ่ายทั้งที ก็ขอคงคาแรกเตอร์สายกินนิดนึงนะคะ 55”  เห็นแบบนี้แล้วอยากจะบอกสาวเจ้าเหลือเกินว่า จะอึ๋มแบบฮาๆ หรือ อึ๋มแบบจัดเต็ม เหล่าแฟนๆ ก็พร้อมรอชม ขอแค่เป็น “ใหม่ สุคนธวา” อวดแบบไหนก็ติดตราตรึงใจ');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tb_product_detail`
---
-
-CREATE TABLE `tb_product_detail` (
-  `product_detail_id` int(11) NOT NULL,
-  `product_id` int(11) NOT NULL,
-  `product_type_id` int(11) NOT NULL,
-  `product_detail_Location` text NOT NULL,
-  `product_detail_bedroom` varchar(2) NOT NULL,
-  `product_detail_bathroom` varchar(2) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tb_product_header`
---
-
-CREATE TABLE `tb_product_header` (
-  `product_header_id` int(5) NOT NULL,
-  `product_header_th` varchar(200) NOT NULL,
-  `product_header_en` varchar(200) NOT NULL,
-  `product_header_detail_th` text NOT NULL,
-  `product_header_detail_en` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `tb_product_header`
---
-
-INSERT INTO `tb_product_header` (`product_header_id`, `product_header_th`, `product_header_en`, `product_header_detail_th`, `product_header_detail_en`) VALUES
-(1, 'บีบีซี เวิลด์ นิวส์ ', ' Donald J. Trump', 'ช่องรายการถูกส่งสัญญาณโดย Red Bee Media จากสถานีหลัก ณ The Broadcast Centre ซึ่งเป็นส่วนหนึ่งของ BBC Media Village และส่วนหนึ่งของ BBC White City ที่ White City ในลอนดอนตะวันตก โดยมีห้องส่งจาก BBC Television Centre ที่อยู่ในบริเวณเดียวกัน BBC World News มีห้องข่าวแยกออกจากห้องข่าวของ BBC News ห้องข่าวนี้ส่งสัญญาณตั้งแต่เวลา 05.00 น. ถึง 00.30 น. (เวลาสหราชอาณาจักร) ทุกๆ วันจันทร์ถึงศุกร์ และตั้งแต่ 06.00 น. ถึง 00.30 น. ในวันเสาร์และอาทิตย์ ส่วนในเวลา 01.00 น. ถึง 05.00 น. จะส่งสัญญาณจากห้องส่งภายในสหราชอาณาจักร หรือ BBC News', '\nasdasdasdasd asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd');
+INSERT INTO `tb_product` (`product_id`, `product_types_id`, `furniture_id`, `location_id`, `product_name_th`, `product_name_en`, `product_price`, `product_img`, `product_detail_th`, `product_detail_en`, `product_bedroom`, `product_bathroom`) VALUES
+(5, 14, 0, 0, 'zxccccxz', '2', 1000000, '27022019114641-reasdental.jpg', ' zzzzzzzzzzzzzzzzzzzzzzz', 'aaa', '', ''),
+(6, 12, 0, 0, '1', '2', 1000000, '27022019140649-reasdental.jpg', 'aassa', ' aaasssssss', '', ''),
+(11, 14, 0, 0, 'a', 'as', 0, '27022019151810-reasdental.jpg', 'sssss ', 'dddddd ', '', '');
 
 -- --------------------------------------------------------
 
@@ -611,7 +515,8 @@ INSERT INTO `tb_product_header` (`product_header_id`, `product_header_th`, `prod
 
 CREATE TABLE `tb_product_types` (
   `product_types_id` int(11) NOT NULL,
-  `product_types_name` varchar(200) NOT NULL,
+  `product_types_name_th` varchar(200) NOT NULL,
+  `product_types_name_en` varchar(200) NOT NULL,
   `product_types_img` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -619,13 +524,9 @@ CREATE TABLE `tb_product_types` (
 -- Dumping data for table `tb_product_types`
 --
 
-INSERT INTO `tb_product_types` (`product_types_id`, `product_types_name`, `product_types_img`) VALUES
-(1, 'VILLA', '25022019145559-villa.jpg'),
-(2, 'REASIDENTAL', '25022019145656-reasdental.jpg'),
-(3, 'APARTMENT', '25022019145744-apartment.jpg'),
-(4, 'CONDOMINIUM', '25022019145844-condominium.jpg'),
-(5, 'SHOP', '25022019145902-shop.jpg'),
-(6, 'OFFICE', '25022019145927-office.jpg');
+INSERT INTO `tb_product_types` (`product_types_id`, `product_types_name_th`, `product_types_name_en`, `product_types_img`) VALUES
+(12, 'aaaa', 'aahhhn', '27022019120711-reasdental.jpg'),
+(14, 'กกกกกก', 'ssssss', '27022019105759-reasdental.jpg');
 
 -- --------------------------------------------------------
 
@@ -635,10 +536,20 @@ INSERT INTO `tb_product_types` (`product_types_id`, `product_types_name`, `produ
 
 CREATE TABLE `tb_services` (
   `services_id` int(11) NOT NULL,
-  `services_name` varchar(200) NOT NULL,
+  `services_name_th` varchar(200) NOT NULL,
+  `services_name_en` varchar(200) NOT NULL,
   `services_img` text NOT NULL,
-  `services_detail` text NOT NULL
+  `services_detail_th` text NOT NULL,
+  `services_detail_en` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tb_services`
+--
+
+INSERT INTO `tb_services` (`services_id`, `services_name_th`, `services_name_en`, `services_img`, `services_detail_th`, `services_detail_en`) VALUES
+(12, 'ddddddddddddd', 'aaaaaaaaaaaaaaaaaaaaaaaa', '27022019152439-villa.jpg', ' pppp', ' poooooooop'),
+(13, 'ddddddddddddd', 'sssss', '27022019152454-shop.jpg', ' ooooooo', ' oioioioioio');
 
 -- --------------------------------------------------------
 
@@ -670,8 +581,7 @@ CREATE TABLE `tb_user` (
 --
 
 INSERT INTO `tb_user` (`user_id`, `user_type_id`, `user_firstname`, `user_lastname`, `user_phone`, `user_email`, `user_facebook`, `user_line`, `user_username`, `user_password`, `user_address`, `user_district`, `user_amphur`, `user_province`, `user_zipcode`, `user_image`) VALUES
-(4, 2, 'ทดลอง', 'ทดลอง', '0859589654', 'test@gmail.com', 'www.facebook.com/test', '085-958-9654', 'admin', '123456', '698', 'ในเมือง', 'เมืองนครราชสีมา', 'นครราชสีมา', '30000', '25012019143620-24012019112916240120191129161102358359.jpg'),
-(5, 1, 'asd', 'asdasd', 'asdasd', 'asdas', 'das', 'das', 'root', 'root123456', 'dasdasd', 'dasdasd', 'das', 'dasdas', 'asdasdasd', '27022019104335-48052436_1896837297097519_7126811084484247552_n.jpg');
+(4, 2, 'ทดลอง', 'ทดลอง', '0859589654', 'test@gmail.com', 'www.facebook.com/test', '085-958-9654', 'admin', '123456', '698', 'ในเมือง', 'เมืองนครราชสีมา', 'นครราชสีมา', '30000', '25012019143620-24012019112916240120191129161102358359.jpg');
 
 -- --------------------------------------------------------
 
@@ -695,30 +605,6 @@ INSERT INTO `tb_user_type` (`user_type_id`, `user_type_name`) VALUES
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `tb_about_us`
---
-ALTER TABLE `tb_about_us`
-  ADD PRIMARY KEY (`about_us_id`);
-
---
--- Indexes for table `tb_agent`
---
-ALTER TABLE `tb_agent`
-  ADD PRIMARY KEY (`agent_id`);
-
---
--- Indexes for table `tb_agent_head`
---
-ALTER TABLE `tb_agent_head`
-  ADD PRIMARY KEY (`agent_head_id`);
-
---
--- Indexes for table `tb_company_profile`
---
-ALTER TABLE `tb_company_profile`
-  ADD PRIMARY KEY (`company_profile_id`);
 
 --
 -- Indexes for table `tb_contact`
@@ -769,6 +655,12 @@ ALTER TABLE `tb_highlight`
   ADD PRIMARY KEY (`highlight_id`);
 
 --
+-- Indexes for table `tb_location`
+--
+ALTER TABLE `tb_location`
+  ADD PRIMARY KEY (`location_id`);
+
+--
 -- Indexes for table `tb_news`
 --
 ALTER TABLE `tb_news`
@@ -779,18 +671,6 @@ ALTER TABLE `tb_news`
 --
 ALTER TABLE `tb_product`
   ADD PRIMARY KEY (`product_id`);
-
---
--- Indexes for table `tb_product_detail`
---
-ALTER TABLE `tb_product_detail`
-  ADD PRIMARY KEY (`product_detail_id`);
-
---
--- Indexes for table `tb_product_header`
---
-ALTER TABLE `tb_product_header`
-  ADD PRIMARY KEY (`product_header_id`);
 
 --
 -- Indexes for table `tb_product_types`
@@ -821,21 +701,6 @@ ALTER TABLE `tb_user_type`
 --
 
 --
--- AUTO_INCREMENT for table `tb_about_us`
---
-ALTER TABLE `tb_about_us`
-  MODIFY `about_us_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT for table `tb_agent`
---
-ALTER TABLE `tb_agent`
-  MODIFY `agent_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
---
--- AUTO_INCREMENT for table `tb_agent_head`
---
-ALTER TABLE `tb_agent_head`
-  MODIFY `agent_head_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
---
 -- AUTO_INCREMENT for table `tb_contact`
 --
 ALTER TABLE `tb_contact`
@@ -864,42 +729,42 @@ ALTER TABLE `tb_contact_us`
 -- AUTO_INCREMENT for table `tb_furniture`
 --
 ALTER TABLE `tb_furniture`
-  MODIFY `furniture_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `furniture_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `tb_highlight`
 --
 ALTER TABLE `tb_highlight`
   MODIFY `highlight_id` int(11) NOT NULL AUTO_INCREMENT;
 --
+-- AUTO_INCREMENT for table `tb_location`
+--
+ALTER TABLE `tb_location`
+  MODIFY `location_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
 -- AUTO_INCREMENT for table `tb_news`
 --
 ALTER TABLE `tb_news`
-  MODIFY `news_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `news_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `tb_product`
 --
 ALTER TABLE `tb_product`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
---
--- AUTO_INCREMENT for table `tb_product_detail`
---
-ALTER TABLE `tb_product_detail`
-  MODIFY `product_detail_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `tb_product_types`
 --
 ALTER TABLE `tb_product_types`
-  MODIFY `product_types_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `product_types_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT for table `tb_services`
 --
 ALTER TABLE `tb_services`
-  MODIFY `services_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `services_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT for table `tb_user`
 --
 ALTER TABLE `tb_user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `tb_user_type`
 --

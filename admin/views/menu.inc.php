@@ -26,6 +26,26 @@
                 </div>
             </a>
         </li>
+        
+        <li>
+            <a href="index.php?content=furniture">
+                <div <? if($page=="furniture"){echo "class='menu-active'";}else{echo "class='menu'";}?> >
+                    <span style="padding-top: 5px; font-size: 15px;">
+                        Furniture
+                    </span>
+                </div>
+            </a>
+        </li>
+        
+        <li>
+            <a href="index.php?content=location">
+                <div <? if($page=="location"){echo "class='menu-active'";}else{echo "class='menu'";}?> >
+                    <span style="padding-top: 5px; font-size: 15px;">
+                        Location
+                    </span>
+                </div>
+            </a>
+        </li>
 
         <li>
             <a href="index.php?content=product">

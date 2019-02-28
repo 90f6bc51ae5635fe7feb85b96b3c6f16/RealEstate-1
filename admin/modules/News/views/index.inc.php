@@ -46,8 +46,10 @@ if($_GET['action'] == 'insert'){
     $check = true;
     $data = [];  
     $data['news_img'] = $_POST['news_img'];   
-    $data['news_name'] = $_POST['news_name'];     
-    $data['news_detail'] = $_POST['news_detail'];    
+    $data['news_name_th'] = $_POST['news_name_th'];     
+    $data['news_name_en'] = $_POST['news_name_en'];     
+    $data['news_detail_th'] = $_POST['news_detail_th'];    
+    $data['news_detail_en'] = $_POST['news_detail_en'];    
 
     $input_image = array("news_img");
 
@@ -94,9 +96,11 @@ if($_GET['action'] == 'insert'){
         $check = true;
         $data = [];  
         $data['news_img'] = $_POST['news_img'];   
-        $data['news_name'] = $_POST['news_name'];    
-        $data['news_detail'] = $_POST['news_detail'];     
-
+        $data['news_name_th'] = $_POST['news_name_th'];     
+        $data['news_name_en'] = $_POST['news_name_en'];     
+        $data['news_detail_th'] = $_POST['news_detail_th'];    
+        $data['news_detail_en'] = $_POST['news_detail_en'];    
+    
         $input_image = array("news_img");
 
         for($i = 0;$i<count($input_image);$i++){

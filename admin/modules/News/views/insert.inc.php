@@ -1,25 +1,37 @@
 <script>
 
     function check(){
-        var news_name = document.getElementById("news_name").value;
+        var news_name_th = document.getElementById("news_name_th").value;
+        var news_name_en = document.getElementById("news_name_en").value;
         var news_img = document.getElementById("news_img").value;
-        var news_detail = document.getElementById("news_detail").value;
+        var news_detail_th = document.getElementById("news_detail_th").value;
+        var news_detail_en = document.getElementById("news_detail_en").value;
 
-        news_name = $.trim(news_name);
-        news_img = $.trim(	news_img);
-        news_detail = $.trim(	news_detail);
+        news_name_th = $.trim(news_name_th);
+        news_name_en = $.trim(news_name_en);
+        news_img = $.trim(news_img);
+        news_detail_th = $.trim(news_detail_th);
+        news_detail_en = $.trim(news_detail_en);
         
-        if(news_name.length == 0){
+        if(news_name_th.length == 0){
             alert("กรุณากรอกชื่อ");
-            document.getElementById("news_name").focus();
+            document.getElementById("news_name_th").focus();
+            return false;
+        }else if(news_name_en.length == 0){
+            alert("กรุณากรอกชื่อ");
+            document.getElementById("news_name_en").focus();
             return false;
         }else if(news_img.length == 0){
             alert("กรุณาเลือกรูปภาพ");
             document.getElementById("news_img").focus();
             return false;
-        }else if(news_detail.length == 0){
+        }else if(news_detail_th.length == 0){
             alert("กรุณากรอกรายละเอียด");
-            document.getElementById("news_detail").focus();
+            document.getElementById("news_detail_th").focus();
+            return false;
+        }else if(news_detail_en.length == 0){
+            alert("กรุณากรอกรายละเอียด");
+            document.getElementById("news_detail_en").focus();
             return false;
         }else{
             return true;
@@ -59,14 +71,20 @@
             <!-- /.panel-heading -->
             <div class="panel-body">
                 <form role="form" method="post" onsubmit="return check();" action="index.php?content=news&action=add" enctype="multipart/form-data">
-                     
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <label>ชื่อ <font color="#F00"><b>*</b></font></label>
-                            <input id="news_name" name="news_name" class="form-control"  >
+                    <div class="row">  
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>ชื่อ <font color="#F00"><b>TH</b></font></label>
+                                <input id="news_name_th" name="news_name_th" class="form-control"  >
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>ชื่อ <font color="#F00"><b>EN</b></font></label>
+                                <input id="news_name_en" name="news_name_en" class="form-control"  >
+                            </div>
                         </div>
                     </div>
-
 
 
                     <div class="row">
@@ -82,8 +100,16 @@
                     <div class="row">  
                         <div class="col-lg-12">
                             <div class="form-group">
-                                <label>รายละเอียด <font color="#F00"><b>*</b></font></label>
-                                <Textarea id="news_detail" name="news_detail" class="form-control" style=""  > </Textarea>
+                                <label>รายละเอียด <font color="#F00"><b>TH</b></font></label>
+                                <Textarea id="news_detail_th" name="news_detail_th" class="form-control" style=""  > </Textarea>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="row">  
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label>รายละเอียด <font color="#F00"><b>EN</b></font></label>
+                                <Textarea id="news_detail_en" name="news_detail_en" class="form-control" style=""  > </Textarea>
                             </div>
                         </div>    
                     </div>

@@ -14,7 +14,8 @@
       <tr>
         <th>#</th>
         <th width="20%">รูปภาพ</th>    
-        <th width="20%">ชื่อ</th>    
+        <th width="20%">ชื่อ TH</th>    
+        <th width="20%">ชื่อ EN</th>    
         <th>เเก้ไข</th>
         <th>ลบ</th>
       </tr>
@@ -31,7 +32,10 @@
             </div>
           </td>  
           <td>
-            <?php echo $news[$i]['news_name'];?>
+            <?php echo $news[$i]['news_name_th'];?>
+          </td> 
+          <td>
+            <?php echo $news[$i]['news_name_en'];?>
           </td> 
 
           <td> 

@@ -10,10 +10,11 @@ class ProductModel extends BaseModel{
     }
 
     function getProductBy(){
-        $sql = "SELECT * FROM `tb_product` 
+        $sql = " SELECT * FROM `tb_product` 
         LEFT JOIN tb_product_types 
         ON tb_product.product_types_id = tb_product_types.product_types_id 
         WHERE 1
+
         ORDER BY tb_product.product_id
         ";
         if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
@@ -27,11 +28,9 @@ class ProductModel extends BaseModel{
     }
    
     function getProductByID($id){
-        $sql = " SELECT * FROM `tb_product` 
-        LEFT JOIN tb_product_types 
-        ON tb_product.product_types_id = tb_product_types.product_types_id 
-        WHERE 1
-        ORDER BY tb_product.product_id
+        $sql = " SELECT * 
+        FROM tb_product
+        WHERE product_id = '$id'
         ";
 
         if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
@@ -44,13 +43,17 @@ class ProductModel extends BaseModel{
         }
     }
     
-    function updateProductByID($id,$data = []){
-        
+    function updateProductByID($id,$data = []){    
+    
         $sql = " UPDATE tb_product SET  
         product_img = '".$data['product_img']."',
-        product_name='".$data['product_name']."', 
+        product_name_th='".$data['product_name_th']."', 
+        product_name_en='".$data['product_name_en']."', 
         product_price='".$data['product_price']."', 
-        product_detail='".$data['product_detail']."',
+        product_detail_th='".$data['product_detail_th']."',
+        product_detail_en='".$data['product_detail_en']."',
+        furniture_id='".$data['furniture_id']."',
+        location_id='".$data['location_id']."',
         product_types_id='".$data['product_types_id']."' 
         WHERE product_id = $id "; 
 
@@ -64,16 +67,24 @@ class ProductModel extends BaseModel{
     function insertProduct($data=[]){
         $sql = " INSERT INTO tb_product( 
         product_img,
-        product_name, 
+        product_name_th, 
+        product_name_en, 
         product_price, 
-        product_detail,
+        product_detail_th,
+        product_detail_en,
+        furniture_id,
+        location_id,
         product_types_id 
         ) 
         VALUES ('". 
         $data['product_img']."','".
-        $data['product_name']."','". 
+        $data['product_name_th']."','". 
+        $data['product_name_en']."','". 
         $data['product_price']."','". 
-        $data['product_detail']."' ,'".
+        $data['product_detail_th']."' ,'".
+        $data['product_detail_en']."' ,'".
+        $data['furniture_id']."' ,'".
+        $data['location_id']."' ,'".
         $data['product_types_id']."'
         )";
     if (mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {

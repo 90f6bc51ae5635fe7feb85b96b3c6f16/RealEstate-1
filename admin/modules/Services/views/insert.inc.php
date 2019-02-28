@@ -1,24 +1,38 @@
 <script>
-    function check(){
-        var services_name = document.getElementById("services_name").value;
-        var services_img = document.getElementById("services_img").value;
-        var services_detail = document.getElementById("services_detail").value;
 
-        services_name = $.trim(services_name);
+    function check(){
+        var services_name_th = document.getElementById("services_name_th").value;
+        var services_name_en = document.getElementById("services_name_en").value;
+        var services_img = document.getElementById("services_img").value;
+        var services_detail_th = document.getElementById("services_detail_th").value;
+        var services_detail_en = document.getElementById("services_detail_en").value;
+
+        services_name_th = $.trim(services_name_th);
+        services_name_en = $.trim(services_name_en);
         services_img = $.trim(services_img);
-        services_detail = $.trim(services_detail);
-        
-        if(services_name.length == 0){
+        services_detail_th = $.trim(services_detail_th);
+        services_detail_en = $.trim(services_detail_en);
+            
+        if(services_name_th.length == 0){
             alert("กรุณากรอกชื่อ");
-            document.getElementById("services_name").focus();
+            document.getElementById("services_name_th").focus();
+            return false;
+        }else if(services_name_en.length == 0){
+            alert("กรุณากรอกรายละเอียด");
+            document.getElementById("services_name_en").focus();
             return false;
         }else if(services_img.length == 0){
             alert("กรุณาเลือกรูปภาพ");
             document.getElementById("services_img").focus();
             return false;
-        }else if(services_detail.length == 0){
+        
+        }else if(services_detail_th.length == 0){
             alert("กรุณากรอกรายละเอียด");
-            document.getElementById("services_detail").focus();
+            document.getElementById("services_detail_th").focus();
+            return false;
+        }else if(services_detail_en.length == 0){
+            alert("กรุณากรอกรายละเอียด");
+            document.getElementById("services_detail_en").focus();
             return false;
         }else{
             return true;
@@ -58,12 +72,20 @@
             <!-- /.panel-heading -->
             <div class="panel-body">
                 <form role="form" method="post" onsubmit="return check();" action="index.php?content=services&action=add" enctype="multipart/form-data">
-                     
+                
+                <div class="row">
                     <div class="col-lg-6">
                         <div class="form-group">
-                            <label>ชื่อ<font color="#F00"><b>*</b></font></label>
-                            <input id="services_name" name="services_name" class="form-control"  >
+                            <label>ชื่อ<font color="#F00"><b>TH</b></font></label>
+                            <input id="services_name_th" name="services_name_th" class="form-control"  >
                         </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label>ชื่อ<font color="#F00"><b>EN</b></font></label>
+                            <input id="services_name_en" name="services_name_en" class="form-control"  >
+                        </div>
+                    </div>
                     </div>
 
 
@@ -81,8 +103,16 @@
                     <div class="row">  
                         <div class="col-lg-12">
                             <div class="form-group">
-                                <label>รายละเอียด<font color="#F00"><b>*</b></font></label>
-                                <Textarea id="services_detail" name="services_detail" class="form-control" style=""  > </Textarea>
+                                <label>รายละเอียด<font color="#F00"><b>TH</b></font></label>
+                                <Textarea id="services_detail_th" name="services_detail_th" class="form-control" style=""  > </Textarea>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="row">  
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label>รายละเอียด<font color="#F00"><b>EN</b></font></label>
+                                <Textarea id="services_detail_en" name="services_detail_en" class="form-control" style=""  > </Textarea>
                             </div>
                         </div>    
                     </div>

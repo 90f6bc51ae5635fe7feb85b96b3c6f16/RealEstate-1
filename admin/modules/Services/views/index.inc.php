@@ -46,8 +46,10 @@ if($_GET['action'] == 'insert'){
     $check = true;
     $data = [];  
     $data['services_img'] = $_POST['services_img'];   
-    $data['services_name'] = $_POST['services_name'];     
-    $data['services_detail'] = $_POST['services_detail'];    
+    $data['services_name_th'] = $_POST['services_name_th'];     
+    $data['services_name_en'] = $_POST['services_name_en'];     
+    $data['services_detail_th'] = $_POST['services_detail_th'];     
+    $data['services_detail_en'] = $_POST['services_detail_en'];    
 
     $input_image = array("services_img");
 
@@ -94,8 +96,10 @@ if($_GET['action'] == 'insert'){
         $check = true;
         $data = [];  
         $data['services_img'] = $_POST['services_img'];   
-        $data['services_name'] = $_POST['services_name'];    
-        $data['services_detail'] = $_POST['services_detail'];     
+        $data['services_name_th'] = $_POST['services_name_th'];    
+        $data['services_name_en'] = $_POST['services_name_en'];    
+        $data['services_detail_th'] = $_POST['services_detail_th'];    
+        $data['services_detail_en'] = $_POST['services_detail_en'];     
 
         $input_image = array("services_img");
 

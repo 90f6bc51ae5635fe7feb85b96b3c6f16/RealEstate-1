@@ -43,8 +43,10 @@ class ServicesModel extends BaseModel{
         
         $sql = " UPDATE tb_services SET  
         services_img = '".$data['services_img']."',
-        services_name='".$data['services_name']."',
-        services_detail='".$data['services_detail']."'
+        services_name_th='".$data['services_name_th']."',
+        services_name_en='".$data['services_name_en']."',
+        services_detail_th='".$data['services_detail_th']."',
+        services_detail_en='".$data['services_detail_en']."'
         WHERE services_id = $id "; 
 
         if (mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
@@ -57,13 +59,17 @@ class ServicesModel extends BaseModel{
     function insertServices($data=[]){
         $sql = " INSERT INTO tb_services( 
         services_img,
-        services_name,
-        services_detail
+        services_name_th,
+        services_name_en,
+        services_detail_th,
+        services_detail_en
         ) 
         VALUES ('". 
         $data['services_img']."','".
-        $data['services_detail']."','".
-        $data['services_name']."'
+        $data['services_name_th']."','".
+        $data['services_name_en']."','".
+        $data['services_detail_th']."','".
+        $data['services_detail_en']."'
         )";
     if (mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
         return mysqli_insert_id(static::$db);

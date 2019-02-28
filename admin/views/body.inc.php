@@ -1,9 +1,17 @@
 <?PHP
  
- if($content=="types" || $content=="" ){
+   if($content=="types" || $content=="" ){
 
     require_once("modules/types/views/index.inc.php");
    
+   }else if($content=="furniture"){
+   
+      require_once("modules/furniture/views/index.inc.php");
+
+   }else if($content=="location"){
+   
+      require_once("modules/location/views/index.inc.php");
+
    }else if($content=="product"){
    
       require_once("modules/product/views/index.inc.php");
@@ -36,7 +44,7 @@
    
       require_once("modules/user/views/index.inc.php");
    
-   }else if($content=="Services"){
+   }else if($content=="services"){
    
       require_once("modules/services/views/index.inc.php");
    

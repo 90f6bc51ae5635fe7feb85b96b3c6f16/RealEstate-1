@@ -1,12 +1,17 @@
 <?php 
 date_default_timezone_set("Asia/Bangkok");
 require_once('../models/ProductModel.php'); 
+require_once('../models/LocationModel.php'); 
+require_once('../models/FurnitureModel.php'); 
 require_once('../models/TypesModel.php'); 
 
 $path = "modules/product/views/";
  
 $product_model = new ProductModel;
-$product_types_model = new TypesModel;  
+$product_types_model = new TypesModel;
+$location_model = new LocationModel;
+$furniture_model = new FurnitureModel;
+
 
 $d1=date("d");
 $d2=date("m");
@@ -21,11 +26,17 @@ $target_dir = "../img_upload/product/";
 $product_id = $_GET['id'];
 if($_GET['action'] == 'insert'){   
     $type = $product_types_model->getTypesBy();
+    $location = $location_model ->getLocationBy();
+    $furniture = $furniture_model ->getFurnitureBy();
+
     require_once($path.'insert.inc.php');
 
 }else if ($_GET['action'] == 'update'){ 
 
     $type = $product_types_model->getTypesBy();
+    $location = $location_model ->getLocationBy();
+    $furniture = $furniture_model ->getFurnitureBy();
+
     $product = $product_model->getProductByID($product_id);  
     require_once($path.'update.inc.php');
 
@@ -48,11 +59,15 @@ if($_GET['action'] == 'insert'){
        
     $check = true;
     $data = [];  
-    $data['product_img'] = $_POST['product_img'];   
-    $data['product_name'] = $_POST['product_name'];
     $data['product_types_id'] = $_POST['product_types_id'];
-    $data['product_detail'] = $_POST['product_detail'];    
+    $data['furniture_id'] = $_POST['furniture_id'];
+    $data['location_id'] = $_POST['location_id'];
+    $data['product_name_th'] = $_POST['product_name_th'];    
+    $data['product_name_en'] = $_POST['product_name_en'];    
     $data['product_price'] = $_POST['product_price'];    
+    $data['product_img'] = $_POST['product_img'];   
+    $data['product_detail_th'] = $_POST['product_detail_th'];
+    $data['product_detail_en'] = $_POST['product_detail_en'];
 
     $input_image = array("product_img");
 
@@ -98,11 +113,16 @@ if($_GET['action'] == 'insert'){
         $product_id = $_POST['product_id'];
         $check = true;
         $data = [];  
+        $data['product_types_id'] = $_POST['product_types_id'];
+        $data['furniture_id'] = $_POST['furniture_id'];
+        $data['location_id'] = $_POST['location_id'];    
+        $data['product_name_th'] = $_POST['product_name_th'];    
+        $data['product_name_en'] = $_POST['product_name_en'];    
+        $data['product_price'] = $_POST['product_price'];    
         $data['product_img'] = $_POST['product_img'];   
-        $data['product_name'] = $_POST['product_name'];    
-        $data['product_detail'] = $_POST['product_detail'];     
-        $data['product_price'] = $_POST['product_price'];     
-
+        $data['product_detail_th'] = $_POST['product_detail_th'];
+        $data['product_detail_en'] = $_POST['product_detail_en'];
+    
         $input_image = array("product_img");
 
         for($i = 0;$i<count($input_image);$i++){
@@ -142,7 +162,7 @@ if($_GET['action'] == 'insert'){
             $check_result = $product_model->updateProductByID($product_id,$data);
             if($check_result!=false){
                 ?>
-                <script>window.location="index.php?content=P-++++roduct&action=update&id=<?PHP echo $product_id;?>"</script>
+                <script>window.location="index.php?content=product&action=update&id=<?PHP echo $product_id;?>"</script>
                 <?php
             }else{
                 ?>  <script> window.history.back(); </script> <?php

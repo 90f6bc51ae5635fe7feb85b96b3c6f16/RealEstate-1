@@ -43,8 +43,10 @@ class NewsModel extends BaseModel{
         
         $sql = " UPDATE tb_news SET  
         news_img = '".$data['news_img']."',
-        news_name='".$data['news_name']."',
-        news_detail='".$data['news_detail']."'
+        news_name_th='".$data['news_name_th']."',
+        news_name_en='".$data['news_name_en']."',
+        news_detail_th='".$data['news_detail_th']."',
+        news_detail_en='".$data['news_detail_en']."'
 
         WHERE news_id = $id "; 
 
@@ -58,13 +60,17 @@ class NewsModel extends BaseModel{
     function insertNews($data=[]){
         $sql = " INSERT INTO tb_news( 
         news_img,
-        news_name,
-        news_detail
+        news_name_th,
+        news_name_en,
+        news_detail_th,
+        news_detail_en
         ) 
         VALUES ('". 
         $data['news_img']."','".
-        $data['news_detail']."','".
-        $data['news_name']."'
+        $data['news_name_th']."','".
+        $data['news_name_en']."','".
+        $data['news_detail_th']."','".
+        $data['news_detail_en']."'
         )";
     if (mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
         return mysqli_insert_id(static::$db);

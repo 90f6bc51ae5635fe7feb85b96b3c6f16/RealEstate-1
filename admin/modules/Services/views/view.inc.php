@@ -14,7 +14,8 @@
       <tr>
         <th>#</th>
         <th width="20%">รูปภาพ</th>    
-        <th width="20%">ชื่อบริการ</th>    
+        <th width="20%">ชื่อบริการ TH</th>    
+        <th width="20%">ชื่อบริการ EN</th>    
         <th>เเก้ไข</th>
         <th>ลบ</th>
       </tr>
@@ -31,9 +32,11 @@
             </div>
           </td>  
           <td>
-            <?php echo $services[$i]['services_name'];?>
+            <?php echo $services[$i]['services_name_th'];?>
           </td> 
-
+          <td>
+            <?php echo $services[$i]['services_name_en'];?>
+          </td> 
           <td> 
             <a href="?content=services&action=update&id=<?php echo $services[$i]['services_id'];?>" style="font-size: 20px;">
               <i class="fa fa-pencil-square-o" aria-hidden="true" ></i>

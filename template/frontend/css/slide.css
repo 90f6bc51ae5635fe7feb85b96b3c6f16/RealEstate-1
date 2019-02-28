@@ -1,5 +1,8 @@
 .menu-slide-style{
     color: #ffffff;
+    
+    background-image: url('../../../img_upload/product/28022019160456-architecture-1867187_1920.jpg');
+    
 }
 .menu-slide{
     margin-top : -20em;
@@ -47,7 +50,7 @@
     color: #ffffff;
 }
 .bg-slide-color{
-    background-color: #000;
+    
 }
 @media (max-width: 991px) {
     .menu-slide-title{

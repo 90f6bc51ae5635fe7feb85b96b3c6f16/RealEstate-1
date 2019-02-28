@@ -100,9 +100,9 @@
                             <div class="form-group">
                                 <label>Location </label>
                                 <select class="form-control  custom-select" id="location_id" name="location_id">
-                                    <? for ($i=0; $i < count($type); $i++) {  ?>
-                                    <option selected value="<? echo $type[$i]['location_id'];?>">
-                                    <? echo $type[$i]['location_name_th'];?>
+                                    <? for ($i=0; $i < count($location); $i++) {  ?>
+                                    <option selected value="<? echo $location[$i]['location_id'];?>">
+                                    <? echo $location[$i]['location_name_th'];?>
                                     </option>
                                     <? }?>
                                 </select>
@@ -112,9 +112,9 @@
                             <div class="form-group">
                                 <label>Furniture </label>
                                 <select class="form-control  custom-select" id="furniture_id" name="furniture_id">
-                                    <? for ($i=0; $i < count($type); $i++) {  ?>
-                                    <option selected value="<? echo $type[$i]['furniture_id'];?>">
-                                    <? echo $type[$i]['furniture_name_th'];?>
+                                    <? for ($i=0; $i < count($furniture); $i++) {  ?>
+                                    <option selected value="<? echo $furniture[$i]['furniture_id'];?>">
+                                    <? echo $furniture[$i]['furniture_name_th'];?>
                                     </option>
                                     <? }?>
                                 </select>
@@ -126,13 +126,13 @@
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>NO. of Bedroom </label>
-                                <input id="	product_bedroom" name="	product_bedroom" class="form-control"  value="<?php echo $product['product_bedroom'];?>" >
+                                <input id="product_bedroom" name="product_bedroom" class="form-control" value="<?php echo $product['product_bedroom'];?>">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>No. of Bathroom </label>
-                                <input id="	product_bathroom" name="	product_bathroom" class="form-control"  value="<?php echo $product['product_bedroom'];?>" >
+                                <input id="product_bathroom" name="product_bathroom" class="form-control" value="<?php echo $product['product_bedroom'];?>">
                             </div>
                         </div>
                     </div>

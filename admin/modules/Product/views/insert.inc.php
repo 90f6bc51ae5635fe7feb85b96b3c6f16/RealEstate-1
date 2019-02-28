@@ -55,7 +55,12 @@
         }
     }
 
+
 </script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="//maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&sensor=false"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery-gmaps-latlon-picker.css"/>
+  <script src="js/jquery-gmaps-latlon-picker.js"></script>
 
 <div class="row">
     <div class="col-lg-6">
@@ -142,13 +147,13 @@
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>NO. of Bedroom </label>
-                                <input id="product_bedroom" name="product_bedroom" class="form-control"  >
+                                <input id="product_bedroom" name="product_bedroom" class="form-control">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>No. of Bathroom </label>
-                                <input id="product_bathroom" name="product_bathroom" class="form-control"  >
+                                <input id="product_bathroom" name="product_bathroom" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -180,6 +185,37 @@
                         </div>    
                     </div>
 
+<!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+                    <link rel="stylesheet" type="text/css" href="css/jquery-gmaps-latlon-picker.css"/>
+                        <script>
+                            $.gMapsLatLonPickerNoAutoInit = 1;
+                        </script>
+                    <script src="js/jquery-gmaps-latlon-picker.js"></script>
+                    <fieldset class="gllpLatlonPicker">
+                        <input type="text" class="gllpSearchField">
+                        <input type="button" class="gllpSearchButton" value="search">
+                        <div class="gllpMap">Google Maps</div>
+                        <input type="hidden" class="gllpLatitude" value="20"/>
+                        <input type="hidden" class="gllpLongitude" value="20"/>
+                        <input type="hidden" class="gllpZoom" value="3"/>
+                    </fieldset>
+                    <script>
+                $(document).ready(function() {
+                    // Copy the init code from "jquery-gmaps-latlon-picker.js" and extend it here
+                    $(".gllpLatlonPicker").each(function() {
+                    $obj = $(document).gMapsLatLonPicker();
+
+                    $obj.params.strings.markerText = "Drag this Marker (example edit)";
+
+                    $obj.params.displayError = function(message) {
+                        console.log("MAPS ERROR: " + message); // instead of alert()
+                    };
+
+                    $obj.init( $(this) );
+                    });
+                });
+                </script>
+<!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
                     <div align="right">
                         <button type="button" class="btn btn-default" onclick="window.location='?content=product';" >ย้อนกลับ</button>
                         <button type="reset" class="btn btn-primary">ล้างข้อมูล</button>

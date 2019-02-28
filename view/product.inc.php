@@ -1,33 +1,8 @@
 <?PHP 
-require_once('models/TrendProductModel.php');    
-$trend_product_model = new TrendProductModel;   
-$trend_product = $trend_product_model->getTrendProductBy(); 
-?>
-
-
-<div style="padding: 5% 10%;">
-    <div class="text-center">
-        <div class="text-header-medium">
-            TRENDING PRODUCTS
-        </div>
-        <div class="text-detail" style="padding: 3.5% 20%;">
-            this is photo shop' version of Lorem Ipsum. Proin gravida nibh vel velist auctor aliquet Aenean sollicitudin. lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis.
-        </div>
-            
-        <div class="row">
-            <?PHP for($i=0;$i<count($trend_product );$i++){ ?> 
-                <div class="col-md-4">
-                    <img src="img_upload/trend_product/<?PHP echo $trend_product[$i]['trend_product_img'];?>" style="width: 90%;" alt="<?PHP echo $trend_product[$i]['trend_product_title'];?>">
-                    <div class="text-header-regular" style="padding: 50px 0;">
-                    <?PHP echo $trend_product[$i]['trend_product_title'];?>
-                    </div>
-                </div>
-            <?PHP } ?>        
-        </div>
-    </div>
-</div>
-
-<?PHP 
+require_once('models/ProductModel.php');    
+$product_model = new ProductModel;   
+$product_header = $product_model-> getProductHeaderBy();
+// print_r($product_header);
 require_once('models/ProductModel.php');    
 $product_model = new ProductModel;   
 $product = $product_model->getProductBy(); 
@@ -36,24 +11,56 @@ $product = $product_model->getProductBy();
 <div style="padding: 5% 10%;">
     <div class="text-center">
         <div class="text-header-medium">
-            POPULAR PRODUCTS
+            <?PHP if ($lng == "TH"){echo $product_header[0]['product_header_th'] ;}else{echo $product_header[0]['product_header_en'] ;} ?>
         </div>
         <div class="text-detail" style="padding: 3.5% 20%;">
-            this is photo shop' version of Lorem Ipsum. Proin gravida nibh vel velist auctor aliquet Aenean sollicitudin. lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis.
+            <?PHP if ($lng == "TH"){echo $product_header[0]['product_header_detail_th'] ;}else{echo $product_header[0]['product_header_detail_en'] ;} ?>
         </div>
 
         <div class="row">
-        <?PHP for($i=0;$i<count($product );$i++){ ?> 
-                <div class="col-md-4">
-                <img src="img_upload/product/<?PHP echo $product[$i]['product_img'];?>" style="width: 90%;" alt="<?PHP echo $product[$i]['product_name'];?>">
+            <?PHP for($i=0;$i<count($product );$i++){ ?>
+            <div class="col-md-4">
+                <img src="img_upload/product/<?PHP echo $product[$i]['product_img'];?>" style="width: 90%;"
+                    alt="<?PHP echo $product[$i]['product_name'];?>">
                 <div class="text-regular" style="padding-top: 48px;">
-                <?PHP echo $product[$i]['product_name'];?>
+                    <div class="product-product-name">
+                        <?PHP echo $product[$i]['product_name'];?>
+                    </div>
+                    <div class="product-product-detail">
+                        <?PHP echo $product[$i]['product_detail'];?>
+                    </div>
                 </div>
                 <div class="text-regular" style="padding: 16px 0px; color: #c6c6c6;">
-                <?php echo number_format($product[$i]['product_price']); ?> ฿
+                <button type="button" class="btn btn-outline-success">Success</button>
+
+                
+                <button class="btn btn-primary" type="submit"><?php echo number_format($product[$i]['product_price'],2); ?></button>
+
+                    
                 </div>
             </div>
             <?PHP } ?>
         </div>
     </div>
 </div>
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=K2D:300');
+
+.product-product-detail {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-family: 'K2D', sans-serif;
+}
+
+.product-product-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+</style>

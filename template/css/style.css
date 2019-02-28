@@ -25,13 +25,13 @@ footer{
     color: #fff !important;
     padding: 12px 24px;;
 }
-.btn {
+/* .btn {
     background-color: #e5dcbd;
     border-radius: unset;
     border: unset;
     padding-right: 24px;
     padding-left: 24px;
-}
+} */
 .form-control {
     background-color: #f6f4f5;
     border-radius: unset;

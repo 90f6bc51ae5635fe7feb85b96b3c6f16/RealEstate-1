@@ -1,3 +1,8 @@
+<?PHP
+if(isset($_COOKIE['language'])){
+    $lng = $_COOKIE['language'];
+}
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -20,12 +25,15 @@
 
         <!-- Custom Fonts & CSS -->
         <link rel="stylesheet" type="text/css" media="screen" href="template/css/style.css" />
+        
+        <link href="template/frontend/css/menu.css" rel="stylesheet">
+        <link href="template/frontend/css/slide.css" rel="stylesheet">
     </head>
     <body>
-        <?PHP require_once('view/header.inc.php'); ?>
-        <?PHP require_once('view/slide.inc.php'); ?>
+        <?PHP require_once('view/menu.inc.php');?>
+        <?PHP require_once('view/slide.inc.php');?>
         <?PHP require_once('view/product.inc.php'); ?>
-        <?PHP require_once('view/contact.inc.php'); ?>
+        <?PHP require_once('view/agent.inc.php'); ?>
         <?PHP require_once('view/footer.inc.php'); ?>
     </body>
 </html>

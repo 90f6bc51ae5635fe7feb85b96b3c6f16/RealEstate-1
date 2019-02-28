@@ -108,6 +108,18 @@ if($_GET['action'] == 'insert'){
             ?>  <script> window.history.back(); </script> <?php
         }
     }  
+    
+} else if( $_GET['action'] == "edit_head") {
+    $result = $product_model-> editProductHead($id, $_POST['product_header_th'], $_POST['product_header_en'], $_POST['product_header_detail_th'], $_POST['product_header_detail_en']);
+    require_once($path.'view.inc.php');
+    ?>
+<script>
+window.location = "index.php?content=product"
+</script>
+<?PHP
+
+
+
 
 }else if ($_GET['action'] == 'edit'){
         $product_id = $_POST['product_id'];
@@ -171,6 +183,8 @@ if($_GET['action'] == 'insert'){
      
 }else {
     $product = $product_model->getProductBy();
+    $product_header = $product_model->getProductHeaderBy();
+    // print_r($product_header);
     require_once($path.'view.inc.php');
 }
 ?>

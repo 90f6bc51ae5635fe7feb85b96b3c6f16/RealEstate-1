@@ -26,6 +26,25 @@ class ProductModel extends BaseModel{
             return $data;
         }
     }
+
+    function getProductHeaderBy(){
+        $sql = "SELECT
+        *
+    FROM
+        `tb_product_header`
+    WHERE
+        1
+        ORDER BY tb_product_header.product_header_id
+        ";
+        if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
+            $data = [];
+            while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)){
+                $data[] = $row;
+            }
+            $result->close();
+            return $data;
+        }
+    }
    
     function getProductByID($id){
         $sql = " SELECT * 
@@ -40,6 +59,27 @@ class ProductModel extends BaseModel{
             }
             $result->close();
             return $data;
+        }
+    }
+
+    
+    function editProductHead($product_header_id, $product_header_th, $product_header_en, $product_header_detail_th, $product_header_detail_en) {
+        
+        $sql = "UPDATE `tb_product_header` SET 
+        `product_header_th` = '$product_header_th', 
+        `product_header_en` = '$product_header_en' ,
+        `product_header_detail_th` = '$product_header_detail_th', 
+        `product_header_detail_en` = '$product_header_detail_en' 
+        WHERE `tb_product_header`.`product_header_id` = 1 
+        ";
+        // echo "<pre>";
+        // print_r( $sql);
+        // echo "</pre>";
+
+        if (mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
+            return 1;
+        }else {
+            return 0;
         }
     }
     

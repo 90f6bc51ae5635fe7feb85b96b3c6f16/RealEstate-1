@@ -3,13 +3,13 @@
     function check(){
         var news_name_th = document.getElementById("news_name_th").value;
         var news_name_en = document.getElementById("news_name_en").value;
-        var news_img = document.getElementById("news_img").value;
+        // var news_img = document.getElementById("news_img").value;
         var news_detail_th = document.getElementById("news_detail_th").value;
         var news_detail_en = document.getElementById("news_detail_en").value;
 
         news_name_th = $.trim(news_name_th);
         news_name_en = $.trim(news_name_en);
-        news_img = $.trim(news_img);
+        // // news_img = $.trim(news_img);
         news_detail_th = $.trim(news_detail_th);
         news_detail_en = $.trim(news_detail_en);
         
@@ -21,10 +21,10 @@
             alert("กรุณากรอกชื่อ");
             document.getElementById("news_name_en").focus();
             return false;
-        }else if(news_img.length == 0){
-            alert("กรุณาเลือกรูปภาพ");
-            document.getElementById("news_img").focus();
-            return false;
+        // }else if(news_img.length == 0){
+            // alert("กรุณาเลือกรูปภาพ");
+            // document.getElementById("news_img").focus();
+            // return false;
         }else if(news_detail_th.length == 0){
             alert("กรุณากรอกรายละเอียด");
             document.getElementById("news_detail_th").focus();

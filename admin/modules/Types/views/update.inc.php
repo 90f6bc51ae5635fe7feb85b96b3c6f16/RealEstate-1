@@ -3,11 +3,9 @@
     function check(){
         var product_types_name_th = document.getElementById("product_types_name_th").value;
         var product_types_name_en = document.getElementById("product_types_name_en").value;
-        var product_types_img = document.getElementById("product_types_img").value;
 
         product_types_name_th = $.trim(product_types_name_th);
         	product_types_name_en = $.trim(	product_types_name_en);
-        product_types_img = $.trim(	product_types_img);
         
         if(product_types_name_th.length == 0){
             alert("กรุณากรอกชื่อ TH");
@@ -17,10 +15,6 @@
             alert("กรุณากรอกชื่อ EN");
             document.getElementById("product_types_name_en").focus();
             return false;
-        }else if(product_types_img.length == 0){
-            alert("กรุณาเลือกรูปภาพ");
-            document.getElementById("product_types_img").focus();
-            return false;  
         }else{
             return true;
         }

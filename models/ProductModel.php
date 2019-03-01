@@ -139,7 +139,7 @@ class ProductModel extends BaseModel{
         $data['location_id']."' ,'".
         $data['product_types_id']."'
         )";
-        echo $sql;
+        // echo $sql;
     if (mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
         return mysqli_insert_id(static::$db);
    }else {
@@ -148,13 +148,9 @@ class ProductModel extends BaseModel{
 }
 
 
-function deleteProductByID($id){
-    $sql = "DELETE FROM tb_product WHERE product_id = '$id' ";
-    mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT); 
-}
-
-
-
-
+    function deleteProductByID($id){
+        $sql = "DELETE FROM tb_product WHERE product_id = '$id' ";
+        mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT); 
+    }
 }
 ?>

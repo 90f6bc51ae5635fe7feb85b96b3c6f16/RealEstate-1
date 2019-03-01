@@ -81,13 +81,13 @@ if($_GET['action'] == 'insert'){
     if($check == false){
         ?>  <script>  alert('<?php echo $error_msg; ?>'); window.history.back(); </script>  <?php
     }else{
-        $check_result = $news_model->insertnews($data);
+        $check_result = $news_model->insertNews($data);
         if($check_result!=false){   
             ?>
             <script>window.location="index.php?content=news"</script>
             <?php
         }else{
-            ?>  <script> window.history.back(); </script> <?php
+            ?>  <script> window.location="index.php?content=news" </script> <?php
         }
     }  
 
@@ -137,10 +137,10 @@ if($_GET['action'] == 'insert'){
         if($check == false){
             ?>  <script>  alert('<?php echo $error_msg; ?>'); window.history.back(); </script>  <?php
         }else{
-            $check_result = $news_model->updatenewsByID($news_id,$data);
+            $check_result = $news_model->updateNewsByID($news_id,$data);
             if($check_result!=false){
                 ?>
-                <script>window.location="index.php?content=news&action=update&id=<?PHP echo $news_id;?>"</script>
+                <script> window.location="index.php?content=news"</script>
                 <?php
             }else{
                 ?>  <script> window.history.back(); </script> <?php

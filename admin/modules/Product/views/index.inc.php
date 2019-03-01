@@ -24,7 +24,8 @@ $date="$d1$d2$d3$d4$d5$d6";
 $target_dir = "../img_upload/product/";
 
 $product_id = $_GET['id'];
-if($_GET['action'] == 'insert'){   
+if($_GET['action'] == 'insert'){
+
     $type = $product_types_model->getTypesBy();
     $location = $location_model ->getLocationBy();
     $furniture = $furniture_model ->getFurnitureBy();
@@ -101,37 +102,29 @@ if($_GET['action'] == 'insert'){
     } 
 
     if($check == false){
-        ?>  <script> 
-         alert('<?php echo $error_msg; ?>'); window.history.back(); 
-        </script>  <?php
+        ?>  <script> alert('<?php echo $error_msg; ?>'); window.history.back();  </script> 
+        <?php
     }else{
         $check_result = $product_model->insertProduct($data);
         if($check_result!=false){   
             ?>
-            <script>
-            window.location="index.php?content=product"
-            </script>
+            <script> window.location="index.php?content=product" </script>
             <?php
         }else{
-            ?>  <script> 
-            window.history.back(); 
-            </script> <?php
+            ?>  <script> window.history.back(); </script> <?php
         }
     }  
     
 } else if( $_GET['action'] == "edit_head") {
+    
     $result = $product_model-> editProductHead($id, $_POST['product_header_th'], $_POST['product_header_en'], $_POST['product_header_detail_th'], $_POST['product_header_detail_en']);
     require_once($path.'view.inc.php');
     ?>
-<script>
-window.location = "index.php?content=product"
-</script>
+<script> window.location = "index.php?content=product" </script>
 <?PHP
 
-
-
-
 }else if ($_GET['action'] == 'edit'){
+
         $product_id = $_POST['product_id'];
         $check = true;
         $data = [];  
@@ -188,7 +181,7 @@ window.location = "index.php?content=product"
             $check_result = $product_model->updateProductByID($product_id,$data);
             if($check_result!=false){
                 ?>
-                <script>window.location="index.php?content=product&action=update&id=<?PHP echo $product_id;?>"</script>
+                <script>window.location="index.php?content=product"</script>
                 <?php
             }else{
                 ?>  <script> window.history.back(); </script> <?php
@@ -198,7 +191,6 @@ window.location = "index.php?content=product"
 }else {
     $product = $product_model->getProductBy();
     $product_header = $product_model->getProductHeaderBy();
-    // print_r($product_header);
     require_once($path.'view.inc.php');
 }
 ?>

@@ -12,6 +12,10 @@
    
       require_once("modules/location/views/index.inc.php");
 
+   }else if($content=="product_highlight"){
+   
+      require_once("modules/product_highlight/views/index.inc.php");
+
    }else if($content=="product"){
    
       require_once("modules/product/views/index.inc.php");

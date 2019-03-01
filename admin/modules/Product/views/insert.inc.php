@@ -100,6 +100,7 @@
             <!-- /.panel-heading -->
             <div class="panel-body">
                 <form role="form" method="post" onsubmit="return check();" action="index.php?content=product&action=add" enctype="multipart/form-data">
+
                     <div class="row">  
                         <div class="col-lg-6">
                             <div class="form-group">
@@ -114,6 +115,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="row">  
                         <div class="col-lg-6">
                             <div class="form-group">
@@ -216,11 +218,7 @@
                                     </fieldset>
 
                                     <script src="https://maps-api-ssl.google.com/maps/api/js?key=AIzaSyBPYt_mZGd-2iotzhpiZKw1_GpZ6H9w3vs&sensor=false"></script>
-                                    <script src="../template/js/jquery-gmaps-latlon-picker.js"></script>
-                                    <script src="js/jquery-2.1.1.min.js"></script>
-                                    <script src="//maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&sensor=false"></script>
-                                    <link rel="stylesheet" type="text/css" href="css/jquery-gmaps-latlon-picker.css"/>
-                                    <script src="js/jquery-gmaps-latlon-picker.js"></script>
+                                    <script src="../template/map/js/jquery-gmaps-latlon-picker.js"></script>
 <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
                     <div align="right">
                         <button type="button" class="btn btn-default" onclick="window.location='?content=product';" >ย้อนกลับ</button>

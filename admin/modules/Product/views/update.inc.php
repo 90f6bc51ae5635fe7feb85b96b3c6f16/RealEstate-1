@@ -3,7 +3,7 @@
         var product_name_th = document.getElementById("product_name_th").value; 
         var product_name_en = document.getElementById("product_name_en").value; 
         var product_price = document.getElementById("product_price").value; 
-        var product_img = document.getElementById("product_img").value; 
+        // var product_img = document.getElementById("product_img").value; 
         var product_detail_th = document.getElementById("product_detail_th").value; 
         var product_detail_en = document.getElementById("product_detail_en").value; 
         var product_bathroom = document.getElementById("product_bathroom").value; 
@@ -14,7 +14,7 @@
         product_name_th = $.trim(product_name_th);
         product_name_en = $.trim(product_name_en);
         product_price = $.trim(	product_price);
-        product_img = $.trim(	product_img);
+        // // product_img = $.trim(	product_img);
         product_detail_th = $.trim(product_detail_th);
         product_detail_en = $.trim(product_detail_en);
         product_bathroom = $.trim(product_bathroom);
@@ -34,9 +34,9 @@
             alert("กรุณากรอกราคา");
             document.getElementById("product_price").focus();
             return false;
-        }else if(product_img.length == 0){
-            alert("กรุณาเลือกรูปภาพ");
-            document.getElementById("product_img").focus();
+        // }else if(product_img.length == 0){
+            // alert("กรุณาเลือกรูปภาพ");
+            // document.getElementById("product_img").focus();
             return false;
         }else if(product_detail_th.length == 0){
             alert("กรุณากรอกรายละเอียด");

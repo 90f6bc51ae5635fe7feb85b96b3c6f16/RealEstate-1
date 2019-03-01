@@ -2,13 +2,13 @@
     function check(){
         var services_name_th = document.getElementById("services_name_th").value;
         var services_name_en = document.getElementById("services_name_en").value;
-        var services_img = document.getElementById("services_img").value;
+        // var services_img = document.getElementById("services_img").value;
         var services_detail_th = document.getElementById("services_detail_th").value;
         var services_detail_en = document.getElementById("services_detail_en").value;
 
         services_name_th = $.trim(services_name_th);
         services_name_en = $.trim(services_name_en);
-        services_img = $.trim(services_img);
+        // // services_img = $.trim(services_img);
         services_detail_th = $.trim(services_detail_th);
         services_detail_en = $.trim(services_detail_en);
             
@@ -20,10 +20,10 @@
             alert("กรุณากรอกรายละเอียด");
             document.getElementById("services_name_en").focus();
             return false;
-        }else if(services_img.length == 0){
-            alert("กรุณาเลือกรูปภาพ");
-            document.getElementById("services_img").focus();
-            return false;
+        // }else if(services_img.length == 0){
+            // alert("กรุณาเลือกรูปภาพ");
+            // document.getElementById("services_img").focus();
+            // return false;
         
         }else if(services_detail_th.length == 0){
             alert("กรุณากรอกรายละเอียด");

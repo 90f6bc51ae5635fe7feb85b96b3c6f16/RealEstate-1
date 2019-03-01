@@ -140,7 +140,7 @@ if($_GET['action'] == 'insert'){
             $check_result = $services_model->updateServicesByID($services_id,$data);
             if($check_result!=false){
                 ?>
-                <script>window.location="index.php?content=services&action=update&id=<?PHP echo $services_id;?>"</script>
+                <script>window.location="index.php?content=services"</script>
                 <?php
             }else{
                 ?>  <script> window.history.back(); </script> <?php

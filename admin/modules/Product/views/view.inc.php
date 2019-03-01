@@ -54,14 +54,6 @@
             </div>
         </form>
 
-
-
-
-
-
-
-
-
         <div align=right>
             <a href="?content=product&action=insert">
                 <input class="button" type="submit" value="เพิ่ม">
@@ -79,6 +71,7 @@
                     <th width="20%">ประเภท TH</th>
                     <th width="20%">ประเภท EN</th>
                     <th width="20%">ราคา</th>
+                    <th>รูปภาพเพิ่มเติม</th>
                     <th>เเก้ไข</th>
                     <th>ลบ</th>
                 </tr>
@@ -91,9 +84,7 @@
                     <td><?php echo $i+1; ?></td>
                     <td>
                         <div align="center">
-                            <img class="img-fluid"
-                                src="../img_upload/product/<?php if($product[$i]['product_img'] != "") echo $product[$i]['product_img']; else echo "default.png" ?>"
-                                height="72" width="auto" />
+                            <img class="img-fluid" src="../img_upload/product/<?php if($product[$i]['product_img'] != "") echo $product[$i]['product_img']; else echo "default.png" ?>" height="72" width="auto" />
                         </div>
                     </td>
                     <td>
@@ -111,6 +102,13 @@
                     <td>
                         <?php echo $product[$i]['product_price'];?>
                     </td>
+
+                    <td>
+						<a href="?content=product_highlight&product_id=<?php echo $product[$i]['product_id'];?>" style="color: green;">
+							<i class="fa fa-plus" aria-hidden="true"></i>
+						</a> 
+					</td>
+
 
                     <td>
                         <a href="?content=product&action=update&id=<?php echo $product[$i]['product_id'];?>"

@@ -2,6 +2,7 @@
 require_once('models/ProductModel.php');
 $slide_model = new ProductModel;
 $slide = $slide_model -> getProductBy();
+// print_r($slide);
 ?>
 
 
@@ -14,10 +15,10 @@ $slide = $slide_model -> getProductBy();
                 <div class="menu-slide-detail" >
                     <div class="row">
                         <div class="col-lg-7 menu-slide-title">
-                        <h4 class="pb-4"><?php if ($lng == TH) {  echo "ยินดีต้อนรับเข้าสู่";   }else {  echo "Welcome To"; }  ?></h4>
-                            <h1 class="pb-4"><?php if ($lng == TH) {  echo $slide[$i]['slide_title_th'];   }else {  echo $slide[$i]['slide_title_en'];  }  ?></h1>
+                        <h3 class="pb-4 slide-detail-title"><?php if ($lng == TH) {  echo $slide[$i]['product_name_th'];   }else {  echo$slide[$i]['product_name_en']; }  ?></h3>
+                            <h4 class="pb-4 "><?php if ($lng == TH) {  echo $slide[$i][''];   }else {  echo $slide[$i][''];  }  ?></h4>
                             <div class="d-none d-lg-block">
-                                <h3 class="pb-4"><?php if ($lng == TH) {  echo $slide[$i]['slide_sub_title_th'];   }else {  echo $slide[$i]['slide_sub_title_en'];  }  ?></h3>
+                                <h3 class="pb-4 slide-detail-slide"><?php if ($lng == TH) {  echo $slide[$i]['product_detail_th'];   }else {  echo $slide[$i]['product_detail_en'];  }  ?></h3>
                             </div>
                         </div>
                     </div>
@@ -46,3 +47,18 @@ $(document).on('ready', function() {
     });
 });
 </script>
+
+<style>
+.slide-detail-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.slide-detail-slide {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+</style>

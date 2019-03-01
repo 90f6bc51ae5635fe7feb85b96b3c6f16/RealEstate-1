@@ -96,6 +96,8 @@ class ProductModel extends BaseModel{
         location_id='".$data['location_id']."',
         product_bedroom='".$data['product_bedroom']."',
         product_bathroom='".$data['product_bathroom']."',
+        product_latitude='".$data['product_latitude']."',
+        product_longitude='".$data['product_longitude']."',
         product_types_id='".$data['product_types_id']."' 
         WHERE product_id = $id "; 
 
@@ -116,6 +118,8 @@ class ProductModel extends BaseModel{
         product_detail_en,
         furniture_id,
         product_bathroom,
+        product_latitude,
+        product_longitude,
         product_bedroom,
         location_id,
         product_types_id 
@@ -129,6 +133,8 @@ class ProductModel extends BaseModel{
         $data['product_detail_en']."' ,'".
         $data['furniture_id']."' ,'".
         $data['product_bathroom']."' ,'".
+        $data['product_latitude']."' ,'".
+        $data['product_longitude']."' ,'".
         $data['product_bedroom']."' ,'".
         $data['location_id']."' ,'".
         $data['product_types_id']."'

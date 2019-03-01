@@ -6,6 +6,10 @@
         var product_img = document.getElementById("product_img").value; 
         var product_detail_th = document.getElementById("product_detail_th").value; 
         var product_detail_en = document.getElementById("product_detail_en").value; 
+        var product_bathroom = document.getElementById("product_bathroom").value; 
+        var product_bedroom = document.getElementById("product_bedroom").value; 
+        var product_longitude = document.getElementById("product_longitude").value; 
+        var product_latitude = document.getElementById("product_latitude").value; 
 
         product_name_th = $.trim(product_name_th);
         product_name_en = $.trim(product_name_en);
@@ -13,6 +17,10 @@
         product_img = $.trim(	product_img);
         product_detail_th = $.trim(product_detail_th);
         product_detail_en = $.trim(product_detail_en);
+        product_bathroom = $.trim(product_bathroom);
+        product_bedroom = $.trim(product_bedroom);
+        product_longitude = $.trim(product_longitude);
+        product_latitude = $.trim(product_latitude);
 
         if(product_name_th.length == 0){
             alert("กรุณากรอกชื่อ");
@@ -38,6 +46,22 @@
             alert("กรุณากรอกราคา");
             document.getElementById("product_detail_en").focus();
             return false;
+        }else if(product_bathroom.length == 0){
+            alert("กรุณากรอกราคา");
+            document.getElementById("product_bathroom").focus();
+            return false;
+        }else if(product_bedroom.length == 0){
+            alert("กรุณากรอกราคา");
+            document.getElementById("product_bedroom").focus();
+            return false;
+        }else if(product_longitude.length == 0){
+            alert("กรุณากรอกราคา");
+            document.getElementById("product_longitude").focus();
+            return false;
+        }else if(product_latitude.length == 0){
+            alert("กรุณากรอกราคา");
+            document.getElementById("product_latitude").focus();
+            return false;
         }else{
             return true;
         }
@@ -55,12 +79,7 @@
         }
     }
 
-
 </script>
-    <script src="js/jquery-2.1.1.min.js"></script>
-    <script src="//maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&sensor=false"></script>
-<link rel="stylesheet" type="text/css" href="css/jquery-gmaps-latlon-picker.css"/>
-  <script src="js/jquery-gmaps-latlon-picker.js"></script>
 
 <div class="row">
     <div class="col-lg-6">
@@ -186,35 +205,22 @@
                     </div>
 
 <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
-                    <link rel="stylesheet" type="text/css" href="css/jquery-gmaps-latlon-picker.css"/>
-                        <script>
-                            $.gMapsLatLonPickerNoAutoInit = 1;
-                        </script>
-                    <script src="js/jquery-gmaps-latlon-picker.js"></script>
-                    <fieldset class="gllpLatlonPicker">
-                        <input type="text" class="gllpSearchField">
-                        <input type="button" class="gllpSearchButton" value="search">
-                        <div class="gllpMap">Google Maps</div>
-                        <input type="hidden" class="gllpLatitude" value="20"/>
-                        <input type="hidden" class="gllpLongitude" value="20"/>
-                        <input type="hidden" class="gllpZoom" value="3"/>
-                    </fieldset>
-                    <script>
-                $(document).ready(function() {
-                    // Copy the init code from "jquery-gmaps-latlon-picker.js" and extend it here
-                    $(".gllpLatlonPicker").each(function() {
-                    $obj = $(document).gMapsLatLonPicker();
+                                    <fieldset class="gllpLatlonPicker">
+                           				<input type="text" class="gllpSearchField form-control" placeholder="ค้นหาตำแหน่ง">
+                           				<input type="button" class="gllpSearchButton btn btn-primary" value="ค้นหา">
+                                        <div class="gllpMap" style="width: 85em;  height: 20em;">Google Maps</div>
+                                        <!-- <div class="gllpMap" style="width: 100%; height: 80%;">Google Maps</div> -->
+                                        <input type="text" class="gllpLatitude form-control" name="product_latitude" value="<?PHP echo $contact_us[0]['product_latitude']; ?>" />
+                                        <input type="text" class="gllpLongitude form-control" name="product_longitude" value="<?PHP echo $contact_us[0]['product_longitude']; ?>"/>
+                                        <input type="hidden" class="gllpZoom" value="14" />
+                                    </fieldset>
 
-                    $obj.params.strings.markerText = "Drag this Marker (example edit)";
-
-                    $obj.params.displayError = function(message) {
-                        console.log("MAPS ERROR: " + message); // instead of alert()
-                    };
-
-                    $obj.init( $(this) );
-                    });
-                });
-                </script>
+                                    <script src="https://maps-api-ssl.google.com/maps/api/js?key=AIzaSyBPYt_mZGd-2iotzhpiZKw1_GpZ6H9w3vs&sensor=false"></script>
+                                    <script src="../template/js/jquery-gmaps-latlon-picker.js"></script>
+                                    <script src="js/jquery-2.1.1.min.js"></script>
+                                    <script src="//maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&sensor=false"></script>
+                                    <link rel="stylesheet" type="text/css" href="css/jquery-gmaps-latlon-picker.css"/>
+                                    <script src="js/jquery-gmaps-latlon-picker.js"></script>
 <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
                     <div align="right">
                         <button type="button" class="btn btn-default" onclick="window.location='?content=product';" >ย้อนกลับ</button>

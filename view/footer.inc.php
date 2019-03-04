@@ -8,6 +8,12 @@ require_once('models/TypesModel.php');
 $type_model = new TypesModel;   
 $type = $type_model->  getTypesBy(); 
 // print_r($type) ;
+
+require_once('models/LocationModel.php');    
+$location_model = new LocationModel;   
+$location = $location_model->  getLocationBy(); 
+// print_r($location) ;
+
 ?>
 <footer class="container">
     <div class="row ">
@@ -55,7 +61,15 @@ $type = $type_model->  getTypesBy();
                         LOCATIONS
                     </div>
                     <div style="font-size: 0.95rem;">
-                        <?PHP echo $about['about_address'];?>
+                        <?PHP for ($i=0; $i < count($location); $i++) {  ?>
+                        <i class="fas fa-angle-right"></i>
+                        <?PHP if ($lan=="TH") {
+                            echo $location[$i]['location_name_th'];
+                        } else{
+                            echo $location[$i]['location_name_en'];
+                        }?>
+                        <br>
+                        <?PHP } ?>
                     </div>
                 </div>
             </div>

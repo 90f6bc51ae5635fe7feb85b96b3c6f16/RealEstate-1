@@ -24,6 +24,7 @@ if($_GET['action'] == 'insert'){
 }else if ($_GET['action'] == 'update'){  
 
     $location = $location_model->getLocationByID($location_id);  
+    
     require_once($path.'update.inc.php');
 
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 01, 2019 at 03:02 AM
+-- Generation Time: Mar 04, 2019 at 03:19 AM
 -- Server version: 5.7.17-log
 -- PHP Version: 5.6.30
 
@@ -40,7 +40,7 @@ CREATE TABLE `tb_about_us` (
 --
 
 INSERT INTO `tb_about_us` (`about_us_id`, `about_us_title_en`, `about_us_sub_title_en`, `about_us_title_th`, `about_us_sub_title_th`, `about_us_img`) VALUES
-(1, 'asdasdasd', 'dfgsrdtawerhtaertje5styrtysbtryenery', 'กหดฟหกฟหกฟห', 'หกดไำพฟ้ิภะภำืะฟำถะั', '');
+(1, 'กรุณาช่วยกันคลิก ″แจ้งลบ″ ', 'หากรำคาญข้อความโฆษณา หรือพบข้อความไม่เหมาะสม กรุณาช่วยกันคลิก ″แจ้งลบ″ เพื่อช่วยให้ทีมงาน  ดำเนินการลบข้อความดังกล่าวได้รวดเร็วยิ่งขึ้น ขอบคุณมากค่ะ :)', 'Please help. Click ″ Delete ″', 'If bothering the ad text Or found inappropriate messages Please help. Click ″ Delete ″ to help the team. To delete the message more quickly. Thank you very much :)', '');
 
 -- --------------------------------------------------------
 
@@ -547,7 +547,11 @@ CREATE TABLE `tb_location` (
 --
 
 INSERT INTO `tb_location` (`location_id`, `location_name_th`, `location_name_en`) VALUES
-(1, '\"แฝดน้อง\" กระโดดให้รถไฟชนจนตาย หลังตรอมใจซึมเศร้าที่เสีย \"แฝดพี่\" มานานกว่า 8 ปี', '\"Twin sister\" jumped to the train until he died. After being sad, depressed at losing \"twin brother\"');
+(1, 'กทม', 'Bangkok'),
+(2, 'นครราชสีมา', 'Nakhon Ratchasima'),
+(3, 'ขอนแก่น', 'Khon Kaen'),
+(4, 'เชียงใหม่', 'Chiang Mai'),
+(5, 'กาญจนบุรี', 'Kanchanaburi');
 
 -- --------------------------------------------------------
 
@@ -559,7 +563,7 @@ CREATE TABLE `tb_news` (
   `news_id` int(11) NOT NULL,
   `news_name_th` varchar(200) NOT NULL,
   `news_name_en` varchar(200) NOT NULL,
-  `news_date` date NOT NULL,
+  `news_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `news_img` text NOT NULL,
   `news_detail_th` text NOT NULL,
   `news_detail_en` text NOT NULL
@@ -570,10 +574,8 @@ CREATE TABLE `tb_news` (
 --
 
 INSERT INTO `tb_news` (`news_id`, `news_name_th`, `news_name_en`, `news_date`, `news_img`, `news_detail_th`, `news_detail_en`) VALUES
-(2, 'ฟฟฟฟ', '0', '0000-00-00', '28022019155625-agent+coulson+returns+to+the+mcu+in+captain+marvel+set+photo+teaseagent+coulson+returns+to+the+mcu+in+captain+marvel+set+photo+tease-social.jpg', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaa', '0'),
-(3, 'กกก11', 'aaww', '0000-00-00', '28022019155632-captain-marvel-movie-agent-coulson-clark-gregg-begins.jpg', 'cccc', ' wwwwwqqqq'),
-(5, 'dddddd', 'ddddddddddddddd', '0000-00-00', '28022019155640-3305164-image2.png', ' sssssssssss', ' sseeeeeeeeeeeeeee'),
-(6, 'eeeeeeeeeeeeeeeeeeeeeeeee', 'eeeeeeeeeeeeeeeeeeeeeeee', '0000-00-00', '28022019155647-3305164-image2.png', ' eeerrrrrrrrrrr', ' rrtttttttttttttttttt');
+(1, 'นครราชสีมา หรือรู้จักในชื่อ โคราช', 'Nakhon Ratchasima or known as Korat', '2019-03-04 03:06:27', '04032019100750-3305164-image2.png', 'เป็นจังหวัดที่มีพื้นที่มากที่สุดในประเทศไทยและมีประชากรมากเป็นอันดับ 2 ของประเทศ อยู่ในภาคตะวันออกเฉียงเหนือ ชื่อเมืองนครราชสีมาปรากฏครั้งแรกเป็นเมืองพระยามหานครในการปฏิรูปการปกครองในรัชสมัยสมเด็จพระบรมไตรโลกนาถ(ตั้งอยู่ในพื้นที่อำเภอสูงเนิน จังหวัดนครราชสีมา) ในรัชสมัยสมเด็จพระนารายณ์มหาราชทรงมีรับสั่งให้ย้ายเมืองนครราชสีมามาตั้งบริเวณพื้นที่ปัจจุบัน เมื่อ พ.ศ. 2217', 'Is the province that has the most area in Thailand and has the second largest population of the country in the northeastern region The name of the city of Nakhon Ratchasima first appears as the city of Phraya Mahan in the administrative reform in the reign of King Borom Trai Lokanat (located in Sung Noen District). In the reign of King Narai the Great, ordered to move the city of Nakhon Ratchasima to the current area in 2217\r\n'),
+(2, 'จังหวัดเชียงใหม่ ', 'Chiang Mai', '2019-03-04 03:09:44', '04032019100944-3305164-image2.png', ' จังหวัดเชียงใหม่มีเขตเมืองที่จัดเป็นเมืองใหญ่อันดับที่สองของประเทศไทยรองจากกรุงเทพมหานคร มีประชากรในเขตเมืองและชานเมือง 960,906 คน (พ.ศ. 2553) จังหวัดเชียงใหม่แบ่งการปกครองออกเป็น 25 อำเภอ โดยมีอำเภอเมืองเชียงใหม่เป็นศูนย์กลางของจังหวัด เมื่อ พ.ศ. 2552 มีการจัดตั้งอำเภอกัลยาณิวัฒนาเป็นอำเภอลำดับที่ 25 ของจังหวัด และลำดับที่ 878 ของประเทศ ซึ่งเป็นอำเภอล่าสุดของไทย', ' Chiang Mai has the second largest city in Thailand after Bangkok. There are 960,906 people in the urban and suburban areas (2010). Chiang Mai province is divided into 25 districts with the city of Chiang Mai as the center of the province. In 2009, the district was established. No. 25 of the province and No. 878 of the country which is the latest district in Thailand\r\n');
 
 -- --------------------------------------------------------
 
@@ -659,8 +661,9 @@ CREATE TABLE `tb_product_types` (
 --
 
 INSERT INTO `tb_product_types` (`product_types_id`, `product_types_name_th`, `product_types_name_en`, `product_types_img`) VALUES
-(12, ' ข้อมูลตัวอักษร (ข้อมูลตัวอักขระ)', 'Character information (Character data)', '28022019155002-3305164-image2.png'),
-(14, 'ข้อมูลตัวอักษร (ข้อมูลตัวอักขระ)', 'Character information (Character data)', '28022019155025-agent+coulson+returns+to+the+mcu+in+captain+marvel+set+photo+teaseagent+coulson+returns+to+the+mcu+in+captain+marvel+set+photo+tease-social.jpg');
+(1, 'อพาร์ทเม้น', 'apartment', '01032019154251-captain-marvel-movie-agent-coulson-clark-gregg-begins.jpg'),
+(12, 'วิลล่า', 'VILLA', '01032019144158-3305164-image2.png'),
+(14, 'ที่อยู่อาศัย', 'residential', '01032019151759-agent+coulson+returns+to+the+mcu+in+captain+marvel+set+photo+teaseagent+coulson+returns+to+the+mcu+in+captain+marvel+set+photo+tease-social.jpg');
 
 -- --------------------------------------------------------
 
@@ -880,7 +883,7 @@ ALTER TABLE `tb_about_us`
 -- AUTO_INCREMENT for table `tb_agent`
 --
 ALTER TABLE `tb_agent`
-  MODIFY `agent_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `agent_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `tb_agent_head`
 --
@@ -912,20 +915,45 @@ ALTER TABLE `tb_contact_type`
 ALTER TABLE `tb_contact_us`
   MODIFY `contact_us_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
+-- AUTO_INCREMENT for table `tb_furniture`
+--
+ALTER TABLE `tb_furniture`
+  MODIFY `furniture_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
 -- AUTO_INCREMENT for table `tb_highlight`
 --
 ALTER TABLE `tb_highlight`
   MODIFY `highlight_id` int(11) NOT NULL AUTO_INCREMENT;
 --
+-- AUTO_INCREMENT for table `tb_location`
+--
+ALTER TABLE `tb_location`
+  MODIFY `location_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT for table `tb_news`
+--
+ALTER TABLE `tb_news`
+  MODIFY `news_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
 -- AUTO_INCREMENT for table `tb_product`
 --
 ALTER TABLE `tb_product`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `tb_product_detail`
 --
 ALTER TABLE `tb_product_detail`
   MODIFY `product_detail_id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `tb_product_types`
+--
+ALTER TABLE `tb_product_types`
+  MODIFY `product_types_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+--
+-- AUTO_INCREMENT for table `tb_services`
+--
+ALTER TABLE `tb_services`
+  MODIFY `services_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT for table `tb_user`
 --

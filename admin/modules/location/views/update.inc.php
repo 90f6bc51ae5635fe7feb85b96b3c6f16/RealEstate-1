@@ -38,13 +38,13 @@
             <!-- /.panel-heading -->
             <div class="panel-body">
                 <form role="form" method="post" onsubmit="return check();" action="index.php?content=location&action=edit" enctype="multipart/form-data">
-                    <input type="hidden"  id="location_id" name="location_id" value="<?php echo $location['location_id']; ?>" />
+                    <input type="hidden"  id="location_id" name="location_id" value="<?php echo $location ['location_id']; ?>" />
 
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>ชื่อ <font color="#F00"><b>TH</b></font></label>
-                                <input id="location_name_th" name="location_name_th" class="form-control" value="<?php echo $location['location_name_th'];?>" >
+                                <input id="location_name_th" name="location_name_th" class="form-control" value="<?php echo $location ['location_name_th'];?>" />
                             </div>
                         </div>                        
                     </div> 
@@ -52,7 +52,7 @@
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>ชื่อ <font color="#F00"><b>EN</b></font></label>
-                                <input id="location_name_en" name="location_name_en" class="form-control" value="<?php echo $location['location_name_en'];?>" >
+                                <input id="location_name_en" name="location_name_en" class="form-control" value="<?php echo $location['location_name_en'];?>" />
                             </div>
                         </div>                        
                     </div> 

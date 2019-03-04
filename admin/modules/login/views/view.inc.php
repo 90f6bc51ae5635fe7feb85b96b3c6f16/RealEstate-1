@@ -1,11 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE >
 <html>
     <head>
         <!-- Bootstrap Core CSS -->
         <link href="../template/backend/css/bootstrap.min.css" rel="stylesheet">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <title>ADMIN PANEL LOGIN</title>
-        <link rel="icon" href="../template/backend/images/logo/logo.png" type="image/png">
+        <link rel="icon" href="../img_upload/logo.png" type="image/png">
         <script>
             function refresh(){
                 location.reload();

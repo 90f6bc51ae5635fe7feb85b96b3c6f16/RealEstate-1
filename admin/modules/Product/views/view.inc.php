@@ -83,10 +83,10 @@
                 <tr>
                     <td><?php echo $i+1; ?></td>
                     <td>
-                        <div align="center">
-                            <img class="img-fluid" src="../img_upload/product/<?php if($product[$i]['product_img'] != "") echo $product[$i]['product_img']; else echo "default.png" ?>" height="72" width="auto" />
-                        </div>
-                    </td>
+						<a href="?content=product_image&product_id=<?php echo $product[$i]['product_id'];?>" style="color: green;">
+							<i class="fa fa-plus" aria-hidden="true"></i>
+						</a> 
+					</td>
                     <td>
                         <?php echo $product[$i]['product_name_th'];?>
                     </td>

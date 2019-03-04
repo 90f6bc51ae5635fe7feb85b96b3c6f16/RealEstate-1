@@ -12,13 +12,17 @@
    
       require_once("modules/location/views/index.inc.php");
 
+   }else if($content=="product"){
+   
+      require_once("modules/product/views/index.inc.php");
+
    }else if($content=="product_highlight"){
    
       require_once("modules/product_highlight/views/index.inc.php");
 
-   }else if($content=="product"){
+   }else if($content=="product_image"){
    
-      require_once("modules/product/views/index.inc.php");
+      require_once("modules/product_image/views/index.inc.php");
    
    }else if($content=="news"){
    

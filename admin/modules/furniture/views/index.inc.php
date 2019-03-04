@@ -74,7 +74,7 @@ if($_GET['action'] == 'insert'){
             $check_result = $furniture_model->updateFurnitureByID($furniture_id,$data);
             if($check_result!=false){
                 ?>
-                <script>window.location="index.php?content=furniture&action=update&id=<?PHP echo $furniture_id;?>"</script>
+                <script>window.location="index.php?content=furniture"</script>
                 <?php
             }else{
                 ?>  <script> window.history.back(); </script> <?php

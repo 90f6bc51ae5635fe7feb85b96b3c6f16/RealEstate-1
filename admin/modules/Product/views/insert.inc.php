@@ -3,7 +3,6 @@
         var product_name_th = document.getElementById("product_name_th").value; 
         var product_name_en = document.getElementById("product_name_en").value; 
         var product_price = document.getElementById("product_price").value; 
-        var product_img = document.getElementById("product_img").value; 
         var product_detail_th = document.getElementById("product_detail_th").value; 
         var product_detail_en = document.getElementById("product_detail_en").value; 
         var product_bathroom = document.getElementById("product_bathroom").value; 
@@ -14,7 +13,6 @@
         product_name_th = $.trim(product_name_th);
         product_name_en = $.trim(product_name_en);
         product_price = $.trim(	product_price);
-        product_img = $.trim(	product_img);
         product_detail_th = $.trim(product_detail_th);
         product_detail_en = $.trim(product_detail_en);
         product_bathroom = $.trim(product_bathroom);
@@ -33,10 +31,6 @@
         }else if(product_price.length == 0){
             alert("กรุณากรอกราคา");
             document.getElementById("product_price").focus();
-            return false;
-        }else if(product_img.length == 0){
-            alert("กรุณาเลือกรูปภาพ");
-            document.getElementById("product_img").focus();
             return false;
         }else if(product_detail_th.length == 0){
             alert("กรุณากรอกรายละเอียด");
@@ -67,18 +61,6 @@
         }
     }
     
-    function readURL(input,id) {
-        if (input.files && input.files[0]) {
-            var reader = new FileReader();
-            reader.onload = function(e) {
-                $('#img_'+id).attr('src', e.target.result);
-            }
-            reader.readAsDataURL(input.files[0]);
-        }else{
-            $('#img_'+id).attr('src', '../img_upload/product/default.png');
-        }
-    }
-
 </script>
 
 <div class="row">
@@ -87,7 +69,6 @@
 
     </div>
 
-    
     <div class="col-lg-6" align="right">
 
     </div>
@@ -178,16 +159,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <div class="form-group" >
-                                <label>รูป </label>
-                                <img id="img_product_img" src="../img_upload/default.png" class="img-fluid shadows hoverable"  > 
-                                <input accept=".jpg , .png" type="file" id="product_img" name="product_img" class="form-control" style="" onChange="readURL(this,'product_img');">
-                            </div>
-                        </div> 
-                    </div>
                      
                     <div class="row">  
                         <div class="col-lg-12">
@@ -206,7 +177,7 @@
                         </div>    
                     </div>
 
-<!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- GoogleMap--------------------------------------------------------------------------------------------------------------------------- -->
                                     <fieldset class="gllpLatlonPicker">
                            				<input type="text" class="gllpSearchField form-control" placeholder="ค้นหาตำแหน่ง">
                            				<input type="button" class="gllpSearchButton btn btn-primary" value="ค้นหา">

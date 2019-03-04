@@ -86,7 +86,6 @@ class ProductModel extends BaseModel{
     function updateProductByID($id,$data = []){    
     
         $sql = " UPDATE tb_product SET  
-        product_img = '".$data['product_img']."',
         product_name_th='".$data['product_name_th']."', 
         product_name_en='".$data['product_name_en']."', 
         product_price='".$data['product_price']."', 
@@ -110,7 +109,6 @@ class ProductModel extends BaseModel{
 
     function insertProduct($data=[]){
         $sql = " INSERT INTO tb_product( 
-        product_img,
         product_name_th, 
         product_name_en, 
         product_price, 
@@ -125,7 +123,6 @@ class ProductModel extends BaseModel{
         product_types_id 
         ) 
         VALUES ('". 
-        $data['product_img']."','".
         $data['product_name_th']."','". 
         $data['product_name_en']."','". 
         $data['product_price']."','". 

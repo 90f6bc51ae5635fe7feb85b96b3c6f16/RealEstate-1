@@ -74,7 +74,7 @@ if($_GET['action'] == 'insert'){
             $check_result = $location_model->updateLocationByID($location_id,$data);
             if($check_result!=false){
                 ?>
-                <script>window.location="index.php?content=location&action=update&id=<?PHP echo $location_id;?>"</script>
+                <script>window.location="index.php?content=location"</script>
                 <?php
             }else{
                 ?>  <script> window.history.back(); </script> <?php

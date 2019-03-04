@@ -136,7 +136,7 @@ if($_GET['action'] == 'insert'){
             $check_result = $product_types_model->updateTypesByID($product_types_id,$data);
             if($check_result!=false){
                 ?>
-                <script>window.location="index.php?content=types&action=update&id=<?PHP echo $product_types_id;?>"</script>
+                <script>window.location="index.php?content=types"</script>
                 <?php
             }else{
                 ?>  <script> window.history.back(); </script> <?php

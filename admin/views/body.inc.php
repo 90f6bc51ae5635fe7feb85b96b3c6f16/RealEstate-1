@@ -55,6 +55,11 @@
    }else if($content=="services"){
    
       require_once("modules/services/views/index.inc.php");
+
+
+   }else if($content=="page"){
+   
+      require_once("modules/page/views/index.inc.php");
    
    }else {
       

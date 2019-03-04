@@ -2,14 +2,10 @@
 if(isset($_COOKIE['language'])){
     $lng = $_COOKIE['language'];
 }
-
-
-
-
-
 require_once('models/PageModel.php'); 
 $page_model = new PageModel;
-$page = $page_model->getPageByID('1');
+$page = $page_model->getPageByID('6');
+
 // print_r($page);
 ?>
 
@@ -30,7 +26,7 @@ $page = $page_model->getPageByID('1');
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title> REAL ESTATE HOME PAGE </title>
+        <title> REAL ESTATE CONTACT PAGE </title>
 
         <script src="template/js/jquery-2.2.0.min.js" type="text/javascript"></script>
 
@@ -52,8 +48,11 @@ $page = $page_model->getPageByID('1');
     <body>
         <?PHP require_once('view/menu.inc.php');?>
         <?PHP require_once('view/slide.inc.php');?>
-        <?PHP require_once('view/product.inc.php'); ?>
-        <?PHP require_once('view/agent.inc.php'); ?>
+        
+
+
+
+        
         <?PHP require_once('view/footer.inc.php'); ?>
     </body>
 </html>

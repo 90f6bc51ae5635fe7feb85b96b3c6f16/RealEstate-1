@@ -137,5 +137,15 @@
             </a>
         </li>
 
+        <li>
+            <a href="index.php?content=page">
+                <div <? if($page=="page"){echo "class='menu-active'";}else{echo "class='menu'";}?> >
+                    <span style="padding-top: 5px; font-size: 15px;">
+                    ป้ายกำกับหน้า
+                    </span>
+                </div>
+            </a>
+        </li>
+
     </ul>
 </div>

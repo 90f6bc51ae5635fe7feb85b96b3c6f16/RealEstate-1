@@ -119,10 +119,12 @@ if($_GET['action'] == 'insert'){
             $check_result = $product_model->updateProductByID($product_id,$data);
             if($check_result!=false){
                 ?>
-                <script>window.location="index.php?content=product"</script>
+                <script>window.history.back();</script>
                 <?php
             }else{
-                ?>  <script> window.history.back(); </script> <?php
+                ?> 
+                <script> window.location="index.php?content=product"</script>
+                <?php
             }
         } 
      

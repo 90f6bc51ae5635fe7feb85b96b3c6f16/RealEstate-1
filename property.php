@@ -47,9 +47,11 @@ $page = $page_model->getPageByID('4');
     </head>
     <body>
         <?PHP require_once('view/menu.inc.php');?>
-        <?PHP require_once('view/slide.inc.php');?>
+        <?PHP require_once('view/property/slide.inc.php');?>
         
         <?PHP require_once('view/property/property_type.inc.php');?>
+        <?PHP require_once('view/property/property_product.inc.php');?>
+        <?PHP require_once('view/property/property_detail.inc.php');?>
         
 
 

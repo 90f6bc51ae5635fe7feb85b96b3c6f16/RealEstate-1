@@ -1,4 +1,4 @@
-<?php require_once('menu.inc.php')?>
+<?php require_once('view/menu.inc.php')?>
 <section class="col-lg-12 no-padding" style="position: relative;">
 
 

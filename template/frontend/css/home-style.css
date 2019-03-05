@@ -101,6 +101,26 @@
 .slide-item{
     /* position: relative; */
 }
+.overlay-slide{
+    background: linear-gradient(blue, rgb(0, 255, 13));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    opacity: .2;
+    z-index: 996;
+}
+.overlay-slide-2{
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+    z-index: 995;
+}
 .overlay{
     background: linear-gradient(blue, rgb(0, 255, 13));
     position: absolute;

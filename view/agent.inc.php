@@ -7,15 +7,14 @@ $agent_agent = $agent_agent_model-> getagent();
 // print_r($agent_agent);
 // echo "</pre>";
 ?>
-
+<div class="container">
 <section class="agent agent-background-img">
     <?PHP for($i=0;$i<count($agent_agent );$i++){ ?>
     <div class="col-12">
         <div class="row">
-            <div class="col-md-4">
-            <div>
-            Our Agent
-            </div>
+            <div class="col-md-5">
+            <h2 style="color: #0175A4;">Our Agent</h2>
+            <h2 style="color: #70b247;">You Can Trust</h2>
                 <div>
                     <?PHP if($lng == "TH"){ echo $agent_agent[$i]['agent_name_th']; }else { echo $agent_agent[$i]['agent_name_en']; } ?>
                 </div>
@@ -25,7 +24,7 @@ $agent_agent = $agent_agent_model-> getagent();
                 <div class="row">
                 </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-7">
                 <div>
                     <img class="img-fluid" src="img_upload/agent/<?PHP echo $agent_agent[$i]['agent_img'];?>">
                 </div>
@@ -34,6 +33,7 @@ $agent_agent = $agent_agent_model-> getagent();
     </div>
     <?PHP } ?>
 </section>
+</div>
 
 <style>
 .agent-background-img {

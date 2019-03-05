@@ -15,47 +15,46 @@ function setLanguage(lng) {
     $contact_us_model = new ContactUsModel;
     $contact_us = $contact_us_model -> getContact_us();
 ?>
-<div class="header-menu" id="mainNav">
+<div class = "header-menu" id = "mainNav" style = "position: absolute; width: 100%; z-index: 999;">
     <div class="col-12">
-        <div class="row">
-            <div class="col">
+        <div class = "row" style = "margin-left: 15vw;">
+           
                 <div class="text-left">
                     <div class="contact_list pb-0">
-                        <span style="color: #ffffffdb;"><span><i class="fas fa-mobile-alt"
+                        <span style ="color: #ffffffdb;"><span><i class="fas fa-mobile-alt"
                                     aria-hidden="true"></i>&nbsp;</span><?php echo $contact_us[0]['contact_us_tel']; ?></span>
-                        <span style="color: #ffffffdb;"><span>&nbsp;<i
+                        <span style ="color: #ffffffdb;"><span>&nbsp;<i
                                     class='fas fa-map-marker-alt'></i>&nbsp;</span><?php if ($lng == TH) {  echo $contact_us[0]['contact_us_address_3_th'];}else { echo $contact_us[0]['contact_us_address_3_en'];  }  ?></span>
-                        <a onclick="setLanguage('EN')"
+                        <a onclick ="setLanguage('EN')"
                             class="right btn p-1 ml-5 <?php if($lng != "TH"){ echo "active-lng"; } ?>"
                             style="color: #ffffffdb;">
                             EN</a>
                         <a class="right" style="#ffffffdb;">
                             |
                         </a>
-                        <a onclick="setLanguage('TH')"
-                            class="right btn p-1 <?php if($lng == "TH"){ echo "active-lng"; } ?>"
-                            style="color: #ffffff;">
+                        <a onclick ="setLanguage('TH')"
+                            class ="right btn p-1 <?php if($lng == "TH"){ echo "active-lng"; } ?>"
+                            style ="color: #ffffff;">
                             TH
                         </a>
 
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="float-right" style="color: #ffffffdb;">
+          
+                
+                <div class="float-right" style="color: #ffffffdb; margin-left: 15vw;">
                     <div class="contact_list pb-0">
                         <i class="fas fa-mobile-alt" aria-hidden="true"></i>
                         &nbsp;&nbsp;<i class="fab fa-twitter"></i>
                         &nbsp;&nbsp;<i class="fab fa-linkedin-in"></i>
                     </div>
                 </div>
-            </div>
         </div>
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
 
-        <a href="index.php" class=""><img src="img_upload/logo.png" width="130px" class="img-icon float-right"></a>
+        <a href="index.php" class=""><img src="img_upload/logo.png" width="130px" class = "logo"></a>
 
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
             data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -64,15 +63,7 @@ function setLanguage(lng) {
             <i class="fas fa-bars"></i>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-
-<style>
-
-    .nav-color{
-
-        color: white;
-    }
-</style>
+        <div class="collapse navbar-collapse" id="navbarResponsive" style = "margin-right: 20vw;">
             <ul class="navbar-nav text-center ml-auto" >
                 <li class="nav-item ">
 

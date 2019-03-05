@@ -1,64 +1,123 @@
-<?PHP
-require_once('models/ProductModel.php');
-$slide_model = new ProductModel;
-$slide = $slide_model -> getProductBy();
-// print_r($slide);
-?>
+<?php require_once('menu.inc.php')?>
+<section class="col-lg-12 no-padding" style="position: relative;">
+
+
+    <img class="size-img-slide" src="img_upload/home/1.jpg">
+    <div class="overlay">
+    </div>
+    <div class="overlay2">
+    </div>
+
+    <section class="slide no-padding slide-home ">
 
 
 
+        <div class="col-12">
+            <div class="container">
 
-<div class="menu-slide-style">
-    <section class="menu-slide">
-        <?php for ($i = 0; $i < count($slide); ++$i) { ?>
-            <div class="menu-slide-item"  >
-                <div class="menu-slide-detail" >
-                    <div class="row">
-                        <div class="col-lg-7 menu-slide-title">
-                        <h3 class="pb-4 slide-detail-title"><?php if ($lng == TH) {  echo $slide[$i]['product_name_th'];   }else {  echo$slide[$i]['product_name_en']; }  ?></h3>
-                            <h4 class="pb-4 "><?php if ($lng == TH) {  echo $slide[$i][''];   }else {  echo $slide[$i][''];  }  ?></h4>
-                            <div class="d-none d-lg-block">
-                                <h3 class="pb-4 slide-detail-slide"><?php if ($lng == TH) {  echo $slide[$i]['product_detail_th'];   }else {  echo $slide[$i]['product_detail_en'];  }  ?></h3>
+                <div class="row">
+                    <div class="col-7" style="margin-top: 4vw;">
+
+                        <div class="slide-item">
+                            <div class="slide-detail-home">
+                                <div class="slide-header-home">
+                                    Penthouse Apartment with 5 Rooms in Pipera-Baneasa Forest Area
+                                </div>
+                                <div class="slide-text-detail">
+                                    Penthouse apartment for sale located on Iancu Nicolae Road. Wit New Darwin suburb
+                                    Muirhead – which came in at number two with 49.7% price growth – and rapidly growing
+                                    new Melbourne area, Clyde North, are examples of suburbs with high development,
+                                    expansion potential and subsequent shifts in supply and demand.
+                                </div>
+                                <div class="btn btn-slide">
+                                    VIEW DETAIL
+                                </div>
+                                <div class="btn btn-slide">
+                                    SEE ALL PROPERTY
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="col-5">
+                        <img class="rounded-circle float-right" src="img_upload/home/2.jpg" alt="Los Angles">
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="col-12">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-7" style="margin-top: 4vw;">
+
+                        <div class="slide-item">
+                            <div class="slide-detail-home">
+                                <div class="slide-header-home">
+                                    Penthouse Apartment with 5 Rooms in Pipera-Baneasa Forest Area
+                                </div>
+                                <div class="slide-text-detail">
+                                    Penthouse apartment for sale located on Iancu Nicolae Road. Wit New Darwin suburb
+                                    Muirhead – which came in at number two with 49.7% price growth – and rapidly growing
+                                    new Melbourne area, Clyde North, are examples of suburbs with high development,
+                                    expansion potential and subsequent shifts in supply and demand.
+                                </div>
+                                <div class="btn btn-slide">
+                                    VIEW DETAIL
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="bg-slide-color" >
-                    <img style=" width: 100%; height: 900px; object-fit: cover;  
-                    
-            opacity: 0;
-            filter: alpha(opacity=0); /* For IE8 and earlier */
-                    
-                    " src="img_upload/product/<?php echo $slide[$i]['product_img']; ?>">
+                    <div class="col-5" style="position: relative;">
+                        <img class="rounded-circle float-right" src="img_upload/home/2.jpg" alt="Los Angles">
+
+                        <div class="rounded-circle on-img float-right">
+                            <p class="price-slide1">1,500,000</p>
+                            <p class="price-slide2">foe sale</p>
+                            <!-- <img class="rounded-circle on-img float-right" src="" alt="Los Angles"> -->
+                        </div>
+                    </div>
                 </div>
             </div>
-        <?php } ?>
-    </section>
 
-</div>
+        </div>
+
+        </div>
+        </div>
+
+    </section>
+   
+    <div class="" style="width: 100%;
+    bottom: -3%;
+    position: absolute;
+    z-index: 9999;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;">
+            <div class="shadow-lg" style="background-color: white;">
+                fdgdfgdfgdfg
+            </div>
+
+        </div>
+</section>
+
+ <!-- <div class="container">
+
+
+      
+    </div> -->
 <script type="text/javascript">
 $(document).on('ready', function() {
-    $(".menu-slide").slick({
+    $(".slide").slick({
         arrows: false,
-        dots: false,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 2500,
     });
 });
 </script>
-
-<style>
-.slide-detail-title {
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-.slide-detail-slide {
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-</style>

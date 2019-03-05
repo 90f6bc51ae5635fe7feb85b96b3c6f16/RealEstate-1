@@ -29,7 +29,7 @@ a:hover {
 }
 @media (min-width: 768px) {
     section {
-        padding: 5% 0%;
+        padding:  0%;
     }
 }
 img::-moz-selection {

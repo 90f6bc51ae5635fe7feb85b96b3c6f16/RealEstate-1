@@ -22,7 +22,7 @@ $product = $product_model->getProductBy();
         <div class="row">
             <?PHP for($i=0;$i<count($product );$i++){ ?>
             <div class="col-md-4">
-                <img src="img_upload/product/<?PHP echo $product[$i]['product_img'];?>" style="width: 90%;"
+                <img src="img_upload/home/1.jpg<?PHP echo $product[$i]['product_img'];?>" style="width: 90%;"
                     alt="<?PHP echo $product[$i]['product_name_th'];?>">
                 <div class="text-regular" style="padding-top: 48px;">
                     <div class="product-product-name">

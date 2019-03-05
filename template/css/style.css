@@ -10,6 +10,7 @@
     font-family: 'Kanit-Regular';
     src: url('../fonts/kanit/Kanit-Regular.ttf') format('truetype');
 }
+
 body {
     font-family: 'Kanit-Light';
     font-size: 1em;

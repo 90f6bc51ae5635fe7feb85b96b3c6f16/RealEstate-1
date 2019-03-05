@@ -9,6 +9,7 @@ $agent_slide = $agent_slide_model-> getagent();
 ?>
 
 <section class="slide slide-background-img">
+
     <?PHP for($i=0;$i<count($agent_slide );$i++){ ?>
     <div class="col-12">
         <div class="row">
@@ -27,13 +28,15 @@ $agent_slide = $agent_slide_model-> getagent();
             </div>
             <div class="col-md-8">
                 <div>
-                    <img class="img-fluid" src="img_upload/agent/<?PHP echo $agent_slide[$i]['agent_img'];?>">
+                    <img class="img-fluid-agent" src="img_upload/agent/<?PHP echo $agent_slide[$i]['agent_img'];?>">
                 </div>
             </div>
         </div>
     </div>
     <?PHP } ?>
+   
 </section>
+
 
 <style>
 .slide-background-img {

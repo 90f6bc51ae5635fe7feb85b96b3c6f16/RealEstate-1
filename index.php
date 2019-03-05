@@ -48,6 +48,7 @@ $page = $page_model->getPageByID('1');
         
         <link href="template/frontend/css/menu.css" rel="stylesheet">
         <link href="template/frontend/css/home-style.css" rel="stylesheet">
+        <link href="template/frontend/css/footer.css" rel="stylesheet">
     </head>
     <body>
         <?PHP require_once('view/menu.inc.php');?>

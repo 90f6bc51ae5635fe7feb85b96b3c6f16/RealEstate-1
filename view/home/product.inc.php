@@ -11,25 +11,26 @@ $product = $product_model->getProductBy();
 ?>
 
 <div style="padding: 5% 10%;">
-    <div class="text-center">
+    <div class="text-center" style="padding-top: 7vw;">
         <div class="text-header-medium">
-            <?PHP if ($lng == "TH"){echo $product_header[0]['product_header_th'] ;}else{echo $product_header[0]['product_header_en'] ;} ?>
+        We are Offering the Best Real Estate Deals
         </div>
-        <div class="text-detail" style="padding: 3.5% 20%;">
+        <div class="text-detail" style="padding: 1.5% 6%;;">
             <?PHP if ($lng == "TH"){echo $product_header[0]['product_header_detail_th'] ;}else{echo $product_header[0]['product_header_detail_en'] ;} ?>
         </div>
 
         <div class="row">
             <?PHP for($i=0;$i<count($product );$i++){ ?>
             <div class="col-md-4">
-                <img src="img_upload/home/1.jpg<?PHP echo $product[$i]['product_img'];?>" style="width: 90%;"
+                <img src="img_upload/home/1.jpg" style="width: 90%;"
                     alt="<?PHP echo $product[$i]['product_name_th'];?>">
-                <div class="text-regular" style="padding-top: 48px;">
+                <div class="text-regular" style="padding-top: 20px;">
                     <div class="product-product-name">
-                        <?PHP echo $product[$i]['product_name_th'];?>
+                    Villa with 6 Rooms in Dorobanti Area
                     </div>
                     <div class="product-product-detail">
-                        <?PHP echo $product[$i]['product_detail_th'];?>
+                    Benefits are: very close to city center, easy access to schools, cafes /
+                     restaurants etc... The villa consists; entrance hall, living room, dining room [...]
                     </div>
                 </div>
                 <div class="text-regular" style="padding: 16px 0px; color: #c6c6c6;">
@@ -51,18 +52,4 @@ $product = $product_model->getProductBy();
 <style>
 @import url('https://fonts.googleapis.com/css?family=K2D:300');
 
-.product-product-detail {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    font-family: 'K2D', sans-serif;
-}
-
-.product-product-name {
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
 </style>

@@ -13,7 +13,7 @@ $agent_agent = $agent_agent_model-> getagent();
     <div class="col-12">
         <div class="row">
             <div class="col-md-5">
-            <h2 style="color: #0175A4;">Our Agent</h2>
+            <h2>Our Agent</h2>
             <h2 style="color: #70b247;">You Can Trust</h2>
                 <div>
                     <?PHP if($lng == "TH"){ echo $agent_agent[$i]['agent_name_th']; }else { echo $agent_agent[$i]['agent_name_en']; } ?>

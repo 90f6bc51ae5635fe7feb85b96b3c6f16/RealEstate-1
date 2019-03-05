@@ -17,14 +17,14 @@ $location = $location_model->  getLocationBy();
 
 
 ?>
+<div class="container">
+    <footer>
 
-<footer >
 
-    <div class="container">
 
         <div class="row ">
             <div class="col-md-3 footer-panel">
-                <div class="text-header-medium">
+                <div class="text-header-medium" style="color: #0175A4;">
                     ABOUT US
                 </div>
                 <br>
@@ -93,6 +93,7 @@ $location = $location_model->  getLocationBy();
         <div class="text-center" style="padding-top: 3.5em;">
             2018 @ Revelsoft Co., Ltd. Design in nakhonratchasima, Thailand.
         </div>
-    </div>
-</footer>
+
+    </footer>
+</div>
 <img class="size-img-footer" src="img_upload/footer/footer.jpg">

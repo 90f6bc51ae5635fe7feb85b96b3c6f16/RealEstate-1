@@ -1,8 +1,8 @@
 <div class="row">
   <div class="col-lg-12">
     <div>
-     <h1>ระบบจัดการข่าวสาร</h1>
-     <h2>เพิ่ม ลบ เเก้ไข ข่าวสาร</h2> 
+     <h1>ระบบจัดการ Location</h1>
+     <h2>เพิ่ม ลบ เเก้ไข</h2> 
      <div align=right>
       <a href="?content=location&action=insert">
         <input class="button" type="submit" value="เพิ่ม">

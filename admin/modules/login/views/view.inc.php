@@ -1,11 +1,11 @@
-<!DOCTYPE >
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
     <head>
         <!-- Bootstrap Core CSS -->
-        <link href="../template/backend/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../template/frontend/css/bootstrap.min.css" rel="stylesheet">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <title>ADMIN PANEL LOGIN</title>
-        <link rel="icon" href="../img_upload/logo.png" type="image/png">
+        <link rel="icon" href="../template/backend/images/logo/logo.png" type="image/png">
         <script>
             function refresh(){
                 location.reload();
@@ -19,7 +19,7 @@
     </head>
     <style type="text/css">
         body{
-            /* background-image: url('../template/backend/images/travel.jpg'); */
+            background-image: url('../template/frontend/img/1.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
@@ -31,7 +31,7 @@
             left: 50%;
             margin-top: -300px; 
             margin-left: -135px; 
-            background-color: #1252BC; 
+            background-color: #000; 
             border-radius: 3px; 
             padding: 15px; 
             width: 380px; 
@@ -41,15 +41,16 @@
             filter: alpha(opacity=85); /* For IE8 and earlier */
         }
         .btn-yellow {
-            color: #1252BC;
-            background-color: #25C530;
-            border-color: #25C530;
+            color: #000;
+            background-color: #32CD32;
+            border-color: #32CD32;
         }
     </style>
     <body>
         <div class="container">
             <iframe id="checklogin" name="checklogin" src="" hidden></iframe>
             <form class="login-panel" action="check_login.php" method="post" target="checklogin">
+                <div align="center"  style="padding-top: 10%"><img style="width:180px; height:110px;"   style="padding-top: 10%" src="../img_upload/home/1.jpg"></div>
                 <div style="padding: 10% 40px;">
                     <input required name="username" id="username" type="text" class="form-control form-control-sm" autocomplete="false" placeholder="Username" autofocus>
                     <input required name="password" id="password" type="password" style="margin-top:10px;" class="form-control form-control-sm" autocomplete="false" placeholder="Password">

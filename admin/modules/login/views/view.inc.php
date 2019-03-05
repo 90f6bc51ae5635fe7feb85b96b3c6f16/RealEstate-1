@@ -42,8 +42,8 @@
         }
         .btn-yellow {
             color: #000;
-            background-color: #f47322;
-            border-color: #f47322;
+            background-color: #32CD32;
+            border-color: #32CD32;
         }
     </style>
     <body>

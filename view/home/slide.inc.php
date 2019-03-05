@@ -33,7 +33,7 @@
                                     VIEW DETAIL
                                 </div>
                                 <div class="btn btn-slide">
-                                    SEE ALL PROPERTY
+                                    VIEW DETAIL
                                 </div>
                             </div>
                         </div>
@@ -41,8 +41,14 @@
 
 
                     </div>
-                    <div class="col-5">
+                    <div class="col-5" style="position: relative;">
                         <img class="rounded-circle float-right" src="img_upload/home/2.jpg" alt="Los Angles">
+
+                        <div class="rounded-circle on-img float-right">
+                            <p class="price-slide1">1,500,000</p>
+                            <p class="price-slide2">foe sale</p>
+                            <!-- <img class="rounded-circle on-img float-right" src="" alt="Los Angles"> -->
+                        </div>
                     </div>
 
 
@@ -73,6 +79,9 @@
                                 <div class="btn btn-slide">
                                     VIEW DETAIL
                                 </div>
+                                <div class="btn btn-slide">
+                                    VIEW DETAIL
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -94,26 +103,68 @@
         </div>
 
     </section>
-   
-    <div class="" style="width: 100%;
-    bottom: -3%;
-    position: absolute;
-    z-index: 9999;
-    text-align: center;
-    padding-left: 20%;
-    padding-right: 20%;">
-            <div class="shadow-lg" style="background-color: white;">
-                fdgdfgdfgdfg
-            </div>
 
+    <div class=""
+        style="width: 100%; bottom: -8%; position: absolute; z-index: 9999; text-align: center; padding-left: 20%; padding-right: 20%;">
+        <div class="shadow-lg" style="background-color: white;">
+
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="text-left">
+                        <div class="form-group">
+                            <label>Room Type <font color="#F00"><b>*</b></font></label> <br />
+                            <select class="form-control  custom-select" id="room_type_id" name="room_type_id">
+                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                            </select>
+                            <p class="help-block">Example : Deluxe Junior Suite </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="text-left">
+                        <div class="form-group">
+                            <label>Room Type <font color="#F00"><b>*</b></font></label> <br />
+                            <select class="form-control  custom-select" id="room_type_id" name="room_type_id">
+                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                            </select>
+                            <p class="help-block">Example : Deluxe Junior Suite </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+    </div>
 </section>
 
- <!-- <div class="container">
+<!-- <div class="container">
 
 
       
     </div> -->
+    
 <script type="text/javascript">
 $(document).on('ready', function() {
     $(".slide").slick({

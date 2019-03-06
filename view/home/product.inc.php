@@ -21,7 +21,7 @@ $product = $product_model->getProductBy();
         
         <div class="multiple-items">
             <!-- <div class="row"> -->
-
+            <div style="    margin-right: 1vw;">
                 <?PHP for($i=0;$i<count($product );$i++){ ?>
                 <div class="" style="border: ridge;">
                     <img src="img_upload/home/1.jpg" style="width: 100%;"

@@ -43,15 +43,17 @@ $page = $page_model->getPageByID('2');
         
         <link href="template/frontend/css/menu.css" rel="stylesheet">
         <link href="template/frontend/css/home-style.css" rel="stylesheet">
+        <link href="template/frontend/css/footer.css" rel="stylesheet">
+        <link href="template/frontend/css/about.css" rel="stylesheet">
     </head>
     <body>
         <?PHP require_once('view/menu.inc.php');?>
-        <?PHP require_once('view/home/slide.inc.php');?>
+        <?PHP require_once('view/about/slide.inc.php');?>
+        <?PHP require_once('view/about/view.inc.php');?>
         
 
 
-
-
+        <?PHP require_once('view/agent.inc.php'); ?>
         <?PHP require_once('view/footer.inc.php'); ?>
     </body>
 </html>

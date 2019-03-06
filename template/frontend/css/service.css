@@ -1,3 +1,15 @@
 .text-header-service{
     font-size: 3.5vw;
 }
+.icon-service-detail{
+    width: 100%
+}
+.text-sevice-detail1{
+    color: #70b247
+}
+.text-sevice-detail2{
+    color: #3379a5;
+}
+.all-text-service-detail{
+    padding-top: 3.5vw;
+}

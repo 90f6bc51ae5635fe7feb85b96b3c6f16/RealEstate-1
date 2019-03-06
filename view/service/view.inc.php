@@ -16,14 +16,14 @@
                 <a href="?action=project_detail&id=<?echo $project_show[$i]['project_detail_id'];?>"> <img src="img_upload/services/1.jpg" class="img-fluid"></a>
                     <div class="row">
                         <div class="col-6">
-                            <img class="size-icon-contact"
+                            <img class="icon-service-detail"
                                 src="img_upload/icon-services/53176142_310652063137173_1974414113991819264_n.png">
                         </div>
-                        <div class="col-6">
-                            <div class="text-sevice" style="color: #70b247">
+                        <div class="col-6 all-text-service-detail">
+                            <div class="text-sevice-detail1">
                                 SERVICE FOR
                             </div>
-                            <div class="text-sevice" style="color: #3379a5">
+                            <div class="text-sevice-detail2">
                                 SELLER / LESSOR
                             </div>
 
@@ -36,17 +36,16 @@
                 <a href="?action=project_detail&id=<?echo $project_show[$i]['project_detail_id'];?>"> <img src="img_upload/services/1.jpg" class="img-fluid"></a>
                     <div class="row">
                         <div class="col-6">
-                            <img class="size-icon-contact"
+                            <img class="icon-service-detail"
                                 src="img_upload/icon-services/53176142_310652063137173_1974414113991819264_n.png">
                         </div>
-                        <div class="col-6">
-                            <div class="text-sevice" style="color: #70b247">
+                        <div class="col-6 all-text-service-detail">
+                            <div class="text-sevice-detail1">
                                 SERVICE FOR
                             </div>
-                            <div class="text-sevice" style="color: #3379a5">
+                            <div class="text-sevice-detail2">
                                 SELLER / LESSOR
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -56,17 +55,16 @@
                 <a href="?action=project_detail&id=<?echo $project_show[$i]['project_detail_id'];?>"> <img src="img_upload/services/1.jpg" class="img-fluid"></a>
                     <div class="row">
                         <div class="col-6">
-                            <img class="size-icon-contact"
+                            <img class="icon-service-detail"
                                 src="img_upload/icon-services/53176142_310652063137173_1974414113991819264_n.png">
                         </div>
-                        <div class="col-6">
-                            <div class="text-sevice" style="color: #70b247">
+                       <div class="col-6 all-text-service-detail">
+                            <div class="text-sevice-detail1">
                                 SERVICE FOR
                             </div>
-                            <div class="text-sevice" style="color: #3379a5">
+                            <div class="text-sevice-detail2">
                                 SELLER / LESSOR
                             </div>
-
                         </div>
                     </div>
                 </div>

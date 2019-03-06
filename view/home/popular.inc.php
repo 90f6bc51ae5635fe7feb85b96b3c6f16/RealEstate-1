@@ -1,7 +1,26 @@
 <div class="container">
-<fieldset style="border: 5px solid #000; ">
-  <legend style="width: 0%; text-align: center;">AAA</legend>
-</fieldset>
+    <fieldset style="border: 5px solid #000; ">
+        <legend style="width: 47.65px !important ; text-align: center;">POPPULAR PROPERTIES </legend>
+        <div class="row" style="max-width: 1100px;margin: auto;">
+            <div class="col-lg-6 no-padding">
+                <img class="img-fluid" src="img_upload/home/1.jpg" style="width: 35vw; margin: 5px;">
+            </div>
+            <div class="col-lg-6 no-padding">
+                <img class="img-fluid" src="img_upload/home/1.jpg" style="width: 35vw; margin: 5px;">
+            </div>
+        </div>
+        <div class="row" style="max-width: 1100px;margin: auto;">
+            <div class="col-lg-4 no-padding">
+                <img class="img-fluid" src="img_upload/home/1.jpg" style="width: 35vw; margin: 5px;">
+            </div>
+            <div class="col-lg-4 no-padding">
+                <img class="img-fluid" src="img_upload/home/1.jpg" style="width: 35vw; margin: 5px;">
+            </div>
+            <div class="col-lg-4 no-padding">
+                <img class="img-fluid" src="img_upload/home/1.jpg" style="width: 35vw; margin: 5px;">
+            </div>
+        </div>
+    </fieldset>
     <div class="">
         <aside id="info-block">
 

@@ -15,7 +15,7 @@ $product = $product_model->getProductBy();
         <div class="text-header-medium">
             We are Offering the Best Real Estate Deals
         </div>
-        <div class="text-detail" style="padding: 1.5% 6%;;">
+        <div class="text-product-home">
             <?PHP if ($lng == "TH"){echo $product_header[0]['product_header_detail_th'] ;}else{echo $product_header[0]['product_header_detail_en'] ;} ?>
         </div>
         

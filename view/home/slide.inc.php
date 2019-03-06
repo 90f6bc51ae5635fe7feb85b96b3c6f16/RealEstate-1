@@ -109,7 +109,7 @@
         <div class="shadow-lg" style="background-color: white;">
 
 
-            <div class="row">
+            <div class="row" style="padding: 1vw;">
                 <div class="col-sm-3">
                     <div class="text-left">
                         <div class="form-group">

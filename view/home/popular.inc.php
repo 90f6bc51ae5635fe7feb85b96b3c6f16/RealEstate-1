@@ -1,6 +1,6 @@
 <div class="container">
-    <fieldset style="border: 5px solid #000; ">
-        <legend style="width: 47.65px !important ; text-align: center;">POPPULAR PROPERTIES </legend>
+    <fieldset style="border: 8px solid #ececec; ">
+        <legend style="width: 30% !important ; text-align: center; color: #70b247;font-weight: 800;">POPPULAR PROPERTIES </legend>
         <div class="row" style="max-width: 1100px;margin: auto;">
             <div class="col-lg-6 no-padding">
                 <img class="img-poppular-home1" src="img_upload/home/1.jpg">

@@ -8,6 +8,47 @@
                     <div class="img-box-bg"
                         style=" background-image: url(img_upload/product/28022019141054-architecture-1867187_1920.jpg);">
                         <div class="img-box-bg-cl">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img class="size-icon-contact"
+                                        src="img_upload/icon-services/53848771_2049174922048058_7419565942394322944_n.png">
+                                </div>
+                                <div class="col-8 text-address">
+                                    <p style=" font-weight: 600; padding-top: 3%">ADDRESS</p>
+                                    606/13 SOI EKAMAI 28, SUKUMVIT 63 RD,
+                                    KLONGTON NUA, WATTANA MANGKOK 10110
+                                    THAILND
+                                </div>
+                            </div>
+                            <div class="row" style="padding-top: 5%">
+                                <div class="col-4">
+                                    <img class="size-icon-contact"
+                                        src="img_upload/icon-services/53160337_2284323801808189_6278116261075353600_n.png">
+                                </div>
+                                <div class="col-8 text-address">
+                                    <p style=" font-weight: 600; padding-top: 3%">PHONE</p>
+                                    029-652-5147
+                                </div>
+                            </div>
+                            <div class="row" style="padding-top: 5%">
+                                <div class="col-4">
+                                    <img class="size-icon-contact"
+                                        src="img_upload/icon-services/53160337_2284323801808189_6278116261075353600_n.png">
+                                </div>
+                                <div class="col-8 text-address">
+                                    <p style=" font-weight: 600; padding-top: 3%">MOBIE</p>
+                                    089-652-5147 089-652-7777
+                                </div>
+                            </div>
+                            <div class="row" style="padding-top: 5%">
+                                <div class="col-4">
+                                    <img class="size-icon-contact"
+                                        src="img_upload/icon-services/53270645_2159312354381793_2320096657049387008_n.png">
+                                </div>
+                                <div class="col-8 text-address">
+                                    <p style=" font-weight: 600; padding-top: 3%">E-MAIL</p>
+                                    REALESTATE@GMAILCOM                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

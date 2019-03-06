@@ -1,3 +1,35 @@
+.main-div {
+    position: relative;
+    width: 200px;
+    height: 150px;
+    border: 2px solid black;
+}
+
+.main-div-overlay-text {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -20px;
+}
+#info-block section {
+    border: 10px solid #ececec;
+    font-size: 1.5vw;
+    color: #70b247;
+    font-weight: 800;
+    text-align: center;
+}
+
+.file-marker > div {
+    height: 20vw;
+    margin-top: -0.8em;
+    text-align: center;
+}
+.box-title {
+    background: white none repeat scroll 0 0;
+    display: inline-block;
+    padding: 0 2px;
+}
 .product-product-detail {
     display: -webkit-box;
     -webkit-line-clamp: 3;

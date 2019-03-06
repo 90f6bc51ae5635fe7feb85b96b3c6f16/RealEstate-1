@@ -1,27 +1,27 @@
-<div class="text-center">
-    <div class="main-div">
-       
-            <div class="main-div-overlay-text">
-                 <a name="" id="" class="btn btn-light" role="button">SOME TEXT
-             </a></div>
-       
-        SOME TEXT HERE
+<div class="container">
+<fieldset style="border: 5px solid #000; ">
+  <legend style="width: 0%; text-align: center;">AAA</legend>
+</fieldset>
+    <div class="">
+        <aside id="info-block">
+
+            <!-- <section class="file-marker">
+                    <div class="box-title">
+                        POPULAR PROPERTIES
+                    </div>
+                    <div class="box-contents">
+                        <div id="audit-trail">
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 no-padding">
+                                <img class="img-fluid" src="img_upload/home/1.jpg">
+                            </div>
+                            <div class="col-lg-6 no-padding">
+                                <img class="img-fluid" src="img_upload/home/1.jpg">
+                            </div>
+                        </div>
+                    </div>
+            </section> -->
+        </aside>
     </div>
 </div>
-
-<style>
-.main-div {
-    position: relative;
-    width: 200px;
-    height: 150px;
-    border: 2px solid black;
-}
-
-.main-div-overlay-text {
-    position: relative;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: -20px;
-}
-</style>

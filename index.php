@@ -54,6 +54,7 @@ $page = $page_model->getPageByID('1');
         <?PHP require_once('view/menu.inc.php');?>
         <?PHP require_once('view/home/slide.inc.php');?>
         <?PHP require_once('view/home/product.inc.php'); ?>
+        <?PHP require_once('view/home/popular.inc.php'); ?>
         <?PHP require_once('view/agent.inc.php'); ?>
         <?PHP require_once('view/footer.inc.php'); ?>
     </body>

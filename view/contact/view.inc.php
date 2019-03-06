@@ -4,9 +4,12 @@
         <hr class="border-contact" style="border-top: 2px solid  #5a5a5a">
         <div class="p-3 mb-2 bg-light contact-box">
             <div class="row">
-                <div class="col-md-6 img-box-height">
-                    <div class="overlay-contact"></div>
-                    <img class="size-img-contact" src="img_upload/product/28022019141054-architecture-1867187_1920.jpg">
+                <div class="col-md-6">
+
+                    <div class="img-box-bg" style=" background-image: url(img_upload/product/28022019141054-architecture-1867187_1920.jpg);">
+                        <div class="img-box-bg-cl">
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-6 text-left">
                     <form id="form_target" role="form" method="post" action="contact_us.php?&action=add">

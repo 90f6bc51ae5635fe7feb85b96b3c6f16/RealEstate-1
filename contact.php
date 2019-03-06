@@ -43,6 +43,7 @@ $page = $page_model->getPageByID('6');
         <link rel="stylesheet" type="text/css" media="screen" href="template/css/style.css" />
         
         <link href="template/frontend/css/menu.css" rel="stylesheet">
+        <link href="template/frontend/css/footer.css" rel="stylesheet">
         <link href="template/frontend/css/home-style.css" rel="stylesheet">
     </head>
     <body>

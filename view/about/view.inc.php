@@ -1,6 +1,6 @@
 <div class="container about-container">
     <div class="text-left about-head">
-        <h1>COMPANY<span>PROFILE</span></h1>
+        <h1 style="font-weight: 600">COMPANY<span>PROFILE</span></h1>
         <p>
             Penthouse apartment for sale located on Iancu Nicolae Road. Wit New Darwin suburb
             Muirhead – which came in at number two with 49.7% price growth – and rapidly growing
@@ -19,9 +19,9 @@
             </div>
             <div class="col-md-6">
                 <div class="text-center about-head">
-                    <h1>VISION</h1>
+                    <h1 style="font-weight: 600">VISION</h1>
                     <p class="about-box-text">"expansion potential and subsequent shifts"</p>
-                    <h1><span>MISSION</span></h1>
+                    <h1 style="font-weight: 600"><span>MISSION</span></h1>
                     <p class="about-box-text2">"expansion potential shifts"</p>
                 </div>
             </div>

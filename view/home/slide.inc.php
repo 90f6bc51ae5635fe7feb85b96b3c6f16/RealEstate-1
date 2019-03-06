@@ -110,48 +110,48 @@
 
 
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-3">
                     <div class="text-left">
                         <div class="form-group">
-                            <label>Room Type <font color="#F00"><b>*</b></font></label> <br />
+                          <br />
                             <select class="form-control  custom-select" id="room_type_id" name="room_type_id">
+                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> Location</option>
                                 <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
-                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
-                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
-                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
-                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
-                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
-                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
-                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
-                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
-                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
-                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                            
                             </select>
-                            <p class="help-block">Example : Deluxe Junior Suite </p>
+                          
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-6">
+                <div class="col-sm-3">
                     <div class="text-left">
                         <div class="form-group">
-                            <label>Room Type <font color="#F00"><b>*</b></font></label> <br />
+                            <br />
                             <select class="form-control  custom-select" id="room_type_id" name="room_type_id">
+                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> Property type</option>
                                 <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
-                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
-                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
-                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
-                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
-                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
-                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
-                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
-                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
-                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
-                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                                
                             </select>
-                            <p class="help-block">Example : Deluxe Junior Suite </p>
+                         
                         </div>
                     </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="text-left">
+                        <div class="form-group">
+                             <br />
+                            <select class="form-control  custom-select" id="room_type_id" name="room_type_id">
+                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                            </select>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                <div class="btn btn-search">
+                    SEARCH
+                </div>
                 </div>
             </div>
         </div>
@@ -164,7 +164,7 @@
 
       
     </div> -->
-    
+
 <script type="text/javascript">
 $(document).on('ready', function() {
     $(".slide").slick({

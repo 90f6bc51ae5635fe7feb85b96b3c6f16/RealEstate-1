@@ -12,16 +12,14 @@ $product = $product_model->getProductBy();
 
 <div style="padding: 5% 10%;">
     <div class="text-center" style="padding-top: 7vw;">
-        <div class="text-header-medium">
+        <div class="text-product-home-topic">
             We are Offering the Best Real Estate Deals
         </div>
         <div class="text-product-home">
             <?PHP if ($lng == "TH"){echo $product_header[0]['product_header_detail_th'] ;}else{echo $product_header[0]['product_header_detail_en'] ;} ?>
         </div>
         
-        <div class="multiple-items">
-            <!-- <div class="row"> -->
-            <div style="    margin-right: 1vw;">
+        <div class="multiple-items" style="margin-right: 1vw;">
                 <?PHP for($i=0;$i<count($product );$i++){ ?>
                 <div class="" style="border: ridge;">
                     <img src="img_upload/home/1.jpg" style="width: 100%;"
@@ -37,16 +35,12 @@ $product = $product_model->getProductBy();
                     </div>
                     <div class="text-regular" style="padding: 16px 0px; color: #c6c6c6;">
                         <button type="button" class="btn btn-outline-success">Success</button>
-
-
                         <button class="btn btn-primary"
                             type="submit"><?php echo number_format($product[$i]['product_price'],2); ?></button>
-
-
                     </div>
                 </div>
                 <?PHP } ?>
-            <!-- </div> -->
+           
         </div>
     </div>
 </div>

@@ -5,8 +5,8 @@
         <div class="p-3 mb-2 bg-light contact-box">
             <div class="row">
                 <div class="col-md-6">
-
-                    <div class="img-box-bg" style=" background-image: url(img_upload/product/28022019141054-architecture-1867187_1920.jpg);">
+                    <div class="img-box-bg"
+                        style=" background-image: url(img_upload/product/28022019141054-architecture-1867187_1920.jpg);">
                         <div class="img-box-bg-cl">
                         </div>
                     </div>
@@ -85,16 +85,16 @@
             <div class="shadow-lg p-3 mb-5 bg-light service-box">
                 <div class="row">
                     <div class="col-6">
-                    <img class="size-icon-contact"
-                    src="img_upload/icon-services/53176142_310652063137173_1974414113991819264_n.png">
+                        <img class="size-icon-contact"
+                            src="img_upload/icon-services/53176142_310652063137173_1974414113991819264_n.png">
                     </div>
                     <div class="col-6">
-                    <div class="text-sevice" style="color: #70b247">
-                    SERVICE FOR
-                </div>
-                <div class="text-sevice" style="color: #3379a5">
-                    SELLER / LESSOR
-                </div>
+                        <div class="text-sevice" style="color: #70b247">
+                            SERVICE FOR
+                        </div>
+                        <div class="text-sevice" style="color: #3379a5">
+                            SELLER / LESSOR
+                        </div>
 
                     </div>
                 </div>
@@ -104,16 +104,16 @@
             <div class="shadow-lg p-3 mb-5 bg-light service-box">
                 <div class="row">
                     <div class="col-6">
-                    <img class="size-icon-contact"
-                    src="img_upload/icon-services/53574180_338964410080072_6205132100857757696_n.png">
+                        <img class="size-icon-contact"
+                            src="img_upload/icon-services/53574180_338964410080072_6205132100857757696_n.png">
                     </div>
                     <div class="col-6">
-                    <div class="text-sevice" style="color: #70b247">
-                    SERVICE FOR
-                </div>
-                <div class="text-sevice" style="color: #3379a5">
-                    SELLER / LESSOR
-                </div>
+                        <div class="text-sevice" style="color: #70b247">
+                            SERVICE FOR
+                        </div>
+                        <div class="text-sevice" style="color: #3379a5">
+                            SELLER / LESSOR
+                        </div>
 
                     </div>
                 </div>
@@ -123,16 +123,16 @@
             <div class="shadow-lg p-3 mb-5 bg-light service-box">
                 <div class="row">
                     <div class="col-6">
-                    <img class="size-icon-contact"
-                    src="img_upload/icon-services/53599082_583643432118145_3564111742239768576_n.png">
+                        <img class="size-icon-contact"
+                            src="img_upload/icon-services/53599082_583643432118145_3564111742239768576_n.png">
                     </div>
                     <div class="col-6">
-                    <div class="text-sevice" style="color: #70b247">
-                    SERVICE FOR
-                </div>
-                <div class="text-sevice" style="color: #3379a5">
-                    SELLER / LESSOR
-                </div>
+                        <div class="text-sevice" style="color: #70b247">
+                            SERVICE FOR
+                        </div>
+                        <div class="text-sevice" style="color: #3379a5">
+                            SELLER / LESSOR
+                        </div>
 
                     </div>
                 </div>

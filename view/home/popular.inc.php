@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" style="margin-bottom: 7vw;">
     <fieldset style="border: 8px solid #ececec; ">
         <legend style="width: 30% !important ; text-align: center; color: #70b247;font-weight: 800;">POPPULAR PROPERTIES </legend>
         <div class="row" style="max-width: 1100px;margin: auto;">

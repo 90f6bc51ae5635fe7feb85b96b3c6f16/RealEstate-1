@@ -63,7 +63,7 @@
 
 
             <div class="row" style="padding: 1vw;">
-                <div class="col-sm-3">
+            <div class="element-item col-lg-3 col-md-6 col-sm-6">
                     <div class="text-left">
                         <div class="form-group">
                           <br />
@@ -77,7 +77,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-3">
+                <div class="element-item col-lg-3 col-md-6 col-sm-6">
                     <div class="text-left">
                         <div class="form-group">
                             <br />
@@ -90,7 +90,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="element-item col-lg-3 col-md-6 col-sm-6">
                     <div class="text-left">
                         <div class="form-group">
                              <br />
@@ -101,7 +101,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="element-item col-lg-3 col-md-6 col-sm-6">
                 <div class="btn btn-search">
                     SEARCH
                 </div>

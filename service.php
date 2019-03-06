@@ -45,15 +45,12 @@ $page = $page_model->getPageByID('3');
         <link href="template/frontend/css/menu.css" rel="stylesheet">
         <link href="template/frontend/css/footer.css" rel="stylesheet">
         <link href="template/frontend/css/home-style.css" rel="stylesheet">
+        <link href="template/frontend/css/service.css" rel="stylesheet">
     </head>
     <body>
-        <?PHP require_once('view/menu.inc.php');?>
-        <?PHP require_once('view/home/slide.inc.php');?>
-        
-
-
-
-        
-        <?PHP require_once('view/footer.inc.php'); ?>
+    <?PHP require_once('view/menu.inc.php');?>
+    <?PHP require_once('view/service/slide.inc.php');?>
+    <?PHP require_once('view/service/view.inc.php');?>
+    <?PHP require_once('view/footer.inc.php'); ?>
     </body>
 </html>

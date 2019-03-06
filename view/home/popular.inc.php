@@ -3,21 +3,21 @@
         <legend style="width: 30% !important ; text-align: center; color: #70b247;font-weight: 800;">POPPULAR PROPERTIES </legend>
         <div class="row" style="max-width: 1100px;margin: auto;">
             <div class="col-lg-6 no-padding">
-                <img class="img-poppular-home1" src="img_upload/home/1.jpg">
+                <img class="img-poppular-home1" src="img_upload/home/111.jpg">
             </div>
             <div class="col-lg-6 no-padding">
-                <img class="img-poppular-home1" src="img_upload/home/1.jpg">
+                <img class="img-poppular-home1" src="img_upload/home/222.png">
             </div>
         </div>
         <div class="row" style="max-width: 1100px;margin: auto;">
             <div class="col-lg-4 no-padding">
-                <img class="img-poppular-home2" src="img_upload/home/1.jpg" >
+                <img class="img-poppular-home2" src="img_upload/home/2.jpg" >
             </div>
             <div class="col-lg-4 no-padding">
-                <img class="img-poppular-home2" src="img_upload/home/1.jpg" >
+                <img class="img-poppular-home2" src="img_upload/home/333.png" >
             </div>
             <div class="col-lg-4 no-padding">
-                <img class="img-poppular-home3" src="img_upload/home/1.jpg" >
+                <img class="img-poppular-home3" src="img_upload/home/444.png" >
             </div>
         </div>
     </fieldset>

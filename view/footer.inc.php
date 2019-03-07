@@ -25,9 +25,7 @@ $news = $news_model->  getNewsByDESC();
 ?>
 
 <footer>
-    <img class="size-img-footer" src="img_upload/footer/footer.jpg">
-
-    <div class="container">
+    <div class="container con-footer">
 
         <div class="row ">
             <div class="col-md-4 footer-panel">
@@ -125,6 +123,7 @@ $news = $news_model->  getNewsByDESC();
             </div>
         </div>
     </div>
+    <img class="size-img-footer" src="img_upload/footer/footer.jpg">
 </footer>
 
 

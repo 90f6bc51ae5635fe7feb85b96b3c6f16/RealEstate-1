@@ -1,7 +1,6 @@
 <div class="text-center" style="padding-top: 7vw;">
-    <div class="text-header-service">
-        SERVICE
-    </div>
+<h1 style="color: #5a5a5a; font-weight: 600">SERVICE </h1>
+        <hr class="border-contact" style="border-top: 2px solid  #5a5a5a; width: 5%;">
 </div>
 
 

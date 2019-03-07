@@ -39,7 +39,7 @@
 
                                 </div>
                                 <div class="btn btn-slide">
-                                    VIEW DETAIL
+                                    VIEW DETAIL 
                                 </div>
                                 <a href="property.php" class="btn btn-slide">
                                     SEE ALL PROPERTY
@@ -56,7 +56,7 @@
                             alt="Los Angles">
 
                         <div class="rounded-circle on-img float-right">
-                            <p class="price-slide1">1,500,000</p>
+                            <p class="price-slide1"><?PHP echo number_format($product[$i]['product_price'],2);?>  </p>
                             <p class="price-slide2">foe sale</p>
                             <!-- <img class="rounded-circle on-img float-right" src="" alt="Los Angles"> -->
                         </div>

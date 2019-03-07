@@ -75,7 +75,7 @@ function setLanguage(lng) {
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?php if($menu == 'room'){ echo 'active'; }?>" href="room.php#room" >
+                    <a class="nav-link <?php if($menu == 'about'){ echo 'active'; }?>" href="about.php#about" >
 
 
                         <?php
@@ -88,8 +88,8 @@ function setLanguage(lng) {
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link <?php if($menu == 'facilities'){ echo 'active'; }?>"
-                        href="facilities.php#facilities">
+                    <a class="nav-link <?php if($menu == 'service'){ echo 'active'; }?>"
+                        href="service.php#service">
 
 
                         <?php
@@ -104,7 +104,7 @@ function setLanguage(lng) {
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link <?php if($menu == 'gallery'){ echo 'active'; }?>" href="gallery.php#gallery">
+                    <a class="nav-link <?php if($menu == 'property'){ echo 'active'; }?>" href="property.php#property">
 
                         <?php
                         if ($lng == TH) {
@@ -117,7 +117,7 @@ function setLanguage(lng) {
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link <?php if($menu == 'about_us'){ echo 'active'; }?>" href="about_us.php#about_us">
+                    <a class="nav-link <?php if($menu == 'news'){ echo 'active'; }?>" href="news.php#news">
 
 
                         <?php
@@ -131,8 +131,8 @@ function setLanguage(lng) {
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?php if($menu == 'contact_us'){ echo 'active'; }?>"
-                        href="contact_us.php#contact_us">
+                    <a class="nav-link <?php if($menu == 'contact'){ echo 'active'; }?>"
+                        href="contact.php#contact">
 
                         <?php
                         if ($lng == TH) {

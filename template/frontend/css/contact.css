@@ -41,16 +41,6 @@
     height: 100%;
     padding: 3%;
 }
-.overlay-contact{
-    background: black;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-    z-index: 995;
-}
 .service-row-box{
     padding-top: 3%;
 }

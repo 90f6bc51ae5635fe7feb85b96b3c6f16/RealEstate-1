@@ -23,13 +23,14 @@ $news = $news_model->  getNewsByDESC();
 
 
 ?>
-<div class="container">
-    <footer>
 
+<footer>
+    <img class="size-img-footer" src="img_upload/footer/footer.jpg">
 
+    <div class="container">
 
         <div class="row ">
-            <div class="col-md-3 footer-panel">
+            <div class="col-md-4 footer-panel">
                 <div class="text-header-medium" style="color: #0175A4;">
                     ABOUT US
                 </div>
@@ -50,7 +51,7 @@ $news = $news_model->  getNewsByDESC();
                 }?>
                 </div>
             </div>
-            <div class="col-md-4 footer-panel">
+            <div class="col-md-5 footer-panel">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="text-header-medium">
@@ -86,7 +87,7 @@ $news = $news_model->  getNewsByDESC();
                     </div>
                 </div>
             </div>
-            <div class="col-md-5 footer-panel">
+            <div class="col-md-3 footer-panel">
                 <div class="text-header-medium">
                     FROM THE BLOG
                 </div>
@@ -108,27 +109,25 @@ $news = $news_model->  getNewsByDESC();
                             } else {
                                echo $news[$i]['news_name_en']; 
                             }  ?>
-                            <br>
-                                <p class="light "><i class="far fa-clock light"></i> <?PHP echo  date("M d, Y ",strtotime($news[$i]['news_date']));?> </p> 
-                                
+                                <br>
+                                <p class="light "><i class="far fa-clock light"></i>
+                                    <?PHP echo  date("M d, Y ",strtotime($news[$i]['news_date']));?>
+                                </p>
+
 
                             </div>
                         </div>
-                            <br>
+                        <br>
                         <?PHP } ?>
                     </div>
 
                 </div>
             </div>
         </div>
+    </div>
+</footer>
 
-        <div class="text-center" style="padding-top: 3.5em;">
-            2018 @ Revelsoft Co., Ltd. Design in nakhonratchasima, Thailand.
-        </div>
 
-    </footer>
-</div>
-<img class="size-img-footer" src="img_upload/footer/footer.jpg">
 
 
 <style>
@@ -141,7 +140,8 @@ $news = $news_model->  getNewsByDESC();
     max-width: 100%;
     height: 60;
 }
-.light{
+
+.light {
     color: #0009;
 }
 </style>

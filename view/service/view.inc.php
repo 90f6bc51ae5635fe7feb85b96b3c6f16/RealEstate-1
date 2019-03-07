@@ -7,7 +7,7 @@
     <div class="container">
         <div class="row service-row-box">
             <div class="element-item col-lg-4 col-md-6 col-sm-6">
-                <div class="shadow-lg p-3 mb-5 bg-light service-box">
+                <div class="shadow-lg mb-5 bg-light service-box">
                 <a href="service.php?action=detail"> <img src="img_upload/services/1.jpg" class="img-fluid"></a>
                     <div class="row">
                         <div class="col-6">
@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="element-item col-lg-4 col-md-6 col-sm-6">
-                <div class="shadow-lg p-3 mb-5 bg-light service-box">
+                <div class="shadow-lg mb-5 bg-light service-box">
                 <a href="?action=project_detail&id=<?echo $project_show[$i]['project_detail_id'];?>"> <img src="img_upload/services/1.jpg" class="img-fluid"></a>
                     <div class="row">
                         <div class="col-6">
@@ -46,7 +46,7 @@
                 </div>
             </div>
             <div class="element-item col-lg-4 col-md-6 col-sm-6">
-                <div class="shadow-lg p-3 mb-5 bg-light service-box">
+                <div class="shadow-lg mb-5 bg-light service-box">
                 <a href="?action=project_detail&id=<?echo $project_show[$i]['project_detail_id'];?>"> <img src="img_upload/services/1.jpg" class="img-fluid"></a>
                     <div class="row">
                         <div class="col-6">

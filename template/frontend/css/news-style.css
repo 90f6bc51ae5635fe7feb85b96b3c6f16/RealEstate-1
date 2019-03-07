@@ -22,3 +22,20 @@
     font-size: 1.25em;
     margin-top: 1vw;
 }
+.topic-news{
+    font-size: 1.3vw;
+    font-weight: 600;
+    color: #70b247;
+    padding-top: 1vw;
+    padding-bottom: 0.5vw;
+}
+.date-news{
+    font-weight: 600;
+    padding-bottom: 0.3vw;
+}
+.row-news1{
+    padding-top: 1vw;
+}
+.row-news2{
+    padding-top: 2.5vw;
+}

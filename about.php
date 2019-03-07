@@ -6,6 +6,7 @@ require_once('models/PageModel.php');
 $page_model = new PageModel;
 $page = $page_model->getPageByID('2');
 
+date_default_timezone_set("Asia/Bangkok");
 ?>
 
 <html>

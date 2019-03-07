@@ -3,7 +3,7 @@ if(isset($_COOKIE['language'])){
     $lng = $_COOKIE['language'];
 }
 
-
+date_default_timezone_set("Asia/Bangkok");
 
 
 

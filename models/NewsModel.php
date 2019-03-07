@@ -22,6 +22,19 @@ class NewsModel extends BaseModel{
             return $data;
         }
     }
+
+    function getNewsByDESC(){
+        $sql = "SELECT * FROM `tb_news` WHERE 1 ORDER BY news_id DESC
+        ";
+        if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
+            $data = [];
+            while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)){
+                $data[] = $row;
+            }
+            $result->close();
+            return $data;
+        }
+    }
    
     function getNewsByID($id){
         $sql = " SELECT * 

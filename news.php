@@ -2,6 +2,9 @@
 if(isset($_COOKIE['language'])){
     $lng = $_COOKIE['language'];
 }
+
+
+date_default_timezone_set("Asia/Bangkok");
 require_once('models/PageModel.php'); 
 $page_model = new PageModel;
 $page = $page_model->getPageByID('5');

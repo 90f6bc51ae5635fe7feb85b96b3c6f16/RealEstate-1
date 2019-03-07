@@ -15,6 +15,12 @@ $location = $location_model->  getLocationBy();
 // print_r($location) ;
 
 
+require_once('models/NewsModel.php');    
+$news_model = new NewsModel;   
+$news = $news_model->  getNewsByDESC(); 
+// print_r($news) ;
+
+
 
 ?>
 <div class="container">
@@ -44,7 +50,7 @@ $location = $location_model->  getLocationBy();
                 }?>
                 </div>
             </div>
-            <div class="col-md-6 footer-panel">
+            <div class="col-md-4 footer-panel">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="text-header-medium">
@@ -80,12 +86,38 @@ $location = $location_model->  getLocationBy();
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 footer-panel">
+            <div class="col-md-5 footer-panel">
                 <div class="text-header-medium">
                     FROM THE BLOG
                 </div>
                 <div>
-                    <?PHP echo $about['about_email'];?>
+
+                    <div class="col-12 ">
+                        <?PHP for ($i=0; $i < 2 ; $i++) { 
+                    # code...
+                // print_r(count ($news));?>
+                        <div class="row">
+                            <div class="col-4 col-img-footer">
+                                <img src="img_upload/news/<?PHP echo $news[$i]['news_img']; ?>"
+                                    class="rounded float-left img-fluid" alt="...">
+                            </div>
+                            <div class="col-8">
+                                <?PHP if ($lan == 'TH') {
+                                # code...
+                                echo $news[$i]['news_name_th'];
+                            } else {
+                               echo $news[$i]['news_name_en']; 
+                            }  ?>
+                            <br>
+                                <p class="light "><i class="far fa-clock light"></i> <?PHP echo  date("M d, Y ",strtotime($news[$i]['news_date']));?> </p> 
+                                
+
+                            </div>
+                        </div>
+                            <br>
+                        <?PHP } ?>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -97,3 +129,19 @@ $location = $location_model->  getLocationBy();
     </footer>
 </div>
 <img class="size-img-footer" src="img_upload/footer/footer.jpg">
+
+
+<style>
+.col-img-footer {
+    padding-right: 5;
+    padding-left: 0;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: 60;
+}
+.light{
+    color: #0009;
+}
+</style>

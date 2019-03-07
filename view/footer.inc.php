@@ -99,7 +99,7 @@ $news = $news_model->  getNewsByDESC();
                         <div class="row">
                             <div class="col-4 col-img-footer">
                                 <img src="img_upload/news/<?PHP echo $news[$i]['news_img']; ?>"
-                                    class="rounded float-left img-fluid" alt="...">
+                                    class="rounded float-left img-fluid img-size-footer " alt="...">
                             </div>
                             <div class="col-8">
                                 <?PHP if ($lan == 'TH') {
@@ -137,7 +137,7 @@ $news = $news_model->  getNewsByDESC();
     padding-left: 0;
 }
 
-.img-fluid {
+.img-size-footer {
     max-width: 100%;
     height: 60;
 }

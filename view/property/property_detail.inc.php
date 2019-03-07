@@ -1,4 +1,4 @@
-<div style="padding-top: 100px;">
+<div style="padding: 7vw 20% 0% 20%;">
     <div class="col-12">
         <!-- div col-12 -->
         <div class="row">
@@ -7,10 +7,12 @@
             </div>
             <div class="col-6">
                 <h2>TREE CONDO</h2>
+                <hr class="border-contact" style="border-top: 2px solid  #5a5a5a; width:100%;">
+
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 p-0">
                 <img src="img_upload\types\05032019093050-566508.jpg" class="img-fluid" alt="Responsive image">
             </div>
             <div class="col-6">
@@ -69,7 +71,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 p-0">
                 <div id="googleMap" style="width:100%;height:400px;"></div>
                 <script>
                 function myMap() {

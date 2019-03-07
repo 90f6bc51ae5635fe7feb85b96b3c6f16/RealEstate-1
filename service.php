@@ -14,6 +14,12 @@ $page_model = new PageModel;
 $page = $page_model->getPageByID('3');
 
 // print_r($page);
+
+
+
+
+
+
 ?>
 
 <html>
@@ -57,7 +63,16 @@ $page = $page_model->getPageByID('3');
     <body>
     <?PHP require_once('view/menu.inc.php');?>
     <?PHP require_once('view/service/slide.inc.php');?>
-    <?PHP require_once('view/service/view.inc.php');?>
+    <?php $path = "view/service/";
+
+    if( !isset($_GET['action']) ) {
+        require_once('view/service/view.inc.php');
+    } else if( $_GET['action'] == "detail") {
+        
+
+        require_once('view/service/servicedetail.inc.php');
+    }
+    ?>
     <?PHP require_once('view/footer.inc.php'); ?>
     </body>
 </html>

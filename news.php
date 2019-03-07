@@ -48,15 +48,12 @@ $page = $page_model->getPageByID('5');
         <link href="template/frontend/css/menu.css" rel="stylesheet">
         <link href="template/frontend/css/footer.css" rel="stylesheet">
         <link href="template/frontend/css/home-style.css" rel="stylesheet">
+        <link href="template/frontend/css/news-style.css" rel="stylesheet">
     </head>
     <body>
-        <?PHP require_once('view/menu.inc.php');?>
-        <?PHP require_once('view/home/slide.inc.php');?>
-        
-
-
-
-        
-        <?PHP require_once('view/footer.inc.php'); ?>
+    <?PHP require_once('view/menu.inc.php');?>
+    <?PHP require_once('view/news/slide.inc.php');?>
+    <?PHP require_once('view/news/view.inc.php');?>
+    <?PHP require_once('view/footer.inc.php'); ?>
     </body>
 </html>

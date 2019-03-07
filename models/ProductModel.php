@@ -26,6 +26,19 @@ class ProductModel extends BaseModel{
             return $data;
         }
     }
+    function getProducImgtBy(){
+        $sql = " SELECT * FROM `tb_product` LEFT JOIN tb_product_image ON tb_product.product_id = tb_product_image.product_id WHERE 1 ORDER BY tb_product.product_id
+
+        ";
+        if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
+            $data = [];
+            while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)){
+                $data[] = $row;
+            }
+            $result->close();
+            return $data;
+        }
+    }
 
     function getProductHeaderBy(){
         $sql = "SELECT

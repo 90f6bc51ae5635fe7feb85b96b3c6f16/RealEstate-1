@@ -7,6 +7,33 @@ date_default_timezone_set("Asia/Bangkok");
 
 
 
+
+require_once('models/TypesModel.php');    
+$type_model = new TypesModel;   
+$type = $type_model->  getTypesBy(); 
+// print_r($type) ;
+
+require_once('models/LocationModel.php');    
+$location_model = new LocationModel;   
+$location = $location_model->  getLocationBy(); 
+// print_r($location) ;
+
+require_once('models/ProductModel.php');    
+$product_model = new ProductModel;   
+$product = $product_model->  getProducImgtBy(); 
+// echo "<pre>";
+// print_r($product) ;
+// echo "</pre>";
+
+
+
+
+
+
+
+
+
+
 require_once('models/PageModel.php'); 
 $page_model = new PageModel;
 $page = $page_model->getPageByID('1');

@@ -10,7 +10,7 @@
 
     <section class="slide no-padding slide-home ">
 
-        <?PHP for ($i=0; $i < count($product); $i++) { ?>
+        <?PHP for ($i=0; $i < count($slide); $i++) { ?>
 
         <div class="col-12">
             <div class="container">
@@ -23,18 +23,18 @@
                                 <div class="slide-header-home">
 
                                     <?PHP if ($lan=="TH") {
-                                        echo $product[$i]['product_name_th'];
+                                        echo $slide[$i]['product_name_th'];
                                     } else{
-                                        echo $product[$i]['product_name_en'];
+                                        echo $slide[$i]['product_name_en'];
                                     }?>
 
                                 </div>
                                 <div class="slide-text-detail">
 
                                     <?PHP if ($lan=="TH") {
-                                        echo $product[$i]['product_detail_th'];
+                                        echo $slide[$i]['product_detail_th'];
                                     } else{
-                                        echo $product[$i]['product_detail_en'];
+                                        echo $slide[$i]['product_detail_en'];
                                     }?>
 
                                 </div>
@@ -52,12 +52,12 @@
                     </div>
                     <div class="col-5" style="position: relative;">
                         <img class="rounded-circle float-right"
-                            src="img_upload/product_image/<?PHP echo $product[$i]['product_image_img'];?>"
+                            src="img_upload/product_image/<?PHP echo $slide[$i]['product_image_img'];?>"
                             alt="Los Angles">
 
                         <div class="rounded-circle on-img float-right">
                             <p class="price-slide1">
-                                <?PHP echo number_format($product[$i]['product_price'],2);?>
+                                <?PHP echo number_format($slide[$i]['product_price'],2);?>
                             </p>
                             <p class="price-slide2">foe sale</p>
                             <!-- <img class="rounded-circle on-img float-right" src="" alt="Los Angles"> -->
@@ -78,7 +78,15 @@
     </section>
 
 
-    <form action="index.php?search=1" method="post">
+    <script>
+function search() {
+    var location_id = $("#location_id").val();
+    var product_types_id = $("#product_types_id").val();
+    var keyword = $("#keyword").val();
+        window.location = "index.php?search=1&location_id="+location_id+"&product_types_id="+product_types_id+"&keyword="+keyword;
+}
+</script>
+
         <div class=""
             style="width: 100%; bottom: -8%; position: absolute; z-index: 9999; text-align: center; padding-left: 20%; padding-right: 20%;">
             <div class="shadow-lg" style="background-color: white;">
@@ -92,7 +100,7 @@
                                 <select class="form-control  custom-select" id="location_id" name="location_id">
                                     <option value=""> Location</option>
                                     <?PHP for ($i=0; $i < count($location); $i++) {  ?>
-                                    <option value="<?PHP echo $location[$i]['location_id'];?>">
+                                    <option value="<?PHP echo $location[$i]['location_id'];?>" <?PHP if($_GET['location_id'] == $location[$i]['location_id']){ echo 'selected' ; } ?>>
                                         <?PHP if($lan =='TH'){ echo $location[$i]['location_name_th']; } else { echo $location[$i]['location_name_en'];}?>
                                     </option>
                                     <?PHP } ?>
@@ -110,7 +118,7 @@
                                     name="product_types_id">
                                     <option value=""> Property type</option>
                                     <?PHP for ($i=0; $i < count($type); $i++) {  ?>
-                                    <option value="<?PHP echo $type[$i]['product_types_id'];?>">
+                                    <option value="<?PHP echo $type[$i]['product_types_id'];?>" <?PHP if($_GET['product_types_id'] == $type[$i]['product_types_id']){ echo 'selected' ; } ?>>
                                         <?PHP if($lan =='TH'){ echo $type[$i]['product_types_name_th']; } else { echo $type[$i]['product_types_name_en'];}?>
                                     </option>
                                     <?PHP } ?>
@@ -125,14 +133,14 @@
                             <div class="form-group">
                                 <br />
                                 <div class="form-group">
-                                    <input id="keyword" name="keyword" class="form-control" placeholder="KEYWORD" />
+                                    <input id="keyword" name="keyword" class="form-control" value="<?PHP echo $_GET['keyword']; ?>"  placeholder="KEYWORD" />
                                 </div>
 
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-3">
-                    <button type="submit" class="btn btn-search">
+                    <button onclick="search();" type="submit" class="btn btn-search">
                             SEARCH
                         </button>
                     </div>
@@ -140,8 +148,6 @@
             </div>
 
         </div>
-    </form>
-
 
 </section>
 

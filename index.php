@@ -11,6 +11,7 @@ date_default_timezone_set("Asia/Bangkok");
 require_once('models/TypesModel.php');    
 $type_model = new TypesModel;   
 $type = $type_model->  getTypesBy(); 
+$type_popular = $type_model->  getTypesByPopular(); 
 
 // echo "<pre>";
 // print_r($type) ;
@@ -27,7 +28,9 @@ $location = $location_model->  getLocationBy();
 
 require_once('models/ProductModel.php');    
 $product_model = new ProductModel;   
+$slide = $product_model->  getProducImgtBy(); 
 $product = $product_model->  getProducImgtBy(); 
+$product_header = $product_model->  getProductHeaderBy(); 
 // echo "<pre>";
 // print_r($product) ;
 // echo "</pre>";
@@ -52,8 +55,12 @@ $page = $page_model->getPageByID('1');
 
 
 if ($_GET['search'] == '1') {
-    // echo 55555;
+    
 
+    $product = $product_model->   getProducSearchBy($_GET['location_id'], $_GET['product_types_id'], $_GET['keyword']);
+// echo "<pre>";
+// print_r($product) ;
+// echo "</pre>";
 }
 ?>
 

@@ -29,38 +29,19 @@ class ProductModel extends BaseModel{
     
     function getProducSearchBy($location_id, $product_types_id, $product_name){
         
-        if ($location_id != "") {
-
-           $location = "tb_location.location_id = '$location_id'";
-        }else {
-            $location = " tb_location.location_id";
-        }
-
-        if ($product_types_id != "") {
-
-           $product_types = "AND tb_product.product_types_id = '$product_types_id' OR  tb_product.product_types_id = '$product_types_id'";
-        }else {
-            $product_types = "OR tb_product.product_types_id";
-        }
-
-        if ($product_name != "") {
-           $product = "AND tb_product.product_name_th = '$product_name' OR tb_product.product_name_en='$product_name'";
-        }else {
-            $product = "OR tb_product.product_name_th = '$product_name' OR tb_product.product_name_en='$product_name'";
-        }
-
-        if ($location_id != ""  && $product_name != "" && $product_types_id != "") {
-            $product = '1';
-        }
         $sql = " SELECT * 
         FROM `tb_product` 
         LEFT JOIN tb_location  ON tb_product.location_id = tb_location.location_id 
         LEFT JOIN tb_product_types  ON tb_product.product_types_id = tb_product_types.product_types_id 
         LEFT JOIN tb_product_image ON tb_product.product_id = tb_product_image.product_id
-        WHERE 
-        $location
-        $product_types
-        $product
+        WHERE  
+                tb_location.location_id LIKE ('%$location_id%')
+            AND tb_product.product_types_id LIKE ('%$product_types_id%') 
+            AND
+        ( 
+                tb_product.product_name_th LIKE ('%$product_name%') 
+            OR  tb_product.product_name_en LIKE ('%$product_name%') 
+        ) 
         GROUP BY tb_product.product_id
         ";
         // echo "<pre>";

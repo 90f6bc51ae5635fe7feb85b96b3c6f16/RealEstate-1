@@ -19,7 +19,7 @@
     </head>
     <style type="text/css">
         body{
-            background-image: url('../template/frontend/img/1.jpg');
+            background-image: url('../img_upload/home/2.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;

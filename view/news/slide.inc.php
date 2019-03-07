@@ -1,7 +1,9 @@
 <?php require_once('view/menu.inc.php')?>
-    <section class="col-lg-12 no-padding" style="position: relative;">
-        <img class="size-img-slide" src="img_upload/home/2.jpg">
-            <div class="overlay-slide">
+    <section class="col-lg-12 no-padding img-slide-news">
+        <img class="size-img-slide" src="img_upload/news/1.jpg">
+            <div class="overlay-slide-news">
+            </div>
+            <div class="overlay2">
             </div>
     
     <section class="slide no-padding slide-home ">
@@ -13,7 +15,7 @@
                         <div class="slide-item">
                             <div class="slide-detail-home">
                                 <div class="slide-header-home">
-                                <h1 style="color: #fff;">SERVICE</h1>
+                                <h1 style="color: #fff;">NEWS</h1>
                                 </div>
                                 <div class="slide-text-detail">
                                     Penthouse apartment for sale located on Iancu Nicolae Road. Wit New Darwin suburb
@@ -36,7 +38,7 @@
                         <div class="slide-item">
                             <div class="slide-detail-home">
                                 <div class="slide-header-home">
-                                    <h1 style="color: #fff;">SERVICE</h1>
+                                    <h1 style="color: #fff;">NEWS</h1>
                                 </div>
                                 <div class="slide-text-detail">
                                     Penthouse apartment for sale located on Iancu Nicolae Road. Wit New Darwin suburb

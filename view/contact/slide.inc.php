@@ -2,7 +2,7 @@
 <section class="col-lg-12 no-padding" style="position: relative;">
 
 
-    <img class="size-img-slide" src="img_upload/home/panorama.jpg">
+    <img class="size-img-slide" src="img_upload/home/architecture-1477041_1280.jpg">
     <div class="overlay-slide">
     </div>
     <div class="overlay-slide-2">
@@ -21,7 +21,7 @@
                         <div class="slide-item">
                             <div class="slide-detail-home">
                                 <div class="slide-header-home">
-                                <h1 style="color: #fff;">PROPERTY</h1>
+                                <h1 style="color: #fff; font-weight: 800;">CONTACT REALESTATE</h1>
                                 </div>
                                 <div class="slide-text-detail">
                                     Penthouse apartment for sale located on Iancu Nicolae Road. Wit New Darwin suburb
@@ -46,7 +46,7 @@
                         <div class="slide-item">
                             <div class="slide-detail-home">
                                 <div class="slide-header-home">
-                                    <h1 style="color: #fff;">PROPERTY</h1>
+                                <h1 style="color: #fff; font-weight: 800;">CONTACT REALESTATE</h1>
                                 </div>
                                 <div class="slide-text-detail">
                                     Penthouse apartment for sale located on Iancu Nicolae Road. Wit New Darwin suburb

@@ -16,6 +16,7 @@
         <th width="10%">รูปภาพ</th>    
         <th width="30%">ชื่อประเภทสินค้า TH</th>    
         <th width="30%">ชื่อประเภทสินค้า EN</th>    
+        <th></th>
         <th>เเก้ไข</th>
         <th>ลบ</th>
       </tr>
@@ -37,6 +38,26 @@
           <td>
           <?php echo $product_types[$i]['product_types_name_en'];?>
           </td> 
+
+          <td>
+            <?PHP 
+                    if ($product_types[$i]['product_types_popular'] == 1) {
+                        ?>
+            <a href="?content=types&action=recommened&id=<?PHP echo $product_types[$i]['product_types_id'];?>&recommened=0">
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </a>
+            <?PHP        
+            }else{
+           
+                ?>
+            <a href="?content=types&action=recommened&id=<?PHP echo $product_types[$i]['product_types_id'];?>&recommened=1">
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </a>
+            <?PHP
+            }
+            ?>
+
+        </td>
 
           <td> 
             <a href="?content=types&action=update&id=<?php echo $product_types[$i]['product_types_id'];?>" style="font-size: 20px;">

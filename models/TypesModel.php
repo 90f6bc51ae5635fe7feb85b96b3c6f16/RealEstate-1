@@ -22,6 +22,36 @@ class TypesModel extends BaseModel{
             return $data;
         }
     }
+
+    function getTypesByPopular(){
+        $sql = "SELECT * FROM `tb_product_types` WHERE `product_types_popular` = 1
+        ";
+        if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
+            $data = [];
+            while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)){
+                $data[] = $row;
+            }
+            $result->close();
+            return $data;
+        }
+    }
+    
+    
+    function editTypeRecommened($product_types_id,$product_types_popular) {
+      
+        $sql = "UPDATE `tb_product_types` SET `product_types_popular` = '$product_types_popular' WHERE `tb_product_types`.`product_types_id` = '$product_types_id'
+        ";
+        // echo "<pre>";
+        // print_r( $sql);
+        // echo "</pre>";
+
+        if (mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
+            return 1;
+        }else {
+            return 0;
+        }
+    }
+
    
     function getTypesByID($id){
         $sql = " SELECT * 

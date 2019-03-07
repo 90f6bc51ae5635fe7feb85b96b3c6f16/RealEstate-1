@@ -15,7 +15,7 @@ class ProductModel extends BaseModel{
         ON tb_product.product_types_id = tb_product_types.product_types_id 
         WHERE 1
 
-        ORDER BY tb_product.product_id
+        GROUP BY tb_product.product_id
         ";
         if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
             $data = [];
@@ -26,8 +26,41 @@ class ProductModel extends BaseModel{
             return $data;
         }
     }
+    
+    function getProducSearchBy($location_id, $product_types_id, $product_name){
+        
+        $sql = " SELECT * 
+        FROM `tb_product` 
+        LEFT JOIN tb_location  ON tb_product.location_id = tb_location.location_id 
+        LEFT JOIN tb_product_types  ON tb_product.product_types_id = tb_product_types.product_types_id 
+        LEFT JOIN tb_product_image ON tb_product.product_id = tb_product_image.product_id
+        WHERE  
+                tb_location.location_id LIKE ('%$location_id%')
+            AND tb_product.product_types_id LIKE ('%$product_types_id%') 
+            AND
+        ( 
+                tb_product.product_name_th LIKE ('%$product_name%') 
+            OR  tb_product.product_name_en LIKE ('%$product_name%') 
+        ) 
+        GROUP BY tb_product.product_id
+        ";
+        // echo "<pre>";
+        // print_r( $sql) ;
+        // echo "</pre>";
+        if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
+            $data = [];
+            while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)){
+                $data[] = $row;
+            }
+            $result->close();
+            return $data;
+        }
+    }
+
     function getProducImgtBy(){
-        $sql = " SELECT * FROM `tb_product` LEFT JOIN tb_product_image ON tb_product.product_id = tb_product_image.product_id WHERE 1 ORDER BY tb_product.product_id
+        $sql = " SELECT * FROM `tb_product` 
+        LEFT JOIN tb_product_image ON tb_product.product_id = tb_product_image.product_id 
+        WHERE 1 ORDER BY tb_product.product_id
 
         ";
         if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {

@@ -54,8 +54,8 @@ date_default_timezone_set("Asia/Bangkok");
 </head>
 
 <body>
-    <?PHP require_once('view/menu.inc.php');?>
-    <?PHP require_once('view/contact/slide.inc.php');?>
+    <!-- <?PHP require_once('view/menu.inc.php');?> -->
+    <!-- <?PHP require_once('view/contact/slide.inc.php');?> -->
     <?PHP require_once('view/contact/view.inc.php');?>
 
 

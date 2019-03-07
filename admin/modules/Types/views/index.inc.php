@@ -21,6 +21,19 @@ if($_GET['action'] == 'insert'){
     
     require_once($path.'insert.inc.php');
 
+
+    
+} else if( $_GET['action'] == "recommened") {
+      
+    $product_types = $product_types_model-> editTypeRecommened($_GET['id'], $_GET['recommened']);        
+
+?>
+<script>
+window.location = "index.php?content=types"
+</script>
+<?PHP
+
+
 }else if ($_GET['action'] == 'update'){  
 
     $product_types = $product_types_model->getTypesByID($product_types_id);  

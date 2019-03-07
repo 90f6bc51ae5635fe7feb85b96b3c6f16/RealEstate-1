@@ -39,7 +39,7 @@
 
                                 </div>
                                 <div class="btn btn-slide">
-                                    VIEW DETAIL 
+                                    VIEW DETAIL
                                 </div>
                                 <a href="property.php" class="btn btn-slide">
                                     SEE ALL PROPERTY
@@ -56,7 +56,9 @@
                             alt="Los Angles">
 
                         <div class="rounded-circle on-img float-right">
-                            <p class="price-slide1"><?PHP echo number_format($product[$i]['product_price'],2);?>  </p>
+                            <p class="price-slide1">
+                                <?PHP echo number_format($product[$i]['product_price'],2);?>
+                            </p>
                             <p class="price-slide2">foe sale</p>
                             <!-- <img class="rounded-circle on-img float-right" src="" alt="Los Angles"> -->
                         </div>
@@ -75,59 +77,72 @@
 
     </section>
 
-    <div class=""
-        style="width: 100%; bottom: -8%; position: absolute; z-index: 9999; text-align: center; padding-left: 20%; padding-right: 20%;">
-        <div class="shadow-lg" style="background-color: white;">
+
+    <form action="index.php?search=1" method="post">
+        <div class=""
+            style="width: 100%; bottom: -8%; position: absolute; z-index: 9999; text-align: center; padding-left: 20%; padding-right: 20%;">
+            <div class="shadow-lg" style="background-color: white;">
 
 
-            <div class="row" style="padding: 1vw;">
-                <div class="col-sm-3">
-                    <div class="text-left">
-                        <div class="form-group">
-                            <br />
-                            <select class="form-control  custom-select" id="room_type_id" name="room_type_id">
-                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> Location</option>
-                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                <div class="row" style="padding: 1vw;">
+                    <div class="col-sm-3">
+                        <div class="text-left">
+                            <div class="form-group">
+                                <br />
+                                <select class="form-control  custom-select" id="location_id" name="location_id">
+                                    <option value=""> Location</option>
+                                    <?PHP for ($i=0; $i < count($location); $i++) {  ?>
+                                    <option value="<?PHP echo $location[$i]['location_id'];?>">
+                                        <?PHP if($lan =='TH'){ echo $location[$i]['location_name_th']; } else { echo $location[$i]['location_name_en'];}?>
+                                    </option>
+                                    <?PHP } ?>
+                                </select>
 
-                            </select>
-
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-sm-3">
-                    <div class="text-left">
-                        <div class="form-group">
-                            <br />
-                            <select class="form-control  custom-select" id="room_type_id" name="room_type_id">
-                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> Property type</option>
-                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
+                    <div class="col-sm-3">
+                        <div class="text-left">
+                            <div class="form-group">
+                                <br />
+                                <select class="form-control  custom-select" id="product_types_id"
+                                    name="product_types_id">
+                                    <option value=""> Property type</option>
+                                    <?PHP for ($i=0; $i < count($type); $i++) {  ?>
+                                    <option value="<?PHP echo $type[$i]['product_types_id'];?>">
+                                        <?PHP if($lan =='TH'){ echo $type[$i]['product_types_name_th']; } else { echo $type[$i]['product_types_name_en'];}?>
+                                    </option>
+                                    <?PHP } ?>
 
-                            </select>
+                                </select>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="text-left">
-                        <div class="form-group">
-                            <br />
-                            <select class="form-control  custom-select" id="room_type_id" name="room_type_id">
-                                <option value="<?PHP echo $room_type[$i]['room_type_id'];?>"> 5</option>
-                            </select>
+                    <div class="col-sm-3">
+                        <div class="text-left">
+                            <div class="form-group">
+                                <br />
+                                <div class="form-group">
+                                    <input id="keyword" name="keyword" class="form-control" placeholder="KEYWORD" />
+                                </div>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="btn btn-search">
-                        SEARCH
+                    <div class="col-sm-3">
+                    <button type="submit" class="btn btn-search">
+                            SEARCH
+                        </button>
                     </div>
                 </div>
             </div>
-        </div>
 
-    </div>
+        </div>
+    </form>
+
+
 </section>
 
 <!-- <div class="container">

@@ -11,12 +11,19 @@ date_default_timezone_set("Asia/Bangkok");
 require_once('models/TypesModel.php');    
 $type_model = new TypesModel;   
 $type = $type_model->  getTypesBy(); 
+
+// echo "<pre>";
 // print_r($type) ;
+// echo "</pre>";
 
 require_once('models/LocationModel.php');    
 $location_model = new LocationModel;   
 $location = $location_model->  getLocationBy(); 
+// echo "<pre>";
 // print_r($location) ;
+// echo "</pre>";
+
+
 
 require_once('models/ProductModel.php');    
 $product_model = new ProductModel;   
@@ -38,6 +45,16 @@ require_once('models/PageModel.php');
 $page_model = new PageModel;
 $page = $page_model->getPageByID('1');
 // print_r($page);
+
+
+
+
+
+
+if ($_GET['search'] == '1') {
+    // echo 55555;
+
+}
 ?>
 
 <html>

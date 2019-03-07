@@ -1,27 +1,19 @@
 <?php require_once('view/menu.inc.php')?>
-<section class="col-lg-12 no-padding" style="position: relative;">
-
-
-    <img class="size-img-slide" src="img_upload/home/panorama.jpg">
-    <div class="overlay-slide">
-    </div>
-    <div class="overlay-slide-2">
-    </div>
+    <section class="col-lg-12 no-padding" style="position: relative;">
+        <img class="size-img-slide" src="img_upload/home/architecture-1867187_1920.jpg">
+            <div class="overlay-slide">
+            </div>
 
     <section class="slide no-padding slide-home ">
-
-
-
         <div class="col-12">
             <div class="container">
-
                 <div class="row">
                     <div class="col-7" style="margin-top: 4vw;">
 
                         <div class="slide-item">
                             <div class="slide-detail-home">
                                 <div class="slide-header-home">
-                                <h1>PROPERTY</h1>
+                                <h1 style="color: #fff; font-weight: 800;">SERVICE</h1>
                                 </div>
                                 <div class="slide-text-detail">
                                     Penthouse apartment for sale located on Iancu Nicolae Road. Wit New Darwin suburb
@@ -35,8 +27,6 @@
                 </div>
             </div>
         </div>
-
-
         <div class="col-12">
             <div class="container">
 
@@ -46,7 +36,7 @@
                         <div class="slide-item">
                             <div class="slide-detail-home">
                                 <div class="slide-header-home">
-                                    <h1>PROPERTY</h1>
+                                    <h1 style="color: #fff; font-weight: 800;">SERVICE</h1>
                                 </div>
                                 <div class="slide-text-detail">
                                     Penthouse apartment for sale located on Iancu Nicolae Road. Wit New Darwin suburb
@@ -73,7 +63,7 @@
 
 
             <div class="row" style="padding: 1vw;">
-                <div class="col-sm-3">
+            <div class="element-item col-lg-3 col-md-6 col-sm-6">
                     <div class="text-left">
                         <div class="form-group">
                           <br />
@@ -87,7 +77,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-3">
+                <div class="element-item col-lg-3 col-md-6 col-sm-6">
                     <div class="text-left">
                         <div class="form-group">
                             <br />
@@ -100,7 +90,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="element-item col-lg-3 col-md-6 col-sm-6">
                     <div class="text-left">
                         <div class="form-group">
                              <br />
@@ -111,7 +101,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="element-item col-lg-3 col-md-6 col-sm-6">
                 <div class="btn btn-search">
                     SEARCH
                 </div>
@@ -121,12 +111,6 @@
 
     </div>
 </section>
-
-<!-- <div class="container">
-
-
-      
-    </div> -->
 
 <script type="text/javascript">
 $(document).on('ready', function() {

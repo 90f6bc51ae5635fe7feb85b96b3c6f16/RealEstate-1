@@ -1,5 +1,5 @@
 <div style="padding-top: 100px; padding-left: 20%; padding-right: 20%;">
-    <div class="col-12">
+    <div class="col-12 p-0">
         <!-- div col-12 -->
 
         <div class="row">
@@ -8,34 +8,42 @@
             </div>
         </div>
         <!-- <div class="container"> -->
-            <div class="col-4" style="position: relative;">
-            <!-- <img src="img_upload\types\05032019093050-566508.jpg" width="100%" height="auto" href="" typ>
-                <div style="position:absolute; top:28%;">
-                     
-                            <h1 style="">VILLA</h1>
-                       
-                </div> -->
-                <div class="facilities-bg p-3" style="
-    width: 100%;
-    height: 200px;
-    background-image: url(img_upload/types/05032019093050-566508.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: top;
-    background-position-x: center;
-    color: #ffffff;">
-                    <div class="facilities-content" style="
-    background-color: rgba(0, 0, 0, 0.555);
-    width: 100%;
-    height: 100%;
-    padding: 14% 3% 3% 3%;">
-                        <h3>
-                            <span>
-                                VILLA                            
-                            </span>
-                        </h3>
+            <div class="row">
+
+                <div class="col-lg-4 col-sm-6 col-md-4 p-1" style="position: relative;">
+                    <div class="element-item proerty-bg p-3 " style="background-image: url(img_upload/types/05032019093050-566508.jpg);">
+                        <div class="proerty-top">
+                            <div class="proerty-content">
+                                <div class="property-h3">
+                                    VILLA                            
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="col-lg-4 col-sm-6 col-md-4 p-1" style="position: relative;">
+                    <div class="element-item proerty-bg p-3 " style="background-image: url(img_upload/types/05032019093050-566508.jpg);">
+                        <div class="proerty-top">
+                            <div class="proerty-content">
+                                <h3 class="property-h3">
+                                    VILLA                            
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-md-4 p-1" style="position: relative;">
+                    <div class="element-item proerty-bg p-3 " style="background-image: url(img_upload/types/05032019093050-566508.jpg);">
+                        <div class="proerty-top">
+                            <div class="proerty-content">
+                                <h3 class="property-h3">
+                                    VILLA                            
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         <!-- </div> -->
         <!-- div col-12 -->

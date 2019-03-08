@@ -17,7 +17,7 @@ function setLanguage(lng) {
 ?>
 <div class = "header-menu" id = "mainNav" style = "position: absolute; width: 100%; z-index: 999;">
     <div class="col-12">
-        <div class = "row" style = "margin-left: 15vw;">
+        <div class = "row menu">
            
                 <div class="text-left">
                     <div class="contact_list pb-0">
@@ -63,8 +63,8 @@ function setLanguage(lng) {
             <i class="fas fa-bars"></i>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarResponsive" style = "margin-right: 20vw;">
-            <ul class="navbar-nav text-center ml-auto" >
+        <div class=" collapse navbar-collapse" id="navbarResponsive" style="margin-right: 15vw;">
+            <ul class=" navbar-nav text-center " >
                 <li class="nav-item ">
 
                     <a class="nav-color nav-link <?php if($menu == 'index'){ echo 'active'; }?>" href="index.php" style="#ffffff">

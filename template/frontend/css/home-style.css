@@ -224,6 +224,18 @@
     opacity: .2;
     z-index: 995;
 }
+.menu{
+    margin-left: 15vw;
+}
+@media only screen and (max-width: 1100px) {
+    .logo{
+        margin-left: 0vw;
+    }
+    .menu{
+        margin-left: 0vw;
+    }
+}
+
 @media only screen and (max-width: 991px) {
     .size-img-slide{
         min-height: 70vw;

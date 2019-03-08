@@ -1,14 +1,14 @@
 <?php require_once('view/menu.inc.php')?>
-    <section class="col-lg-12 no-padding" style="position: relative;">
-        <img class="size-img-slide" src="img_upload/home/2.jpg">
-            <div class="overlay-slide">
+    <section class="col-lg-12 no-padding" style="position: relative; height: 30vw;">
+        <img class="size-img-slide" src="img_upload/services/3.jpg">
+            <div class="overlay-slide-service">
             </div>
     
     <section class="slide no-padding slide-home ">
         <div class="col-12">
             <div class="container">
                 <div class="row">
-                    <div class="col-7" style="margin-top: 4vw;">
+                    <div class="col-10" style="margin-top: 4vw;">
 
                         <div class="slide-item">
                             <div class="slide-detail-home">
@@ -31,7 +31,7 @@
             <div class="container">
 
                 <div class="row">
-                    <div class="col-7" style="margin-top: 4vw;">
+                    <div class="col-10" style="margin-top: 4vw;">
 
                         <div class="slide-item">
                             <div class="slide-detail-home">

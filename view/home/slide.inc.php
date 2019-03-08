@@ -1,5 +1,5 @@
 <?php require_once('view/menu.inc.php')?>
-<section class="col-lg-12 no-padding" style="position: relative;">
+<section class="col-lg-12 no-padding" style="position: relative; ">
 
 
     <img class="size-img-slide" src="img_upload/home/2.jpg">

@@ -83,8 +83,29 @@
                                         src="img_upload/icon-services/53160337_2284323801808189_6278116261075353600_n.png">
                                 </div>
                                 <div class="col-8 text-address">
-                                    <p style=" font-weight: 600; padding-top: 3%">PHONE</p>
-                                    029-652-5147
+                                    <p style=" font-weight: 600; padding-top: 3%">
+                                
+                                                            
+                                                            
+                                <?PHP if($lng == "TH"){ echo  'เบอร์โทรศัพท์'; }else{ echo  'PHONE';} ?>
+                                
+
+                                                        
+                            
+                            
+                            
+    </p>
+    
+                                
+                                                            
+                                                            
+                                <?PHP echo  $contact_us[0]['contact_us_fax']; ?>
+                                
+
+                                                        
+                            
+                            
+                            
                                 </div>
                             </div>
                             <div class="row" style="padding-top: 5%">
@@ -93,8 +114,27 @@
                                         src="img_upload/icon-services/53160337_2284323801808189_6278116261075353600_n.png">
                                 </div>
                                 <div class="col-8 text-address">
-                                    <p style=" font-weight: 600; padding-top: 3%">MOBIE</p>
-                                    089-652-5147 089-652-7777
+                                    <p style=" font-weight: 600; padding-top: 3%">
+                                
+                                                            
+                                                            
+                                <?PHP if($lng == "TH"){ echo  'มือถือ'; }else{ echo  'MOBILE';} ?>
+                                
+
+                                                        
+                            
+                            
+                            </p>
+                                    
+                                                            
+                                                            
+                                <?PHP echo  $contact_us[0]['contact_us_tel']; ?>
+                                
+
+                                                        
+                            
+                            
+                            
                                 </div>
                             </div>
                             <div class="row" style="padding-top: 5%">
@@ -103,8 +143,25 @@
                                         src="img_upload/icon-services/53270645_2159312354381793_2320096657049387008_n.png">
                                 </div>
                                 <div class="col-8 text-address">
-                                    <p style=" font-weight: 600; padding-top: 3%">E-MAIL</p>
-                                    REALESTATE@GMAILCOM                                </div>
+                                    <p style=" font-weight: 600; padding-top: 3%">
+                                
+                                                            
+                                                            
+                                <?PHP if($lng == "TH"){ echo  'EMAIL'; }else{ echo  'EMAIL';} ?>
+                                
+
+                                                        
+                            </p>
+                                   
+                                                            
+                                                            
+                                <?PHP echo  $contact_us[0]['contact_us_email']; ?>
+                                
+
+                                                        
+                            
+                            
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -87,16 +87,14 @@ function search() {
 }
 </script>
 
-        <div class=""
-            style="width: 100%; bottom: -8%; position: absolute; z-index: 9999; text-align: center; padding-left: 20%; padding-right: 20%;">
+        <div class="box-search-home">
             <div class="shadow-lg" style="background-color: white;">
 
 
-                <div class="row" style="padding: 1vw;">
-                    <div class="col-sm-3">
+                <div class="row m-0 py-4">
+                    <div class="col-sm-12 col-md-3 py-md-0 py-sm-3">
                         <div class="text-left">
-                            <div class="form-group">
-                                <br />
+                            <div class="">
                                 <select class="form-control  custom-select" id="location_id" name="location_id">
                                     <option value=""> Location</option>
                                     <?PHP for ($i=0; $i < count($location); $i++) {  ?>
@@ -110,10 +108,9 @@ function search() {
                         </div>
                     </div>
 
-                    <div class="col-sm-3">
+                    <div class="col-sm-12 col-md-3 py-md-0 py-sm-3">
                         <div class="text-left">
-                            <div class="form-group">
-                                <br />
+                            <div class="">
                                 <select class="form-control  custom-select" id="product_types_id"
                                     name="product_types_id">
                                     <option value=""> Property type</option>
@@ -128,11 +125,10 @@ function search() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-12 col-md-3 py-md-0 py-sm-3 ">
                         <div class="text-left">
-                            <div class="form-group">
-                                <br />
-                                <div class="form-group">
+                            <div class="">
+                                <div class="">
                                     <input id="keyword" name="keyword" class="form-control" value="<?PHP echo $_GET['keyword']; ?>"  placeholder="KEYWORD" />
                                 </div>
 

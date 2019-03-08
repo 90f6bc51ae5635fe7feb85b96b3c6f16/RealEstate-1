@@ -274,43 +274,47 @@
 
     <?PHP for ($i=0; $i < count($services) ; $i++) { ?>
 
+                                  
+                                    
         <div class="col-lg-4 col-md-6">
             <div class="shadow-lg p-3 mb-5 bg-light service-box">
                 <div class="row">
-                    <div class="col-6">
-                        <img class="size-icon-contact"
-                            src="img_upload/icon-services/53176142_310652063137173_1974414113991819264_n.png">
-                    </div>
-                    <div class="col-6">
-                        <div class="text-sevice" style="color: #70b247">
-                           
-                                
-                                
-                        <?PHP if($lng == "TH"){ echo 'บริการสำหรับ'; }else{ echo ' SERVICE FOR'; } ?>
-                               
-                                
-                                
-                                
+                    
+                        <div class="col-6">
+                        <a href="service.php?action=detail&id=<?PHP echo $i; ?>">
+                            <img class="size-icon-contact"
+                                src="img_upload/icon-services/53176142_310652063137173_1974414113991819264_n.png">                    
+                    </a>
                         </div>
-                        <div class="text-sevice" style="color: #3379a5">
-                          
-                                
+                        <div class="col-6">
+                            <div class="text-sevice" style="color: #70b247">
+                              <a href="service.php?action=detail&id=<?PHP echo $i; ?>">
+                            <?PHP if($lng == "TH"){ echo 'บริการสำหรับ'; }else{ echo ' SERVICE FOR'; } ?>
+                                            
+                    </a>
+                                    
+                            </div>
+                            <div class="text-sevice" style="color: #3379a5">
+                            
+                            <a href="service.php?action=detail&id=<?PHP echo $i; ?>">
+                                    
 
 
-                                
-                        <?PHP if($lng == "TH"){ echo $services[$i]['services_name_th']; }else{ echo $services[$i]['services_name_en']; } ?>
-                                
+                                    
+                            <?PHP if($lng == "TH"){ echo $services[$i]['services_name_th']; }else{ echo $services[$i]['services_name_en']; } ?>
+                                    
+                  
+                    </a>
 
 
+                            </div>
 
                         </div>
-
-                    </div>
                 </div>
             </div>
         </div>
-
-
+    
+                            
     <?PHP } ?>
         
     </div>

@@ -1,3 +1,7 @@
+.font-news{
+    color: #5a5a5a;
+    font-weight: 600
+}
 .img-slide-news{
     position: relative;
     height: 30vw;
@@ -21,6 +25,7 @@
     background-color: #70b247;
     font-size: 1.25em;
     margin-top: 1vw;
+    font-weight: 600;
 }
 .topic-news{
     font-size: 1.3vw;
@@ -29,9 +34,22 @@
     padding-top: 1vw;
     padding-bottom: 0.5vw;
 }
+.topic-news2{
+    font-size: 1vw;
+    font-weight: 600;
+    color: #70b247;
+    padding-top: 1vw;
+    padding-bottom: 0.5vw;
+}
 .date-news{
     font-weight: 600;
     padding-bottom: 0.3vw;
+    font-size: 1vw;
+}
+.date-news2{
+    font-weight: 600;
+    padding-bottom: 0.3vw;
+    font-size: 1vw;
 }
 .row-news1{
     padding-top: 1vw;
@@ -43,6 +61,7 @@
     background: transparent;
     border-color: #ececec;
     margin-top: 10vw; 
+    width: 18vw;
 }
 .btn-search-news{
     margin-top: 10vw;
@@ -54,4 +73,91 @@
     padding-top: 1vw;
     font-size: 1.5vw;
     font-weight: 600;
+}
+.row-news{
+    margin-top: 0vw;
+}
+.most-read-news{
+    background-color: #f1f1f1;
+    margin-right: 2vw;
+}
+@media only screen and (max-width: 1200px) {
+    .btn-readmore{
+        font-size: 1.3vw;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .topic-service{
+        margin-top: 25vw;
+    }
+    .btn-search-news{
+        margin-top: 10vw;
+        font-size: 0.40em;
+    }
+    .btn-readmore{
+        font-size: 1.1vw;
+    }
+    .topic-news1{
+        font-size: 1.4vw;
+    }
+    .topic-news2{
+        font-size: 1.4vw;
+    }
+    .date-news{
+        font-size: 2vw;
+    }
+    .date-news2{
+        font-size: 1vw;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .topic-service{
+        margin-top: 60vw;
+    }
+    .box-search-news{
+        width: 18vw;
+    }
+    .btn-search-news{
+        margin-top: 1vw;
+    }
+    .btn-readmore{
+        font-size: 1.4vw;
+    }
+    .font-news{
+        font-size: 5vw;
+    }
+    .topic-news{
+        font-size: 2.3vw;
+    }
+}
+@media only screen and (max-width: 698px) {
+    .box-search-news{
+        width: 30vw;
+    }
+}
+@media only screen and (max-width: 625px) {
+    .topic-service{
+        margin-top: 70vw;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .topic-service{
+        margin-top: 130vw;
+    }
+}
+@media only screen and (max-width: 415px) {
+    .btn-readmore {
+        font-size: 3.4vw;
+    }
+    .font-news{
+        font-size: 8vw;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .topic-service{
+        margin-top: 170vw;
+    }
+    .btn-readmore {
+        font-size: 4.4vw;
+    }
 }

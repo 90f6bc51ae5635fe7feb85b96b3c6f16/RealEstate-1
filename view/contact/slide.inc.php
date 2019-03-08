@@ -15,43 +15,42 @@
                         <div class="slide-item">
                             <div class="slide-detail-home">
                                 <div class="slide-header-home">
-                                <h1 style="color: #fff;">CONTACT REALESTATE</h1>
+                                <h1 style="color: #fff;">
+                                
+                                
+                                
+                                
+                                <?PHP if($lng == "TH"){ echo  $contact_us[0]['contact_us_title_th']; }else{ echo  $contact_us[0]['contact_us_title_en'];} ?>
+           
+
+                                
+                                
+                                
+                                
+                                </h1>
                                 </div>
                                 <div class="slide-text-detail">
-                                    Penthouse apartment for sale located on Iancu Nicolae Road. Wit New Darwin suburb
-                                    Muirhead – which came in at number two with 49.7% price growth – and rapidly growing
-                                    new Melbourne area, Clyde North, are examples of suburbs with high development,
-                                    expansion potential and subsequent shifts in supply and demand.
+                                
+                                
+                                
+                                
+                                <?PHP if($lng == "TH"){ echo  $contact_us[0]['contact_us_sub_title_th']; }else{ echo  $contact_us[0]['contact_us_sub_title_en'];} ?>
+           
+
+                                
+                                
+                                
+                            
+
+                                
+
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-12">
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-7" style="margin-top: 4vw;">
-
-                        <div class="slide-item">
-                            <div class="slide-detail-home">
-                                <div class="slide-header-home">
-                                    <h1 style="color: #fff;">CONTACT REALESTATE</h1>
-                                </div>
-                                <div class="slide-text-detail">
-                                    Penthouse apartment for sale located on Iancu Nicolae Road. Wit New Darwin suburb
-                                    Muirhead – which came in at number two with 49.7% price growth – and rapidly growing
-                                    new Melbourne area, Clyde North, are examples of suburbs with high development,
-                                    expansion potential and subsequent shifts in supply and demand.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
 
         </div>

@@ -42,8 +42,8 @@ function readURL(input) {
                     <div class="col-lg-2">
                         <div class="form-group">
                             <label> Title TH<font color="#F00"><b>*</b></font></label>
-                            <input id="contact_us_title_en" name="contact_us_title_en" class="form-control"
-                                value="<?PHP echo $contact_us[$id]['contact_us_title_en'];?>" />
+                            <input id="contact_us_title_th" name="contact_us_title_th" class="form-control"
+                                value="<?PHP echo $contact_us[$id]['contact_us_title_th'];?>" />
                             <p class="help-block"></p>
                         </div>
                     </div>

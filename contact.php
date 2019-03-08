@@ -8,6 +8,24 @@ $page = $page_model->getPageByID('6');
 
 date_default_timezone_set("Asia/Bangkok");
 // print_r($page);
+
+
+
+
+
+require_once('models/ContactUsModel.php');    
+$contact_us_model = new ContactUsModel;   
+$contact_us = $contact_us_model->  getContact_us(); 
+
+// echo "<pre>";
+// print_r($service) ;
+// echo "</pre>";
+
+
+
+
+
+
 ?>
 
 <html>

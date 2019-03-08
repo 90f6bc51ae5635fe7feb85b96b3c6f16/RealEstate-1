@@ -1,6 +1,23 @@
 <div class="container">
     <div class="text-center contact-head">
-        <h1 style="color: #5a5a5a; font-weight: 600">CONTACT REALESTATE </h1>
+        <h1 style="color: #5a5a5a; font-weight: 600">
+        
+        
+        
+                                
+                                
+                                
+        <?PHP if($lng == "TH"){ echo  $contact_us[0]['contact_us_title_th']; }else{ echo  $contact_us[0]['contact_us_title_en'];} ?>
+           
+
+                                
+                                
+                                
+                                
+        
+        
+        
+        </h1>
         <hr class="border-contact" style="border-top: 2px solid  #5a5a5a">
         <div class="p-3 mb-2 bg-light contact-box">
             <div class="row">
@@ -14,10 +31,50 @@
                                         src="img_upload/icon-services/53848771_2049174922048058_7419565942394322944_n.png">
                                 </div>
                                 <div class="col-8 text-address">
-                                    <p style=" font-weight: 600; padding-top: 3%">ADDRESS</p>
-                                    606/13 SOI EKAMAI 28, SUKUMVIT 63 RD,
-                                    KLONGTON NUA, WATTANA MANGKOK 10110
-                                    THAILND
+                                    <p style=" font-weight: 600; padding-top: 3%">
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+        
+        
+                                
+                                                            
+                                                            
+                                    <?PHP if($lng == "TH"){ echo  'ที่อยู่'; }else{ echo  'ADDRESS';} ?>
+                                    
+
+                                                            
+                                
+                                
+                                
+        
+                                    
+                                    
+                                    
+                                    </p>
+        
+        
+        
+                                
+                                
+                                
+                                    <?PHP if($lng == "TH"){ echo  $contact_us[0]['contact_us_address_th']; }else{ echo  $contact_us[0]['contact_us_address_en'];} ?>
+                                    <?PHP if($lng == "TH"){ echo  $contact_us[0]['contact_us_address_1_th']; }else{ echo  $contact_us[0]['contact_us_address_1_en'];} ?>
+                                    <?PHP if($lng == "TH"){ echo  $contact_us[0]['contact_us_address_2_th']; }else{ echo  $contact_us[0]['contact_us_address_2_en'];} ?>
+                                    <?PHP if($lng == "TH"){ echo  $contact_us[0]['contact_us_address_3_th']; }else{ echo  $contact_us[0]['contact_us_address_3_en'];} ?>
+                                    <?PHP if($lng == "TH"){ echo  $contact_us[0]['contact_us_address_4']; }else{ echo  $contact_us[0]['contact_us_address_4'];} ?>
+           
+
+                                
+                                
+                                
+                                
+        
+        
+        
                                 </div>
                             </div>
                             <div class="row" style="padding-top: 5%">

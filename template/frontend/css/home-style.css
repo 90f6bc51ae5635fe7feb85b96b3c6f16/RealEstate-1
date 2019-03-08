@@ -1,3 +1,12 @@
+.box-search-home{
+    width: 100%;
+    bottom: -8%;
+    position: absolute;
+    z-index: 9999;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
 .img-poppular-home-padding{
     padding-right: 5px;
     padding-left: 5px;
@@ -15,8 +24,6 @@
     color: #fff;
     background-color: #70b247;
     font-size: 1.25em;
-    margin-left: 1vw;
-    margin-top: 1vw;
 }
 .text-product-home-topic{
     color: #70b247;
@@ -229,6 +236,9 @@
     .img-poppular-home-padding{
         padding-right: 3px;
         padding-left: 3px;
+    }
+    .box-search-home{
+        position: unset;
     }
 }
 @media only screen and (max-width: 500px) {

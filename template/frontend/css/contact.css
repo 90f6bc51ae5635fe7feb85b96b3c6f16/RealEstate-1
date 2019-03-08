@@ -28,7 +28,7 @@
 }
 .img-box-bg{
     width: 100%;
-    height: 70%;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: top;
@@ -55,4 +55,19 @@
 .text-address{
     text-align: left;
     margin-left: -40;
+    font-size: 1rem;
+}
+
+
+@media (max-width: 992px) {
+    .size-icon-contact{
+        object-fit: cover;
+        width: 100%;
+        padding-top: 20%;
+    }
+}
+@media (max-width: 768px) {
+    .text-contact{
+        padding-top: 10%;
+    }
 }

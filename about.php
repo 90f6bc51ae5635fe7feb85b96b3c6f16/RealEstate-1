@@ -48,8 +48,8 @@ date_default_timezone_set("Asia/Bangkok");
         <link href="template/frontend/css/about.css" rel="stylesheet">
     </head>
     <body>
-        <!-- <?PHP require_once('view/menu.inc.php');?> -->
-        <!-- <?PHP require_once('view/about/slide.inc.php');?> -->
+        <?PHP require_once('view/menu.inc.php');?>
+        <?PHP require_once('view/about/slide.inc.php');?>
         <?PHP require_once('view/about/view.inc.php');?>
         
 

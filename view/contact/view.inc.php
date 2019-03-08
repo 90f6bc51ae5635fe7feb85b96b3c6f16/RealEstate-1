@@ -52,7 +52,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 text-left">
+                <div class="col-md-6 text-left text-contact">
                     <form id="form_target" role="form" method="post" action="contact_us.php?&action=add">
                         <div class="row">
                             <div class="col-lg-6">

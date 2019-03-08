@@ -49,14 +49,17 @@ $page = $page_model->getPageByID('4');
         <link href="template/frontend/css/menu.css" rel="stylesheet">
         <link href="template/frontend/css/footer.css" rel="stylesheet">
         <link href="template/frontend/css/home-style.css" rel="stylesheet">
+        <link href="template/frontend/css/property-types.css" rel="stylesheet">
+        <link href="template/frontend/css/property-product.css" rel="stylesheet">
+        <link href="template/frontend/css/property-detail.css" rel="stylesheet">
     </head>
     <body>
         <?PHP require_once('view/menu.inc.php');?>
         <?PHP require_once('view/property/slide.inc.php');?>
         
-        <?PHP require_once('view/property/property_type.inc.php');?>
+        <?PHP //require_once('view/property/property_type.inc.php');?>
         <?PHP //require_once('view/property/property_product.inc.php');?>
-        <?PHP //require_once('view/property/property_detail.inc.php');?>
+        <?PHP require_once('view/property/property_detail.inc.php');?>
         
 
 

@@ -26,6 +26,22 @@ class AboutUsModel extends BaseModel{
             return $data;
         }
     }
+
+    function getProfile() {
+        $sql = " SELECT * FROM `tb_company_profile`
+        ";
+        // echo "<pre>";
+        // print_r();
+        // echo "</pre>";
+        if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
+            $data = [];
+            while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)){
+                $data[] = $row;
+            }
+            $result->close();
+            return $data;
+        }
+    }
     
 
     function editRoom($about_us_id,$data = []) {

@@ -66,3 +66,23 @@
         padding-top: 25vw;
     }
 }
+@media only screen and (max-width: 767px) {
+    .topic-service{
+        padding-top: 60vw;
+    }
+}
+@media only screen and (max-width: 630px) {
+    .topic-service{
+        padding-top: 70vw;
+    }
+}
+@media only screen and (max-width: 415px) {
+    .topic-service{
+        padding-top: 125vw;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .topic-service{
+        padding-top: 160vw;
+    }
+}

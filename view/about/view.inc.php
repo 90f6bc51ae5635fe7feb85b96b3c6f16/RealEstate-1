@@ -4,12 +4,12 @@
 
 
 
-require_once('models/AboutUsModel.php');    
-$about_model = new AboutUsModel;   
-$about = $about_model->  getAbout_us(); 
+require_once('models/CompanyProfileModel.php');    
+$company_model = new CompanyProfileModel;   
+$company = $company_model->  getCompanyProfile(); 
 
 // echo "<pre>";
-// print_r($about) ;
+// print_r($company) ;
 // echo "</pre>";
 
 
@@ -22,7 +22,7 @@ $about = $about_model->  getAbout_us();
     <div class="text-left about-head">
         <p style="font-weight: 600; color: #0175a4; font-size: 2.0em;">COMPANY<span>PROFILE</span></p>
         <p>
-        <?PHP if($lng == "TH"){ echo  $about[0]['about_us_sub_title_th']; }else{ echo  $about[0]['about_us_sub_title_en'];} ?>"
+        <?PHP if($lng == "TH"){ echo  $company[0]['company_profile_sub_title_th']; }else{ echo  $company[0]['company_profile_sub_title_en'];} ?>
            
 
         </p>
@@ -30,14 +30,33 @@ $about = $about_model->  getAbout_us();
     <div class="mb-2 bg-light about-box">
         <div class="row">
             <div class="col-md-6">
-                <img class="size-img-about" src="img_upload/product/28022019141054-architecture-1867187_1920.jpg">
+                <img class="size-img-about" src="img_upload/company_profile/<?PHP echo  $company[0]['company_profile_img'];?>">
             </div>
             <div class="col-md-6">
                 <div class="text-center about-head">
-                    <h1 style="font-weight: 600">VISION</h1>
-                    <p class="about-box-text">"expansion potential and subsequent shifts"</p>
-                    <h1 style="font-weight: 600"><span>MISSION</span></h1>
-                    <p class="about-box-text2">"expansion potential shifts"</p>
+                    <h1 style="font-weight: 600">
+
+        <?PHP if($lng == "TH"){ echo  $company[0]['company_profile_vision_th']; }else{ echo  $company[0]['company_profile_vision_en'];} ?>
+
+           </h1>
+                    <p class="about-box-text">
+
+<?PHP if($lng == "TH"){ echo  $company[0]['company_profile_vision_detail_th']; }else{ echo  $company[0]['company_profile_vision_detail_en'];} ?>
+
+
+
+</p>
+                    <h1 style="font-weight: 600"><span>
+
+<?PHP if($lng == "TH"){ echo  $company[0]['company_profile_mission_th']; }else{ echo  $company[0]['company_profile_mission_en'];} ?>
+
+
+</span></h1>
+                    <p class="about-box-text2">
+
+<?PHP if($lng == "TH"){ echo  $company[0]['company_profile_mission_detail_th']; }else{ echo  $company[0]['company_profile_mission_detail_en'];} ?>
+
+</p>
                 </div>
             </div>
         </div>

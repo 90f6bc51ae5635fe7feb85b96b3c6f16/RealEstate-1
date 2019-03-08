@@ -2,7 +2,7 @@
     <div class="row topic-service">
         <div class="col-8">
             <div class="text-left" style="padding-top: 7vw;">
-                <h1 style="color: #5a5a5a; font-weight: 600">LATEST NEWS </h1>
+                <h1 class="font-news">LATEST NEWS </h1>
                 <hr align="left" class="border-news" style="border-top: 2px solid  #5a5a5a; width: 7vw;">
             </div>
         </div>
@@ -84,24 +84,24 @@
                     Most Read This Month
                 </div>
                 <div style="border-top: 2px solid  #5a5a5a;"></div>
-                <div class="topic-news">
+                <div class="topic-news2">
                     DDproperty Property Index Saw Prices For Residential Property In Bangkok
                 </div>
-                <div class="date-news">
+                <div class="date-news2">
                     Aug 12, 2015
                 </div>
                 <div style="border-top: 2px solid  #5a5a5a;"></div>
-                <div class="topic-news">
+                <div class="topic-news2">
                     DDproperty Property Index Saw Prices For Residential Property In Bangkok
                 </div>
-                <div class="date-news">
+                <div class="date-news2">
                     Aug 12, 2015
                 </div>
                 <div style="border-top: 2px solid  #5a5a5a;"></div>
-                <div class="topic-news">
+                <div class="topic-news2">
                     DDproperty Property Index Saw Prices For Residential Property In Bangkok
                 </div>
-                <div class="date-news">
+                <div class="date-news2">
                     Aug 12, 2015
                 </div>
 

@@ -1,3 +1,7 @@
+.font-news{
+    color: #5a5a5a;
+    font-weight: 600
+}
 .img-slide-news{
     position: relative;
     height: 30vw;
@@ -30,9 +34,22 @@
     padding-top: 1vw;
     padding-bottom: 0.5vw;
 }
+.topic-news2{
+    font-size: 1vw;
+    font-weight: 600;
+    color: #70b247;
+    padding-top: 1vw;
+    padding-bottom: 0.5vw;
+}
 .date-news{
     font-weight: 600;
     padding-bottom: 0.3vw;
+    font-size: 1vw;
+}
+.date-news2{
+    font-weight: 600;
+    padding-bottom: 0.3vw;
+    font-size: 1vw;
 }
 .row-news1{
     padding-top: 1vw;
@@ -80,6 +97,18 @@
     .btn-readmore{
         font-size: 1.1vw;
     }
+    .topic-news1{
+        font-size: 1.4vw;
+    }
+    .topic-news2{
+        font-size: 1.4vw;
+    }
+    .date-news{
+        font-size: 2vw;
+    }
+    .date-news2{
+        font-size: 1vw;
+    }
 }
 @media only screen and (max-width: 768px) {
     .topic-service{
@@ -93,6 +122,12 @@
     }
     .btn-readmore{
         font-size: 1.4vw;
+    }
+    .font-news{
+        font-size: 5vw;
+    }
+    .topic-news{
+        font-size: 2.3vw;
     }
 }
 @media only screen and (max-width: 698px) {
@@ -113,6 +148,9 @@
 @media only screen and (max-width: 415px) {
     .btn-readmore {
         font-size: 3.4vw;
+    }
+    .font-news{
+        font-size: 8vw;
     }
 }
 @media only screen and (max-width: 320px) {

@@ -1,12 +1,12 @@
 .top{
-    padding: 0vw 20% 0% 20%;
-} 
-  .content {
+    padding: 6% 20% 3% 20%;
+}
+.content {
     position: absolute;
-    width: 100%;
+    width: 98%;
     height: 100%;
-    padding: 7vw 0vw 0vw 5%;
-  }
+    padding: 33% 4% 0vw 4%;
+}
 
 .proerty-bg{
     width: 100%;
@@ -23,36 +23,40 @@
 }
 .proerty-content{
     background-color: rgba(0, 0, 0, 0.555);
-    width: 18vw;
-    height: 6vw;
+    width: 100%;
+    padding: 1% 0% 1% 0%;
 }
 .property-h3{
     color: #ffffff;
     text-align: center;
-    padding-top: 1vw;
-    font-size: 3vw;
+    font-size: 4vw;
 }
-@media only screen and (max-width: 768px) {
-    .content {
-        padding: 11vw 0vw 0vw 4%;
-      }
-    .proerty-content{
-        width: 28vw;
-        height: 8vw;
-    }        
-    .property-h3{
-        font-size:  4vw;
+@media only screen and (max-width: 991px) {
+    .top{
+        padding: 30% 20% 3% 20%;
     }
 }
-@media only screen and (max-width: 576px) {
-    .content {
-        padding: 24vw 0vw 0vw 3%;
-      }
-    .proerty-content{
-        width: 60vw;
-        height: 15vw;
-    }        
-    .property-h3{
-        font-size: 8vw;
+@media only screen and (max-width: 781px) {
+    .top{
+        padding: 35% 20% 3% 20%;
     }
+    .content {
+        width: 96%;
+    }
+    
+}
+@media only screen and (max-width: 767px) {
+    .top{
+        padding: 65%  20% 3% 20%;
+    }    
+}
+@media only screen and (max-width: 767px) {
+    .top{
+        padding: 65%  20% 3% 20%;
+    }    
+}
+@media only screen and (max-width: 676px) {
+    .top{
+        padding: 70%  20% 3% 20%;
+    }    
 }

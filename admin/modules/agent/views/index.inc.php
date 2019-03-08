@@ -237,3 +237,31 @@ window.history.back();
     
 }
 ?>
+
+
+
+<script>
+
+
+CKEDITOR.replace("agent_head_sub_title_th", {
+    filebrowserBrowseUrl: '../template/backend/ckfinder/ckfinder.html',
+    filebrowserImageBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Images',
+    filebrowserFlashBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Flash',
+    filebrowserUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+    filebrowserImageUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+    filebrowserFlashUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+});
+CKEDITOR.replace("agent_head_sub_title_en", {
+    filebrowserBrowseUrl: '../template/backend/ckfinder/ckfinder.html',
+    filebrowserImageBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Images',
+    filebrowserFlashBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Flash',
+    filebrowserUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+    filebrowserImageUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+    filebrowserFlashUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+});
+
+
+
+
+
+</script>

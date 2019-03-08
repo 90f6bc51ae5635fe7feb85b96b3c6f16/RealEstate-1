@@ -32,9 +32,10 @@ $id =($_GET['id']);
     $numrand = (mt_rand());
     //-----------------------------------------------
 
+    $id = 0;
 
     if( !isset($_GET['action']) ) {
-        require_once($path.'view.inc.php');
+        require_once($path.'edit.inc.php');
     } else if( $_GET['action'] == "edit") {
         
     if(isset($_POST['company_profile_id'])){
@@ -131,3 +132,62 @@ window.history.back();
     }
     }
 ?>
+
+
+
+<script>
+CKEDITOR.replace("company_profile_sub_title_th", {
+    filebrowserBrowseUrl: '../template/backend/ckfinder/ckfinder.html',
+    filebrowserImageBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Images',
+    filebrowserFlashBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Flash',
+    filebrowserUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+    filebrowserImageUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+    filebrowserFlashUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+});
+
+
+CKEDITOR.replace("company_profile_sub_title_en", {
+    filebrowserBrowseUrl: '../template/backend/ckfinder/ckfinder.html',
+    filebrowserImageBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Images',
+    filebrowserFlashBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Flash',
+    filebrowserUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+    filebrowserImageUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+    filebrowserFlashUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+});
+// CKEDITOR.replace("company_profile_vision_detail_th", {
+//     filebrowserBrowseUrl: '../template/backend/ckfinder/ckfinder.html',
+//     filebrowserImageBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Images',
+//     filebrowserFlashBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Flash',
+//     filebrowserUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+//     filebrowserImageUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+//     filebrowserFlashUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+// });
+
+
+// CKEDITOR.replace("company_profile_vision_detail_en", {
+//     filebrowserBrowseUrl: '../template/backend/ckfinder/ckfinder.html',
+//     filebrowserImageBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Images',
+//     filebrowserFlashBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Flash',
+//     filebrowserUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+//     filebrowserImageUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+//     filebrowserFlashUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+// });
+// CKEDITOR.replace("company_profile_mission_detail_th", {
+//     filebrowserBrowseUrl: '../template/backend/ckfinder/ckfinder.html',
+//     filebrowserImageBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Images',
+//     filebrowserFlashBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Flash',
+//     filebrowserUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+//     filebrowserImageUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+//     filebrowserFlashUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+// });
+
+
+// CKEDITOR.replace("company_profile_mission_detail_en", {
+//     filebrowserBrowseUrl: '../template/backend/ckfinder/ckfinder.html',
+//     filebrowserImageBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Images',
+//     filebrowserFlashBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Flash',
+//     filebrowserUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+//     filebrowserImageUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+//     filebrowserFlashUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+// });
+</script>

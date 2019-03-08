@@ -47,7 +47,7 @@
                                
                                 <div class="card-body">
                                     <h1 class="card-title">
-                                        <?PHP echo $company_profile[0]['company_profile_title_th'];  ?>
+                                        TH
                                     </h1>
                                     <p class="card-text">
                                         <?PHP echo  $company_profile[0]['company_profile_sub_title_th'];  ?>
@@ -67,7 +67,7 @@
 
                                     
                                     <h1 class="card-title">
-                                        <?PHP echo $company_profile[0]['company_profile_title_en'];  ?>
+                                        EN
                                     </h1>
                                     <p class="card-text">
                                         <?PHP echo  $company_profile[0]['company_profile_sub_title_en'];  ?>

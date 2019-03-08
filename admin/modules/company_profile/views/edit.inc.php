@@ -56,7 +56,7 @@ function readURL(input) {
                 </div>
                 <div class="col-lg-9">
                     <div class="row">
-
+<!-- 
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>Profile Title EN <font color="#F00"><b>*</b></font></label>
@@ -71,7 +71,7 @@ function readURL(input) {
                                 <input id="company_profile_title_th" name="company_profile_title_th" class="form-control"
                                     value="<?PHP echo $company_profile[$id]['company_profile_title_th'];?>" />
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="col-lg-6">
                             <div class="form-group">

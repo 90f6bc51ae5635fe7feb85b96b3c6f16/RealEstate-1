@@ -25,10 +25,10 @@ $id =($_GET['id']);
 
     if( !isset($_GET['action']) ) {
         $id =0;
-        require_once($path.'view.inc.php');
+        require_once($path.'edit.inc.php');
     } else if( $_GET['action'] == "delete") {
         $result = $contact_us_model-> deleteContact_us($id);
-        require_once($path.'view.inc.php');
+        require_once($path.'edit.inc.php');
         ?>
 <script>
     window.location = "index.php?content=contact_us"
@@ -248,3 +248,26 @@ $id =($_GET['id']);
     
 }
 ?>
+
+
+
+<script>
+CKEDITOR.replace("contact_us_sub_title_th", {
+    filebrowserBrowseUrl: '../template/backend/ckfinder/ckfinder.html',
+    filebrowserImageBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Images',
+    filebrowserFlashBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Flash',
+    filebrowserUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+    filebrowserImageUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+    filebrowserFlashUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+});
+
+
+CKEDITOR.replace("contact_us_sub_title_en", {
+    filebrowserBrowseUrl: '../template/backend/ckfinder/ckfinder.html',
+    filebrowserImageBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Images',
+    filebrowserFlashBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Flash',
+    filebrowserUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+    filebrowserImageUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+    filebrowserFlashUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+});
+</script>

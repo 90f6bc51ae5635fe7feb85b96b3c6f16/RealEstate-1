@@ -8,9 +8,9 @@ require_once('models/AboutUsModel.php');
 $about_model = new AboutUsModel;   
 $about = $about_model->  getAbout_us(); 
 
-echo "<pre>";
-print_r($about) ;
-echo "</pre>";
+// echo "<pre>";
+// print_r($about) ;
+// echo "</pre>";
 
 
 
@@ -22,14 +22,9 @@ echo "</pre>";
     <div class="text-left about-head">
         <p style="font-weight: 600; color: #0175a4; font-size: 2.0em;">COMPANY<span>PROFILE</span></p>
         <p>
-            Penthouse apartment for sale located on Iancu Nicolae Road. Wit New Darwin suburb
-            Muirhead – which came in at number two with 49.7% price growth – and rapidly growing
-            new Melbourne area, Clyde North, are examples of suburbs with high development,
-            expansion potential and subsequent shifts in supply and demand Penthouse apartment for sale located on
-            Iancu Nicolae Road. Wit New Darwin suburb
-            Muirhead – which came in at number two with 49.7% price growth – and rapidly growing
-            new Melbourne area, Clyde North, are examples of suburbs with high development,
-            expansion potential and subsequent shifts in supply and demand.
+        <?PHP if($lng == "TH"){ echo  $about[0]['about_us_sub_title_th']; }else{ echo  $about[0]['about_us_sub_title_en'];} ?>"
+           
+
         </p>
     </div>
     <div class="mb-2 bg-light about-box">

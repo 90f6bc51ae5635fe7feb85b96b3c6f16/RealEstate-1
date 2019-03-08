@@ -68,7 +68,7 @@
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>Sub Title TH <font color="#F00"><b>*</b></font></label>
-                                <textarea class="form-control " id="agent_detail_th" name="agent_detail_th"rows="6"><?PHP echo $agent[$id]['agent_detail_th'];?></textarea>
+                                <textarea class="form-control " id="agent_detail_th" name="agent_detail_th"rows="6" /><?PHP echo $agent[$id]['agent_detail_th'];?></textarea>
                                 <p class="help-block">Example : </p>
                             </div>
                         </div>
@@ -76,7 +76,7 @@
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>Sub Title EN<font color="#F00"><b>*</b></font></label>
-                                <textarea class="form-control " id="agent_detail_en" name="agent_detail_en"rows="6"><?PHP echo $agent[$id]['agent_detail_en'];?></textarea>
+                                <textarea class="form-control " id="agent_detail_en" name="agent_detail_en"rows="6" /><?PHP echo $agent[$id]['agent_detail_en'];?></textarea>
                                 <p class="help-block">Example : </p>
                             </div>
                         </div>
@@ -96,3 +96,4 @@
 
 
 </form>
+

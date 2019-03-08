@@ -45,6 +45,10 @@
     <script src="../template/js/jquery.min.js"></script>
 
     <!-- Custom Fonts & CSS -->
+
+
+    
+    <script type="text/javascript" src="../template/ckeditor/ckeditor.js"></script>
 </head>
 
 <body>

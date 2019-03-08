@@ -1,20 +1,25 @@
+
+
 <div class="row">
+    <form id="form_target" role="form" method="post" action="index.php?content=contact&action=edit_head">
+    <div class="row">
     <div class="col-lg-6">
         <h1> Contact page</h1>
 
     </div>
+    <div class="col-lg-6">
+    <button type="submit" name="" id="" class="btn btn-warning btn-xs float-right" btn-block>แก้ไข</button>
 
+    </div>
 </div>
-
 
 <hr>
 
-<div class="row">
-    <div class="col-lg-4">
-        <form id="form_target" role="form" method="post" action="index.php?content=contact&action=edit_head">
+        <div class="col-lg-12">
+
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="row">
+                <div class="col-lg-6">
+                    <!-- <div class="row">
                         <div class="col-lg-6">
                             <h2> เพิ่ม แก้ไข ข้อมูล </h2>
                         </div>
@@ -22,29 +27,46 @@
                             <button type="submit" name="" id="" class="btn btn-warning btn-xs float-right"
                                 btn-block>แก้ไข</button>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="form-group">
                         <label> </label>
                         <!-- <button type="submit" name="" id="" class="btn btn-warning btn-xs float-right"  btn-block>แก้ไข</button> -->
                         <font color="#F00"><b>TH</b></font>
-                        <textarea class="form-control " id="contact_head_detail_en" name="contact_head_detail_en" rows="5"><?PHP echo $contact_head[0]['contact_head_detail_en'];?></textarea>
+                        <textarea class="form-control " id="contact_head_detail_en" name="contact_head_detail_en"
+                            rows="5"><?PHP echo $contact_head[0]['contact_head_detail_en'];?></textarea>
+                    </div>
+                    <!-- <button type="submit" name="" id="" class="btn btn-warning btn-xs float-right" btn-block>แก้ไข</button> -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- <h2> เพิ่ม แก้ไข ข้อมูล </h2> -->
+                        </div>
+                        <div class="col-lg-6">
+                            <!-- <button type="submit" name="" id="" class="btn btn-warning btn-xs float-right"
+                                btn-block>แก้ไข</button> -->
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label> </label>
+                        <!-- <button type="submit" name="" id="" class="btn btn-warning btn-xs float-right"  btn-block>แก้ไข</button> -->
                         <font color="#F00"><b>EN</b></font>
-                        <textarea class="form-control " id="contact_head_detail_th" name="contact_head_detail_th" rows="5"><?PHP echo $contact_head[0]['contact_head_detail_th'];?></textarea>
+                        <textarea class="form-control " id="contact_head_detail_th" name="contact_head_detail_th"
+                            rows="5"><?PHP echo $contact_head[0]['contact_head_detail_th'];?></textarea>
                     </div>
                     <!-- <button type="submit" name="" id="" class="btn btn-warning btn-xs float-right" btn-block>แก้ไข</button> -->
                 </div>
             </div>
-        </form>
-    </div>
-    <div class="col-lg-4">
+        </div>
+    </form>
+    <div class="col-lg-6">
         <div class="row">
             <div class="col-lg-6">
                 <h2> ข้อมูลชื่อเรื่อง</h2>
             </div>
             <div class="col-lg-6">
                 <form id="form_target" role="form" method="post" action="index.php?content=contact&action=insert_title">
-                    <button type="submit" name="" id="" class="button float-right"
-                        btn-block>เพิ่ม</button>
+                    <button type="submit" name="" id="" class="button float-right" btn-block>เพิ่ม</button>
                 </form>
             </div>
         </div>
@@ -60,10 +82,10 @@
                 </tr>
             </thead>
             <?PHP 
-    for ($i=0; $i < count($contact_title); $i++) { 
-        # code...
-        
-        ?>
+                for ($i=0; $i < count($contact_title); $i++) { 
+                    # code...
+                    
+                    ?>
             <tr>
 
                 <td>
@@ -79,9 +101,10 @@
                         <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                     </a>
                 </td>
-                
+
                 <td>
-                    <a class="text-danger" href="?content=contact&action=delete_title&id=<?PHP echo $contact_title[$i]['contact_title_id']; ?>">
+                    <a class="text-danger"
+                        href="?content=contact&action=delete_title&id=<?PHP echo $contact_title[$i]['contact_title_id']; ?>">
                         <i class="fa fa-window-close" aria-hidden="true"></i>
                     </a>
                 </td>
@@ -90,19 +113,18 @@
             </tr>
             </tbody>
             <?PHP 
-    }
-    ?>
+                    }
+                    ?>
         </table>
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-6">
         <div class="row">
             <div class="col-lg-6">
                 <h2> ข้อมูลประเภทของคำถาม </h2>
             </div>
             <div class="col-lg-6">
                 <form id="form_target" role="form" method="post" action="index.php?content=contact&action=insert_type">
-                    <button type="submit" name="" id="" class="button float-right"
-                        btn-block>เพิ่ม</button>
+                    <button type="submit" name="" id="" class="button float-right" btn-block>เพิ่ม</button>
                 </form>
             </div>
         </div>
@@ -138,7 +160,8 @@
                 </td>
 
                 <td>
-                    <a class="text-danger" href="?content=contact&action=delete_type&id=<?PHP echo $contact_type[$i]['contact_type_id'];  ?>">
+                    <a class="text-danger"
+                        href="?content=contact&action=delete_type&id=<?PHP echo $contact_type[$i]['contact_type_id'];  ?>">
                         <i class="fa fa-window-close" aria-hidden="true"></i>
                     </a>
                 </td>

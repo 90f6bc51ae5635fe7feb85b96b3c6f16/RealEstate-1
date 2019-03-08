@@ -89,8 +89,6 @@ function search() {
 
         <div class="box-search-home">
             <div class="shadow-lg" style="background-color: white;">
-
-
                 <div class="row m-0 py-4">
                     <div class="col-sm-12 col-md-3 py-md-0 py-sm-3">
                         <div class="text-left">

@@ -1,64 +1,11 @@
 
 
 <div class="row">
-    <form id="form_target" role="form" method="post" action="index.php?content=contact&action=edit_head">
-    <div class="row">
-    <div class="col-lg-6">
+    <div class="col-lg-12">
         <h1> Contact page</h1>
-
-    </div>
-    <div class="col-lg-6">
-    <button type="submit" name="" id="" class="btn btn-warning btn-xs float-right" btn-block>แก้ไข</button>
-
-    </div>
 </div>
 
 <hr>
-
-        <div class="col-lg-12">
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <!-- <div class="row">
-                        <div class="col-lg-6">
-                            <h2> เพิ่ม แก้ไข ข้อมูล </h2>
-                        </div>
-                        <div class="col-lg-6">
-                            <button type="submit" name="" id="" class="btn btn-warning btn-xs float-right"
-                                btn-block>แก้ไข</button>
-                        </div>
-                    </div> -->
-                    <div class="form-group">
-                        <label> </label>
-                        <!-- <button type="submit" name="" id="" class="btn btn-warning btn-xs float-right"  btn-block>แก้ไข</button> -->
-                        <font color="#F00"><b>TH</b></font>
-                        <textarea class="form-control " id="contact_head_detail_en" name="contact_head_detail_en"
-                            rows="5"><?PHP echo $contact_head[0]['contact_head_detail_en'];?></textarea>
-                    </div>
-                    <!-- <button type="submit" name="" id="" class="btn btn-warning btn-xs float-right" btn-block>แก้ไข</button> -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <!-- <h2> เพิ่ม แก้ไข ข้อมูล </h2> -->
-                        </div>
-                        <div class="col-lg-6">
-                            <!-- <button type="submit" name="" id="" class="btn btn-warning btn-xs float-right"
-                                btn-block>แก้ไข</button> -->
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label> </label>
-                        <!-- <button type="submit" name="" id="" class="btn btn-warning btn-xs float-right"  btn-block>แก้ไข</button> -->
-                        <font color="#F00"><b>EN</b></font>
-                        <textarea class="form-control " id="contact_head_detail_th" name="contact_head_detail_th"
-                            rows="5"><?PHP echo $contact_head[0]['contact_head_detail_th'];?></textarea>
-                    </div>
-                    <!-- <button type="submit" name="" id="" class="btn btn-warning btn-xs float-right" btn-block>แก้ไข</button> -->
-                </div>
-            </div>
-        </div>
-    </form>
     <div class="col-lg-6">
         <div class="row">
             <div class="col-lg-6">

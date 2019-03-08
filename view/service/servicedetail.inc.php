@@ -6,7 +6,7 @@
 
     <div class="row shadow-lg">
         <div class="col-lg-6 col-md-6 col-sm-6 col-6 no-padding">
-                <img class="img-service-detail" src="img_upload/product/28022019141054-architecture-1867187_1920.jpg">
+                <img class="img-service-detail" src="img_upload/services/<?PHP  echo $services[$i]['services_img']; ?>">
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-6 no-padding">
            
@@ -18,28 +18,47 @@
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-4 all-text-service-detail no-padding">
                             <div class="text-sevice-detail1">
-                                SERVICE FOR<br>
-                                SELLER / LESSOR
+                                
+                                
+                                
+                                <?PHP if($lng == "TH"){ echo 'บริการสำหรับ'; }else{ echo ' SERVICE FOR'; } ?>
+                               
+                                
+                                
+                                
+                                <br>
+                                
+                                
+
+
+                                
+                                <?PHP if($lng == "TH"){ echo $services[$i]['services_name_th']; }else{ echo $services[$i]['services_name_en']; } ?>
+                                
+
+
+
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-4 no-padding">
-                            <div class="btn btn-contact-servicedetail">
+                            <a href="contact.php#contact" class="btn btn-contact-servicedetail">
+                            
                                 CONTACT US
-                            </div>
+
+                            </a>
                         </div>
                     </div>
                     <div class="row">
                         <div class="text-service-detail">
-                            Penthouse apartment for sale located on Iancu Nicolae Road. Wit New Darwin
-                            suburb Muirhead – which came in at number two with 49.7% price growth
-                            – and rapidly growing new Melbourne area, Clyde North, are examples of
-                            suburbs with high development, expansion potential and subsequent shifts
-                            in supply and demand Penthouse apartment for sale located on Iancu Nicolae
-                            Road. Wit New Darwin suburb Muirhead – which came in at number two with
-                            49.7% price growth – and rapidlyrapidly growing new Melbourne area, Clyde North,
-                            are examples of
-                            suburbs with high development, expansion potential and subsequent shifts
-                            in supply and demand
+                        
+
+
+
+                                
+                         <?PHP if($lng == "TH"){ echo $services[$i]['services_detail_th']; }else{ echo $services[$i]['services_detail_en']; } ?>
+                                
+
+
+                        
                         </div>
                     </div>
                 </div>

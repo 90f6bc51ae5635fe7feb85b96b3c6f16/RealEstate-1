@@ -40,7 +40,6 @@ if( !isset($_GET['action']) ) {
     require_once($path.'view.inc.php');
 } else if( $_GET['action'] == "delete") {
     $result = $contact_model-> deleteContact($id);
-    require_once($path.'view.inc.php');
     ?>
 <script>
 window.location = "index.php?content=contact"

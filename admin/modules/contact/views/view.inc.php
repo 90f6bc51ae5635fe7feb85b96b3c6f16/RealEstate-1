@@ -137,6 +137,7 @@
             <th width="100"> Tel</th>
             <th width="100"> Country</th>
             <th width="300"> Text</th>
+            <th width="300"> </th>
         </tr>
     </thead>
     <?PHP 
@@ -182,6 +183,13 @@
             <?PHP echo  $contact[$i]['contact_text'];  ?>
         </td>
 
+
+
+        <td>
+            <a class="text-danger" href="?content=contact&action=delete&id=<?PHP echo  $contact[$i]['contact_id'];?>">
+                <i class="fa fa-window-close" aria-hidden="true"></i>
+            </a>
+        </td>
 
     </tr>
     </tbody>

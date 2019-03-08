@@ -1,3 +1,23 @@
+
+<?PHP #endregion
+
+
+
+
+require_once('models/AboutUsModel.php');    
+$about_model = new AboutUsModel;   
+$about = $about_model->  getAbout_us(); 
+
+echo "<pre>";
+print_r($about) ;
+echo "</pre>";
+
+
+
+
+
+?>
+
 <div class="container about-container">
     <div class="text-left about-head">
         <p style="font-weight: 600; color: #0175a4; font-size: 2.0em;">COMPANY<span>PROFILE</span></p>

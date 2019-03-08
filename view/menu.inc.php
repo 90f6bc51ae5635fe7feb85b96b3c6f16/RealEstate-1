@@ -63,7 +63,7 @@ function setLanguage(lng) {
             <i class="fas fa-bars"></i>
         </button>
 
-        <div class=" collapse navbar-collapse" id="navbarResponsive" style="margin-right: 15vw;">
+        <div class=" collapse navbar-collapse" id="navbarResponsive" style="margin-left: 15vw;">
             <ul class=" navbar-nav text-center " >
                 <li class="nav-item ">
 

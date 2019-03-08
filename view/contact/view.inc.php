@@ -267,6 +267,13 @@
         </div>
     </div>
     <div class="row service-row-box">
+
+
+
+
+
+    <?PHP for ($i=0; $i < count($services) ; $i++) { ?>
+
         <div class="col-lg-4 col-md-6">
             <div class="shadow-lg p-3 mb-5 bg-light service-box">
                 <div class="row">
@@ -276,53 +283,35 @@
                     </div>
                     <div class="col-6">
                         <div class="text-sevice" style="color: #70b247">
-                            SERVICE FOR
+                           
+                                
+                                
+                        <?PHP if($lng == "TH"){ echo 'บริการสำหรับ'; }else{ echo ' SERVICE FOR'; } ?>
+                               
+                                
+                                
+                                
                         </div>
                         <div class="text-sevice" style="color: #3379a5">
-                            SELLER / LESSOR
+                          
+                                
+
+
+                                
+                        <?PHP if($lng == "TH"){ echo $services[$i]['services_name_th']; }else{ echo $services[$i]['services_name_en']; } ?>
+                                
+
+
+
                         </div>
 
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-6">
-            <div class="shadow-lg p-3 mb-5 bg-light service-box">
-                <div class="row">
-                    <div class="col-6">
-                        <img class="size-icon-contact"
-                            src="img_upload/icon-services/53574180_338964410080072_6205132100857757696_n.png">
-                    </div>
-                    <div class="col-6">
-                        <div class="text-sevice" style="color: #70b247">
-                            SERVICE FOR
-                        </div>
-                        <div class="text-sevice" style="color: #3379a5">
-                            SELLER / LESSOR
-                        </div>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-            <div class="shadow-lg p-3 mb-5 bg-light service-box">
-                <div class="row">
-                    <div class="col-6">
-                        <img class="size-icon-contact"
-                            src="img_upload/icon-services/53599082_583643432118145_3564111742239768576_n.png">
-                    </div>
-                    <div class="col-6">
-                        <div class="text-sevice" style="color: #70b247">
-                            SERVICE FOR
-                        </div>
-                        <div class="text-sevice" style="color: #3379a5">
-                            SELLER / LESSOR
-                        </div>
 
-                    </div>
-                </div>
-            </div>
-        </div>
+    <?PHP } ?>
+        
     </div>
 </div>

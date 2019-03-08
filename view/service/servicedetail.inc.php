@@ -3,7 +3,7 @@
         <h1 class="topic-service">SERVICE </h1>
         <hr class="border-contact" style="border-top: 2px solid  #5a5a5a; width: 5%;">
     </div>
-
+<?PHP $i = $_GET['id'] ; ?>
     <div class="row shadow-lg">
         <div class="col-lg-6 col-md-6 col-sm-6 col-6 no-padding">
                 <img class="img-service-detail" src="img_upload/services/<?PHP  echo $services[$i]['services_img']; ?>">

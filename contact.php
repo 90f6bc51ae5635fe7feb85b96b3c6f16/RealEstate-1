@@ -12,6 +12,17 @@ date_default_timezone_set("Asia/Bangkok");
 
 
 
+require_once('models/ServicesModel.php');    
+$service_model = new ServicesModel;   
+$services = $service_model->  getServicesBy(); 
+
+echo "<pre>";
+print_r($service) ;
+echo "</pre>";
+
+
+
+
 
 require_once('models/ContactUsModel.php');    
 $contact_us_model = new ContactUsModel;   

@@ -11,7 +11,7 @@
                 <div class="element-item col-lg-4 col-md-6 col-sm-6">
                     <div class="shadow-lg mb-5 bg-light service-box">
                     
-            <a href="service.php?action=detail&id=<?PHP echo $services[$i]['services_id'] ?>"> <img src="img_upload/services/<?PHP  echo $services[$i]['services_img']; ?>" class="img-fluid"></a>
+            <a href="service.php?action=detail&id=<?PHP echo $i; ?>"> <img src="img_upload/services/<?PHP  echo $services[$i]['services_img']; ?>" class="img-fluid"></a>
                         <div class="row">
                             <div class="col-6">
                                 <img class="icon-service-detail"

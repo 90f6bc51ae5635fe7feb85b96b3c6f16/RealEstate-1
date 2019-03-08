@@ -5,6 +5,7 @@ $path = "modules/services/views/";
  
 $services_model = new ServicesModel;   
 
+$service_head = $services_model -> getServiceHead();
 date_default_timezone_set("Asia/Bangkok");
 $d1=date("d");
 $d2=date("m");
@@ -20,6 +21,19 @@ $services_id = $_GET['id'];
 if($_GET['action'] == 'insert'){   
     
     require_once($path.'insert.inc.php');
+
+
+    
+} else if( $_GET['action'] == "edit_head") {
+    $result = $services_model-> editServiceHead($id, $_POST['service_head_sub_title_th'], $_POST['service_head_sub_title_en']);
+    // require_once($path.'view.inc.php');
+    ?>
+<script>
+window.location = "index.php?content=services"
+</script>
+<?PHP
+
+
 
 }else if ($_GET['action'] == 'update'){  
 

@@ -6,63 +6,35 @@
 
     <div class="container">
         <div class="row service-row-box">
-            <div class="element-item col-lg-4 col-md-6 col-sm-6">
-                <div class="shadow-lg mb-5 bg-light service-box">
-                <a href="service.php?action=detail"> <img src="img_upload/services/1.jpg" class="img-fluid"></a>
-                    <div class="row">
-                        <div class="col-6">
-                            <img class="icon-service-detail"
-                                src="img_upload/icon-services/53176142_310652063137173_1974414113991819264_n.png">
-                        </div>
-                        <div class="col-6 all-text-service-detail">
-                            <div class="text-sevice-detail1">
-                                SERVICE FOR
-                            </div>
-                            <div class="text-sevice-detail2">
-                                SELLER / LESSOR
-                            </div>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="element-item col-lg-4 col-md-6 col-sm-6">
-                <div class="shadow-lg mb-5 bg-light service-box">
-                <a href="?action=project_detail&id=<?echo $project_show[$i]['project_detail_id'];?>"> <img src="img_upload/services/1.jpg" class="img-fluid"></a>
-                    <div class="row">
-                        <div class="col-6">
-                            <img class="icon-service-detail"
-                                src="img_upload/icon-services/53176142_310652063137173_1974414113991819264_n.png">
-                        </div>
-                        <div class="col-6 all-text-service-detail">
-                            <div class="text-sevice-detail1">
-                                SERVICE FOR
+            <?PHP for ($i=0; $i < count($services) ; $i++) { ?>
+                <div class="element-item col-lg-4 col-md-6 col-sm-6">
+                    <div class="shadow-lg mb-5 bg-light service-box">
+                    
+            <a href="service.php?action=detail&id=<?PHP echo $services[$i]['services_id'] ?>"> <img src="img_upload/services/<?PHP  echo $services[$i]['services_img']; ?>" class="img-fluid"></a>
+                        <div class="row">
+                            <div class="col-6">
+                                <img class="icon-service-detail"
+                                    src="img_upload/icon-services/53176142_310652063137173_1974414113991819264_n.png">
                             </div>
-                            <div class="text-sevice-detail2">
-                                SELLER / LESSOR
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="element-item col-lg-4 col-md-6 col-sm-6">
-                <div class="shadow-lg mb-5 bg-light service-box">
-                <a href="?action=project_detail&id=<?echo $project_show[$i]['project_detail_id'];?>"> <img src="img_upload/services/1.jpg" class="img-fluid"></a>
-                    <div class="row">
-                        <div class="col-6">
-                            <img class="icon-service-detail"
-                                src="img_upload/icon-services/53176142_310652063137173_1974414113991819264_n.png">
-                        </div>
-                       <div class="col-6 all-text-service-detail">
-                            <div class="text-sevice-detail1">
-                                SERVICE FOR
-                            </div>
-                            <div class="text-sevice-detail2">
-                                SELLER / LESSOR
+                            <div class="col-6 all-text-service-detail">
+                                <div class="text-sevice-detail1">
+                                <?PHP if($lng == "TH"){ echo 'บริการสำหรับ'; }else{ echo ' SERVICE FOR'; } ?>
+                               
+                                </div>
+                                <div class="text-sevice-detail2">
+                                <?PHP if($lng == "TH"){ echo $services[$i]['services_name_th']; }else{ echo $services[$i]['services_name_en']; } ?>
+                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            
+
+            <?PHP } ?>
+
+
+
         </div>
     </div>

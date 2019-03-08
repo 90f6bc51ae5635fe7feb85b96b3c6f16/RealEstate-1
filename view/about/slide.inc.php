@@ -1,4 +1,25 @@
-<?php require_once('view/menu.inc.php')?>
+<?php 
+
+require_once('view/menu.inc.php');
+
+
+
+
+require_once('models/AboutUsModel.php');    
+$about_model = new AboutUsModel;   
+$about = $about_model->  getAbout_us(); 
+
+// echo "<pre>";
+// print_r($about) ;
+// echo "</pre>";
+
+
+
+
+?>
+
+
+
     <section class="col-lg-12 no-padding img-slide-about">
         <img class="size-img-slide" src="img_upload/home/architecture-1867187_1920.jpg">
             <div class="overlay-slide-about">
@@ -18,10 +39,12 @@
                                 <h1 style="color: #fff;">ABOUT</h1>
                                 </div>
                                 <div class="slide-text-detail">
-                                    Penthouse apartment for sale located on Iancu Nicolae Road. Wit New Darwin suburb
-                                    Muirhead – which came in at number two with 49.7% price growth – and rapidly growing
-                                    new Melbourne area, Clyde North, are examples of suburbs with high development,
-                                    expansion potential and subsequent shifts in supply and demand.
+                                
+                                
+                                    <?PHP if($lng == "TH"){ echo  $about[0]['about_us_sub_title_th']; }else{ echo  $about[0]['about_us_sub_title_en'];} ?>"
+           
+
+
                                 </div>
                             </div>
                         </div>

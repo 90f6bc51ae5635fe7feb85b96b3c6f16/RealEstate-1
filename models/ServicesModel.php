@@ -22,7 +22,41 @@ class ServicesModel extends BaseModel{
             return $data;
         }
     }
+
+    
+    function getServiceHead() {
+        $sql = " SELECT *
+        FROM `tb_service_head`
+        WHERE 1
+        ORDER BY tb_service_head.service_head_id
+        ";
+        // echo "<pre>";
+        // print_r($sql);
+        // echo "</pre>";
+        if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
+            $data = [];
+            while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)){
+                $data[] = $row;
+            }
+            $result->close();
+            return $data;
+        }
+    }
    
+    function editServiceHead($service_head_id, $service_head_sub_title_th, $service_head_sub_title_en) {
+        
+        $sql = "UPDATE `tb_service_head` SET `service_head_sub_title_th` = '$service_head_sub_title_th', `service_head_sub_title_en` = '$service_head_sub_title_en' WHERE `tb_service_head`.`service_head_id` = 1 
+        ";
+        // echo "<pre>";
+        // print_r( $sql);
+        // echo "</pre>";
+
+        if (mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
+            return 1;
+        }else {
+            return 0;
+        }
+    }
     function getServicesByID($id){
         $sql = " SELECT * 
         FROM tb_services

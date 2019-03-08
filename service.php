@@ -18,6 +18,16 @@ $page = $page_model->getPageByID('3');
 
 
 
+require_once('models/ServicesModel.php');    
+$service_model = new ServicesModel;   
+$services = $service_model->  getServicesBy(); 
+
+// echo "<pre>";
+// print_r($service) ;
+// echo "</pre>";
+
+
+
 
 
 ?>

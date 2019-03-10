@@ -8,9 +8,9 @@
             <div class="row m-0">
 
                 <div class="col-lg-4 col-sm-6 col-md-4 p-1" style="position: relative;">
-                    <div class="proerty-bg" style="background-image: url(img_upload/types/05032019093050-566508.jpg);">
+                    <div class="property-bg" style="background-image: url(img_upload/types/05032019093050-566508.jpg);">
                         <div class="property-img ">
-                            <div class="proerty-content">
+                            <div class="property-content">
                                 <div class="property-h3">
                                     VILLA                            
                                 </div>

@@ -1,0 +1,18 @@
+.property-de-h1{
+    color: #5a5a5a; 
+    font-weight: 600;
+    font-size: 3vw;
+}
+.property-de-font{
+
+}
+@media only screen and (max-width: 769px) {
+    .property-de-h1{
+        font-size: 6vw;
+    }
+}
+@media only screen and (max-width: 426px) {
+    .property-de-h1{
+        font-size: 9vw;
+    }
+}

@@ -288,7 +288,7 @@
                         </div>
                         <div class="col-6">
                             <div class="text-sevice" style="color: #70b247">
-                              <a href="service.php?action=detail&id=<?PHP echo $i; ?>">
+                              <a href="service.php?action=detail&id=<?PHP echo $i; ?>"  style="color: #70b247">
                             <?PHP if($lng == "TH"){ echo 'บริการสำหรับ'; }else{ echo ' SERVICE FOR'; } ?>
                                             
                     </a>

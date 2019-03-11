@@ -2,7 +2,9 @@
     <div class="col-12 p-0">
         <!-- div col-12 -->
         <div class="text-center">
-                <h1 class="property-pro-h1">CONDOMINIUM</h1>
+                <h1 class="property-pro-h1">
+                    <?PHP if($lng == 'TH') { print_r($type_by_id['product_types_name_th']); } else {  print_r($type_by_id['product_types_name_en']);  } ?>
+                </h1>
                 <hr class="border-contact" style="border-top: 2px solid  #5a5a5a; width: 5%;">
             </div>            
         <div class="row m-0">

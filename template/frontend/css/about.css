@@ -36,3 +36,39 @@
     opacity: .2;
     z-index: 996;
 }
+@media (max-width: 991px) {
+    .about-head{
+        padding-top: 40%;
+        font-weight: 600;
+    }
+}
+@media (max-width: 768px) {
+    .about-head{
+        padding-top: 100%;
+        font-weight: 600;
+    }
+}
+@media (max-width: 576px) {
+    .about-head{
+        padding-top:80%;
+        font-weight: 600;
+    }
+}
+@media (max-width: 501px) {
+    .about-head{
+        padding-top:130%;
+        font-weight: 600;
+    }
+}
+@media (max-width: 441px) {
+    .about-head{
+        padding-top:140%;
+        font-weight: 600;
+    }
+}
+@media (max-width: 362px) {
+    .about-head{
+        padding-top:160%;
+        font-weight: 600;
+    }
+}

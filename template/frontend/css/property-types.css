@@ -8,7 +8,7 @@
     padding: 33% 4% 0vw 4%;
 }
 
-.proerty-bg{
+.property-bg{
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,12 +16,12 @@
     background-position-x: center;
     color: #ffffff;
 }
-.proerty-bg:after{
+.property-bg:after{
     content: "";
     display: block;
     padding-bottom: 100%;
 }
-.proerty-content{
+.property-content{
     background-color: rgba(0, 0, 0, 0.555);
     width: 100%;
     padding: 1% 0% 1% 0%;
@@ -50,13 +50,13 @@
         padding: 65%  20% 3% 20%;
     }    
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 427px) {
     .top{
-        padding: 65%  20% 3% 20%;
+        padding: 125%  20% 3% 20%;
     }    
 }
-@media only screen and (max-width: 676px) {
+@media only screen and (max-width: 320px) {
     .top{
-        padding: 70%  20% 3% 20%;
+        padding: 160%  20% 3% 20%;
     }    
 }

@@ -14,7 +14,7 @@
                 <div class="col-lg-4 col-sm-6 col-md-4 p-1" style="position: relative;">
                     <div class="proerty-bg" style="background-image: url(img_upload/types/<?PHP print_r($type[$i]['product_types_img']); ?>);">
                         <div class="property-img ">
-                            <div class="proerty-content">
+                            <div class="property-content">
                                 <div class="property-h3">
                                     <?PHP print_r($type[$i]['product_types_name_th']); ?>
                                 </div>

@@ -17,8 +17,8 @@ $page = $page_model->getPageByID('4');
 require_once('models/TypesModel.php'); 
 $type_model = new TypesModel;
 $type = $type_model->getTypesBy();
-$type_by_id = $type_model->getTypesByID($id);
-print_r($type_by_id);
+$type_by_id = $type_model->getTypesByID($_GET['type_id']);
+// print_r($type_by_id);
 
 
 require_once('models/ProductModel.php'); 

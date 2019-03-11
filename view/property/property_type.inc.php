@@ -17,7 +17,7 @@
                         <div class="property-img ">
                             <div class="property-content">
                                 <div class="property-h3">
-                                    <?PHP if($lan = 'TH') { print_r($type[$i]['product_types_name_th']); } else {  print_r($type[$i]['product_types_name_en']);  } ?>
+                                    <?PHP if($lng == 'TH') { print_r($type[$i]['product_types_name_th']); } else {  print_r($type[$i]['product_types_name_en']);  } ?>
                                 </div>
                             </div>
                         </div>

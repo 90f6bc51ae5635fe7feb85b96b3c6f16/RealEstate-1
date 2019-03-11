@@ -33,7 +33,7 @@ $company = $company_model->  getCompanyProfile();
                 <img class="size-img-about" src="img_upload/company_profile/<?PHP echo  $company[0]['company_profile_img'];?>">
             </div>
             <div class="col-md-6">
-                <div class="text-center about-head">
+                <div class="text-center about-head-box">
                     <h1 style="font-weight: 600">
 
         <?PHP if($lng == "TH"){ echo  $company[0]['company_profile_vision_th']; }else{ echo  $company[0]['company_profile_vision_en'];} ?>

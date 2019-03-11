@@ -237,51 +237,81 @@
                     </div>
                 </div>
             </div>
+                <div class="col-12" style="padding: 5% 0% 0% 0%">
+            <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center" style="background-color: #f5f5f5;">
 
-            <div class="col-12" style="padding: 5% 0% 0% 0%">
-                <div class="col-lg-6 col-md-12 col-sm-12 text-center" style="background-color: #f5f5f5;">
+                        <div class="col-12" style="padding: 5% 0% 5% 0%">
+                            HIGHLIGHT
+                        </div>
+                        <div class="row">
 
-                    <div class="col-12" style="padding: 5% 0% 5% 0%">
-                        HIGHLIGHT
-                    </div>
-                    <div class="row">
-
-                    <?php for ($j = 0; $j < count($product_hightlight); ++$j) { ?>
-                        <div class="col-lg-3 col-md-4 col-sm-6 p-2">
-                            <div class="col-12 property-bg" style="background-image: url(img_upload/product_highlight/<?PHP print_r($product_hightlight[$j]['product_highlight_img']); ?>);"></div>
-                            <div class="col-12">
-
-
-
-                            
+                            <?php for ($j = 0; $j < count($product_hightlight); ++$j) { ?>
+                            <div class="col-lg-3 col-md-4 col-sm-6 p-2">
+                                <div class="col-12 property-bg" style="background-image: url(img_upload/product_highlight/<?PHP print_r($product_hightlight[$j]['product_highlight_img']); ?>);"></div>
+                                <div class="col-12">
 
 
-                        <?PHP if ($lng == 'TH') {
-                            print_r($product_hightlight[$j]['product_highlight_name_th']);
-                        } else {
-                            print_r($product_hightlight[$j]['product_highlight_name_en']);
+
+
+
+
+                                    <?PHP if ($lng == 'TH') {
+                                        print_r($product_hightlight[$j]['product_highlight_name_th']);
+                                    } else {
+                                        print_r($product_hightlight[$j]['product_highlight_name_en']);
+                                    } ?>
+
+
+
+
+
+
+
+                                    <?PHP  ?>
+                                </div>
+                            </div>
+                            <?PHP 
                         } ?>
 
-
-
-
-
-
-
-                                <?PHP  ?>
-                            </div>
                         </div>
-                    <?PHP } ?>
-
                     </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 text-center">
-                    <!-- Google Map -->
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+                        <!-- Google Map -->
 
-                    <!-- /Google Map -->
+
+
+
+                        <fieldset class="gllpLatlonPicker" style="margin: -14; height: auto;">
+                            <div class="gllpMap" style="width: 100%;  height: 20%;">Google Maps</div>
+                            <!-- <div class="gllpMap" style="width: 100%; height: 80%;">Google Maps</div> -->
+                            <input type="text" class="gllpLatitude form-control" name="product_latitude" value="<?PHP echo $product[0]['product_latitude']; ?>" hidden />
+                            <input type="text" class="gllpLongitude form-control" name="product_longitude" value="<?PHP echo $product[0]['product_longitude']; ?>" hidden />
+                            <input type="hidden" class="gllpZoom" value="14" />
+                        </fieldset>
+
+
+
+                        <!-- /Google Map -->
+                    </div>
                 </div>
             </div>
 
             <!-- div col-12 -->
         </div>
-    </div> 
+    </div>
+
+
+
+
+
+
+
+    <?PHP if ($lng == "TH") {        ?>
+    <script src="https://maps-api-ssl.google.com/maps/api/js?key=AIzaSyBPYt_mZGd-2iotzhpiZKw1_GpZ6H9w3vs&sensor=false"></script>
+    <?PHP 
+} else {        ?>
+    <script src="https://maps-api-ssl.google.com/maps/api/js?key=AIzaSyBPYt_mZGd-2iotzhpiZKw1_GpZ6H9w3vs&sensor=false&language=en&region=en"></script>
+    <?PHP 
+} ?>
+    <script src="template/map/js/jquery-gmaps-latlon-picker.js"></script> 

@@ -230,9 +230,9 @@
                 <div class="row" style="padding: 15% 0% 15% 0%">
                     <div class="col-6">
                         <div>
-                            <button type="submit" name="" id="" class="btn btn-orage btn-md" btn-block="" style="width: 150px; text-align: center; margin:0 auto;">
+                            <a href="contact.php#contact" type="submit" name="" id="" class="btn btn-orage btn-md" btn-block="" style="width: 150px; text-align: center; margin:0 auto;">
                                 CONTACT US
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -256,11 +256,11 @@
 
 
 
-                                    <?PHP if ($lng == 'TH') {
-                                        print_r($product_hightlight[$j]['product_highlight_name_th']);
-                                    } else {
-                                        print_r($product_hightlight[$j]['product_highlight_name_en']);
-                                    } ?>
+                                        <?PHP if ($lng == 'TH') {
+                                            print_r($product_hightlight[$j]['product_highlight_name_th']);
+                                        } else {
+                                            print_r($product_hightlight[$j]['product_highlight_name_en']);
+                                        } ?>
 
 
 

@@ -27,7 +27,8 @@ $product_by_type = $product_model->getProductByType($_GET['type_id']);
 $product = $product_model-> getProductByProduct($_GET['id']);
 $product_img = $product_model-> getProducImgtById($_GET['id']);
 $product_hightlight = $product_model-> getProducHightlightById($_GET['id']);
-// print_r($product_hightlight);
+$product_header = $product_model-> getProductHeaderBy();
+// print_r($product_header);
 
 
 

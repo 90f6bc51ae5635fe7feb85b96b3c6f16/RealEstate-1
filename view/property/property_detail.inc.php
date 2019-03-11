@@ -250,7 +250,25 @@
                         <div class="col-lg-3 col-md-4 col-sm-6 p-2">
                             <div class="col-12 property-bg" style="background-image: url(img_upload/product_highlight/<?PHP print_r($product_hightlight[$j]['product_highlight_img']); ?>);"></div>
                             <div class="col-12">
-                                Swimming pool
+
+
+
+                            
+
+
+                        <?PHP if ($lng == 'TH') {
+                            print_r($product_hightlight[$j]['product_highlight_name_th']);
+                        } else {
+                            print_r($product_hightlight[$j]['product_highlight_name_en']);
+                        } ?>
+
+
+
+
+
+
+
+                                <?PHP  ?>
                             </div>
                         </div>
                     <?PHP } ?>

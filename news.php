@@ -19,7 +19,7 @@ require_once('models/NewsModel.php');
 $news_model = new NewsModel;
 $news = $news_model->getNewsBy();
 $news_most = $news_model->getNewsReadMost();
-print_r($news_most);
+// print_r($news_most);
 
 
 

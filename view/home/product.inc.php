@@ -3,17 +3,17 @@
     <div class="text-center" style="padding-top: 7vw;">
         <div class="text-product-home-topic">
         <?PHP if ($lan == 'TH') { ?>
-           <?PHP  print_r($product_header[0]['product_header_th']) ?>
+           <?PHP  echo ($product_header[0]['product_header_th']) ?>
         <?PHP } else { ?>
-           <?PHP  print_r($product_header[0]['product_header_en']) ?>
+           <?PHP  echo ($product_header[0]['product_header_en']) ?>
         <?PHP } ?>
         </div>
         <div class="text-product-home">
         
         <?PHP if ($lan == 'TH') { ?>
-           <?PHP  print_r($product_header[0]['product_header_detail_th']) ?>
+           <?PHP  echo ($product_header[0]['product_header_detail_th']) ?>
         <?PHP } else { ?>
-           <?PHP  print_r($product_header[0]['product_header_detail_en']) ?>
+           <?PHP  echo ($product_header[0]['product_header_detail_en']) ?>
         <?PHP } ?>
 
 
@@ -29,9 +29,9 @@
 
 
                             <?PHP if ($lan == 'TH') { ?>
-                            <?PHP  print_r($product[$i]['product_name_th']) ?>
+                            <?PHP  echo ($product[$i]['product_name_th']) ?>
                             <?PHP } else { ?>
-                            <?PHP  print_r($product[$i]['product_name_en']) ?>
+                            <?PHP  echo ($product[$i]['product_name_en']) ?>
                             <?PHP } ?>
 
 
@@ -39,9 +39,9 @@
                         <div class="product-product-detail">
 
                             <?PHP if ($lan == 'TH') { ?>
-                            <?PHP  print_r($product[$i]['product_detail_th']) ?>
+                            <?PHP  echo ($product[$i]['product_detail_th']) ?>
                             <?PHP } else { ?>
-                            <?PHP  print_r($product[$i]['product_detail_en']) ?>
+                            <?PHP  echo ($product[$i]['product_detail_en']) ?>
                             <?PHP } ?>
 
 

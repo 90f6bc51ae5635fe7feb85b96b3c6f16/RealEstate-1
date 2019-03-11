@@ -34,9 +34,9 @@
 
 
                                     <?PHP if ($lng == 'TH') {
-                                        print_r($product_header[0]['product_header_detail_th']);
+                                        echo ($product_header[0]['product_header_detail_th']);
                                     } else {
-                                        print_r($product_header[0]['product_header_detail_en']);
+                                        echo ($product_header[0]['product_header_detail_en']);
                                     } ?>
 
 

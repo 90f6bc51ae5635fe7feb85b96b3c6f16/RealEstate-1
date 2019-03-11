@@ -10,9 +10,9 @@
 
 
                     <?PHP if ($lng == 'TH') {
-                        print_r($product[0]['product_name_th']);
+                        echo ($product[0]['product_name_th']);
                     } else {
-                        print_r($product[0]['product_name_en']);
+                        echo ($product[0]['product_name_en']);
                     } ?>
 
                 </h1>
@@ -25,7 +25,7 @@
             <div class="col-lg-6 col-md-12 col-sm-6 p-0 ">
                 <section class="property-detail-img">
                     <?php for ($j = 0; $j < count($product_img); ++$j) { ?>
-                    <img class="property-de-img" src="img_upload/product_image/<?PHP print_r($product_img[$j]['product_image_img']); ?>">
+                    <img class="property-de-img" src="img_upload/product_image/<?PHP echo ($product_img[$j]['product_image_img']); ?>">
                     <?php 
                 } ?>
                 </section>
@@ -49,9 +49,9 @@
                     <div class="col" style="padding: 6% 0% 5% 7%;">
 
                         <?PHP if ($lng == 'TH') {
-                            print_r($product[0]['product_detail_th']);
+                            echo ($product[0]['product_detail_th']);
                         } else {
-                            print_r($product[0]['product_detail_en']);
+                            echo ($product[0]['product_detail_en']);
                         } ?>
 
 
@@ -70,9 +70,9 @@
 
 
                             <?PHP if ($lng == 'TH') {
-                                print_r($type_by_id['product_types_name_th']);
+                                echo ($type_by_id['product_types_name_th']);
                             } else {
-                                print_r($type_by_id['product_types_name_en']);
+                                echo ($type_by_id['product_types_name_en']);
                             } ?>
 
 
@@ -89,9 +89,9 @@
 
 
                             <?PHP if ($lng == 'TH') {
-                                print_r($product[0]['product_name_th']);
+                                echo ($product[0]['product_name_th']);
                             } else {
-                                print_r($product[0]['product_name_en']);
+                                echo ($product[0]['product_name_en']);
                             } ?>
 
                         </div>
@@ -108,9 +108,9 @@
 
 
                             <?PHP if ($lng == 'TH') {
-                                print_r($product[0]['location_name_th']);
+                                echo ($product[0]['location_name_th']);
                             } else {
-                                print_r($product[0]['location_name_en']);
+                                echo ($product[0]['location_name_en']);
                             } ?>
 
 
@@ -130,9 +130,9 @@
 
 
                             <?PHP if ($lng == 'TH') {
-                                print_r($product[0]['product_bedroom']);
+                                echo ($product[0]['product_bedroom']);
                             } else {
-                                print_r($product[0]['product_bedroom']);
+                                echo ($product[0]['product_bedroom']);
                             } ?>
 
 
@@ -154,9 +154,9 @@
 
 
                             <?PHP if ($lng == 'TH') {
-                                print_r($product[0]['product_bathroom']);
+                                echo ($product[0]['product_bathroom']);
                             } else {
-                                print_r($product[0]['product_bathroom']);
+                                echo ($product[0]['product_bathroom']);
                             } ?>
 
 
@@ -182,9 +182,9 @@
 
 
                             <?PHP if ($lng == 'TH') {
-                                print_r($product[0]['furniture_name_th']);
+                                echo ($product[0]['furniture_name_th']);
                             } else {
-                                print_r($product[0]['furniture_name_en']);
+                                echo ($product[0]['furniture_name_en']);
                             } ?>
 
 
@@ -212,9 +212,9 @@
 
 
                         <?PHP if ($lng == 'TH') {
-                            (print_r(number_format($product[0]['product_price'], 2)));
+                            (echo (number_format($product[0]['product_price'], 2)));
                         } else {
-                            (print_r(number_format($product[0]['product_price'], 2)));
+                            (echo (number_format($product[0]['product_price'], 2)));
                         } ?>
 
 
@@ -248,7 +248,7 @@
 
                             <?php for ($j = 0; $j < count($product_hightlight); ++$j) { ?>
                             <div class="col-lg-3 col-md-4 col-sm-6 p-2">
-                                <div class="col-12 property-bg" style="background-image: url(img_upload/product_highlight/<?PHP print_r($product_hightlight[$j]['product_highlight_img']); ?>);"></div>
+                                <div class="col-12 property-bg" style="background-image: url(img_upload/product_highlight/<?PHP echo ($product_hightlight[$j]['product_highlight_img']); ?>);"></div>
                                 <div class="col-12">
 
 
@@ -257,9 +257,9 @@
 
 
                                         <?PHP if ($lng == 'TH') {
-                                            print_r($product_hightlight[$j]['product_highlight_name_th']);
+                                            echo ($product_hightlight[$j]['product_highlight_name_th']);
                                         } else {
-                                            print_r($product_hightlight[$j]['product_highlight_name_en']);
+                                            echo ($product_hightlight[$j]['product_highlight_name_en']);
                                         } ?>
 
 

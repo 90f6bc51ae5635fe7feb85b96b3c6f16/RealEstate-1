@@ -37,9 +37,9 @@
 
 
                         <?PHP if ($lng == 'TH') {
-                            print_r($news[$i]['news_name_th']);
+                            echo ($news[$i]['news_name_th']);
                         } else {
-                            print_r($news[$i]['news_name_en']);
+                            echo ($news[$i]['news_name_en']);
                         } ?>
 
 
@@ -63,9 +63,9 @@
 
 
                         <?PHP if ($lng == 'TH') {
-                            print_r($news[$i]['news_detail_th']);
+                            echo ($news[$i]['news_detail_th']);
                         } else {
-                            print_r($news[$i]['news_detail_en']);
+                            echo ($news[$i]['news_detail_en']);
                         } ?>
 
 
@@ -75,7 +75,7 @@
                     <div class="row">
                         <div class="text-center element-item col-lg-6 col-md-6 col-sm-12">
                             <div style=" padding-top:20px;  ">
-                                <a href="news.php?action=read&news_read=<?PHP print_r($news[$i]['news_read']) ?>&id=<?PHP print_r($news[$i]['news_id']) ?>" class="btn btn-readmore">
+                                <a href="news.php?action=read&news_read=<?PHP echo ($news[$i]['news_read']) ?>&id=<?PHP echo ($news[$i]['news_id']) ?>" class="btn btn-readmore">
                                     READ MORE
                                 </a>
                             </div>
@@ -116,9 +116,9 @@
 
 
                         <?PHP if ($lng == 'TH') {
-                            print_r($news_most[$i]['news_name_th']);
+                            echo ($news_most[$i]['news_name_th']);
                         } else {
-                            print_r($news_most[$i]['news_name_en']);
+                            echo ($news_most[$i]['news_name_en']);
                         } ?>
 
 

@@ -106,7 +106,7 @@
 
 
 
-                    <?PHP for ($i = 0; $i < count($news); $i++) {
+                    <?PHP for ($i = 0; $i < 6; $i++) {
                         # code...
                         // $type[$i][''];
                         ?>
@@ -116,9 +116,9 @@
 
 
                         <?PHP if ($lng == 'TH') {
-                            print_r($news[$i]['news_name_th']);
+                            print_r($news_most[$i]['news_name_th']);
                         } else {
-                            print_r($news[$i]['news_name_en']);
+                            print_r($news_most[$i]['news_name_en']);
                         } ?>
 
 
@@ -129,12 +129,16 @@
 
 
 
-                        <?PHP echo  date("M d, Y ", strtotime($news[$i]['news_date'])); ?>
+                        <?PHP echo  date("M d, Y ", strtotime($news_most[$i]['news_date'])); ?>
 
 
 
 
                     </div>
+                    
+
+                    <div style="border-top: 2px solid  #5a5a5a;"></div>
+
                     <?php 
                 } ?>
 

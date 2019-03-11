@@ -48,8 +48,8 @@
 }
 @media (max-width: 768px) {
     .about-head{
-        padding-top: 100%;
         font-weight: 600;
+        padding-top: 100%;
     }
 }
 @media (max-width: 576px) {

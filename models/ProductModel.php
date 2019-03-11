@@ -26,6 +26,7 @@ class ProductModel extends BaseModel{
             return $data;
         }
     }
+    
     function getProductByType($product_types_id){
         $sql = " SELECT
             *
@@ -34,6 +35,36 @@ class ProductModel extends BaseModel{
                 
             WHERE
                 `product_types_id`  = '$product_types_id'
+        ";
+        
+        // echo "<pre>";
+        // print_r( $sql) ;
+        // echo "</pre>";
+        if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
+            $data = [];
+            while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)){
+                $data[] = $row;
+            }
+            $result->close();
+            return $data;
+        }
+    }
+
+    function getProductByProduct($product_id){
+        $sql = " SELECT
+            *
+            FROM
+                `tb_product`
+            LEFT JOIN
+                tb_location
+            ON
+                tb_product.location_id = tb_location.location_id
+                LEFT JOIN
+                tb_furniture
+            ON
+                tb_product.furniture_id = tb_furniture.furniture_id
+            WHERE
+                `product_id`  = '$product_id'
         ";
         
         // echo "<pre>";

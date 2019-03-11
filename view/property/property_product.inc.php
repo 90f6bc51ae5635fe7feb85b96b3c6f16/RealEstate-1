@@ -44,7 +44,7 @@
                         </p>
                     </div>
                     <div class="col" style="padding: 5% 0% 10% 0%;">
-                        <a type="button" href="" class="btn btn-default" role="button">
+                        <a type="button" href="property.php?action=product&id=<?PHP echo $product_by_type[$i]['product_id']; ?>&type_id=<?PHP echo $product_by_type[$i]['product_types_id']; ?>" class="btn btn-default" role="button">
                             DETAIL >
                         </a>
                     </div>

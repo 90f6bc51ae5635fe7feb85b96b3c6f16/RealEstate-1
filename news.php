@@ -1,59 +1,118 @@
 <?PHP
-if(isset($_COOKIE['language'])){
+if (isset($_COOKIE['language'])) {
     $lng = $_COOKIE['language'];
 }
 
 
 date_default_timezone_set("Asia/Bangkok");
-require_once('models/PageModel.php'); 
+
+
+
+require_once('models/PageModel.php');
 $page_model = new PageModel;
 $page = $page_model->getPageByID('5');
-
 // print_r($page);
+
+
+
+require_once('models/NewsModel.php');
+$news_model = new NewsModel;
+$news = $news_model->getNewsBy();
+$news_most = $news_model->getNewsReadMost();
+print_r($news_most);
+
+
+
+
+
 ?>
 
+
 <html>
+
 <head>
 
 
-    <meta property="og:type"          content="website">
-    <meta property="og:title"         content="<?PHP if($lng == "TH"){ echo $page['page_title_th']; }else{ echo $page['page_title_en'];} ?>">
-    <meta property="og:description"   content="<?PHP if($lng == "TH"){ echo $page['page_description_th']; }else{ echo $page['page_description_en']; } ?>">
-    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<?PHP if ($lng == " TH") {
+                                            echo $page['page_title_th'];
+                                        } else {
+                                            echo $page['page_title_en'];
+                                        } ?>">
+    <meta property="og:description" content="<?PHP if ($lng == " TH") {
+                                                    echo $page['page_description_th'];
+                                                } else {
+                                                    echo $page['page_description_en'];
+                                                } ?>">
 
 
 
 
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">   
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title> REAL ESTATE NEW&EVENT PAGE </title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <script src="template/js/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <title> REAL ESTATE NEW&EVENT PAGE </title>
 
-        <!-- Bootstrap Core CSS -->
-        <link rel="stylesheet" type="text/css" media="screen" href="template/bootstrap/css/bootstrap.min.css" />
-        <script src="template/bootstrap/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="template/js/jquery-2.2.0.min.js" type="text/javascript"></script>
 
-        <!-- slide -->
-        <link rel="stylesheet" type="text/css" href="template/slick/slick.css">
-        <script src="template/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="template/bootstrap/css/bootstrap.min.css" />
+    <script src="template/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-        <!-- Custom Fonts & CSS -->
-        <link rel="stylesheet" type="text/css" media="screen" href="template/css/style.css" />
-        
-        <link href="template/frontend/css/menu.css" rel="stylesheet">
-        <link href="template/frontend/css/footer.css" rel="stylesheet">
-        <link href="template/frontend/css/home-style.css" rel="stylesheet">
-        <link href="template/frontend/css/news-style.css" rel="stylesheet">
-    </head>
-    <body>
-    <?PHP require_once('view/menu.inc.php');?>
-    <?PHP require_once('view/news/slide.inc.php');?>
-    <?PHP require_once('view/news/view.inc.php');?>
+    <!-- slide -->
+    <link rel="stylesheet" type="text/css" href="template/slick/slick.css">
+    <script src="template/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- Custom Fonts & CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="template/css/style.css" />
+
+    <link href="template/frontend/css/menu.css" rel="stylesheet">
+    <link href="template/frontend/css/footer.css" rel="stylesheet">
+    <link href="template/frontend/css/home-style.css" rel="stylesheet">
+    <link href="template/frontend/css/news-style.css" rel="stylesheet">
+</head>
+
+<body>
+    <?PHP require_once('view/menu.inc.php'); ?>
+    <?PHP require_once('view/news/slide.inc.php');
+
+
+
+    if (!isset($_GET['action'])) {
+
+
+
+
+        require_once('view/news/view.inc.php');
+    } else if ($_GET['action'] == "read") {
+
+        $news_read = ($_GET['news_read'] + 1);
+        // print_r($news_read);
+
+        $check_result = $news_model->updateNewsByRead($_GET['id'], $news_read);
+        // print_r($check_result);
+
+        require_once('view/news/view.inc.php');
+
+
+        ?>
+    <script>
+        window.location = "news.php"
+    </script>
+    <?PHP
+
+}
+
+
+
+?>
+
+
     <?PHP require_once('view/footer.inc.php'); ?>
-    </body>
-</html>
+</body>
+
+</html> 

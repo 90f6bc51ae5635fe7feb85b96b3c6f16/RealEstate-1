@@ -14,25 +14,25 @@
         news_detail_en = $.trim(news_detail_en);
         
         if(news_name_th.length == 0){
-            alert("กรุณากรอกชื่อ");
+            alert("กรุณากรอกชื่อ TH");
             document.getElementById("news_name_th").focus();
             return false;
         }else if(news_name_en.length == 0){
-            alert("กรุณากรอกชื่อ");
+            alert("กรุณากรอกชื่อ EN");
             document.getElementById("news_name_en").focus();
             return false;
         }else if(news_img.length == 0){
             alert("กรุณาเลือกรูปภาพ");
             document.getElementById("news_img").focus();
             return false;
-        }else if(news_detail_th.length == 0){
-            alert("กรุณากรอกรายละเอียด");
-            document.getElementById("news_detail_th").focus();
-            return false;
-        }else if(news_detail_en.length == 0){
-            alert("กรุณากรอกรายละเอียด");
-            document.getElementById("news_detail_en").focus();
-            return false;
+        // }else if(news_detail_th.length == 0){
+        //     alert("กรุณากรอกรายละเอียด TH");
+        //     document.getElementById("news_detail_th").focus();
+            // return false;
+        // }else if(news_detail_en.length == 0){
+        //     alert("กรุณากรอกรายละเอียด EN");
+        //     document.getElementById("news_detail_en").focus();
+        //     return false;
         }else{
             return true;
         }

@@ -24,7 +24,7 @@ $type_by_id = $type_model->getTypesByID($_GET['type_id']);
 require_once('models/ProductModel.php'); 
 $product_by_type_model = new ProductModel;
 $product_by_type = $product_by_type_model->getProductByType($_GET['type_id']);
-print_r($product_by_type);
+// print_r($product_by_type);
 
 
 
@@ -80,18 +80,18 @@ print_r($product_by_type);
 
         <?PHP
             
-        if( !isset($_GET['action']) ) {
+        // if( !isset($_GET['action']) ) {
             
-            require_once('view/property/property_type.inc.php');
-        } else if( $_GET['action'] == "detail") {
+        //     require_once('view/property/property_type.inc.php');
+        // } else if( $_GET['action'] == "detail") {
             
-            require_once('view/property/property_product.inc.php');
+        //     require_once('view/property/property_product.inc.php');
 
-        } else if( $_GET['action'] == "product") {
+        // } else if( $_GET['action'] == "product") {
 
             require_once('view/property/property_detail.inc.php'); 
 
-        }
+        // }
         ?>
 
 

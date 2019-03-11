@@ -24,7 +24,7 @@ $type_by_id = $type_model->getTypesByID($_GET['type_id']);
 require_once('models/ProductModel.php'); 
 $product_by_type_model = new ProductModel;
 $product_by_type = $product_by_type_model->getProductByType($_GET['type_id']);
-print_r($product_by_type);
+// print_r($product_by_type);
 
 
 

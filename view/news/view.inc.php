@@ -47,8 +47,16 @@
 
                     </div>
                     <div class="date-news">
-                        
-                        <?PHP echo  date("M d, Y ",strtotime($news[$i]['news_date']));?>
+
+
+
+
+                        <?PHP echo  date("M d, Y ", strtotime($news[$i]['news_date'])); ?>
+
+
+
+
+
                     </div>
                     <div class="detail-news cut-text-multi">
 
@@ -92,27 +100,45 @@
                     <div class="most-read">
                         Most Read This Month
                     </div>
+
+
                     <div style="border-top: 2px solid  #5a5a5a;"></div>
+
+
+
+                    <?PHP for ($i = 0; $i < count($news); $i++) {
+                        # code...
+                        // $type[$i][''];
+                        ?>
+
+
                     <div class="topic-news2">
-                        DDproperty Property Index Saw Prices For Residential Property In Bangkok
+
+
+                        <?PHP if ($lng == 'TH') {
+                            print_r($news[$i]['news_name_th']);
+                        } else {
+                            print_r($news[$i]['news_name_en']);
+                        } ?>
+
+
+
                     </div>
                     <div class="date-news2">
-                        Aug 12, 2015
+
+
+
+
+                        <?PHP echo  date("M d, Y ", strtotime($news[$i]['news_date'])); ?>
+
+
+
+
                     </div>
-                    <div style="border-top: 2px solid  #5a5a5a;"></div>
-                    <div class="topic-news2">
-                        DDproperty Property Index Saw Prices For Residential Property In Bangkok
-                    </div>
-                    <div class="date-news2">
-                        Aug 12, 2015
-                    </div>
-                    <div style="border-top: 2px solid  #5a5a5a;"></div>
-                    <div class="topic-news2">
-                        DDproperty Property Index Saw Prices For Residential Property In Bangkok
-                    </div>
-                    <div class="date-news2">
-                        Aug 12, 2015
-                    </div>
+                    <?php 
+                } ?>
+
+
 
                 </div>
             </div>

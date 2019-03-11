@@ -18,8 +18,26 @@
         </div>
 
         <div class="row m-0" style="padding: 0% 0% 5% 0%;">
-            <div class="col-lg-6 col-md-12 col-sm-6 p-0 "
-                style="background-image: url(img_upload/types/05032019093050-566508.jpg);">
+            <div class="col-lg-6 col-md-12 col-sm-6 p-0 ">
+            <section class="property-detail-img">
+                <?php for ($j = 0; $j < 5; ++$j) { ?>
+                <img class="property-de-img"
+                    src="img_upload/types/05032019093050-566508.jpg">
+                <?php } ?>
+            </section>
+
+            <script type="text/javascript">
+            $(document).on('ready', function() {
+                $(".property-detail-img").slick({
+                    arrows: false,
+                    dots: false,
+                    infinite: true,
+                    autoplay: true,
+                    autoplaySpeed: 2500,
+                });
+            });
+            </script>
+
             </div>
 
             <div class="col-lg-6 col-md-12 col-sm-6">
@@ -157,7 +175,21 @@
                         :
                     </div>
                     <div class="col-5 col-sm-4 p-0">
-                        8,900,000
+                    
+                    
+
+
+
+
+                    <?PHP if($lng == 'TH') { (print_r(number_format($product[0]['product_price'],2))); } else {  (print_r(number_format($product[0]['product_price'],2)));  } ?>
+
+
+
+
+
+
+
+
                     </div>
                 </div>
 

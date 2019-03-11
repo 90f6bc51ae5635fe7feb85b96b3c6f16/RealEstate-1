@@ -32,9 +32,16 @@ class ProductModel extends BaseModel{
             *
             FROM
                 `tb_product`
-                
+                  
+            LEFT JOIN 
+                tb_product_image 
+            ON 
+                tb_product.product_id = tb_product_image.product_id 
             WHERE
                 `product_types_id`  = '$product_types_id'
+                
+            GROUP BY 
+                tb_product.product_id
         ";
         
         // echo "<pre>";
@@ -63,8 +70,15 @@ class ProductModel extends BaseModel{
                 tb_furniture
             ON
                 tb_product.furniture_id = tb_furniture.furniture_id
+                
+            LEFT JOIN 
+                tb_product_image 
+            ON 
+                tb_product.product_id = tb_product_image.product_id 
             WHERE
-                `product_id`  = '$product_id'
+                tb_product.product_id  = '$product_id'
+            GROUP BY 
+                tb_product.product_id
         ";
         
         // echo "<pre>";

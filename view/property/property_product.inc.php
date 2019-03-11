@@ -21,7 +21,7 @@
             <div class="col-lg-4 col-sm-6 col-md-4 p-1 text-center" >
                 <div style="background-color: #f2f2f2;">
                     <div class="col" style="padding: 0% 0% 5% 0%;">
-                        <div class="property-bg" style="background-image: url(img_upload/types/05032019093050-566508.jpg);">
+                        <div class="property-bg" style="background-image: url(img_upload/product_image/<?PHP print_r($product_by_type[$i]['product_image_img']); ?>);">
                         </div>
                     </div>
                     <div class="col">

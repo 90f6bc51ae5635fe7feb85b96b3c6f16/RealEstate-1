@@ -18,14 +18,14 @@ require_once('models/TypesModel.php');
 $type_model = new TypesModel;
 $type = $type_model->getTypesBy();
 $type_by_id = $type_model->getTypesByID($_GET['type_id']);
-print_r($type_by_id);
+// print_r($type_by_id);
 
 
 require_once('models/ProductModel.php'); 
 $product_model = new ProductModel;
 $product_by_type = $product_model->getProductByType($_GET['type_id']);
 $product = $product_model-> getProductByProduct($_GET['id']);
-print_r($product);
+// print_r($product_by_type);
 
 
 

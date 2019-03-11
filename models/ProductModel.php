@@ -140,6 +140,44 @@ class ProductModel extends BaseModel{
         }
     }
 
+    function getProducImgtById($product_id){
+        $sql = "SELECT
+                *
+            FROM
+                `tb_product_image`
+            WHERE
+                `product_id` = '$product_id'
+
+        ";
+        if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
+            $data = [];
+            while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)){
+                $data[] = $row;
+            }
+            $result->close();
+            return $data;
+        }
+    }
+
+    function getProducHightlightById($product_id){
+        $sql = "SELECT
+                *
+            FROM
+                `tb_product_highlight`
+            WHERE
+                product_id = '$product_id'
+
+        ";
+        if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
+            $data = [];
+            while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)){
+                $data[] = $row;
+            }
+            $result->close();
+            return $data;
+        }
+    }
+
     function getProductHeaderBy(){
         $sql = "SELECT
         *

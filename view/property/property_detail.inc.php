@@ -9,7 +9,11 @@
                 <h1 class="proper ty-de-h1">
 
 
-                    <?PHP if($lng == 'TH') { print_r($product[0]['product_name_th']); } else {  print_r($product[0]['product_name_en']);  } ?>
+                    <?PHP if ($lng == 'TH') {
+                        print_r($product[0]['product_name_th']);
+                    } else {
+                        print_r($product[0]['product_name_en']);
+                    } ?>
 
                 </h1>
                 <hr class="border-contact" style="border-top: 2px solid  #5a5a5a; width:100%;">
@@ -19,24 +23,24 @@
 
         <div class="row m-0" style="padding: 0% 0% 5% 0%;">
             <div class="col-lg-6 col-md-12 col-sm-6 p-0 ">
-            <section class="property-detail-img">
-                <?php for ($j = 0; $j < 5; ++$j) { ?>
-                <img class="property-de-img"
-                    src="img_upload/types/05032019093050-566508.jpg">
-                <?php } ?>
-            </section>
+                <section class="property-detail-img">
+                    <?php for ($j = 0; $j < count($product_img); ++$j) { ?>
+                    <img class="property-de-img" src="img_upload/product_image/<?PHP print_r($product_img[$j]['product_image_img']); ?>">
+                    <?php 
+                } ?>
+                </section>
 
-            <script type="text/javascript">
-            $(document).on('ready', function() {
-                $(".property-detail-img").slick({
-                    arrows: false,
-                    dots: false,
-                    infinite: true,
-                    autoplay: true,
-                    autoplaySpeed: 2500,
-                });
-            });
-            </script>
+                <script type="text/javascript">
+                    $(document).on('ready', function() {
+                        $(".property-detail-img").slick({
+                            arrows: false,
+                            dots: false,
+                            infinite: true,
+                            autoplay: true,
+                            autoplaySpeed: 2500,
+                        });
+                    });
+                </script>
 
             </div>
 
@@ -44,7 +48,11 @@
                 <div class="row">
                     <div class="col" style="padding: 6% 0% 5% 7%;">
 
-                        <?PHP if($lng == 'TH') { print_r($product[0]['product_detail_th']); } else {  print_r($product[0]['product_detail_en']);  } ?>
+                        <?PHP if ($lng == 'TH') {
+                            print_r($product[0]['product_detail_th']);
+                        } else {
+                            print_r($product[0]['product_detail_en']);
+                        } ?>
 
 
                     </div>
@@ -61,7 +69,11 @@
                         <div class="col-5 col-sm-4 p-0">
 
 
-                            <?PHP if($lng == 'TH') { print_r($type_by_id['product_types_name_th']); } else {  print_r($type_by_id['product_types_name_en']);  } ?>
+                            <?PHP if ($lng == 'TH') {
+                                print_r($type_by_id['product_types_name_th']);
+                            } else {
+                                print_r($type_by_id['product_types_name_en']);
+                            } ?>
 
 
                         </div>
@@ -76,9 +88,11 @@
                         <div class="col-5 col-sm-4 p-0">
 
 
-
-                            <?PHP if($lng == 'TH') { print_r($product[0]['product_detail_th']); } else {  print_r($product[0]['product_detail_en']);  } ?>
-
+                            <?PHP if ($lng == 'TH') {
+                                print_r($product[0]['product_name_th']);
+                            } else {
+                                print_r($product[0]['product_name_en']);
+                            } ?>
 
                         </div>
                     </div>
@@ -93,7 +107,11 @@
 
 
 
-                            <?PHP if($lng == 'TH') { print_r($product[0]['location_name_th']); } else {  print_r($product[0]['location_name_en']);  } ?>
+                            <?PHP if ($lng == 'TH') {
+                                print_r($product[0]['location_name_th']);
+                            } else {
+                                print_r($product[0]['location_name_en']);
+                            } ?>
 
 
                         </div>
@@ -111,7 +129,11 @@
 
 
 
-                            <?PHP if($lng == 'TH') { print_r($product[0]['product_bedroom']); } else {  print_r($product[0]['product_bedroom']);  } ?>
+                            <?PHP if ($lng == 'TH') {
+                                print_r($product[0]['product_bedroom']);
+                            } else {
+                                print_r($product[0]['product_bedroom']);
+                            } ?>
 
 
 
@@ -131,7 +153,11 @@
 
 
 
-                            <?PHP if($lng == 'TH') { print_r($product[0]['product_bathroom']); } else {  print_r($product[0]['product_bathroom']);  } ?>
+                            <?PHP if ($lng == 'TH') {
+                                print_r($product[0]['product_bathroom']);
+                            } else {
+                                print_r($product[0]['product_bathroom']);
+                            } ?>
 
 
 
@@ -155,7 +181,11 @@
 
 
 
-                            <?PHP if($lng == 'TH') { print_r($product[0]['furniture_name_th']); } else {  print_r($product[0]['furniture_name_en']);  } ?>
+                            <?PHP if ($lng == 'TH') {
+                                print_r($product[0]['furniture_name_th']);
+                            } else {
+                                print_r($product[0]['furniture_name_en']);
+                            } ?>
 
 
 
@@ -175,13 +205,17 @@
                         :
                     </div>
                     <div class="col-5 col-sm-4 p-0">
-                    
-                    
 
 
 
 
-                    <?PHP if($lng == 'TH') { (print_r(number_format($product[0]['product_price'],2))); } else {  (print_r(number_format($product[0]['product_price'],2)));  } ?>
+
+
+                        <?PHP if ($lng == 'TH') {
+                            (print_r(number_format($product[0]['product_price'], 2)));
+                        } else {
+                            (print_r(number_format($product[0]['product_price'], 2)));
+                        } ?>
 
 
 
@@ -196,8 +230,7 @@
                 <div class="row" style="padding: 15% 0% 15% 0%">
                     <div class="col-6">
                         <div>
-                            <button type="submit" name="" id="" class="btn btn-orage btn-md" btn-block=""
-                                style="width: 150px; text-align: center; margin:0 auto;">
+                            <button type="submit" name="" id="" class="btn btn-orage btn-md" btn-block="" style="width: 150px; text-align: center; margin:0 auto;">
                                 CONTACT US
                             </button>
                         </div>
@@ -211,14 +244,18 @@
                     <div class="col-12" style="padding: 5% 0% 5% 0%">
                         HIGHLIGHT
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 p-2">
-                        <div class="col-12 property-bg"
-                            style="background-image: url(img_upload/types/05032019093050-566508.jpg);"></div>
-                        <div class="col-12">
-                            Swimming pool
-                        </div>
-                    </div>
+                    <div class="row">
 
+                    <?php for ($j = 0; $j < count($product_hightlight); ++$j) { ?>
+                        <div class="col-lg-3 col-md-4 col-sm-6 p-2">
+                            <div class="col-12 property-bg" style="background-image: url(img_upload/product_highlight/<?PHP print_r($product_hightlight[$j]['product_highlight_img']); ?>);"></div>
+                            <div class="col-12">
+                                Swimming pool
+                            </div>
+                        </div>
+                    <?PHP } ?>
+
+                    </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 text-center">
                     <!-- Google Map -->
@@ -229,4 +266,4 @@
 
             <!-- div col-12 -->
         </div>
-    </div>
+    </div> 

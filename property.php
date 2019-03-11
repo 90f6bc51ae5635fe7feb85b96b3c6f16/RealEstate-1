@@ -25,7 +25,9 @@ require_once('models/ProductModel.php');
 $product_model = new ProductModel;
 $product_by_type = $product_model->getProductByType($_GET['type_id']);
 $product = $product_model-> getProductByProduct($_GET['id']);
-// print_r($product_by_type);
+$product_img = $product_model-> getProducImgtById($_GET['id']);
+$product_hightlight = $product_model-> getProducHightlightById($_GET['id']);
+// print_r($product_hightlight);
 
 
 

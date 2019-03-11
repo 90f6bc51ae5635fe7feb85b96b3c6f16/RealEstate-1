@@ -124,3 +124,9 @@
         padding-top: 180%;
     }
 }
+@media (max-width: 768px) {
+    .sevice1 {
+        padding-top: 10%;
+        font-size: 25px;
+    }
+}

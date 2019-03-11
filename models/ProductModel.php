@@ -26,6 +26,28 @@ class ProductModel extends BaseModel{
             return $data;
         }
     }
+    function getProductByType($product_types_id){
+        $sql = " SELECT
+            *
+            FROM
+                `tb_product`
+                
+            WHERE
+                `product_types_id`  = '$product_types_id'
+        ";
+        
+        // echo "<pre>";
+        // print_r( $sql) ;
+        // echo "</pre>";
+        if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
+            $data = [];
+            while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)){
+                $data[] = $row;
+            }
+            $result->close();
+            return $data;
+        }
+    }
     
     function getProducSearchBy($location_id, $product_types_id, $product_name){
         

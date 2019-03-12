@@ -94,7 +94,7 @@
                 <?php for ($i = 1; $i <= $num_page; $i++) {
                     ?>
 
-                <a class="btn btn-readmore"> <?php echo $i;  ?> </a>&nbsp;
+                <a class="btn btn-readmore" href="news.php?page=<?php echo $i;  ?>"> <?php echo $i;  ?> </a>&nbsp;
                 <?
             }
             ?>

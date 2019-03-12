@@ -212,9 +212,9 @@
 
 
                         <?PHP if ($lng == 'TH') {
-                            (echo (number_format($product[0]['product_price'], 2)));
+                            echo number_format($product[0]['product_price'], 2);
                         } else {
-                            (echo (number_format($product[0]['product_price'], 2)));
+                            echo number_format($product[0]['product_price'], 2);
                         } ?>
 
 

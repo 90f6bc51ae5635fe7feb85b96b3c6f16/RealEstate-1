@@ -16,6 +16,13 @@ $page = $page_model->getPageByID('3');
 // print_r($page);
 
 
+require_once('models/SlideModel.php'); 
+$slide_model = new SlideModel;
+$slide = $slide_model->getSlideByID('2');
+
+// print_r($slide);
+
+
 
 
 require_once('models/ServicesModel.php');    

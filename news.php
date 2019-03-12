@@ -15,6 +15,13 @@ $page = $page_model->getPageByID('5');
 
 
 
+require_once('models/SlideModel.php');
+$slide_model = new SlideModel;
+$slide = $slide_model->getSlideByID('4');
+// print_r($slide);
+
+
+
 require_once('models/NewsModel.php');
 $news_model = new NewsModel;
 $news = $news_model->getNewsBy();

@@ -2,12 +2,24 @@
 if(isset($_COOKIE['language'])){
     $lng = $_COOKIE['language'];
 }
+
+
+date_default_timezone_set("Asia/Bangkok");
+
+
+
 require_once('models/PageModel.php'); 
 $page_model = new PageModel;
 $page = $page_model->getPageByID('6');
 
-date_default_timezone_set("Asia/Bangkok");
-// print_r($page);
+
+
+
+require_once('models/SlideModel.php'); 
+$slide_model = new SlideModel;
+$slide = $slide_model->getSlideByID('5');
+
+// print_r($slide);
 
 
 
@@ -16,9 +28,9 @@ require_once('models/ServicesModel.php');
 $service_model = new ServicesModel;   
 $services = $service_model->  getServicesBy(); 
 
-echo "<pre>";
-print_r($service) ;
-echo "</pre>";
+// echo "<pre>";
+// print_r($service) ;
+// echo "</pre>";
 
 
 

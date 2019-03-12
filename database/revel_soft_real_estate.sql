@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 11, 2019 at 09:37 AM
+-- Generation Time: Mar 12, 2019 at 03:24 AM
 -- Server version: 5.7.17-log
 -- PHP Version: 5.6.30
 
@@ -568,8 +568,8 @@ CREATE TABLE `tb_news` (
 --
 
 INSERT INTO `tb_news` (`news_id`, `news_name_th`, `news_name_en`, `news_date`, `news_img`, `news_detail_th`, `news_detail_en`, `news_read`) VALUES
-(1, 'นครราชสีมา', 'DDproperty Property Index Saw Prices For Residential Property In Bangkok', '2019-03-04 03:06:27', '04032019100750-3305164-image2.png', 'เป็นจังหวัดที่มีพื้นที่มากที่สุดในประเทศไทยและมีประชากรมากเป็นอันดับ 2 ของประเทศ อยู่ในภาคตะวันออกเฉียงเหนือ ชื่อเมืองนครราชสีมาปรากฏครั้งแรกเป็นเมืองพระยามหานครในการปฏิรูปการปกครองในรัชสมัยสมเด็จพระบรมไตรโลกนาถ(ตั้งอยู่ในพื้นที่อำเภอสูงเนิน จังหวัดนครราชสีมา) ในรัชสมัยสมเด็จพระนารายณ์มหาราชทรงมีรับสั่งให้ย้ายเมืองนครราชสีมามาตั้งบริเวณพื้นที่ปัจจุบัน เมื่อ พ.ศ. 2217', '\n                DDproperty revealed that demand for accommodation from millennials will continue\n                    to grow significantly. In Bangkok, Chatuchak, Suanluang and Phyathai are identified\n                    as high growth areas. DDproperty revealed that demand for accommodation from\n                    millennials will continue to grow significantly. In Bangkok, Chatuchak,\n                    Suanluang and Phyathai are identified as high growth areas.', 3),
-(2, 'จังหวัดเชียงใหม่ ', 'Chiang Mai', '2019-03-04 03:09:44', '04032019100944-3305164-image2.png', ' จังหวัดเชียงใหม่มีเขตเมืองที่จัดเป็นเมืองใหญ่อันดับที่สองของประเทศไทยรองจากกรุงเทพมหานคร มีประชากรในเขตเมืองและชานเมือง 960,906 คน (พ.ศ. 2553) จังหวัดเชียงใหม่แบ่งการปกครองออกเป็น 25 อำเภอ โดยมีอำเภอเมืองเชียงใหม่เป็นศูนย์กลางของจังหวัด เมื่อ พ.ศ. 2552 มีการจัดตั้งอำเภอกัลยาณิวัฒนาเป็นอำเภอลำดับที่ 25 ของจังหวัด และลำดับที่ 878 ของประเทศ ซึ่งเป็นอำเภอล่าสุดของไทย', ' Chiang Mai has the second largest city in Thailand after Bangkok. There are 960,906 people in the urban and suburban areas (2010). Chiang Mai province is divided into 25 districts with the city of Chiang Mai as the center of the province. In 2009, the district was established. No. 25 of the province and No. 878 of the country which is the latest district in Thailand\r\n', 10),
+(1, 'นครราชสีมา', 'DDproperty Property Index Saw Prices For Residential Property In Bangkok', '2019-03-04 03:06:27', '04032019100750-3305164-image2.png', 'เป็นจังหวัดที่มีพื้นที่มากที่สุดในประเทศไทยและมีประชากรมากเป็นอันดับ 2 ของประเทศ อยู่ในภาคตะวันออกเฉียงเหนือ ชื่อเมืองนครราชสีมาปรากฏครั้งแรกเป็นเมืองพระยามหานครในการปฏิรูปการปกครองในรัชสมัยสมเด็จพระบรมไตรโลกนาถ(ตั้งอยู่ในพื้นที่อำเภอสูงเนิน จังหวัดนครราชสีมา) ในรัชสมัยสมเด็จพระนารายณ์มหาราชทรงมีรับสั่งให้ย้ายเมืองนครราชสีมามาตั้งบริเวณพื้นที่ปัจจุบัน เมื่อ พ.ศ. 2217', '\n                DDproperty revealed that demand for accommodation from millennials will continue\n                    to grow significantly. In Bangkok, Chatuchak, Suanluang and Phyathai are identified\n                    as high growth areas. DDproperty revealed that demand for accommodation from\n                    millennials will continue to grow significantly. In Bangkok, Chatuchak,\n                    Suanluang and Phyathai are identified as high growth areas.', 4),
+(2, 'จังหวัดเชียงใหม่ ', 'Chiang Mai', '2019-03-04 03:09:44', '04032019100944-3305164-image2.png', ' จังหวัดเชียงใหม่มีเขตเมืองที่จัดเป็นเมืองใหญ่อันดับที่สองของประเทศไทยรองจากกรุงเทพมหานคร มีประชากรในเขตเมืองและชานเมือง 960,906 คน (พ.ศ. 2553) จังหวัดเชียงใหม่แบ่งการปกครองออกเป็น 25 อำเภอ โดยมีอำเภอเมืองเชียงใหม่เป็นศูนย์กลางของจังหวัด เมื่อ พ.ศ. 2552 มีการจัดตั้งอำเภอกัลยาณิวัฒนาเป็นอำเภอลำดับที่ 25 ของจังหวัด และลำดับที่ 878 ของประเทศ ซึ่งเป็นอำเภอล่าสุดของไทย', ' Chiang Mai has the second largest city in Thailand after Bangkok. There are 960,906 people in the urban and suburban areas (2010). Chiang Mai province is divided into 25 districts with the city of Chiang Mai as the center of the province. In 2009, the district was established. No. 25 of the province and No. 878 of the country which is the latest district in Thailand\r\n', 11),
 (3, 'นครราชสีมา หรือรู้จักในชื่อ โคราช', 'Nakhon Ratchasima or known as Korat', '2019-03-04 03:06:27', '04032019100750-3305164-image2.png', 'เป็นจังหวัดที่มีพื้นที่มากที่สุดในประเทศไทยและมีประชากรมากเป็นอันดับ 2 ของประเทศ อยู่ในภาคตะวันออกเฉียงเหนือ ชื่อเมืองนครราชสีมาปรากฏครั้งแรกเป็นเมืองพระยามหานครในการปฏิรูปการปกครองในรัชสมัยสมเด็จพระบรมไตรโลกนาถ(ตั้งอยู่ในพื้นที่อำเภอสูงเนิน จังหวัดนครราชสีมา) ในรัชสมัยสมเด็จพระนารายณ์มหาราชทรงมีรับสั่งให้ย้ายเมืองนครราชสีมามาตั้งบริเวณพื้นที่ปัจจุบัน เมื่อ พ.ศ. 2217', 'Is the province that has the most area in Thailand and has the second largest population of the country in the northeastern region The name of the city of Nakhon Ratchasima first appears as the city of Phraya Mahan in the administrative reform in the reign of King Borom Trai Lokanat (located in Sung Noen District). In the reign of King Narai the Great, ordered to move the city of Nakhon Ratchasima to the current area in 2217\r\n', 0),
 (4, 'จังหวัดเชียงใหม่ ', 'Chiang Mai', '2019-03-04 03:09:44', '04032019100944-3305164-image2.png', ' จังหวัดเชียงใหม่มีเขตเมืองที่จัดเป็นเมืองใหญ่อันดับที่สองของประเทศไทยรองจากกรุงเทพมหานคร มีประชากรในเขตเมืองและชานเมือง 960,906 คน (พ.ศ. 2553) จังหวัดเชียงใหม่แบ่งการปกครองออกเป็น 25 อำเภอ โดยมีอำเภอเมืองเชียงใหม่เป็นศูนย์กลางของจังหวัด เมื่อ พ.ศ. 2552 มีการจัดตั้งอำเภอกัลยาณิวัฒนาเป็นอำเภอลำดับที่ 25 ของจังหวัด และลำดับที่ 878 ของประเทศ ซึ่งเป็นอำเภอล่าสุดของไทย', ' Chiang Mai has the second largest city in Thailand after Bangkok. There are 960,906 people in the urban and suburban areas (2010). Chiang Mai province is divided into 25 districts with the city of Chiang Mai as the center of the province. In 2009, the district was established. No. 25 of the province and No. 878 of the country which is the latest district in Thailand\r\n', 0),
 (5, 'นครราชสีมา หรือรู้จักในชื่อ โคราช', 'Nakhon Ratchasima or known as Korat', '2019-03-04 03:06:27', '04032019100750-3305164-image2.png', 'เป็นจังหวัดที่มีพื้นที่มากที่สุดในประเทศไทยและมีประชากรมากเป็นอันดับ 2 ของประเทศ อยู่ในภาคตะวันออกเฉียงเหนือ ชื่อเมืองนครราชสีมาปรากฏครั้งแรกเป็นเมืองพระยามหานครในการปฏิรูปการปกครองในรัชสมัยสมเด็จพระบรมไตรโลกนาถ(ตั้งอยู่ในพื้นที่อำเภอสูงเนิน จังหวัดนครราชสีมา) ในรัชสมัยสมเด็จพระนารายณ์มหาราชทรงมีรับสั่งให้ย้ายเมืองนครราชสีมามาตั้งบริเวณพื้นที่ปัจจุบัน เมื่อ พ.ศ. 2217', 'Is the province that has the most area in Thailand and has the second largest population of the country in the northeastern region The name of the city of Nakhon Ratchasima first appears as the city of Phraya Mahan in the administrative reform in the reign of King Borom Trai Lokanat (located in Sung Noen District). In the reign of King Narai the Great, ordered to move the city of Nakhon Ratchasima to the current area in 2217\r\n', 0),
@@ -588,7 +588,7 @@ INSERT INTO `tb_news` (`news_id`, `news_name_th`, `news_name_en`, `news_date`, `
 (18, '00000000000000000000', '0000000000000000000000000', '2019-03-11 09:13:40', '11032019161340-default.png', '000000000000000000000000000000000', '000000000000000000000000000000000000000000000000000', 0),
 (19, 'sddasdasdas', 'dasdasdasdasd', '2019-03-11 09:15:44', '11032019161544-05032019145951-default.png', 'asdasdasdasdas', 'dasdasdasdasdasdasdasda', 0),
 (20, 'asdasdasd', 'asdasdasd', '2019-03-11 09:16:53', '11032019161653-05032019145951-default.png', 'asdasdasd', 'dasdasd', 0),
-(21, 'asdasd', 'asdasdasd', '2019-03-11 09:17:42', '11032019161742-default.png', 'asdasdasdas', 'dasdasdasd', 0);
+(21, 'asdasd', 'asdasdasd', '2019-03-11 09:17:42', '11032019161742-default.png', 'asdasdasdas', 'dasdasdasd', 1);
 
 -- --------------------------------------------------------
 
@@ -701,7 +701,7 @@ CREATE TABLE `tb_product_header` (
 --
 
 INSERT INTO `tb_product_header` (`product_header_id`, `product_header_th`, `product_header_en`, `product_header_detail_th`, `product_header_detail_en`) VALUES
-(1, 'บีบีซี เวิลด์ นิวส์ ', ' Donald J. Trump', 'ช่องรายการถูกส่งสัญญาณโดย Red Bee Media จากสถานีหลัก ณ The Broadcast Centre ซึ่งเป็นส่วนหนึ่งของ BBC Media Village และส่วนหนึ่งของ BBC White City ที่ White City ในลอนดอนตะวันตก โดยมีห้องส่งจาก BBC Television Centre ที่อยู่ในบริเวณเดียวกัน BBC World News มีห้องข่าวแยกออกจากห้องข่าวของ BBC News ห้องข่าวนี้ส่งสัญญาณตั้งแต่เวลา 05.00 น. ถึง 00.30 น. (เวลาสหราชอาณาจักร) ทุกๆ วันจันทร์ถึงศุกร์ และตั้งแต่ 06.00 น. ถึง 00.30 น. ในวันเสาร์และอาทิตย์ ส่วนในเวลา 01.00 น. ถึง 05.00 น. จะส่งสัญญาณจากห้องส่งภายในสหราชอาณาจักร หรือ BBC News', '\nThe channel is broadcast by Red Bee Media from the main station at The Broadcast Center, which is part of the BBC Media Village and part of BBC White City at White City in West London. With a room sent from the BBC Television Center in the same area. BBC World News has a news room separated from the BBC News newsroom. Until Friday and from 06.00 hrs to 00.30 hrs. On Saturdays and Sundays. At 01.00 hrs.\n');
+(1, 'บีบีซี เวิลด์ นิวส์ ', ' Donald J. Trump', 'ช่องรายการถูกส่งสัญญาณโดย Red Bee Media จากสถานีหลัก ณ The Broadcast Centre ซึ่งเป็นส่วนหนึ่งของ BBC Media&nbsp;&nbsp;', 'The channel is broadcast by Red Bee Media from the main station at The Broadcast Center, which is&nbsp; nd Sundays. At 01.00 hrs.');
 
 -- --------------------------------------------------------
 
@@ -886,8 +886,8 @@ CREATE TABLE `tb_services` (
 --
 
 INSERT INTO `tb_services` (`services_id`, `services_name_th`, `services_name_en`, `services_img`, `services_detail_th`, `services_detail_en`) VALUES
-(12, 'ผู้ขาย / อาจารย์', 'SELLER / LESSOR', '28022019155707-3305164-image2.png', 'Penthouse apartment for sale located on Iancu Nicolae Road. Wit New Darwin suburb Muirhead &ndash; which came in at number two with 49.7% price growth &ndash; and rapidly growing new Melbourne area, Clyde North, are examples of suburbs with high development, expansion potential and subsequent shifts in supply and demand Penthouse apartment for sale located on Iancu Nicolae Road. Wit New Darwin suburb Muirhead &ndash; which came in at number two with 49.7% price growth &ndash; and rapidlyrapidly growing new Melbourne area, Clyde North, are examples of suburbs with high development, expansion potential and subsequent shifts in supply and demand', 'Counter Service Pay ครบทุกการจ่ายบิลออนไลน์ ค่าน้ำ ค่าไฟ ค่าโทรศัพท์ และอื่นๆด้วยบัตรเครดิต ได้ทุกที่ ทุกเวลา &middot; All Bill บริการสะดวกจ่ายในทุกเรื่อง รับชำระบิลค่าอสังหาริมทรัพย์ ...'),
-(13, 'ผู้ขาย / อาจารย์', 'SELLER / LESSOR', '28022019155714-3305164-image2.png', 'Counter Service Pay ครบทุกการจ่ายบิลออนไลน์ ค่าน้ำ ค่าไฟ ค่าโทรศัพท์ และอื่นๆด้วยบัตรเครดิต ได้ทุกที่ ทุกเวลา &middot; All Bill บริการสะดวกจ่ายในทุกเรื่อง รับชำระบิลค่าอสังหาริมทรัพย์ ...', 'Counter Service Pay ครบทุกการจ่ายบิลออนไลน์ ค่าน้ำ ค่าไฟ ค่าโทรศัพท์ และอื่นๆด้วยบัตรเครดิต ได้ทุกที่ ทุกเวลา &middot; All Bill บริการสะดวกจ่ายในทุกเรื่อง รับชำระบิลค่าอสังหาริมทรัพย์ ...');
+(12, 'ผู้ขาย / อาจารย์', 'SELLER / LESSOR', '28022019155707-3305164-image2.png', 'Penthouse apartment for sale located on Iancu Nicolae Road. Wit New Darwin suburb Muirhead &ndash; which came in at number two with 49.7% price growth &ndash; and rapidly growing new Melbourne area, Clyde North, are examples of suburbs with high development, expansion potential and subsequent shifts in supply and demand Penthouse apartment for sale located on Iancu Nicolae Road. Wit New Darwin suburb Muirhead &ndash; which came in at number two with 49.7% price growth &ndash; and rapidlyrapidly growing new Melbourne area, Clyde North, are examples of suburbs with high development, expansion potential and subsequent shifts in supply and demand', 'Counter Service Pay ครบทุกการจ่ายบิลออนไลน์ ค่าน้ำ ค่าไฟ ค่าโทรศัพท์ และอื่นๆด้วยบัตรเครดิต ได้ทุกที่ ทุกเวลา &middot; All Bill บริการสะดวกจ่ายในทุกเรื่อง รับชำระบิลค่าสินค้า ...'),
+(13, 'ผู้ขาย / อาจารย์', 'SELLER / LESSOR', '28022019155714-3305164-image2.png', 'Counter Service Pay ครบทุกการจ่ายบิลออนไลน์ ค่าน้ำ ค่าไฟ ค่าโทรศัพท์ และอื่นๆด้วยบัตรเครดิต ได้ทุกที่ ทุกเวลา &middot; All Bill บริการสะดวกจ่ายในทุกเรื่อง รับชำระบิลค่าสินค้า ...', 'Counter Service Pay ครบทุกการจ่ายบิลออนไลน์ ค่าน้ำ ค่าไฟ ค่าโทรศัพท์ และอื่นๆด้วยบัตรเครดิต ได้ทุกที่ ทุกเวลา &middot; All Bill บริการสะดวกจ่ายในทุกเรื่อง รับชำระบิลค่าสินค้า ...');
 
 -- --------------------------------------------------------
 
@@ -909,6 +909,35 @@ CREATE TABLE `tb_service_head` (
 
 INSERT INTO `tb_service_head` (`service_head_id`, `service_head_title_en`, `service_head_sub_title_en`, `service_head_title_th`, `service_head_sub_title_th`) VALUES
 (1, 'SERVICE', 'Definition of service - the action of helping or doing work for someone, a system supplying a public need such as transport, communications, or utilities.', 'บริการ', 'ให้การสนับสนุนและดูลูกค้าในการซ่อมผลิตภัณฑ์และให้คำแนะนำรวมถึงความเชื่อเหลือในด้านต่างๆ โดยช่างที่ผ่านการฝึกอบรมและได้รับประกาศนียบัตรเป็นช่างผู้ชำนาญงานของศูนย์บริการซัมซุง \n\n');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_slide`
+--
+
+CREATE TABLE `tb_slide` (
+  `slide_id` int(11) NOT NULL,
+  `slide_name` varchar(100) NOT NULL,
+  `slide_title_th` varchar(100) DEFAULT NULL,
+  `slide_title_en` varchar(100) DEFAULT NULL,
+  `slide_description_th` text,
+  `slide_description_en` text,
+  `slide_image` varchar(200) NOT NULL,
+  `updateby` int(11) DEFAULT NULL,
+  `lastupdate` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tb_slide`
+--
+
+INSERT INTO `tb_slide` (`slide_id`, `slide_name`, `slide_title_th`, `slide_title_en`, `slide_description_th`, `slide_description_en`, `slide_image`, `updateby`, `lastupdate`) VALUES
+(1, 'about', 'REALESTATE-เกี่ยวกับเรา', 'REALESTATE-ABOUT', 'REALESTATE-เกี่ยวกับเรา', 'REALESTATE-ABOUT', '', 1, '2019-03-01 16:15:51'),
+(2, 'service', 'REALESTATE-บริการ', 'REALESTATE-SERVICE', 'REALESTATE-บริการ', 'REALESTATE-SERVICE', '', 1, '2019-03-01 16:15:51'),
+(3, 'property', 'REALESTATE-คุณสมบัติ', 'REALESTATE-PROPERTY', 'REALESTATE-คุณสมบัติ', 'REALESTATE-PROPERTY', '', 1, '2019-03-01 16:15:51'),
+(4, 'news&event', 'REALESTATE-ข่าวและเหตุการณ์', 'REALESTATE-NEWS&EVENT', 'REALESTATE-ข่าวและเหตุการณ์', 'REALESTATE-NEWS&EVENT', '', 1, '2019-03-01 16:15:51'),
+(5, 'contact', 'REALESTATE-ติดต่อเรา', 'REALESTATE-CONTACT', 'REALESTATE-ติดต่อเรา', 'REALESTATE-CONTACT', '', 1, '2019-03-01 16:15:51');
 
 -- --------------------------------------------------------
 
@@ -1093,6 +1122,12 @@ ALTER TABLE `tb_service_head`
   ADD PRIMARY KEY (`service_head_id`);
 
 --
+-- Indexes for table `tb_slide`
+--
+ALTER TABLE `tb_slide`
+  ADD PRIMARY KEY (`slide_id`);
+
+--
 -- Indexes for table `tb_user`
 --
 ALTER TABLE `tb_user`
@@ -1198,6 +1233,11 @@ ALTER TABLE `tb_services`
 --
 ALTER TABLE `tb_service_head`
   MODIFY `service_head_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `tb_slide`
+--
+ALTER TABLE `tb_slide`
+  MODIFY `slide_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `tb_user`
 --

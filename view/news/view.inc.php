@@ -113,15 +113,16 @@
 
 
                     <div class="topic-news2">
+                        <a href="news.php?action=read&news_read=<?PHP echo ($news[$i]['news_read']) ?>&id=<?PHP echo ($news[$i]['news_id']) ?>">
 
 
-                        <?PHP if ($lng == 'TH') {
-                            echo ($news_most[$i]['news_name_th']);
-                        } else {
-                            echo ($news_most[$i]['news_name_en']);
-                        } ?>
+                            <?PHP if ($lng == 'TH') {
+                                echo ($news_most[$i]['news_name_th']);
+                            } else {
+                                echo ($news_most[$i]['news_name_en']);
+                            } ?>
 
-
+                        </a>
 
                     </div>
                     <div class="date-news2">
@@ -135,7 +136,7 @@
 
 
                     </div>
-                    
+
 
                     <div style="border-top: 2px solid  #5a5a5a;"></div>
 

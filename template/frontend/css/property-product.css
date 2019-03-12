@@ -1,3 +1,7 @@
+.property-pro-btn{
+    color: #636363;
+    border-color: #313131;
+}
 .cut-text-multi {
     display: -webkit-box;
     -webkit-line-clamp: 5;

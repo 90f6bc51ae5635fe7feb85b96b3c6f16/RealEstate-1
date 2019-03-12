@@ -35,18 +35,17 @@
                     <div class="col-12" style="padding: 0% 1% 5% 1%;">
                     <hr class="border-contact" style="border-top: 2px solid  #5a5a5a; width: 50%;">
                         <p class="cut-text-multi">
-                        Dproperty Property Index Saw Prices For Residential Property In BangkokDDproperty Property Index Saw Prices For Residential Property In BangkokDDproperty Property Index Saw Prices For Residential Property In BangkokDDproperty Property Index Saw Prices For Residential Property In BangkokDDproperty Property Index Saw Prices For Residential Property In BangkokDDproperty Property Index Saw Prices For Residential Property In BangkokDDproperty Property Index Saw Prices For Residential Property In BangkokDDproperty Property Index Saw Prices For Residential Property In BangkokDDproperty Property Index Saw Prices For Residential Property In BangkokDDproperty Property Index Saw Prices For Residential Property In BangkokDDproperty Property Index Saw Prices For Residential Property In Bangkok
-                        <?PHP //if($lng == 'TH') { 
-                            //echo ($product_by_type[$i]['product_detail_th']); 
-                        //} else {  
-                           //echo ($product_by_type[$i]['product_detail_en']);  
-                        //} ?>
+                        <?PHP if($lng == 'TH') { 
+                            echo ($product_by_type[$i]['product_detail_th']); 
+                        } else {  
+                            echo ($product_by_type[$i]['product_detail_en']);  
+                        } ?>
                         </p>
                     </div>
                     <div class="col" style="padding: 5% 0% 10% 0%;">
-                        <a type="button" href="property.php?action=product&id=<?PHP echo $product_by_type[$i]['product_id']; ?>&type_id=<?PHP echo $product_by_type[$i]['product_types_id']; ?>" class="btn btn-default" role="button">
+                        <button type="button" class="btn property-pro-btn" tabindex="0">
                             DETAIL >
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>

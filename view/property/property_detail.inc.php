@@ -40,11 +40,13 @@
             <div class="col-lg-6 col-md-12 col-sm-6">
                 <div class="row m-0">
                     <div class="col" style="padding: 6% 2% 5% 2%;">
-                        <?PHP if ($lng == 'TH') {
-                            echo ($product[0]['product_detail_th']);
-                        } else {
-                            echo ($product[0]['product_detail_en']);
-                        } ?>
+                        <p>
+                            <?PHP if ($lng == 'TH') {
+                                echo ($product[0]['product_detail_th']);
+                            } else {
+                                echo ($product[0]['product_detail_en']);
+                            } ?>
+                        </p>
                     </div>
                 </div>
                 <div>

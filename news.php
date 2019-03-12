@@ -103,9 +103,6 @@ $news_most = $news_model->getNewsReadMost();
         $check_result = $news_model->updateNewsByRead($_GET['id'], $news_read);
         // print_r($check_result);
 
-        require_once('view/news/view.inc.php');
-
-
         ?>
     <script>
         window.location = "news.php?action=detail"
@@ -114,10 +111,11 @@ $news_most = $news_model->getNewsReadMost();
 
 
 
-} else if ($_GET['action'] == "detail") { }
+} else if ($_GET['action'] == "detail") {
+
+    require_once('view/news/newsdetail.inc.php'); }
 
 
-    require_once('view/news/newsdetail.inc.php');
 
 ?>
 

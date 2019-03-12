@@ -32,7 +32,7 @@
                     <div class="">
                         <img src="img_upload/news/<?PHP echo $news[$i]['news_img']; ?>" class="img-news">
                     </div>
-                    <div class="topic-news">
+                    <div class="topic-news cut-text-multi2">
 
 
 
@@ -74,7 +74,7 @@
                     </div>
                     <div class="row">
                         <div class="text-center element-item col-lg-6 col-md-6 col-sm-12">
-                            <div style=" padding-top:20px;  ">
+                            <div style=" padding-top:20px; margin-bottom: 2vw; ">
                                 <a href="news.php?action=read&news_read=<?PHP echo ($news[$i]['news_read']) ?>&id=<?PHP echo ($news[$i]['news_id']) ?>" class="btn btn-readmore">
                                     READ MORE
                                 </a>
@@ -159,6 +159,12 @@
     .cut-text-multi {
         display: -webkit-box;
         -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .cut-text-multi2 {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
         overflow: hidden;
     }

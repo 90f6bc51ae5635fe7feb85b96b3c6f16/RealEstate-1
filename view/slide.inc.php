@@ -1,25 +1,7 @@
-<?php require_once('view/menu.inc.php');
+<?php require_once('view/menu.inc.php');?>
 
 
 
-
-
-require_once('models/ServicesModel.php');    
-$service_model = new ServicesModel;   
-$service = $service_model->  getServiceHead(); 
-
-// echo "<pre>";
-// print_r($service) ;
-// echo "</pre>";
-
-
-
-
-
-
-
-
-?>
     <section class="col-lg-12 no-padding" style="position: relative; height: 30vw;">
         <img class="size-img-slide" src="img_upload/services/3.jpg">
             <div class="overlay-slide-service">
@@ -34,14 +16,16 @@ $service = $service_model->  getServiceHead();
                         <div class="slide-item">
                             <div class="slide-detail-home">
                                 <div class="slide-header-home">
-                                <h1 style="color: #fff;">SERVICE</h1>
+                                <h1 style="color: #fff;">
+                                
+                                <?PHP if($lng == "TH"){ echo $slide['slide_title_th']; }else{ echo $slide['slide_title_en'];} ?>
+
+
+                                </h1>
                                 </div>
                                 <div class="slide-text-detail">
                                 
-                                
-                                
-                                    <?PHP if($lng == "TH"){ echo  $service[0]['service_head_sub_title_th']; }else{ echo  $service[0]['service_head_sub_title_en'];} ?>"
-           
+                                <?PHP if($lng == "TH"){ echo $slide['slide_description_th']; }else{ echo $slide['slide_description_en']; } ?>
 
 
                                 </div>

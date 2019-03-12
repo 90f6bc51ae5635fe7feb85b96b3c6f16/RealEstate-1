@@ -16,18 +16,22 @@
                         <div class="slide-item">
                             <div class="slide-detail-home">
                                 <div class="slide-header-home">
-                                <h1 style="color: #fff;">
-                                
-                                <?PHP if($lng == "TH"){ echo $slide['slide_title_th']; }else{ echo $slide['slide_title_en'];} ?>
-
-
-                                </h1>
+                                    <h1 class="slide-cut-text-h1" style="color: #fff;">
+                                        <?PHP if($lng == "TH"){ 
+                                            echo $slide['slide_title_th']; 
+                                        }else{ 
+                                            echo $slide['slide_title_en'];
+                                        } ?>
+                                    </h1>
                                 </div>
                                 <div class="slide-text-detail">
-                                
-                                <?PHP if($lng == "TH"){ echo $slide['slide_description_th']; }else{ echo $slide['slide_description_en']; } ?>
-
-
+                                    <p class="slide-cut-text-p">
+                                        <?PHP if($lng == "TH"){ 
+                                            echo $slide['slide_description_th']; 
+                                        }else{ 
+                                            echo $slide['slide_description_en']; 
+                                        } ?>
+                                    </p>
                                 </div>
                             </div>
                         </div>

@@ -85,7 +85,7 @@ $news_most = $news_model->getNewsReadMost();
 
 <body>
     <?PHP require_once('view/menu.inc.php'); ?>
-    <?PHP require_once('view/news/slide.inc.php');
+    <?PHP require_once('view/slide.inc.php');
 
 
 

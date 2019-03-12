@@ -97,7 +97,10 @@
 
 <?php $num_page = ceil(count($news_page)/$perpage); ?>
 <?php for($i = 1 ; $i <= $num_page ; $i++) {
-    echo $i;
+    ?>
+
+<a class="btn btn-readmore"> <?php echo $i;  ?>  </a>&nbsp;
+<?
 
 }
     ?>

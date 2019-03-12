@@ -1,8 +1,8 @@
 <div class="row">
   <div class="col-lg-12">
     <div>
-     <h1>ระบบจัดการประเภทสินค้า</h1>
-     <h2>เพิ่ม ลบ เเก้ไข ประเภทสินค้า</h2> 
+     <h1>ระบบจัดการประเภทอสังหาริมทรัพย์</h1>
+     <h2>เพิ่ม ลบ เเก้ไข ประเภทอสังหาริมทรัพย์</h2> 
      <div align=right>
       <a href="?content=types&action=insert">
         <input class="button" type="submit" value="เพิ่ม">
@@ -14,8 +14,8 @@
       <tr>
         <th>#</th>
         <th width="10%">รูปภาพ</th>    
-        <th width="30%">ชื่อประเภทสินค้า TH</th>    
-        <th width="30%">ชื่อประเภทสินค้า EN</th>    
+        <th width="30%">ชื่อประเภทอสังหาริมทรัพย์ TH</th>    
+        <th width="30%">ชื่อประเภทอสังหาริมทรัพย์ EN</th>    
         <th></th>
         <th>เเก้ไข</th>
         <th>ลบ</th>

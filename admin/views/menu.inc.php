@@ -17,20 +17,6 @@
         </li>
 
         <li>
-            <a href="index.php?content=types">
-                <div <? if ($content == "types") {
-                            echo "class='menu-active top'";
-                        } else {
-                            echo "class='menu top'";
-                        } ?> >
-                    <span style="padding-top: 5px; font-size: 15px;">
-                        Types
-                    </span>
-                </div>
-            </a>
-        </li>
-
-        <li>
             <a href="index.php?content=furniture">
                 <div <? if ($content == "furniture") {
                             echo "class='menu-active'";
@@ -38,7 +24,7 @@
                             echo "class='menu'";
                         } ?> >
                     <span style="padding-top: 5px; font-size: 15px;">
-                        Furniture
+                        <!-- FURNITURE / --> เฟอร์นิเจอร์
                     </span>
                 </div>
             </a>
@@ -52,7 +38,22 @@
                             echo "class='menu'";
                         } ?> >
                     <span style="padding-top: 5px; font-size: 15px;">
-                        Location
+                        <!-- LOCATION /  -->ที่ตั้ง
+                    </span>
+                </div>
+            </a>
+        </li>
+
+
+        <li>
+            <a href="index.php?content=types">
+                <div <? if ($content == "types") {
+                            echo "class='menu-active top'";
+                        } else {
+                            echo "class='menu top'";
+                        } ?> >
+                    <span style="padding-top: 5px; font-size: 15px;">
+                       <!--  PROPERTY TPYE /  -->ประเภทอสังหาริมทรัพย์
                     </span>
                 </div>
             </a>
@@ -66,7 +67,7 @@
                             echo "class='menu'";
                         } ?> >
                     <span style="padding-top: 5px; font-size: 15px;">
-                        Product
+                        <!-- PROPERTY /  -->อสังหาริมทรัพย์
                     </span>
                 </div>
             </a>
@@ -80,7 +81,7 @@
                             echo "class='menu'";
                         } ?> >
                     <span style="padding-top: 5px; font-size: 15px;">
-                        news
+                        <!-- NEWS / --> ข่าวสาร
                     </span>
                 </div>
             </a>
@@ -94,7 +95,7 @@
                             echo "class='menu'";
                         } ?> >
                     <span style="padding-top: 5px; font-size: 15px;">
-                        Services
+                        <!-- SERVICE / --> บริการ
                     </span>
                 </div>
             </a>
@@ -108,7 +109,7 @@
                             echo "class='menu'";
                         } ?> >
                     <span style="padding-top: 5px; font-size: 15px;">
-                        Contact
+                        <!-- CONTACT / --> ติดต่อ
                     </span>
                 </div>
             </a>
@@ -122,7 +123,7 @@
                             echo "class='menu'";
                         } ?> >
                     <span style="padding-top: 5px; font-size: 15px;">
-                        Contact Us
+                        <!-- COMPANY --> ข้อมูลบริษัท
                     </span>
                 </div>
             </a>
@@ -136,7 +137,7 @@
                             echo "class='menu'";
                         } ?> >
                     <span style="padding-top: 5px; font-size: 15px;">
-                        About Us
+                        <!-- ABOUNT US / --> เกี่ยวกับเรา
                     </span>
                 </div>
             </a>
@@ -150,7 +151,7 @@
                             echo "class='menu'";
                         } ?> >
                     <span style="padding-top: 5px; font-size: 15px;">
-                        Company Profile
+                        <!-- VISION & MISSION /  -->วิสัยทํศ & หน้าที่
                     </span>
                 </div>
             </a>
@@ -164,7 +165,7 @@
                             echo "class='menu'";
                         } ?> >
                     <span style="padding-top: 5px; font-size: 15px;">
-                        Agent
+                       <!--  AGENT / --> ตัวแทน
                     </span>
                 </div>
             </a>
@@ -178,7 +179,7 @@
                             echo "class='menu'";
                         } ?> >
                     <span style="padding-top: 5px; font-size: 15px;">
-                        User
+                        ผุ้ใช้งาน
                     </span>
                 </div>
             </a>
@@ -192,7 +193,7 @@
                             echo "class='menu'";
                         } ?> >
                     <span style="padding-top: 5px; font-size: 15px;">
-                        ป้ายกำกับหน้า
+                        <!-- PAGE --> ป้ายกำกับหน้า
                     </span>
                 </div>
             </a>

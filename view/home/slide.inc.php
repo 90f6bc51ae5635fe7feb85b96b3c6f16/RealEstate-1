@@ -41,7 +41,7 @@
                                 <div class="btn btn-slide">
                                     VIEW DETAIL
                                 </div>
-                                <a href="property.php" class="btn btn-slide">
+                                <a href="property.php" class="btn btn-slide2">
                                     SEE ALL PROPERTY
                                 </a>
                             </div>

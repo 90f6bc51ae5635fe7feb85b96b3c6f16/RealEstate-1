@@ -148,7 +148,8 @@ endif;
 
 <body>
     <?PHP require_once('view/menu.inc.php');?>
-    <?PHP require_once('view/contact/slide.inc.php');?>
+    <?PHP require_once('view/slide.inc.php');?>
+    
     <?PHP require_once('view/contact/view.inc.php');?>
 
 

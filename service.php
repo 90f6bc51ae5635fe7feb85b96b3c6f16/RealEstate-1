@@ -79,7 +79,8 @@ $services = $service_model->  getServicesBy();
     </head>
     <body>
     <?PHP require_once('view/menu.inc.php');?>
-    <?PHP require_once('view/service/slide.inc.php');?>
+    <?PHP require_once('view/slide.inc.php');?>
+  
     <?php $path = "view/service/";
 
     if( !isset($_GET['action']) ) {

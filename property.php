@@ -86,7 +86,8 @@ $product_header = $product_model-> getProductHeaderBy();
     </head>
     <body>
         <?PHP require_once('view/menu.inc.php');?>
-        <?PHP require_once('view/property/slide.inc.php');?>
+        <?PHP require_once('view/slide.inc.php');?>
+        
         
 
         <?PHP

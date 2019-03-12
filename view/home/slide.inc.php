@@ -16,7 +16,7 @@
             <div class="container">
 
                 <div class="row">
-                    <div class="col-7" style="margin-top: 4vw;">
+                    <div class="col-7 text-slide-home">
 
                         <div class="slide-item">
                             <div class="slide-detail-home">
@@ -50,8 +50,8 @@
 
 
                     </div>
-                    <div class="col-5" style="position: relative;">
-                        <img class="rounded-circle float-right"
+                    <div class="col-5 img-slide-home" >
+                        <img class="rounded-circle rounded-circle1 float-right"
                             src="img_upload/product_image/<?PHP echo $slide[$i]['product_image_img'];?>"
                             alt="Los Angles">
 

@@ -1,3 +1,21 @@
+.news-topic{
+    font-size: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 1vw;
+    padding-left: 1vw;
+}
+.img-newsdetail{
+    width: 100%;
+    height: 70%;
+    margin-top: 8vw;
+    object-fit: cover;
+}
+.news-detail{
+    padding-top: 10px; 
+}
+.news-detail1{
+    font-size: 1vw;
+}
 .font-news{
     color: #5a5a5a;
     font-weight: 600
@@ -86,6 +104,15 @@
         font-size: 1.3vw;
     }
 }
+@media only screen and (max-width: 1024px) {
+    .news-topic{
+        padding-left: 1.5vw;
+        font-size: 3vw;
+    }
+    .news-detail1{
+        font-size: 1.3vw;
+    }
+}
 @media only screen and (max-width: 992px) {
     .topic-service{
         margin-top: 25vw;
@@ -109,6 +136,9 @@
     .date-news2{
         font-size: 1vw;
     }
+    .img-newsdetail{
+        margin-top: 30vw;
+    }
 }
 @media only screen and (max-width: 768px) {
     .topic-service{
@@ -129,20 +159,49 @@
     .topic-news{
         font-size: 2.3vw;
     }
+    .img-newsdetail{
+        margin-top: 70vw;
+    }
+    .news-topic{
+        font-size: 3.5vw;
+    }
+    .news-detail1{
+        font-size: 1.5vw;
+    }
 }
 @media only screen and (max-width: 698px) {
     .box-search-news{
         width: 30vw;
+    }
+    .news-topic{
+        padding-left: 2vw;
     }
 }
 @media only screen and (max-width: 625px) {
     .topic-service{
         margin-top: 70vw;
     }
+    .img-newsdetail{
+        margin-top: 80vw;
+    }
+}
+@media only screen and (max-width: 573px) {
+    .img-newsdetail{
+        margin-top: 65vw;
+    }
+    .news-detail1{
+        font-size: 1.8vw;
+    }
 }
 @media only screen and (max-width: 500px) {
     .topic-service{
         margin-top: 130vw;
+    }
+    .img-newsdetail{
+        margin-top: 125vw;
+    }
+    .news-topic{
+        padding-left: 3vw;
     }
 }
 @media only screen and (max-width: 415px) {
@@ -153,11 +212,33 @@
         font-size: 8vw;
     }
 }
+@media only screen and (max-width: 375px) {
+    .img-newsdetail{
+        margin-top: 140vw;
+    }
+    .news-topic{
+        padding-left: 4vw;
+        font-size: 4.5vw;
+    }
+    .news-detail1{
+        font-size: 2.5vw;
+    }
+}
 @media only screen and (max-width: 320px) {
     .topic-service{
         margin-top: 170vw;
     }
     .btn-readmore {
         font-size: 4.4vw;
+    }
+    .img-newsdetail{
+        margin-top: 180vw;
+    }
+    .news-topic{
+        padding-left: 5vw;
+        font-size: 5.5vw;
+    }
+    .news-detail1{
+        font-size: 3vw;
     }
 }

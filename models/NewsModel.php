@@ -25,7 +25,21 @@ class NewsModel extends BaseModel
             return $data;
         }
     }
-
+    function getNewsByLimit($start,$perpage)
+    {
+        $sql = "SELECT * 
+        FROM tb_news limit {$start} , {$perpage} 
+        ";
+        echo $sql;
+        if ($result = mysqli_query(static::$db, $sql, MYSQLI_USE_RESULT)) {
+            $data = [];
+            while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+                $data[] = $row;
+            }
+            $result->close();
+            return $data;
+        }
+    }
     function getNewsByDESC()
     {
         $sql = "SELECT * FROM `tb_news` ORDER BY `tb_news`.`news_id` DESC

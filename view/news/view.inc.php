@@ -1,3 +1,4 @@
+
 <div class="container">
     <div class="row topic-service">
         <div class="col-8">
@@ -22,10 +23,12 @@
 
 
 
+                   
 
                 <?PHP for ($i = 0; $i < count($news); $i++) {
                     # code...
                     // $type[$i][''];
+
                     ?>
 
                 <div class="col-lg-6 col-md-6 col-sm-12">
@@ -83,13 +86,22 @@
                     </div>
                 </div>
 
+     
                 <?php 
             } ?>
 
 
 
-
             </div>
+            <div class="row">
+
+<?php $num_page = ceil(count($news_page)/$perpage); ?>
+<?php for($i = 1 ; $i <= $num_page ; $i++) {
+    echo $i;
+
+}
+    ?>
+</div>
         </div>
 
 

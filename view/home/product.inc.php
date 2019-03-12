@@ -68,12 +68,11 @@
 <script>
 $(document).on('ready', function() {
     $('.responsive').slick({
-        dots: true,
         infinite: true,
         speed: 200,
         slidesToShow: 3,
         arrows: false,
-        slidesToScroll: 1,
+        slidesToScroll: 3,
         responsive: [
             {
             breakpoint: 1024,

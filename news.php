@@ -24,9 +24,20 @@ $slide = $slide_model->getSlideByID('4');
 
 require_once('models/NewsModel.php');
 $news_model = new NewsModel;
-$news = $news_model->getNewsBy();
+
+
+$perpage = 4;
+if (isset($_GET['page'])) {
+$page = $_GET['page'];
+} else {
+$page = 1;
+}
+$start = ($page - 1) * $perpage;
+
+$news_page = $news_model->getNewsBy();
+$news = $news_model->getNewsByLimit($start,$perpage);
 $news_most = $news_model->getNewsReadMost();
-// print_r($news_most);
+// print_r($news);
 
 
 

@@ -340,6 +340,18 @@
         margin-left: 0vw;
         margin-top: 15vw;
     }
+    .size-img-slide-home{
+        max-height: 50vw;
+    }
+    .btn-slide{
+        margin-left: 0vw;
+    }
+    .slide-header-home{
+        margin-left: 0vw;
+    }
+    .slide-text-detail{
+        margin-left: 0vw;
+    }
 }
 @media only screen and (max-width: 780px) {
     .img-poppular-home-padding{
@@ -376,6 +388,23 @@
         width: 16vw;
         height: 15vw;
     }
+    .size-img-slide-home{
+        min-height: 65vw;
+    }
+    .btn-slide{
+        margin-left: 0vw;
+    }
+    .slide-header-home{
+        margin-left: 0vw;
+    }
+    .slide-text-detail{
+        margin-left: 0vw;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .size-img-slide-home{
+        min-height: 75vw;
+    }
 }
 @media only screen and (max-width: 500px) {
     .size-img-slide{
@@ -391,6 +420,29 @@
     .slide-detail-home{
         margin-top: 40vw;
     }
+    .size-img-slide-home{
+        min-height: 80vw;
+    }
+    .slide-text-detail{
+        font-size: 2vw;
+    }
+    .text-slide-home{
+        margin-top: -30vw;
+    }   
+    .btn-slide{
+        font-size: 0.3em;
+    } 
+    .btn-slide2{
+        font-size: 0.3em;
+    } 
+    .rounded-circle1{
+        width: 35vw;
+        height: 35vw;
+    }
+    .on-img{   
+        margin-left: -5vw;
+        margin-top: 24vw;
+    }
 }
 @media only screen and (max-width: 400px) {
     .img-poppular-home-padding{
@@ -405,10 +457,47 @@
     .slide-detail-home{
         margin-top: 40vw;
     }
+    .size-img-slide-home{
+        min-height: 110vw;
+    }
+    .btn-slide{
+        font-size: 0.8em;
+    } 
+    .btn-slide2{
+        font-size: 0.8em;
+        margin-left: 0vw;
+    } 
+    .slide-text-detail{
+        font-size: 2.5vw;
+    }
+    .slide-header-home{
+        font-size: 4vw;
+    }
+    .text-slide-home{
+        margin-top: -40vw;
+    } 
+    .img-slide-home{
+        margin-top: 10vw;
+    }
+    .on-img{
+        width: 20vw;
+        height: 19vw;
+        margin-top: 30vw;
+    }
+    .rounded-circle1{
+        margin-right: -10vw;
+    }
+    .rounded-circle1{
+        width: 40vw;
+        height: 40vw;
+    }
 }
 @media only screen and (max-width: 320px) {
     .size-img-slide{
         min-height: 120vw;
+    }
+    .size-img-slide-home{
+        min-height: 130vw;
     }
 }
 

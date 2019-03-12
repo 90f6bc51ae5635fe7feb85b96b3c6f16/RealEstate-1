@@ -101,16 +101,16 @@ $news_most = $news_model->getNewsReadMost();
 
         ?>
     <script>
-        window.location = "news.php"
+        window.location = "news.php?action=detail"
     </script>
     <?PHP
 
 
 
-    require_once('view/news/newsdetail.inc.php');
 } else if ($_GET['action'] == "detail") { }
 
 
+    require_once('view/news/newsdetail.inc.php');
 
 ?>
 

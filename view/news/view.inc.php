@@ -32,7 +32,7 @@
                     <div class="">
                         <img src="img_upload/news/<?PHP echo $news[$i]['news_img']; ?>" class="img-news">
                     </div>
-                    <div class="topic-news">
+                    <div class="topic-news cut-text-multi2">
 
 
 
@@ -159,6 +159,12 @@
     .cut-text-multi {
         display: -webkit-box;
         -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .cut-text-multi2 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         overflow: hidden;
     }

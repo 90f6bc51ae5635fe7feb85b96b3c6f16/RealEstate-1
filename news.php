@@ -105,18 +105,10 @@ $news_most = $news_model->getNewsReadMost();
     </script>
     <?PHP
 
-} else if ($_GET['action'] == "detail") {
 
-
-
-    
 
     require_once('view/news/newsdetail.inc.php');
-
-
-
-
-}
+} else if ($_GET['action'] == "detail") { }
 
 
 

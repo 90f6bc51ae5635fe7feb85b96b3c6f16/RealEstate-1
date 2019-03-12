@@ -36,7 +36,7 @@
 
 
                         </div>
-                        <div class="product-product-detail">
+                        <div class="product-product-detail cut-text-multi ">
 
                             <?PHP if ($lan == 'TH') { ?>
                             <?PHP  echo ($product[$i]['product_detail_th']) ?>

@@ -61,6 +61,11 @@
    
       require_once("modules/page/views/index.inc.php");
    
+
+   }else if($content=="slide"){
+   
+      require_once("modules/slide/views/index.inc.php");
+   
    }else {
       
       require_once("modules/Types/views/index.inc.php");

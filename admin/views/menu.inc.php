@@ -17,6 +17,20 @@
         </li>
 
         <li>
+            <a href="index.php?content=slide">
+                <div <? if ($content == "slide") {
+                            echo "class='menu-active top'";
+                        } else {
+                            echo "class='menu top' ";
+                        } ?> >
+                    <span style="padding-top: 5px; font-size: 15px;">
+                        <!-- PAGE --> ส่วนหัวของหน้า
+                    </span>
+                </div>
+            </a>
+        </li>
+
+        <li>
             <a href="index.php?content=furniture">
                 <div <? if ($content == "furniture") {
                             echo "class='menu-active'";
@@ -48,9 +62,9 @@
         <li>
             <a href="index.php?content=types">
                 <div <? if ($content == "types") {
-                            echo "class='menu-active top'";
+                            echo "class='menu-active '";
                         } else {
-                            echo "class='menu top'";
+                            echo "class='menu '";
                         } ?> >
                     <span style="padding-top: 5px; font-size: 15px;">
                        <!--  PROPERTY TPYE /  -->ประเภทอสังหาริมทรัพย์
@@ -198,6 +212,7 @@
                 </div>
             </a>
         </li>
+
 
     </ul>
 </div> 

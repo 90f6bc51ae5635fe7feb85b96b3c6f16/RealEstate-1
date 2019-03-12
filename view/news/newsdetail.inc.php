@@ -7,9 +7,9 @@
         </div>
     </div>
     <div class="news-detail1">
-        sdfsdfsdfsdfsdfsdfsdfsfssghkluilfgfgnmhj.hfdfbvcbgwfdfsdfsdfasdasdasdczxczxczvcxvxvxcvxcvxcvfdgrtuipip[ouytgfsds]
-        sdfsdfsdfsddfsdfsdfsdfsdfsfssghkluilfgfgnmhj.hfdfbvcbgwfdfsdfsdfasdasdasdczxczxczvcxvxvxcvxcvx
-        dfsdfsdfsdfsdfsfssghkluilfgfgnmhj.hfdfbvcbgwfdfsdfsdfasdasdasdczxczxczvcxvxvxcvxcvx
-        dfsdfsdfsdfsdfsfssghkluilfgfgnmhj.hfdfbvcbgwfdfsdfsdfasdasdasdczxczxczvcxvxvxcvxcvx
+        sdfsdfsdfsdfsdfsdfsdfsfssghkluilfgfgnmhj.hfdfbvcbgwfdfsdfsdfasdasdasdczxcz
+        sdfsdfsdfsddfsdfsdfsdfsdfsfssghkluilfgfgnmhj.hfdfbvcbgwfdfsdfsdfasdasdasdczx
+        dfsdfsdfsdfsdfsfssghkluilfgfgnmhj.hfdfbvcbgwfdfsdfsdfasdasdasdczxczxczvcxv
+        dfsdfsdfsdfsdfsfssghkluilfgfgnmhj.hfdfbvcbgwfdfsdfsdfasdasdasdczxczxczvcx
     </div>
 </div>

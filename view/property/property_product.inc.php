@@ -24,7 +24,7 @@
                         </div>
                     </div>
                     <div class="col p-1">
-                        <h4 class="property-pro-cut-h4">
+                        <h4>
                             <?PHP if ($lng == 'TH') {
                                 echo ($product_by_type[$i]['product_name_th']);
                             } else {
@@ -34,7 +34,7 @@
                     </div>
                     <div class="col-12" style="padding: 0% 1% 5% 1%;">
                         <hr class="border-contact" style="border-top: 2px solid  #5a5a5a; width: 50%;">
-                        <p class="property-pro-cut-text">
+                        <p class="cut-text-multi">
                             <?PHP if ($lng == 'TH') {
                                 echo ($product_by_type[$i]['product_detail_th']);
                             } else {

@@ -93,8 +93,11 @@
                 <?php $num_page = ceil(count($news_page) / $perpage); ?>
                 <?php for ($i = 1; $i <= $num_page; $i++) {
                     ?>
-
-                <a class="btn btn-readmore <?php if($page == $i) { echo 'active'; } ?>" href="news.php?page=<?php echo $i;  ?>"> <?php echo $i;  ?> </a>&nbsp;
+                <div class="child">
+                    <a class=" float_center btn btn-readmore <?php if ($page == $i) {
+                                                                    echo 'active';
+                                                                } ?>" href="news.php?page=<?php echo $i;  ?>"> <?php echo $i;  ?> </a>&nbsp;
+                </div>
                 <?
             }
             ?>
@@ -165,9 +168,16 @@
 
 </div>
 <style>
-    .active{
+    .float_center {
+        position: relative;
+        left: 50%;
+    }
+
+
+    .active {
         background-color: #6c757d;
     }
+
     .cut-text-multi {
         display: -webkit-box;
         -webkit-line-clamp: 5;

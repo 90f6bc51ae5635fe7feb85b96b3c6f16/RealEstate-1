@@ -45,6 +45,11 @@
     margin-top: 1vw;
     font-weight: 600;
 }
+a {
+    color: #70b247;
+    text-decoration: none;
+    background-color: transparent;
+  }
 .topic-news{
     font-size: 1.3vw;
     font-weight: 600;

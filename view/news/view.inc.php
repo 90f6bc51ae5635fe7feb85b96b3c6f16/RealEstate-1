@@ -23,10 +23,8 @@
 
 
 
-                <?PHP for ($i = 0; $i < count($news); $i++) {
-                    # code...
-                    // $type[$i][''];
-                    ?>
+
+                <?PHP for ($i = 0; $i < count($news); $i++) { ?>
 
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="">
@@ -83,12 +81,23 @@
                     </div>
                 </div>
 
+
                 <?php 
             } ?>
 
 
 
+            </div>
+            <div class="row">
 
+                <?php $num_page = ceil(count($news_page) / $perpage); ?>
+                <?php for ($i = 1; $i <= $num_page; $i++) {
+                    ?>
+
+                <a class="btn btn-readmore"> <?php echo $i;  ?> </a>&nbsp;
+                <?
+            }
+            ?>
             </div>
         </div>
 
@@ -162,6 +171,7 @@
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
+
     .cut-text-multi2 {
         display: -webkit-box;
         -webkit-line-clamp: 1;

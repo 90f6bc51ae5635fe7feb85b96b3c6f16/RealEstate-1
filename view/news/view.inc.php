@@ -74,7 +74,7 @@
                     </div>
                     <div class="row">
                         <div class="text-center element-item col-lg-6 col-md-6 col-sm-12">
-                            <div style=" padding-top:20px;  ">
+                            <div style=" padding-top:20px; margin-bottom: 2vw; ">
                                 <a href="news.php?action=read&news_read=<?PHP echo ($news[$i]['news_read']) ?>&id=<?PHP echo ($news[$i]['news_id']) ?>" class="btn btn-readmore">
                                     READ MORE
                                 </a>

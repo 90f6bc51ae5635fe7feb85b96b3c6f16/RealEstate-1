@@ -13,8 +13,20 @@
     font-weight: 600;
     font-size: 3vw;
 }
+.property-pro-cut-h4{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.property-pro-cut-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 @media only screen and (max-width: 1024px) {
-    .cut-text-multi {
+    .property-pro-cut-text {
         -webkit-line-clamp: 3;
     }    
 }

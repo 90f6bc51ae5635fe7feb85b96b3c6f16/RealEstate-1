@@ -156,13 +156,12 @@
                         </div>
                     </div>
                     <div class="row" style="padding: 15% 0% 15% 0%">
-                        <div class="col-6">
-                            <div>
-                                <a href="contact.php#contact" type="submit" name="" id="" class="btn btn-orage btn-md"
-                                    btn-block="" style="width: 150px; text-align: center; margin:0 auto;">
+                        <div class="col-6 p-0">
+
+                            <a href="contact.php#contact" class="btn property-de-btn" tabindex="0">
                                     CONTACT US
                                 </a>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -195,8 +194,7 @@
                         <!-- Google Map -->
 
                         <fieldset class="gllpLatlonPicker" style="height: auto;">
-                            <div class="gllpMap" style="width: 100%;  height: 20%;">Google Maps</div>
-                            <!-- <div class="gllpMap" style="width: 100%; height: 80%;">Google Maps</div> -->
+                            <div class="gllpMap property-de-map" style="">Google Maps</div>
                             <input type="text" class="gllpLatitude form-control" name="product_latitude"
                                 value="<?PHP echo $product[0]['product_latitude']; ?>" hidden />
                             <input type="text" class="gllpLongitude form-control" name="product_longitude"

@@ -36,7 +36,8 @@
 }
 .img-news{
     width: 100%;
-    height: 40%;
+    min-height: 20vw;
+    object-fit: cover;
 }
 .btn-readmore{
     color: #fff;

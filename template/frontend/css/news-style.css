@@ -1,3 +1,6 @@
+.topic-lastnews{
+    margin-top: 0w;
+}
 .news-topic{
     font-size: 2vw;
     padding-top: 2vw;
@@ -119,11 +122,17 @@ a {
     .news-detail1{
         font-size: 1.3vw;
     }
+    .topic-news{
+        font-size: 2.3vw;
+    }
+    .date-news{
+        font-size: 1.3vw;
+    }
+    .topic-news2{
+        font-size: 1.5vw;
+    }
 }
 @media only screen and (max-width: 992px) {
-    .topic-service{
-        margin-top: 25vw;
-    }
     .btn-search-news{
         margin-top: 10vw;
         font-size: 0.40em;
@@ -145,6 +154,9 @@ a {
     }
     .img-newsdetail{
         margin-top: 30vw;
+    }
+    .topic-lastnews{
+        margin-top: 25vw;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -175,6 +187,9 @@ a {
     .news-detail1{
         font-size: 1.5vw;
     }
+    .topic-lastnews{
+        margin-top: 60vw;
+    }
 }
 @media only screen and (max-width: 698px) {
     .box-search-news{
@@ -191,6 +206,18 @@ a {
     .img-newsdetail{
         margin-top: 80vw;
     }
+    .topic-news{
+        font-size: 3.3vw;
+    }
+    .topic-news2{
+        font-size: 2vw;
+    }
+    .date-news2{
+        font-size: 1.7vw;
+    }
+    .topic-lastnews{
+        margin-top: 75vw;
+    }
 }
 @media only screen and (max-width: 573px) {
     .img-newsdetail{
@@ -198,6 +225,9 @@ a {
     }
     .news-detail1{
         font-size: 1.8vw;
+    }
+    .topic-lastnews{
+        margin-top: 60vw;
     }
 }
 @media only screen and (max-width: 500px) {
@@ -210,6 +240,9 @@ a {
     .news-topic{
         padding-left: 3vw;
     }
+    .topic-lastnews{
+        margin-top: 120vw;
+    }
 }
 @media only screen and (max-width: 415px) {
     .btn-readmore {
@@ -217,6 +250,21 @@ a {
     }
     .font-news{
         font-size: 8vw;
+    }
+    .topic-news{
+        font-size: 4.3vw;
+    }
+    .topic-news2{
+        font-size: 2.6vw;
+    }
+    .date-news2{
+        font-size: 2.3vw;
+    }
+    .date-news {
+        font-size: 3vw;
+    }
+    .most-read{
+        font-size: 4.5vw;
     }
 }
 @media only screen and (max-width: 375px) {
@@ -229,6 +277,9 @@ a {
     }
     .news-detail1{
         font-size: 2.5vw;
+    }
+    .topic-lastnews{
+        margin-top: 130vw;
     }
 }
 @media only screen and (max-width: 320px) {
@@ -247,5 +298,8 @@ a {
     }
     .news-detail1{
         font-size: 3vw;
+    }
+    .topic-lastnews{
+        margin-top: 160vw;
     }
 }

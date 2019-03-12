@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="row topic-service">
+    <div class="row topic-lastnews">
         <div class="col-8">
             <div class="text-left" style="padding-top: 7vw;">
                 <h1 class="font-news">LATEST NEWS </h1>

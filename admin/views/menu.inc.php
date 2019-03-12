@@ -19,7 +19,7 @@
 
         <li>
             <a href="index.php?content=types">
-                <div <? if($page=="types"){echo "class='menu-active'";}else{echo "class='menu'";}?> >
+                <div <? if($page=="types"){echo "class='menu-active top'" ;}else{echo "class='menu top'" ;}?> >
                     <span style="padding-top: 5px; font-size: 15px;">
                         Types
                     </span>

@@ -185,6 +185,12 @@
 }
 .size-img-slide{
     width: 100%;
+    max-height: 30vw;
+    z-index: 1;
+    object-fit: cover;
+}
+.size-img-slide-home{
+    width: 100%;
     max-height: 43vw;
     z-index: 1;
     object-fit: cover;
@@ -342,6 +348,33 @@
     }
     .box-search-home{
         position: unset;
+    }
+    .slide-detail-home{
+        margin-top: 5vw;
+    }
+    .slide-header-home{
+        font-size: 3vw;
+    }
+    .slide-text-detail{
+        font-size: 1.6vw;
+    }
+    .btn-slide{
+        font-size: 0.8em;
+    }
+    .btn-slide2{
+        font-size: 0.8em;
+    }
+    .rounded-circle1{
+        width: 30vw;
+        height: 30vw;
+        margin-right: -3vw;
+    }
+    .img-slide-home{
+        margin-top: 5vw;
+    }
+    .on-img{
+        width: 16vw;
+        height: 15vw;
     }
 }
 @media only screen and (max-width: 500px) {

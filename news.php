@@ -92,6 +92,7 @@ $news_most = $news_model->getNewsReadMost();
     <link href="template/frontend/css/footer.css" rel="stylesheet">
     <link href="template/frontend/css/home-style.css" rel="stylesheet">
     <link href="template/frontend/css/news-style.css" rel="stylesheet">
+    <link href="template/frontend/css/service.css" rel="stylesheet">
 </head>
 
 <body>

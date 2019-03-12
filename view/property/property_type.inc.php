@@ -12,12 +12,13 @@
                     ?>
             <div class="col-lg-4 col-sm-6 col-md-4 p-1" style="position: relative;">
                 <a href="property.php?action=detail&type_id=<?PHP echo $type[$i]['product_types_id']; ?>">
-                    <div class="proerty-bg"
-                        style="background-image: url(img_upload/types/<?PHP echo ($type[$i]['product_types_img']); ?>);">
-                        <div class="property-img ">
-                            <div class="property-content">
-                                <div class="property-h3">
-                                    <?PHP if($lng == 'TH') { echo ($type[$i]['product_types_name_th']); } else {  echo ($type[$i]['product_types_name_en']);  } ?>
+                    <div class="property-bg" style="background-image: url(img_upload/types/<?PHP echo ($type[$i]['product_types_img']); ?>);">
+                        <div class="content">
+                            <div class="property-img ">
+                                <div class="property-content">
+                                    <div class="property-h3">
+                                        <?PHP if($lng == 'TH') { echo ($type[$i]['product_types_name_th']); } else {  echo ($type[$i]['product_types_name_en']);  } ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -5,7 +5,7 @@
     position: absolute;
     width: 98%;
     height: 100%;
-    padding: 33% 4% 0vw 4%;
+    padding: 42% 4% 0vw 4%;
 }
 
 .property-bg{
@@ -24,12 +24,17 @@
 .property-content{
     background-color: rgba(0, 0, 0, 0.555);
     width: 100%;
-    padding: 1% 0% 1% 0%;
+    padding: 4% 0% 4% 0%;
 }
 .property-h3{
     color: #ffffff;
     text-align: center;
-    font-size: 4vw;
+    font-size: 2vw;
+}
+@media only screen and (max-width: 1024px) {
+    .content {
+        width: 96%;
+    }
 }
 @media only screen and (max-width: 991px) {
     .top{
@@ -41,22 +46,30 @@
         padding: 35% 20% 3% 20%;
     }
     .content {
-        width: 96%;
+        width: 95%;
     }
-    
 }
 @media only screen and (max-width: 767px) {
     .top{
         padding: 65%  20% 3% 20%;
     }    
 }
-@media only screen and (max-width: 427px) {
+@media only screen and (max-width: 426px) {
     .top{
         padding: 125%  20% 3% 20%;
     }    
+    .property-h3{
+        font-size: 6vw;
+    }
+    .content {
+        width: 97%;
+    }
 }
 @media only screen and (max-width: 320px) {
     .top{
         padding: 160%  20% 3% 20%;
-    }    
+    }  
+    .content {
+        width: 96%;
+    }
 }

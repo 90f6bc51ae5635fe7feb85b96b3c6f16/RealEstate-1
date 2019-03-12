@@ -206,16 +206,17 @@ footer {
 }
 
 .menu {
-    /* border-bottom: solid 1px #414040; */
+    border-bottom: solid 1px #32CD32;
 }
 
 .sidebar-nav .top {
-    border-top: solid 1px #414040;
+    border-top: solid 1px #32CD32;
 }
 
 .menu-active {
     color: #32CD32;
-    border-bottom: solid 1px #414040;
+    /* border-top: solid 1px #32CD32; */
+    border-bottom: solid 1px #32CD32;
     border-left: solid 8px #32CD32;
 }
 

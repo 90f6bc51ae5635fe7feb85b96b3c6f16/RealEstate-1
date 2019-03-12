@@ -89,7 +89,7 @@
 						<div class="col-lg-2">
 							<div class="form-group" style="margin-top: 10px;margin-bottom: 10px;">
 								<div style="text-align: center;">
-									<img id="product_highlight" style="height: 200px;width: 340px;" src="../img_upload/product_highlight/<?php if($product_highlight[$i]['product_highlight_img'] != "") echo $product_highlight[$i]['product_highlight_img']; else echo "default.png" ?>" class="img-responsive img-size-sup"> 
+									<img id="product_highlight" style="height: 200px;" src="../img_upload/product_highlight/<?php if($product_highlight[$i]['product_highlight_img'] != "") echo $product_highlight[$i]['product_highlight_img']; else echo "default.png" ?>" class="img-responsive img-size-sup"> 
 									<a href="?content=product_highlight&action=delete&product_id=<? echo $product_id ?>&id=<? echo $product_highlight[$i]['product_highlight_id'] ?>" onclick="return confirm('คุณต้องการลบรูปภาพนี้ใช่หรือไม่ ?');" style="color:red; font-size: 20px;">
 									<i class="fa fa-times" aria-hidden="true"></i>
 									</a>

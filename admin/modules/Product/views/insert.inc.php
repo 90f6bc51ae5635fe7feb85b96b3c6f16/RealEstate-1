@@ -113,7 +113,7 @@
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label> ราคา <font color="#F00"><b>*</b></font></label>
-                                <input id="product_price" name="product_price" class="form-control"  >
+                                <input type="number" id="product_price" name="product_price" class="form-control"  >
                             </div>
                         </div>    
                     </div>
@@ -149,13 +149,13 @@
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>NO. of Bedroom </label>
-                                <input id="product_bedroom" name="product_bedroom" class="form-control">
+                                <input type="number" id="product_bedroom" name="product_bedroom" class="form-control">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>No. of Bathroom </label>
-                                <input id="product_bathroom" name="product_bathroom" class="form-control">
+                                <input type="number" id="product_bathroom" name="product_bathroom" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -183,9 +183,9 @@
                            				<input type="button" class="gllpSearchButton btn btn-primary" value="ค้นหา">
                                         <div class="gllpMap" style="width: 85em;  height: 20em;">Google Maps</div>
                                         <!-- <div class="gllpMap" style="width: 100%; height: 80%;">Google Maps</div> -->
-                                        <input type="text" class="gllpLatitude form-control" name="product_latitude" value="<?PHP echo $contact_us[0]['product_latitude']; ?>" />
-                                        <input type="text" class="gllpLongitude form-control" name="product_longitude" value="<?PHP echo $contact_us[0]['product_longitude']; ?>"/>
-                                        <input type="hidden" class="gllpZoom" value="14" />
+                                        <input type="text" class="gllpLatitude form-control" name="product_latitude" value="13.757560073777029" />
+                                        <input type="text" class="gllpLongitude form-control" name="product_longitude" value="100.50996780395508"/>
+                                        <input type="hidden" class="gllpZoom" value="10" />
                                     </fieldset>
 
                                     <script src="https://maps-api-ssl.google.com/maps/api/js?key=AIzaSyBPYt_mZGd-2iotzhpiZKw1_GpZ6H9w3vs&sensor=false"></script>

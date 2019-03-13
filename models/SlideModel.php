@@ -47,15 +47,17 @@ class SlideModel extends BaseModel{
         $data['slide_title_en']=mysqli_real_escape_string(static::$db,$data['slide_title_en']);
         $data['slide_description_th']=mysqli_real_escape_string(static::$db,$data['slide_description_th']);
         $data['slide_description_en']=mysqli_real_escape_string(static::$db,$data['slide_description_en']);
+        $data['slide_image']=mysqli_real_escape_string(static::$db,$data['slide_image']);
         $sql = " UPDATE tb_slide SET 
         slide_title_th = '".$data['slide_title_th']."',
         slide_title_en = '".$data['slide_title_en']."',
         slide_description_th = '".$data['slide_description_th']."',
         slide_description_en = '".$data['slide_description_en']."',
+        slide_image = '".$data['slide_image']."',
         updateby = '".$data['updateby']."',        
         lastupdate = NOW() 
         WHERE slide_id = $id "; 
-
+// echo $sql;
         if (mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
             return 1;
         }else {

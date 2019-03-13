@@ -6,12 +6,24 @@
                 <hr align="left" class="border-news" style="border-top: 2px solid  #5a5a5a; width: 7vw;">
             </div>
         </div>
+        
+    
+    <script>
+        function searchkeyword() {
+            var keywordsearchkeyword = $("#keywordsearchkeyword").val();
+            console.log(keywordsearchkeyword);
+            
+            window.location = "news.php?action=search&keyword=" + keywordsearchkeyword;
+        }
+    </script>
+
         <div class="col-4">
             <div class="row">
-                <input type="text" class="box-search-news" id="name" name="name" type="text" placeholder="Search News">
-                <div class="btn btn-search-news">
-                    SEARCH
-                </div>
+                <input type="text" class="box-search-news" id="keywordsearchkeyword" name="keywordsearchkeyword" type="text" placeholder="Search News">
+                <button  onclick="searchkeyword();" class="btn btn-search-news">
+
+                        SEARCH
+                </button>
             </div>
         </div>
     </div>
@@ -88,21 +100,22 @@
 
 
             </div>
+            <?php if($_GET['keyword'] == "") { ?>
             <div class="row">
                 <div class="tex-center">
 
-                <?php $num_page = ceil(count($news_page) / $perpage); ?>
-                <?php for ($i = 1; $i <= $num_page; $i++) {
-                    ?>
+                    <?php $num_page = ceil(count($news_page) / $perpage); ?>
+                    <?php for ($i = 1; $i <= $num_page; $i++) {
+                        ?>
                     <a class=" btn btn-readmore <?php if ($page == $i) {
-                                                                    echo 'active';
-                                                                } ?>" href="news.php?page=<?php echo $i;  ?>"> <?php echo $i;  ?> </a>&nbsp;
-                <?
-
-            }
-            ?>
+                                                    echo 'active';
+                                                } ?>" href="news.php?page=<?php echo $i;  ?>"> <?php echo $i;  ?> </a>&nbsp;
+                    <?
+                }
+                ?>
                 </div>
             </div>
+            <?php } ?>
         </div>
 
 

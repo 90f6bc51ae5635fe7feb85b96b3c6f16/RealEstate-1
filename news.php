@@ -28,14 +28,14 @@ $news_model = new NewsModel;
 
 $perpage = 4;
 if (isset($_GET['page'])) {
-$page = $_GET['page'];
+    $page = $_GET['page'];
 } else {
-$page = 1;
+    $page = 1;
 }
 $start = ($page - 1) * $perpage;
 
 $news_page = $news_model->getNewsBy();
-$news = $news_model->getNewsByLimit($start,$perpage);
+$news = $news_model->getNewsByLimit($start, $perpage, $keyword);
 $news_most = $news_model->getNewsReadMost();
 // print_r($news);
 
@@ -117,15 +117,33 @@ $news_most = $news_model->getNewsReadMost();
 
         ?>
     <script>
-        window.location = "news.php?action=detail"
+        window.location = "news.php?action=detail&id=<?PHP echo $_GET['id'];  ?>"
     </script>
     <?PHP
 
-
-
+    print_r($_GET['id']);
+    $news = $news_model->getNewsByID($_GET['id']);
+    // print_r($news);
 } else if ($_GET['action'] == "detail") {
 
-    require_once('view/news/newsdetail.inc.php'); }
+    $news = $news_model->getNewsByID($_GET['id']);
+    // print_r($news);
+    require_once('view/news/newsdetail.inc.php');
+} else if ($_GET['action'] == "search") {
+
+    $perpage = 4;
+    if (isset($_GET['page'])) {
+        $page = $_GET['page'];
+    } else {
+        $page = 1;
+    }
+    $start = ($page - 1) * $perpage;
+    $news = $news_model->getNewsByLimit($start, $perpage, $_GET['keyword']);
+    // print_r($news);
+    
+    // print_r($news);
+    require_once('view/news/view.inc.php');
+}
 
 
 

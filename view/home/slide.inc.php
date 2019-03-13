@@ -82,7 +82,7 @@
             var location_id = $("#location_id").val();
             var product_types_id = $("#product_types_id").val();
             var keyword = $("#keyword").val();
-            window.location = "index.php?search=1&location_id=" + location_id + "&product_types_id=" + product_types_id + "&keyword=" + keyword;
+            window.location = "property.php?action=detail&search=1&location_id=" + location_id + "&product_types_id=" + product_types_id + "&keyword=" + keyword;
         }
     </script>
 

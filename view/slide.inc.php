@@ -38,7 +38,7 @@ $product_header = $product_model->getProductHeaderBy();
 
 
     <section class="col-lg-12 no-padding" style="position: relative; height: 30vw;">
-        <img class="size-img-slide" src="img_upload/services/3.jpg">
+        <img class="size-img-slide" src="img_upload/slide/<?php echo $slide['slide_image'];  ?>">
             <div class="overlay-slide-service">
             </div>
     

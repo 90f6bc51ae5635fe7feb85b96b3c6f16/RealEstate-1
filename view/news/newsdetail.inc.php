@@ -3,13 +3,22 @@
 
     <div class="row ">
         <div class="news-topic">
-            sdfsdfsdfsdf
+            <?PHP if ($lng == "TH") {
+                # code...
+                echo $news['news_name_th']; 
+            } else{
+                echo $news['news_name_en'];
+            }
+            ?>
         </div>
     </div>
     <div class="news-detail1">
-        sdfsdfsdfsdfsdfsdfsdfsfssghkluilfgfgnmhj.hfdfbvcbgwfdfsdfsdfasdasdasdczxcz
-        sdfsdfsdfsddfsdfsdfsdfsdfsfssghkluilfgfgnmhj.hfdfbvcbgwfdfsdfsdfasdasdasdczx
-        dfsdfsdfsdfsdfsfssghkluilfgfgnmhj.hfdfbvcbgwfdfsdfsdfasdasdasdczxczxczvcxv
-        dfsdfsdfsdfsdfsfssghkluilfgfgnmhj.hfdfbvcbgwfdfsdfsdfasdasdasdczxczxczvcx
+            <?PHP if ($lng == "TH") {
+                # code...
+                echo $news['news_detail_th']; 
+            } else{
+                echo $news['news_detail_en'];
+            }
+            ?>
     </div>
 </div>

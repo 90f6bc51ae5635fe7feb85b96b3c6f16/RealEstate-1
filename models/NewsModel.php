@@ -25,10 +25,34 @@ class NewsModel extends BaseModel
             return $data;
         }
     }
-    function getNewsByLimit($start,$perpage)
+
+    function getNewsByKeyword($keyword)
     {
         $sql = "SELECT * 
-        FROM tb_news limit {$start} , {$perpage} 
+        FROM tb_news 
+        WHERE  
+            tb_news.news_name_th LIKE ('%$keyword%')
+        OR
+            tb_news.news_name_en LIKE ('%$keyword%')
+        ";
+        if ($result = mysqli_query(static::$db, $sql, MYSQLI_USE_RESULT)) {
+            $data = [];
+            while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+                $data[] = $row;
+            }
+            $result->close();
+            return $data;
+        }
+    }
+    function getNewsByLimit($start,$perpage, $keyword)
+    {
+        $sql = "SELECT * 
+        FROM tb_news 
+        WHERE  
+            tb_news.news_name_th LIKE ('%$keyword%')
+        OR
+            tb_news.news_name_en LIKE ('%$keyword%')
+        limit {$start} , {$perpage} 
         ";
         // echo $sql;
         if ($result = mysqli_query(static::$db, $sql, MYSQLI_USE_RESULT)) {

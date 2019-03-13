@@ -77,3 +77,9 @@
         font-weight: 600;
     }
 }
+@media (max-width: 321px) {
+    .about-head{
+        padding-top:180%;
+        font-weight: 600;
+    }
+}

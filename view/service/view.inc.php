@@ -11,12 +11,12 @@
         <div class="element-item col-lg-4 col-md-6 col-sm-6">
             <div class="shadow-lg mb-5 bg-light service-box">
 
-                <a href="service.php?action=detail&id=<?PHP echo $i; ?>"> <img src="img_upload/services/<?PHP echo $services[$i]['services_img']; ?>" class="img-fluid"></a>
+                <a href="service.php?action=detail&id=<?PHP echo $i; ?>"> <img src="img_upload/services/<?PHP echo $services[$i]['services_img']; ?>" class="size-img-service"></a>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-4">
                         <img class="icon-service-detail" src="img_upload/icon-services/53176142_310652063137173_1974414113991819264_n.png">
                     </div>
-                    <div class="col-6 all-text-service-detail">
+                    <div class="col86 all-text-service-detail">
                         <div class="text-sevice-detail1">
                             <?PHP if ($lng == "TH") {
                                 echo 'บริการสำหรับ';

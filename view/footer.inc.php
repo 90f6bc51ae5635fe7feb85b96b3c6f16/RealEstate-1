@@ -26,22 +26,12 @@ $news = $news_model->getNewsByDESC();
 
 <script>
     function search_product_types(id) {
-        // var location_id = $("#location_id").val();
         var product_types_id = document.getElementById("product_types_ids_" + id).value;
-        // console.log(product_types_id);
-
-        // var keyword = $("#keyword").val();
-        // window.location = "property.php?action=detail&search=1&location_id=" + location_id + "&product_types_id=" + product_types_ids + "&keyword=" + keyword;
         window.location = "property.php?action=detail&search=1&product_types_id=" + product_types_id;
     }
 
     function search_location(id) {
-        // var location_id = $("#location_id").val();
         var location_id = document.getElementById("search_location_" + id).value;
-        // console.log(product_types_id);
-
-        // var keyword = $("#keyword").val();
-        // window.location = "property.php?action=detail&search=1&location_id=" + location_id + "&product_types_id=" + product_types_ids + "&keyword=" + keyword;
         window.location = "property.php?action=detail&search=1&location_id=" + location_id;
     }
 </script>
@@ -127,20 +117,29 @@ $news = $news_model->getNewsByDESC();
                             ?>
                         <div class="row">
                             <div class="col-4 col-img-footer">
+                            <a href="news.php?action=read&news_read=<?PHP echo ($news[$i]['news_read']) ?>&id=<?PHP echo ($news[$i]['news_id']) ?>">
+
                                 <img src="img_upload/news/<?PHP echo $news[$i]['news_img']; ?>" class="rounded float-left img-fluid img-size-footer " alt="...">
+                           
+                                </a>
                             </div>
                             <div class="col-8">
-                                <?PHP if ($lan == 'TH') {
-                                    # code...
-                                    echo $news[$i]['news_name_th'];
-                                } else {
-                                    echo $news[$i]['news_name_en'];
-                                }  ?>
+                                <a href="news.php?action=read&news_read=<?PHP echo ($news[$i]['news_read']) ?>&id=<?PHP echo ($news[$i]['news_id']) ?>">
+                                    <?PHP if ($lan == 'TH') {
+                                        # code...
+                                        echo $news[$i]['news_name_th'];
+                                    } else {
+                                        echo $news[$i]['news_name_en'];
+                                    }  ?>
+                                </a>
                                 <br>
-                                <p class="light "><i class="far fa-clock light"></i>
-                                    <?PHP echo  date("M d, Y ", strtotime($news[$i]['news_date'])); ?>
-                                </p>
+                                <a href="news.php?action=read&news_read=<?PHP echo ($news[$i]['news_read']) ?>&id=<?PHP echo ($news[$i]['news_id']) ?>">
 
+                                    <p class="light "><i class="far fa-clock light"></i>
+                                        <?PHP echo  date("M d, Y ", strtotime($news[$i]['news_date'])); ?>
+                                    </p>
+
+                                </a>
 
                             </div>
                         </div>

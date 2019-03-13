@@ -10,6 +10,7 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
 .text-slide-home{
     margin-top: 4vw;
 }
@@ -213,6 +214,7 @@
 }
 .slide-item{
     /* position: relative; */
+    height: 17vw;
 }
 .overlay-slide{
     background: linear-gradient(blue, rgb(0, 255, 13));

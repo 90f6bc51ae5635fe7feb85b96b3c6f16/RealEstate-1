@@ -26,6 +26,11 @@
     margin: -30;
     width: 100%;
 }
+.size-icon-contact2{
+    object-fit: cover;
+    margin: -30;
+    width: 100%;
+}
 .contact-box-text{
     color: #0175A4;
     font-size: 1.5rem;
@@ -73,19 +78,17 @@
         padding-top: 40%;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 767.5px) {
     .contact-head {
         padding-top: 100%;
     }
-    /* .size-icon-contact{
-        object-fit: cover;
-        width: 100%;
-    } */
+
 }
 @media (max-width: 992px) {
     .size-icon-contact{
         object-fit: cover;
         width: 100%;
+        padding-top: 20%;
         
     }
 }
@@ -122,11 +125,5 @@
 @media (max-width: 321px) {
     .contact-head {
         padding-top: 180%;
-    }
-}
-@media (max-width: 768px) {
-    .sevice1 {
-        padding-top: 10%;
-        font-size: 25px;
     }
 }

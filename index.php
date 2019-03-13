@@ -75,7 +75,7 @@ $page = $page_model->getPageByID('1');
 
 
 
-}
+// }
 ?>
 
 <html>

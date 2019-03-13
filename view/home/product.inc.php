@@ -22,7 +22,7 @@
         <div class="responsive" style="margin-right: 1vw;">
                 <?PHP for($i=0;$i<count($product );$i++){ ?>
                 <div class="" style="border: ridge;">
-                    <img src="img_upload/product_image/<?PHP echo $product[$i]['product_image_img'];?>" style="width: 100%;"
+                    <img class="size-img-product-home" src="img_upload/product_image/<?PHP echo $product[$i]['product_image_img'];?>"
                         alt="">
                     <div class="text-regular" style="padding-top: 20px;">
                         <div class="product-product-name">

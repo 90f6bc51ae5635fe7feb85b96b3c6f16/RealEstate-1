@@ -26,6 +26,15 @@
     padding-left: 20%;
     padding-right: 20%;
 }
+.box-search-home-index{
+    width: 100%;
+    bottom: -8%;
+    position: absolute;
+    z-index: 9999;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
 .img-poppular-home-padding{
     padding-right: 5px;
     padding-left: 5px;
@@ -366,7 +375,7 @@
         margin-top: 10vw;
     }
     .box-search-home{
-        bottom: -19%;
+        bottom: -80%;
     }
     .slide-text-detail{
         font-size: 1.5vw;
@@ -400,6 +409,9 @@
     }
     .slide-text-detail{
         margin-left: 0vw;
+    }
+    .box-search-home-index {
+        bottom: -19%;
     }
 }
 @media only screen and (max-width: 780px) {
@@ -453,6 +465,17 @@
         font-size: 2vw;
     }
 }
+@media only screen and (max-width: 767.5px) {
+    .box-search-home-index {
+        bottom: -60%;
+    }
+    .text-product-home-topic{
+        margin-top: 40vw;
+    }
+    .img-slide-home {
+        margin-top: 8vw;
+    }
+}
 @media only screen and (max-width: 600px) {
     .size-img-slide-home{
         min-height: 75vw;
@@ -460,7 +483,11 @@
     .price-slide2 {
         font-size: 2.2vw;
     }
+    .box-search-home-index {
+        bottom: -40%;
+    }
 }
+
 @media only screen and (max-width: 500px) {
     .size-img-slide{
         min-height: 100vw;
@@ -498,7 +525,18 @@
         margin-left: -5vw;
         margin-top: 24vw;
     }
+    .box-search-home-index {
+        bottom: -50%;
+    }
 }
+@media only screen and (max-width: 415px) {
+    .box-search-home-index {
+        bottom: -63%;
+    }
+    .img-slide-home {
+        margin-top: 16vw;
+    }
+    }
 @media only screen and (max-width: 400px) {
     .img-poppular-home-padding{
         padding-right: 2px;
@@ -546,13 +584,39 @@
         width: 40vw;
         height: 40vw;
     }
+    .text-product-home-topic{
+        margin-top: 70vw;
+        font-size: 6vw;
+    }
+    .box-search-home-index {
+        bottom: -45%;
+    }
 }
+@media only screen and (max-width: 345px) {
+    .btn-slide2 {
+        margin-left: -3vw;
+    }
+}
+
+
 @media only screen and (max-width: 320px) {
     .size-img-slide{
         min-height: 120vw;
     }
     .size-img-slide-home{
         min-height: 130vw;
+    }
+    .text-slide-home {
+        margin-top: -25vw;
+    }
+    .img-slide-home {
+        margin-top: 28vw;
+    }
+    .box-search-home-index {
+        bottom: -50%;
+    }
+    .btn-slide2 {
+        margin-left: -5vw;
     }
 }
 

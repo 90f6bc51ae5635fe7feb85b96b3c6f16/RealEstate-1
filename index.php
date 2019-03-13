@@ -54,28 +54,28 @@ $page = $page_model->getPageByID('1');
 
 
 
-// if ($_GET['search'] == '1') {
+if ($_GET['search'] == '1') {
     
 
-//     $product = $product_model->   getProducSearchBy($_GET['location_id'], $_GET['product_types_id'], $_GET['keyword']);
-// echo "<pre>";
-// print_r($product) ;
-// echo "</pre>";
-// }elseif ($_GET['search'] == '2') {
-//     $product = $product_model->   getProducSearchBy($_GET['location_id'], $_GET['product_types_id'], $_GET['keyword']);
+    $product = $product_model->   getProducSearchBy($_GET['location_id'], $_GET['product_types_id'], $_GET['keyword']);
+echo "<pre>";
+print_r($product) ;
+echo "</pre>";
+}elseif ($_GET['search'] == '2') {
+    $product = $product_model->   getProducSearchBy($_GET['location_id'], $_GET['product_types_id'], $_GET['keyword']);
 
 ?>
-<!-- <script>
+<script>
  window.location = "property.php?action=detail" 
-</script>  -->
+</script> 
 <?PHP
-// echo "<pre>";
-// print_r($product) ;
-// echo "</pre>";
+echo "<pre>";
+print_r($product) ;
+echo "</pre>";
 
 
 
-// }
+}
 ?>
 
 <html>

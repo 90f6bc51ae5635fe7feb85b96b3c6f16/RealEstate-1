@@ -45,7 +45,7 @@ $news = $news_model->getNewsByDESC();
                     ABOUT US
                 </div>
                 <br>
-                <div style="font-size: 1rem;">
+                <div class="cut-text-multi-about-footer2" style="font-size: 1rem;">
                     <?PHP if ($lan == "TH") {
                         echo $about['about_us_title_th'];
                     } else {
@@ -53,7 +53,7 @@ $news = $news_model->getNewsByDESC();
                     } ?>
                 </div>
                 <br>
-                <div style="font-size: 1rem;">
+                <div class="cut-text-multi-about-footer2" style="font-size: 1rem;">
                     <?PHP if ($lan == "TH") {
                         echo $about['about_us_sub_title_th'];
                     } else {
@@ -69,9 +69,9 @@ $news = $news_model->getNewsByDESC();
                         </div>
                         <div style="font-size: 0.95rem;">
                             <?PHP for ($i = 0; $i < count($type); $i++) {  ?>
-                            <i class="fas fa-angle-right"></i>
+                            <i class="fas fa-angle-right "></i>
                             <input type="hidden" id="product_types_ids_<?php echo $i; ?>" name="product_types_ids" value="<?php echo $type[$i]['product_types_id']; ?>">
-                            <button onclick="search_product_types('<?php echo $i; ?>');">
+                            <button class="footer-button" onclick="search_product_types('<?php echo $i; ?>');">
                                 <?PHP if ($lan == "TH") {
                                     echo $type[$i]['product_types_name_th'];
                                 } else {
@@ -90,7 +90,7 @@ $news = $news_model->getNewsByDESC();
                         <div style="font-size: 0.95rem;">
                             <?PHP for ($i = 0; $i < count($location); $i++) {  ?>
                             <input type="hidden" id="search_location_<?php echo $i; ?>" name="search_location" value="<?php echo $location[$i]['location_id']; ?>">
-                            <button onclick="search_location('<?php echo $i; ?>');">
+                            <button class="footer-button" onclick="search_location('<?php echo $i; ?>');">
                                 <i class="fas fa-angle-right"></i>
                                 <?PHP if ($lan == "TH") {
                                     echo $location[$i]['location_name_th'];

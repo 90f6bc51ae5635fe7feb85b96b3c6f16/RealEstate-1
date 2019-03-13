@@ -20,7 +20,7 @@
 
                         <div class="slide-item">
                             <div class="slide-detail-home">
-                                <div class="slide-header-home">
+                                <div class="slide-header-home cut-text-multi-cut-text-multi-product-home">
 
                                     <?PHP if ($lan == "TH") {
                                         echo $slide[$i]['product_name_th'];
@@ -29,7 +29,7 @@
                                     } ?>
 
                                 </div>
-                                <div class="slide-text-detail">
+                                <div class="slide-text-detail cut-text-multi ">
 
                                     <?PHP if ($lan == "TH") {
                                         echo $slide[$i]['product_detail_th'];
@@ -86,7 +86,7 @@
         }
     </script>
 
-    <div class="box-search-home">
+    <div class="box-search-home-index">
         <div class="shadow-lg" style="background-color: white;">
             <div class="row m-0 py-4">
                 <div class="col-sm-12 col-md-3 py-md-0 py-sm-3">

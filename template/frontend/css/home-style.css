@@ -1,6 +1,22 @@
+.footer-button{
+    background-color: #fff;
+    border: #fff;
+}
 .cut-text-multi {
     display: -webkit-box;
     -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.cut-text-multi-about-footer2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.cut-text-multi-about-footer1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }

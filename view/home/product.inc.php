@@ -8,7 +8,7 @@
            <?PHP  echo ($product_header[0]['product_header_en']) ?>
         <?PHP } ?>
         </div>
-        <div class="text-product-home">
+        <div class="text-product-home cut-text-multi-product-home">
         
         <?PHP if ($lan == 'TH') { ?>
            <?PHP  echo ($product_header[0]['product_header_detail_th']) ?>

@@ -29,7 +29,7 @@
                                     } ?>
 
                                 </div>
-                                <div class="slide-text-detail">
+                                <div class="slide-text-detail cut-text-multi ">
 
                                     <?PHP if ($lan == "TH") {
                                         echo $slide[$i]['product_detail_th'];

@@ -21,7 +21,7 @@ $company = $company_model->  getCompanyProfile();
 <div class="container about-container">
     <div class="text-left about-head">
         <p style="font-weight: 600; color: #0175a4; font-size: 2.0em;">COMPANY<span>PROFILE</span></p>
-        <p>
+        <p style="color: #959595">
         <?PHP if($lng == "TH"){ echo  $company[0]['company_profile_sub_title_th']; }else{ echo  $company[0]['company_profile_sub_title_en'];} ?>
            
 

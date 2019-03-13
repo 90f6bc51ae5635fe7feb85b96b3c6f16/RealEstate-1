@@ -10,7 +10,6 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-
 .text-slide-home{
     margin-top: 4vw;
 }
@@ -47,7 +46,7 @@
 }
 .text-product-home-topic{
     color: #70b247;
-    font-size: 2vw;
+    font-size: 4vw;
 }
 .img-poppular-home2{
     width: 100%;
@@ -214,7 +213,6 @@
 }
 .slide-item{
     /* position: relative; */
-    height: 17vw;
 }
 .overlay-slide{
     background: linear-gradient(blue, rgb(0, 255, 13));
@@ -259,6 +257,20 @@
 .menu{
     margin-left: 15vw;
 }
+@media only screen and (max-width: 1200px) {
+    .on-img {
+        width: 13vw;
+        height: 12vw;
+    }
+    .rounded-circle1 {
+        width: 25vw;
+        height: 25vw;
+        margin-right: -8vw;
+    }
+    .img-slide-home {
+        margin-top: 2vw;
+    }
+}
 @media only screen and (max-width: 1100px) {
     .logo{
         margin-left: 0vw;
@@ -269,14 +281,14 @@
     .slide-header-home{
         color: #fff;
         position: relative;
-        font-size: 1.6vw;
+        font-size: 1.9vw;
         margin-left: 8vw;
     }
     .slide-text-detail{
         padding-top: 1px;
         color : #fff;
         margin-left: 8vw;
-        font-size: 1vw;
+        font-size: 1.4vw;
     }
     .overlay-slide-service {
         background: linear-gradient(blue, rgb(0, 255, 13));
@@ -287,6 +299,26 @@
         height: 30%;
         opacity: .2;
         z-index: 996;
+    }
+    .rounded-circle1 {
+        width: 23vw;
+        height: 23vw;
+        margin-right: -4vw;
+    }
+    .on-img {
+        margin-left: 6vw;
+    }
+    .text-product-home-topic{
+        font-size: 4vw;
+    }
+    .img-poppular-home1{
+        height: 30vw;
+    }
+    .img-poppular-home2 {
+        height: 21vw;
+    }
+    .img-poppular-home3 {
+        height: 21vw;
     }
 }
 @media only screen and (max-width: 1024px) {
@@ -334,7 +366,7 @@
         margin-top: 10vw;
     }
     .box-search-home{
-        bottom: -80%;
+        bottom: -19%;
     }
     .slide-text-detail{
         font-size: 1.5vw;
@@ -345,7 +377,7 @@
     .rounded-circle1{
         width: 28vw;
         height: 28vw;
-        margin-right: -7vw;
+        margin-right: -8vw;
     }
     .img-slide-home{
         margin-top: 8vw;
@@ -353,6 +385,8 @@
     .on-img{   
         margin-left: 0vw;
         margin-top: 15vw;
+        width: 14vw;
+        height: 13vw;
     }
     .size-img-slide-home{
         max-height: 50vw;
@@ -362,6 +396,7 @@
     }
     .slide-header-home{
         margin-left: 0vw;
+        font-size: 2.5vw;
     }
     .slide-text-detail{
         margin-left: 0vw;
@@ -414,10 +449,16 @@
     .slide-text-detail{
         margin-left: 0vw;
     }
+    .price-slide1 {
+        font-size: 2vw;
+    }
 }
 @media only screen and (max-width: 600px) {
     .size-img-slide-home{
         min-height: 75vw;
+    }
+    .price-slide2 {
+        font-size: 2.2vw;
     }
 }
 @media only screen and (max-width: 500px) {

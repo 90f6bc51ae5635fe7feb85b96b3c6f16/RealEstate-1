@@ -4,6 +4,12 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+.cut-text-multi-cut-text-multi-product-home {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 .cut-text-multi-product-home {
     display: -webkit-box;
     -webkit-line-clamp: 5;

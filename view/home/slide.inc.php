@@ -20,7 +20,7 @@
 
                         <div class="slide-item">
                             <div class="slide-detail-home">
-                                <div class="slide-header-home">
+                                <div class="slide-header-home cut-text-multi-cut-text-multi-product-home">
 
                                     <?PHP if ($lan == "TH") {
                                         echo $slide[$i]['product_name_th'];

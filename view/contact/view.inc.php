@@ -278,7 +278,7 @@
 
                     <div class="col-6">
                         <a href="service.php?action=detail&id=<?PHP echo $i; ?>">
-                            <img class="size-icon-contact"
+                            <img class="size-icon-contact2"
                                 src="img_upload/icon-services/53176142_310652063137173_1974414113991819264_n.png">
                         </a>
                     </div>

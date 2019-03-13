@@ -23,7 +23,7 @@
                                             echo $slide['slide_title_en'];
                                         } ?>
                                     </h1>
-                                </div>
+                                </div> 
                                 <div class="slide-text-detail">
                                     <p class="slide-cut-text-p">
                                         <?PHP if($lng == "TH"){ 

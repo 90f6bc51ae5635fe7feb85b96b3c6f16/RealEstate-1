@@ -49,14 +49,14 @@
         width: 95%;
     }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.5px) {
     .top{
         padding: 65%  20% 3% 20%;
     }    
 }
 @media only screen and (max-width: 426px) {
     .top{
-        padding: 125%  20% 3% 20%;
+        padding: 125%  10% 3% 10%;
     }    
     .property-h3{
         font-size: 6vw;
@@ -67,9 +67,11 @@
 }
 @media only screen and (max-width: 320px) {
     .top{
-        padding: 160%  20% 3% 20%;
+        padding: 160%  10% 3% 10%;
     }  
     .content {
         width: 96%;
     }
+}
+@media only screen and (max-width: 320px) {
 }

@@ -51,7 +51,7 @@
                 </div>
                 <div>
                     <div class="row p-2 property-de-font p-0 m-0">
-                        <div class="col-5 p-0">
+                        <div class="col-5 p-0 property-de-font-weight">
                             Property Type
                         </div>
                         <div class="col-1">
@@ -66,7 +66,7 @@
                         </div>
                     </div>
                     <div class="row p-2 m-0">
-                        <div class="col-5 p-0">
+                        <div class="col-5 p-0 property-de-font-weight">
                             Project Name
                         </div>
                         <div class="col-1">
@@ -81,7 +81,7 @@
                         </div>
                     </div>
                     <div class="row p-2 m-0">
-                        <div class="col-5 p-0">
+                        <div class="col-5 p-0 property-de-font-weight">
                             Location
                         </div>
                         <div class="col-1">
@@ -96,7 +96,7 @@
                         </div>
                     </div>
                     <div class="row p-2 m-0">
-                        <div class="col-5 p-0">
+                        <div class="col-5 p-0 property-de-font-weight">
                             No. of Bedroom
                         </div>
                         <div class="col-1">
@@ -111,7 +111,7 @@
                         </div>
                     </div>
                     <div class="row p-2 m-0">
-                        <div class="col-5 p-0">
+                        <div class="col-5 p-0 property-de-font-weight">
                             No. of Bathroom
                         </div>
                         <div class="col-1">
@@ -126,7 +126,7 @@
                         </div>
                     </div>
                     <div class="row p-2 m-0">
-                        <div class="col-5 p-0">
+                        <div class="col-5 p-0 property-de-font-weight">
                             Furniture
                         </div>
                         <div class="col-1">
@@ -141,7 +141,7 @@
                         </div>
                     </div>
                     <div class="row p-2 m-0">
-                        <div class="col-5 p-0">
+                        <div class="col-5 p-0 property-de-font-weight">
                             Price (MB)
                         </div>
                         <div class="col-1">
@@ -158,7 +158,7 @@
                     <div class="row" style="padding: 15% 0% 15% 0%">
                         <div class="col-6 p-0">
 
-                            <a href="contact.php#contact" class="btn property-de-btn" tabindex="0">
+                            <a href="contact.php#contact" class="btn property-de-btn property-de-font-weight" tabindex="0">
                                     CONTACT US
                                 </a>
 

@@ -10,7 +10,7 @@
                     # code...
                     // $type[$i][''];
                     ?>
-            <div class="col-lg-4 col-sm-6 col-md-4 p-1" style="position: relative;">
+            <div class="col-lg-4 col-md-4 col-sm-6 p-1" style="position: relative;">
                 <a href="property.php?action=detail&type_id=<?PHP echo $type[$i]['product_types_id']; ?>">
                     <div class="property-bg" style="background-image: url(img_upload/types/<?PHP echo ($type[$i]['product_types_img']); ?>);">
                         <div class="content">

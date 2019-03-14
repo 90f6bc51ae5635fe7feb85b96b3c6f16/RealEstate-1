@@ -1,3 +1,24 @@
+.float_center {
+    position: relative;
+    left: 50%;
+}
+.active {
+    background-color: #6c757d;
+}
+
+.cut-text-multi {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.cut-text-multi2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 .topic-lastnews{
     margin-top: 0w;
 }
@@ -46,7 +67,7 @@
 .btn-readmore{
     color: #fff;
     background-color: #70b247;
-    font-size: 1.25em;
+    font-size: 1.2vw;
     margin-top: 1vw;
     font-weight: 600;
 }

@@ -18,13 +18,13 @@
     </script>
 
         <div class="col-4">
-            <div class="row">
+            <!-- <div class="row">
                 <input type="text" class="box-search-news" id="keywordsearchkeyword" name="keywordsearchkeyword" type="text" placeholder="Search News">
                 <button  onclick="searchkeyword();" class="btn btn-search-news">
 
                         SEARCH
                 </button>
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="row row-news1">
@@ -120,7 +120,7 @@
 
 
         <div class="col-lg-4 col-md-4 col-sm-4 col-4">
-            <div class="row">
+            <!-- <div class="row">
 
                 <div class=" col-lg-12 col-md-12 col-sm-12 most-read-news ">
                     <div class="most-read">
@@ -172,7 +172,7 @@
 
 
                 </div>
-            </div>
+            </div> -->
         </div>
 
 

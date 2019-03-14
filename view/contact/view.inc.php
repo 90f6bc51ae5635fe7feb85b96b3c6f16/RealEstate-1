@@ -156,5 +156,22 @@
                 </div>
             </div>
         </div>
+        <!-- Google Map -->
+
+        <fieldset class="gllpLatlonPicker">
+                           				
+                                        <div class="gllpMap" style="width: 100%;  height: 20em;">Google Maps</div>
+                                        <!-- <div class="gllpMap" style="width: 100%; height: 80%;">Google Maps</div> -->
+                                        <input  type="text" class="gllpLatitude form-control" name="product_latitude" value="13.757560073777029" hidden/>
+                                        <input type="text" class="gllpLongitude form-control" name="product_longitude" value="100.50996780395508" hidden/>
+                                        <input type="hidden" class="gllpZoom" value="10" />
+                                    </fieldset>
+
+                                    <script src="https://maps-api-ssl.google.com/maps/api/js?key=AIzaSyBPYt_mZGd-2iotzhpiZKw1_GpZ6H9w3vs&sensor=false"></script>
+                                    <script src="../template/map/js/jquery-gmaps-latlon-picker.js"></script>
+                        <!-- /Google Map -->
+                        <script src="https://maps-api-ssl.google.com/maps/api/js?key=AIzaSyBPYt_mZGd-2iotzhpiZKw1_GpZ6H9w3vs&amp;sensor=false&amp;language=en&amp;region=en">
+                        </script>
+                                                <script src="template/map/js/jquery-gmaps-latlon-picker.js"></script>
     </div>
 </div>

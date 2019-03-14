@@ -170,8 +170,20 @@
         padding-top: 125vw;
     }
 }
+@media only screen and (max-width: 376px) {
+    .text-sevice-detail1 {
+        font-size: 4.5vw;
+    }
+    .icon-service-detail {
+        width: 30vw;
+        height: 20vw;
+    }
+    .topic-service {
+        padding-top: 90vw !important;
+    }
+}
 @media only screen and (max-width: 320px) {
-    .topic-service{
-        padding-top: 160vw;
+    .topic-service {
+        padding-top: 120vw;
     }
 }

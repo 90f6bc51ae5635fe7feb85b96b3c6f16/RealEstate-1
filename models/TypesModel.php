@@ -39,7 +39,9 @@ class TypesModel extends BaseModel{
     
     function editTypeRecommened($product_types_id,$product_types_popular) {
       
-        $sql = "UPDATE `tb_product_types` SET `product_types_popular` = '$product_types_popular' WHERE `tb_product_types`.`product_types_id` = '$product_types_id'
+        $sql = "UPDATE `tb_product_types` 
+        SET `product_types_popular` = '$product_types_popular' 
+        WHERE `tb_product_types`.`product_types_id` = '$product_types_id'
         ";
         // echo "<pre>";
         // print_r( $sql);

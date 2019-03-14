@@ -78,6 +78,8 @@ class ContactUsModel extends BaseModel{
         $data['contact_us_address_4'] =mysqli_real_escape_string(static::$db,$data['contact_us_address_4']);
         $data['contact_us_fax'] =mysqli_real_escape_string(static::$db,$data['contact_us_fax']);
         $data['contact_us_email'] =mysqli_real_escape_string(static::$db,$data['contact_us_email']);
+        $data['contact_us_map_latitude'] =mysqli_real_escape_string(static::$db,$data['contact_us_map_latitude']);
+        $data['contact_us_map_longitude'] =mysqli_real_escape_string(static::$db,$data['contact_us_map_longitude']);
         $sql = "UPDATE `tb_contact_us` 
         SET
          `contact_us_title_th` = '".$data['contact_us_title_th']."', 
@@ -96,7 +98,9 @@ class ContactUsModel extends BaseModel{
          `contact_us_address_3_en` = '".$data['contact_us_address_3_en']."',  
          `contact_us_address_4` = '".$data['contact_us_address_4']."',  
          `contact_us_fax` = '".$data['contact_us_fax']."', 
-         `contact_us_email` = '".$data['contact_us_email']."'
+         `contact_us_email` = '".$data['contact_us_email']."', 
+         `contact_us_map_latitude` = '".$data['contact_us_map_latitude']."', 
+         `contact_us_map_longitude` = '".$data['contact_us_map_longitude']."'
         WHERE `tb_contact_us`.`contact_us_id` = '$contact_us_id'
         ";
         // echo "<pre>";

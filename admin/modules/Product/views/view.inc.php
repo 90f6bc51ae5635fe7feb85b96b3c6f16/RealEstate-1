@@ -72,6 +72,7 @@
                     <th width="20%">ประเภท EN</th>
                     <th width="20%">ราคา</th>
                     <th>Hight Light</th>
+                    <th></th>
                     <th>เเก้ไข</th>
                     <th>ลบ</th>
                 </tr>
@@ -83,10 +84,11 @@
                 <tr>
                     <td><?php echo $i+1; ?></td>
                     <td>
-						<a href="?content=product_image&product_id=<?php echo $product[$i]['product_id'];?>" style="color: green;">
-							<i class="fa fa-plus" aria-hidden="true"></i>
-						</a> 
-					</td>
+                        <a href="?content=product_image&product_id=<?php echo $product[$i]['product_id'];?>"
+                            style="color: green;">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </a>
+                    </td>
                     <td>
                         <?php echo $product[$i]['product_name_th'];?>
                     </td>
@@ -104,12 +106,31 @@
                     </td>
 
                     <td>
-						<a href="?content=product_highlight&product_id=<?php echo $product[$i]['product_id'];?>" style="color: green;">
-							<i class="fa fa-plus" aria-hidden="true"></i>
-						</a> 
-					</td>
+                        <a href="?content=product_highlight&product_id=<?php echo $product[$i]['product_id'];?>"
+                            style="color: green;">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </a>
+                    </td>
 
-
+                    <td>
+                        <?PHP 
+                    if ($product[$i]['product_popular'] == 1) {
+                        ?>
+                        <a
+                            href="?content=product&action=recommened&id=<?PHP echo $product[$i]['product_id'];?>&recommened=0">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </a>
+                        <?PHP        
+            }else{
+                ?>
+                        <a
+                            href="?content=product&action=recommened&id=<?PHP echo $product[$i]['product_id'];?>&recommened=1">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </a>
+                        <?PHP
+            }
+            ?>
+                    </td>
                     <td>
                         <a href="?content=product&action=update&id=<?php echo $product[$i]['product_id'];?>"
                             style="font-size: 20px;">

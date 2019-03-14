@@ -26,6 +26,36 @@ class ProductModel extends BaseModel{
             return $data;
         }
     }
+    function getProductByPopular(){
+        $sql = "SELECT * FROM `tb_product` WHERE `product_popular` = 1
+        ";
+        if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
+            $data = [];
+            while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)){
+                $data[] = $row;
+            }
+            $result->close();
+            return $data;
+        }
+    }
+    
+    
+    function editProductRecommened($product_id,$product_popular) {
+      
+        $sql = "UPDATE `tb_product` 
+        SET `product_popular` = '$product_popular' 
+        WHERE `tb_product`.`product_id` = '$product_id'
+        ";
+        // echo "<pre>";
+        // print_r( $sql);
+        // echo "</pre>";
+
+        if (mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
+            return 1;
+        }else {
+            return 0;
+        }
+    }
 
     function getProductLimitBy(){
         $sql = " SELECT * FROM `tb_product` WHERE 1 ORDER BY `product_id` DESC LIMIT 1

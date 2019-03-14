@@ -182,6 +182,18 @@ if ($_GET['action'] == 'insert') {
 
 }
 }
+} else if( $_GET['action'] == "recommened") {
+      
+    $product = $product_model-> editProductRecommened($_GET['id'], $_GET['recommened']);        
+
+?>
+<script>
+window.location = "index.php?content=product"
+</script>
+<?PHP
+
+
+
 } else {
     $product = $product_model->getProductBy();
     $product_header = $product_model->getProductHeaderBy();

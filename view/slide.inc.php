@@ -46,7 +46,7 @@ $product_header = $product_model->getProductHeaderBy();
         <div class="col-12">
             <div class="container">
                 <div class="row">
-                    <div class="col-10" style="margin-top: 4vw;">
+                    <div class="col-10 margin-all-slide">
 
                         <div class="slide-item">
                             <div class="slide-detail-home">

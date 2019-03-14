@@ -1,6 +1,7 @@
 .detail-service{
     margin-right: 1vw;
     margin-left: 1vw;
+    margin-bottom: 1vw;
 }
 .size-img-service{
     width: 100%;
@@ -73,8 +74,8 @@
 }
 @media only screen and (max-width: 1496px) {
     .icon-service-detail{
-        width: 12vw;
-        height: 10vw;
+        width: 15vw;
+        height: 12vw;
     }
     .text-sevice-detail1{
         font-size: 1.3vw;
@@ -103,19 +104,47 @@
     .text-sevice-detail1{
         font-size: 2.3vw;
         font-weight: 600;
+        margin-left: 6vw;
+        margin-top: 1vw;
     }
     .btn-contact-servicedetail{
-        font-size: 1.1vw;
+        font-size: 2.4vw;
+        margin-left: -5vw;
+        margin-top: 3vw;
+    }
+    .detail-service {
+        margin-top: 1vw;
+    }
+    .icon-service-detail {
+        width: 20vw;
+        height: 14vw;
+        margin-left: 2vw;
     }
 }
 @media only screen and (max-width: 767px) {
     .topic-service{
         padding-top: 60vw;
     }
+    .icon-service-detail {
+        width: 20vw;
+        height: 15vw;
+        margin-left: 2vw;
+    }
 }
 @media only screen and (max-width: 630px) {
     .topic-service{
         padding-top: 70vw;
+    }
+    .icon-service-detail {
+        width: 25vw;
+        height: 18vw;
+    }
+    .text-sevice-detail1 {
+        font-size: 3.3vw;
+        margin-top: 3vw;
+    }
+    .btn-contact-servicedetail {
+        margin-top: 6vw;
     }
 }
 @media only screen and (max-width: 500px) {
@@ -127,10 +156,13 @@
         padding-right: 3.5vw;
     }
     .btn-contact-servicedetail{
-        font-size: 0.4rem;
+        font-size: 3vw;
     }
     .topic-service {
         padding-top: 125vw;
+    }
+    .text-sevice-detail1 {
+        font-size: 3.5vw;
     }
 }
 @media only screen and (max-width: 415px) {

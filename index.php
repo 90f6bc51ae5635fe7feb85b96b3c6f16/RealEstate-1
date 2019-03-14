@@ -30,7 +30,7 @@ $product_model = new ProductModel;
 $slide = $product_model->  getProducImgtBy(); 
 $product = $product_model->  getProducImgtBy(); 
 $product_header = $product_model->  getProductHeaderBy(); 
-$type_popular = $product_model->  getProductByPopular(); 
+$product_popula = $product_model->  getProductByPopular(); 
 
 echo "<pre>";
 print_r($type_popular) ;

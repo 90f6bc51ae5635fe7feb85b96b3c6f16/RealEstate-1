@@ -1,22 +1,7 @@
 <div class="container">
     <div class="text-center contact-head">
         <h1 style="color: #5a5a5a; font-weight: 600">
-
-
-
-
-
-
             <?PHP if($lng == "TH"){ echo  $contact_us[0]['contact_us_title_th']; }else{ echo  $contact_us[0]['contact_us_title_en'];} ?>
-
-
-
-
-
-
-
-
-
         </h1>
         <hr class="border-contact" style="border-top: 2px solid  #5a5a5a">
         <div class="p-3 mb-2 bg-light contact-box">
@@ -32,49 +17,13 @@
                                 </div>
                                 <div class="col-8 text-address">
                                     <p style=" font-weight: 600; padding-top: 3%">
-
-
-
-
-
-
-
-
-
-
-
                                         <?PHP if($lng == "TH"){ echo  'ที่อยู่'; }else{ echo  'ADDRESS';} ?>
-
-
-
-
-
-
-
-
-
-
                                     </p>
-
-
-
-
-
-
                                     <?PHP if($lng == "TH"){ echo  $contact_us[0]['contact_us_address_th']; }else{ echo  $contact_us[0]['contact_us_address_en'];} ?>
                                     <?PHP if($lng == "TH"){ echo  $contact_us[0]['contact_us_address_1_th']; }else{ echo  $contact_us[0]['contact_us_address_1_en'];} ?>
                                     <?PHP if($lng == "TH"){ echo  $contact_us[0]['contact_us_address_2_th']; }else{ echo  $contact_us[0]['contact_us_address_2_en'];} ?>
                                     <?PHP if($lng == "TH"){ echo  $contact_us[0]['contact_us_address_3_th']; }else{ echo  $contact_us[0]['contact_us_address_3_en'];} ?>
                                     <?PHP if($lng == "TH"){ echo  $contact_us[0]['contact_us_address_4']; }else{ echo  $contact_us[0]['contact_us_address_4'];} ?>
-
-
-
-
-
-
-
-
-
                                 </div>
                             </div>
                             <div class="row" style="padding-top: 5%">
@@ -84,28 +33,9 @@
                                 </div>
                                 <div class="col-8 text-address">
                                     <p style=" font-weight: 600; padding-top: 3%">
-
-
-
                                         <?PHP if($lng == "TH"){ echo  'เบอร์โทรศัพท์'; }else{ echo  'PHONE';} ?>
-
-
-
-
-
-
                                     </p>
-
-
-
-
                                     <?PHP echo  $contact_us[0]['contact_us_fax']; ?>
-
-
-
-
-
-
                                 </div>
                             </div>
                             <div class="row" style="padding-top: 5%">
@@ -115,26 +45,10 @@
                                 </div>
                                 <div class="col-8 text-address">
                                     <p style=" font-weight: 600; padding-top: 3%">
-
-
-
                                         <?PHP if($lng == "TH"){ echo  'มือถือ'; }else{ echo  'MOBILE';} ?>
 
-
-
-
-
                                     </p>
-
-
-
                                     <?PHP echo  $contact_us[0]['contact_us_tel']; ?>
-
-
-
-
-
-
                                 </div>
                             </div>
                             <div class="row" style="padding-top: 5%">
@@ -144,31 +58,14 @@
                                 </div>
                                 <div class="col-8 text-address">
                                     <p style=" font-weight: 600; padding-top: 3%">
-
-
-
                                         <?PHP if($lng == "TH"){ echo  'EMAIL'; }else{ echo  'EMAIL';} ?>
-
-
-
                                     </p>
-
-
-
                                     <?PHP echo  $contact_us[0]['contact_us_email']; ?>
-
-
-
-
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-
                 <div class="col-md-6 text-left text-contact">
                     <form id="form_target" role="form" method="post" action="contact.php?&action=add">
                         <div class="row">
@@ -257,64 +154,7 @@
                         </div>  
                     </form>
                 </div>
-
-
             </div>
         </div>
-    </div>
-    <div class="row service-row-box">
-
-
-
-
-
-        <?PHP for ($i=0; $i < count($services) ; $i++) { ?>
-
-
-
-        <div class="col-lg-4 col-md-6">
-            <div class="shadow-lg p-3 mb-5 bg-light service-box">
-                <div class="row">
-
-                    <div class="col-6">
-                        <a href="service.php?action=detail&id=<?PHP echo $i; ?>">
-                            <img class="size-icon-contact2"
-                                src="img_upload/icon-services/53176142_310652063137173_1974414113991819264_n.png">
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <div class="sevice1">
-                            <div class="text-sevice" style="color: #70b247">
-                                <a href="service.php?action=detail&id=<?PHP echo $i; ?>" style="color: #70b247">
-                                    <?PHP if($lng == "TH"){ echo 'บริการสำหรับ'; }else{ echo ' SERVICE FOR'; } ?>
-
-                                </a>
-
-                            </div>
-
-                            <div class="text-sevice" style="color: #3379a5">
-
-                                <a href="service.php?action=detail&id=<?PHP echo $i; ?>">
-
-
-
-
-                                    <?PHP if($lng == "TH"){ echo $services[$i]['services_name_th']; }else{ echo $services[$i]['services_name_en']; } ?>
-
-
-                                </a>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <?PHP } ?>
-
     </div>
 </div>

@@ -2,7 +2,7 @@
 <section class="col-lg-12 no-padding" style="position: relative; ">
 
 
-    <img class="size-img-slide-home" src="img_upload/home/2.jpg">
+    <img class="size-img-slide-home" src="img_upload/home/1.jpg">
     <div class="overlay">
     </div>
     <div class="overlay2">

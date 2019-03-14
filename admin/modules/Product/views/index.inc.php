@@ -12,7 +12,12 @@ $product_types_model = new TypesModel;
 $location_model = new LocationModel;
 $furniture_model = new FurnitureModel;
 
+$product_limit = $product_model-> getProductLimitBy();
+$product_limit = $product_limit[0][product_id];
 
+$product = $product_model-> getProductBy();
+
+print_r(count($product_limit));
 $d1 = date("d");
 $d2 = date("m");
 $d3 = date("Y");
@@ -83,12 +88,14 @@ if ($_GET['action'] == 'insert') {
     $check_result = $product_model->insertProduct($data);
     if ($check_result != false) {
 
-        $product = $product_model->getProductBy();
+        $product = $product_model-> getProductLimitBy();
+
         ?>
 
 <script>
-    window.location = "index.php?content=product_image&product_id=<?php echo count($product) + 1; ?>"
+    window.location = "index.php?content=product&action=img"
 </script>
+
 <?php
 
 } else {
@@ -107,6 +114,29 @@ if ($_GET['action'] == 'insert') {
     window.location = "index.php?content=product"
 </script>
 <?PHP
+
+
+
+
+
+
+
+} else if ($_GET['action'] == "img") {
+?>
+<script>
+    window.location = "index.php?content=product_image&product_id=<?php echo $product_limit; ?>"
+</script>
+<?PHP
+
+
+
+
+
+
+
+
+
+
 
 } else if ($_GET['action'] == 'edit') {
 

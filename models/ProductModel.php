@@ -26,6 +26,19 @@ class ProductModel extends BaseModel{
             return $data;
         }
     }
+
+    function getProductLimitBy(){
+        $sql = " SELECT * FROM `tb_product` WHERE 1 ORDER BY `product_id` DESC LIMIT 1
+        ";
+        if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
+            $data = [];
+            while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)){
+                $data[] = $row;
+            }
+            $result->close();
+            return $data;
+        }
+    }
     
     function getProductByType($product_types_id){
         $sql = " SELECT

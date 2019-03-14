@@ -32,9 +32,9 @@ $product = $product_model->  getProducImgtBy();
 $product_header = $product_model->  getProductHeaderBy(); 
 $product_popula = $product_model->  getProductByPopular(); 
 
-echo "<pre>";
-print_r($type_popular) ;
-echo "</pre>";
+// echo "<pre>";
+// print_r($type_popular) ;
+// echo "</pre>";
 
 
 

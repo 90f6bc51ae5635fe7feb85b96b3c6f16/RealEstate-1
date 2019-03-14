@@ -27,7 +27,9 @@ class ProductModel extends BaseModel{
         }
     }
     function getProductByPopular(){
-        $sql = "SELECT * FROM `tb_product` WHERE `product_popular` = 1
+        $sql = "SELECT * FROM `tb_product` 
+        LEFT JOIN tb_product_image ON tb_product.product_id = tb_product_image.product_id 
+        WHERE product_popular = 1
         ";
         if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
             $data = [];

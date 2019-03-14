@@ -49,6 +49,8 @@ $id =($_GET['id']);
         $data['contact_us_address_4'] = $_POST['contact_us_address_4'];
         $data['contact_us_fax'] = $_POST['contact_us_fax'];
         $data['contact_us_email'] = $_POST['contact_us_email'];
+        $data['contact_us_map_latitude'] = $_POST['contact_us_map_latitude'];
+        $data['contact_us_map_longitude'] = $_POST['contact_us_map_longitude'];
 
 
         $target_dir = "../img_upload/contact_us/";
@@ -159,6 +161,8 @@ $id =($_GET['id']);
         $data['contact_us_address_4'] = $_POST['contact_us_address_4'];
         $data['contact_us_fax'] = $_POST['contact_us_fax'];
         $data['contact_us_email'] = $_POST['contact_us_email'];
+        $data['contact_us_map_latitude'] = $_POST['contact_us_map_latitude'];
+        $data['contact_us_map_longitude'] = $_POST['contact_us_map_longitude'];
 
         $target_dir = "../img_upload/contact_us/";
 

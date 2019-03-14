@@ -69,6 +69,8 @@
 $(document).on('ready', function() {
     $('.responsive').slick({
         infinite: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
         speed: 200,
         slidesToShow: 3,
         arrows: false,

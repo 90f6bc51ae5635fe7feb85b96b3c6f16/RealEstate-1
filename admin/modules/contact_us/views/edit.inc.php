@@ -199,12 +199,20 @@ function readURL(input) {
                         </div>
                     </div>
 
+                    <div class="col-12">
+                    <fieldset class="gllpLatlonPicker">
+                        <input type="text" class="gllpSearchField form-control" placeholder="ค้นหาตำแหน่ง">
+                        <input type="button" class="gllpSearchButton btn btn-primary" value="ค้นหา">
+                        <div class="gllpMap" style="width:100%;  height: 20em;">Google Maps</div>
+                        <input type="text" class="gllpLatitude form-control" name="contact_us_map_latitude" value="<?PHP echo $contact_us[$id]['contact_us_map_latitude'];?>"/>
+                        <input type="text" class="gllpLongitude form-control" name="contact_us_map_longitude" value="<?PHP echo $contact_us[$id]['contact_us_map_longitude'];?>"/>
+                        <input type="hidden" class="gllpZoom" value="14" />
+                    </fieldset>
 
-
-
-
-
-
+                    <script src="https://maps-api-ssl.google.com/maps/api/js?key=AIzaSyBPYt_mZGd-2iotzhpiZKw1_GpZ6H9w3vs&sensor=false"></script>
+                    <script src="../template/map/js/jquery-gmaps-latlon-picker.js"></script>
+<!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+                    </div>
                 </div>
             </div>
         </div>

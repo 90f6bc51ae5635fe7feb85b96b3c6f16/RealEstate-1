@@ -14,6 +14,11 @@
     width: 12vw;
     height: 10vw;
 }
+.icon-service{
+    width: 12vw;
+    height: 10vw;
+    margin-left: -2vw;
+}
 .text-sevice-detail1{
     color: #70b247;
     font-size: 1.3vw;

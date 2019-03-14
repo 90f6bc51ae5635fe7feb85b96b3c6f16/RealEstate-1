@@ -370,6 +370,11 @@
         height: 21vw;
     }
 }
+@media only screen and (max-width: 1176px) {
+    .box-search-home {
+        bottom: -18%;
+    }
+}
 @media only screen and (max-width: 1024px) {
     .slide-header-home{
         padding-bottom: 0px;
@@ -402,6 +407,7 @@
     }
     
 }
+
 
 @media only screen and (max-width: 991px) {
     .size-img-slide{

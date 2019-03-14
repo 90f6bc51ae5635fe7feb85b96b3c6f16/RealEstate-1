@@ -16,7 +16,7 @@
                         <img class="icon-service-detail"
                             src="img_upload/icon-services/53176142_310652063137173_1974414113991819264_n.png">
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-4 all-text-service-detail no-padding">
+                    <div class="col-lg-4 col-md-8 col-sm-8 col-8 all-text-service-detail no-padding">
                         <div class="text-sevice-detail1">
                             <?PHP if($lng == "TH"){ echo 'บริการสำหรับ'; }else{ echo ' SERVICE FOR'; } ?>
                             <br>
@@ -24,19 +24,17 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-4 no-padding">
+                    <div class="col-lg-4 col-md-8 col-sm-8 col-8 no-padding">
                         <a href="contact.php#contact" class="btn btn-contact-servicedetail">
                             CONTACT US
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="">
-                sdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdgsfgdghfghrghgfghfghfghfghfghfghfghfghfghfghdsfsdfsdf
-                sdfsdfsdfsdfsfd
-                <!-- <div class="text-service-detail">
+            <div class="detail-service">
+            
                         <?PHP if($lng == "TH"){ echo $services[$i]['services_detail_th']; }else{ echo $services[$i]['services_detail_en']; } ?>
-                    </div> -->
+                    
             </div>
         </div>
     </div>

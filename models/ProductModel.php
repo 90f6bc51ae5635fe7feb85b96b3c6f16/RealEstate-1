@@ -28,8 +28,10 @@ class ProductModel extends BaseModel{
     }
     function getProductByPopular(){
         $sql = "SELECT * FROM `tb_product` 
-        LEFT JOIN tb_product_image ON tb_product.product_id = tb_product_image.product_id 
+        LEFT JOIN tb_product_image 
+        ON tb_product.product_id = tb_product_image.product_id 
         WHERE product_popular = 1
+        GROUP BY tb_product.product_id
         ";
         if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
             $data = [];
@@ -47,6 +49,7 @@ class ProductModel extends BaseModel{
         $sql = "UPDATE `tb_product` 
         SET `product_popular` = '$product_popular' 
         WHERE `tb_product`.`product_id` = '$product_id'
+        GROUP BY tb_product.product_id
         ";
         // echo "<pre>";
         // print_r( $sql);
@@ -60,7 +63,10 @@ class ProductModel extends BaseModel{
     }
 
     function getProductLimitBy(){
-        $sql = " SELECT * FROM `tb_product` WHERE 1 ORDER BY `product_id` DESC LIMIT 1
+        $sql = " SELECT * FROM `tb_product` 
+        WHERE 1 
+        ORDER BY `product_id` 
+        DESC LIMIT 1
         ";
         if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
             $data = [];

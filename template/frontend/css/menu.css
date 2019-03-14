@@ -1,6 +1,6 @@
 
 .header-menu{
-    z-index: 50;
+    z-index: 9999;
     position: relative;
     padding: 0 5%;
     color: #ffffff; 

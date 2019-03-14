@@ -59,7 +59,7 @@
     width: 100%;
     bottom: -8%;
     position: absolute;
-    z-index: 9999;
+    z-index: 9998;
     text-align: center;
     padding-left: 20%;
     padding-right: 20%;
@@ -68,7 +68,7 @@
     width: 100%;
     bottom: -8%;
     position: absolute;
-    z-index: 9999;
+    z-index: 9998;
     text-align: center;
     padding-left: 20%;
     padding-right: 20%;

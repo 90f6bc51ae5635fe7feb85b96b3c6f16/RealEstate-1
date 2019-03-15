@@ -1,6 +1,6 @@
 
 <div style="padding: 5% 10%;">
-    <div class="text-center" style="padding-top: 7vw;">
+    <div class="text-center margin-product-home">
         <div class="text-product-home-topic">
         <?PHP if ($lan == 'TH') { ?>
            <?PHP  echo ($product_header[0]['product_header_th']) ?>
@@ -86,14 +86,14 @@ $(document).on('ready', function() {
             }
             },
             {
-            breakpoint: 600,
+            breakpoint: 770,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2
             }
             },
             {
-            breakpoint: 480,
+            breakpoint: 600,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1

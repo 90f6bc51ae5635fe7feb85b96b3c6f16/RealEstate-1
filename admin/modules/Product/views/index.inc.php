@@ -176,7 +176,7 @@ window.history.back();
 
 ?>
 <script>
-// window.location = "index.php?content=product"
+window.location = "index.php?content=product"
 </script>
 <?PHP
 

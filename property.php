@@ -31,7 +31,7 @@ $type_by_id = $type_model->getTypesByID($_GET['type_id']);
 require_once('models/ProductModel.php');
 $product_model = new ProductModel;
 $product_by_type = $product_model->getProductByType($_GET['type_id']);
-$product = $product_model->getProductByProduct($_GET['id']);
+$product_property = $product_model->getProductByProduct($_GET['id']);
 $product_img = $product_model->getProducImgtById($_GET['id']);
 $product_hightlight = $product_model->getProducHightlightById($_GET['id']);
 $product_header = $product_model->getProductHeaderBy();

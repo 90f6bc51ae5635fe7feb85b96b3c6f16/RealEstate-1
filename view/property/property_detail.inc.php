@@ -7,9 +7,9 @@
             <div class="col-lg-6 col-md-12 col-sm-6">
                 <h1 class="property-de-h1">
                     <?PHP if ($lng == 'TH') {
-                        echo ($product[0]['product_name_th']);
+                        echo ($product_property[0]['product_name_th']);
                     } else {
-                        echo ($product[0]['product_name_en']);
+                        echo ($product_property[0]['product_name_en']);
                     } ?>
                 </h1>
                 <hr class="border-contact" style="border-top: 2px solid  #5a5a5a; width:100%;">
@@ -42,9 +42,9 @@
                     <div class="col" style="padding: 6% 2% 5% 2%;">
                         <p>
                             <?PHP if ($lng == 'TH') {
-                                echo ($product[0]['product_detail_th']);
+                                echo ($product_property[0]['product_detail_th']);
                             } else {
-                                echo ($product[0]['product_detail_en']);
+                                echo ($product_property[0]['product_detail_en']);
                             } ?>
                         </p>
                     </div>
@@ -74,9 +74,9 @@
                         </div>
                         <div class="col-5 col-sm-4 p-0">
                             <?PHP if ($lng == 'TH') {
-                                echo ($product[0]['product_name_th']);
+                                echo ($product_property[0]['product_name_th']);
                             } else {
-                                echo ($product[0]['product_name_en']);
+                                echo ($product_property[0]['product_name_en']);
                             } ?>
                         </div>
                     </div>
@@ -89,9 +89,9 @@
                         </div>
                         <div class="col-5 col-sm-4 p-0">
                             <?PHP if ($lng == 'TH') {
-                                echo ($product[0]['location_name_th']);
+                                echo ($product_property[0]['location_name_th']);
                             } else {
-                                echo ($product[0]['location_name_en']);
+                                echo ($product_property[0]['location_name_en']);
                             } ?>
                         </div>
                     </div>
@@ -104,9 +104,9 @@
                         </div>
                         <div class="col-5 col-sm-4 p-0">
                             <?PHP if ($lng == 'TH') {
-                                echo ($product[0]['product_bedroom']);
+                                echo ($product_property[0]['product_bedroom']);
                             } else {
-                                echo ($product[0]['product_bedroom']);
+                                echo ($product_property[0]['product_bedroom']);
                             } ?>
                         </div>
                     </div>
@@ -119,9 +119,9 @@
                         </div>
                         <div class="col-5 col-sm-4 p-0">
                             <?PHP if ($lng == 'TH') {
-                                echo ($product[0]['product_bathroom']);
+                                echo ($product_property[0]['product_bathroom']);
                             } else {
-                                echo ($product[0]['product_bathroom']);
+                                echo ($product_property[0]['product_bathroom']);
                             } ?>
                         </div>
                     </div>
@@ -134,9 +134,9 @@
                         </div>
                         <div class="col-5 col-sm-4 p-0">
                             <?PHP if ($lng == 'TH') {
-                                echo ($product[0]['furniture_name_th']);
+                                echo ($product_property[0]['furniture_name_th']);
                             } else {
-                                echo ($product[0]['furniture_name_en']);
+                                echo ($product_property[0]['furniture_name_en']);
                             } ?>
                         </div>
                     </div>
@@ -149,9 +149,9 @@
                         </div>
                         <div class="col-5 col-sm-4 p-0">
                             <?PHP if ($lng == 'TH') {
-                                echo number_format($product[0]['product_price'], 2);
+                                echo number_format($product_property[0]['product_price'], 2);
                             } else {
-                                echo number_format($product[0]['product_price'], 2);
+                                echo number_format($product_property[0]['product_price'], 2);
                             } ?>
                         </div>
                     </div>
@@ -196,9 +196,9 @@
                         <fieldset class="gllpLatlonPicker" style="height: auto;">
                             <div class="gllpMap property-de-map" style="">Google Maps</div>
                             <input type="text" class="gllpLatitude form-control" name="product_latitude"
-                                value="<?PHP echo $product[0]['product_latitude']; ?>" hidden />
+                                value="<?PHP echo $product_property[0]['product_latitude']; ?>" hidden />
                             <input type="text" class="gllpLongitude form-control" name="product_longitude"
-                                value="<?PHP echo $product[0]['product_longitude']; ?>" hidden />
+                                value="<?PHP echo $product_property[0]['product_longitude']; ?>" hidden />
                             <input type="hidden" class="gllpZoom" value="14" />
                         </fieldset>
                         <?PHP if ($lng == "TH") {        ?>

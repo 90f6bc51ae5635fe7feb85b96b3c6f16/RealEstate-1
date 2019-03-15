@@ -38,11 +38,6 @@ $news_page = $news_model->getNewsBy();
 $news = $news_model->getNewsByLimit($start, $perpage, $keyword);
 $news_most = $news_model->getNewsReadMost();
 // print_r($news);
-
-
-
-
-
 ?>
 
 

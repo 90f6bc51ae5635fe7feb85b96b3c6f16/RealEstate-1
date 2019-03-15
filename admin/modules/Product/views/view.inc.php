@@ -10,9 +10,6 @@
             </div> -->
         </div>
 
-
-
-
         <form id="form_target" role="form" method="post" action="index.php?content=product&action=edit_head">
             <div class="row">
                 <div class="col-lg-12">
@@ -113,23 +110,23 @@
                     </td>
 
                     <td>
-                        <?PHP 
+                    <?PHP 
                     if ($product[$i]['product_popular'] == 1) {
-                        ?>
+                    ?>
                         <a
                             href="?content=product&action=recommened&id=<?PHP echo $product[$i]['product_id'];?>&recommened=0">
                             <i class="fa fa-star" aria-hidden="true"></i>
                         </a>
-                        <?PHP        
-            }else{
-                ?>
+                    <?PHP        
+                    }else{
+                    ?>
                         <a
                             href="?content=product&action=recommened&id=<?PHP echo $product[$i]['product_id'];?>&recommened=1">
                             <i class="fa fa-star-o" aria-hidden="true"></i>
                         </a>
-                        <?PHP
-            }
-            ?>
+                    <?PHP
+                    }
+                    ?>
                     </td>
                     <td>
                         <a href="?content=product&action=update&id=<?php echo $product[$i]['product_id'];?>"

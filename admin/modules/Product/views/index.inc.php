@@ -14,7 +14,6 @@ $furniture_model = new FurnitureModel;
 
 $product_limit = $product_model-> getProductLimitBy();
 $product_limit = $product_limit[0][product_id];
-
 $product = $product_model-> getProductBy();
 
 print_r(count($product_limit));
@@ -56,7 +55,7 @@ if ($_GET['action'] == 'insert') {
     $product_model->deleteProductByID($product_id);
     ?>
 <script>
-    window.location = "index.php?content=product"
+window.location = "index.php?content=product"
 </script>
 <?php
 
@@ -79,8 +78,8 @@ if ($_GET['action'] == 'insert') {
 
     if ($check == false) {
         ?> <script>
-    alert('<?php echo $error_msg; ?>');
-    window.history.back();
+alert('<?php echo $error_msg; ?>');
+window.history.back();
 </script>
 <?php
 
@@ -93,14 +92,14 @@ if ($_GET['action'] == 'insert') {
         ?>
 
 <script>
-    window.location = "index.php?content=product&action=img"
+window.location = "index.php?content=product&action=img"
 </script>
 
 <?php
 
 } else {
     ?> <script>
-    window.history.back();
+window.history.back();
 </script> <?php
 
         }
@@ -111,7 +110,7 @@ if ($_GET['action'] == 'insert') {
     require_once($path . 'view.inc.php');
     ?>
 <script>
-    window.location = "index.php?content=product"
+window.location = "index.php?content=product"
 </script>
 <?PHP
 
@@ -124,20 +123,9 @@ if ($_GET['action'] == 'insert') {
 } else if ($_GET['action'] == "img") {
 ?>
 <script>
-    window.location = "index.php?content=product_image&product_id=<?php echo $product_limit; ?>"
+window.location = "index.php?content=product_image&product_id=<?php echo $product_limit; ?>"
 </script>
 <?PHP
-
-
-
-
-
-
-
-
-
-
-
 } else if ($_GET['action'] == 'edit') {
 
     $product_id = $_POST['product_id'];
@@ -159,36 +147,36 @@ if ($_GET['action'] == 'insert') {
     if ($check == false) {
         ?>
 <script>
-    alert('<?php echo $error_msg; ?>');
-    window.history.back();
+alert('<?php echo $error_msg; ?>');
+window.history.back();
 </script> <?php
 
+    } else {
+        $check_result = $product_model->updateProductByID($product_id, $data);
+        if ($check_result != false) {
+            ?>
+            <script>
+            window.location = "index.php?content=product"
+            </script>
+
+            <?php
+
         } else {
-            $check_result = $product_model->updateProductByID($product_id, $data);
-            if ($check_result != false) {
-                ?>
-<script>
-    window.location = "index.php?content=product"
-</script>
+            ?>
+            <script>
+            window.history.back();
+            </script>
+            <?php
 
-<?php
-
-} else {
-    ?>
-<script>
-    window.history.back();
-</script>
-<?php
-
-}
-}
+        }
+    }
 } else if( $_GET['action'] == "recommened") {
       
     $product = $product_model-> editProductRecommened($_GET['id'], $_GET['recommened']);        
 
 ?>
 <script>
-window.location = "index.php?content=product"
+// window.location = "index.php?content=product"
 </script>
 <?PHP
 
@@ -199,4 +187,4 @@ window.location = "index.php?content=product"
     $product_header = $product_model->getProductHeaderBy();
     require_once($path . 'view.inc.php');
 }
-?> 
+?>

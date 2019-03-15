@@ -113,7 +113,7 @@
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label> ราคา <font color="#F00"><b>*</b></font></label>
-                                <input type="number" id="product_price" name="product_price" class="form-control"  >
+                                <input type="number" id="product_price" name="product_price" class="form-control" value="0">
                             </div>
                         </div>    
                     </div>
@@ -149,13 +149,13 @@
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>NO. of Bedroom </label>
-                                <input type="number" id="product_bedroom" name="product_bedroom" class="form-control">
+                                <input type="number" id="product_bedroom" name="product_bedroom" class="form-control" value="0">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <label>No. of Bathroom </label>
-                                <input type="number" id="product_bathroom" name="product_bathroom" class="form-control">
+                                <input type="number" id="product_bathroom" name="product_bathroom" class="form-control" value="0">
                             </div>
                         </div>
                     </div>

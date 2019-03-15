@@ -30,7 +30,7 @@ $product_model = new ProductModel;
 $slide = $product_model->  getProducImgtBy(); 
 $product = $product_model->  getProducImgtBy(); 
 $product_header = $product_model->  getProductHeaderBy(); 
-$product_popula = $product_model->  getProductByPopular(); 
+$product_popular = $product_model->  getProductByPopular(); 
 
 // echo "<pre>";
 // print_r($type_popular) ;
@@ -67,8 +67,8 @@ echo "</pre>";
 
 ?>
 <script>
- window.location = "property.php?action=detail" 
-</script> 
+window.location = "property.php?action=detail"
+</script>
 <?PHP
 echo "<pre>";
 print_r($product) ;
@@ -80,48 +80,54 @@ echo "</pre>";
 ?>
 
 <html>
+
 <head>
 
 
-    <meta property="og:type"          content="website">
-    <meta property="og:title"         content="<?PHP if($lng == "TH"){ echo $page['page_title_th']; }else{ echo $page['page_title_en'];} ?>">
-    <meta property="og:description"   content="<?PHP if($lng == "TH"){ echo $page['page_description_th']; }else{ echo $page['page_description_en']; } ?>">
-    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<?PHP if($lng == " TH"){ echo $page['page_title_th']; }else{ echo
+        $page['page_title_en'];} ?>">
+    <meta property="og:description" content="<?PHP if($lng == " TH"){ echo $page['page_description_th']; }else{ echo
+        $page['page_description_en']; } ?>">
 
 
 
 
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">   
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title> REAL ESTATE HOME PAGE </title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <script src="template/js/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <title> REAL ESTATE HOME PAGE </title>
 
-        <!-- Bootstrap Core CSS -->
-        <link rel="stylesheet" type="text/css" media="screen" href="template/bootstrap/css/bootstrap.min.css" />
-        <script src="template/bootstrap/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="template/js/jquery-2.2.0.min.js" type="text/javascript"></script>
 
-        <!-- slide -->
-        <link rel="stylesheet" type="text/css" href="template/slick/slick.css">
-        <script src="template/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="template/bootstrap/css/bootstrap.min.css" />
+    <script src="template/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-        <!-- Custom Fonts & CSS -->
-        <link rel="stylesheet" type="text/css" media="screen" href="template/css/style.css" />
-        
-        <link href="template/frontend/css/menu.css" rel="stylesheet">
-        <link href="template/frontend/css/home-style.css" rel="stylesheet">
-        <link href="template/frontend/css/footer.css" rel="stylesheet">
-    </head>
-    <body>
-        <?PHP require_once('view/menu.inc.php');?>
-        <?PHP require_once('view/home/slide.inc.php');?>
-        <?PHP require_once('view/home/product.inc.php'); ?>
-        <?PHP require_once('view/home/popular.inc.php'); ?>
-        <?PHP require_once('view/agent.inc.php'); ?>
-        <?PHP require_once('view/footer.inc.php'); ?>
-    </body>
+    <!-- slide -->
+    <link rel="stylesheet" type="text/css" href="template/slick/slick.css">
+    <script src="template/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- Custom Fonts & CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="template/css/style.css" />
+
+    <link href="template/frontend/css/menu.css" rel="stylesheet">
+    <link href="template/frontend/css/home-style.css" rel="stylesheet">
+    <link href="template/frontend/css/footer.css" rel="stylesheet">
+</head>
+
+<body>
+    <?PHP require_once('view/menu.inc.php');?>
+    <?PHP require_once('view/home/slide.inc.php');?>
+    <?PHP require_once('view/home/product.inc.php'); ?>
+    <?PHP require_once('view/home/popular.inc.php'); ?>
+    <?PHP require_once('view/agent.inc.php'); ?>
+    <?PHP require_once('view/footer.inc.php'); ?>
+</body>
+
 </html>

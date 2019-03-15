@@ -49,11 +49,10 @@ class ProductModel extends BaseModel{
         $sql = "UPDATE `tb_product` 
         SET `product_popular` = '$product_popular' 
         WHERE `tb_product`.`product_id` = '$product_id'
-        GROUP BY tb_product.product_id
         ";
-        // echo "<pre>";
-        // print_r( $sql);
-        // echo "</pre>";
+        echo "<pre>";
+        print_r( $sql);
+        echo "</pre>";
 
         if (mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
             return 1;

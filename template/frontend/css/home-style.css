@@ -206,18 +206,18 @@
     color: #fff;
     position: relative;
     font-size: 3.6vw;
-    margin-left: 8vw;
+    margin-left: 4vw;
 }
 .slide-text-detail{
     padding-top: 1px;
     color : #fff;
-    margin-left: 8vw;
+    margin-left: 4vw;
 }
 .btn-slide{
     color: #fff;
     background-color: #70b247;
     font-size: 1.25em;
-    margin-left: 8vw;
+    margin-left: 4vw;
     margin-top: 1vw;
 }
 .btn-slide2{
@@ -378,6 +378,11 @@
 @media only screen and (max-width: 1176px) {
     .box-search-home {
         bottom: -18%;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .btn-slide {
+        margin-left: 8vw;
     }
 }
 @media only screen and (max-width: 1024px) {

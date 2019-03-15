@@ -15,7 +15,7 @@ $img_path = "../img_upload/contact_us/";
 $contact_us_model = new ContactUsModel;
 $contact_us = $contact_us_model->getContact_us();
 ?>
-<div class="header-menu" id="mainNav" style="position: absolute; width: 100%;">
+<div class="header-menu" id="mainNav" >
     <div class="col-12">
         <div class="row menu">
 

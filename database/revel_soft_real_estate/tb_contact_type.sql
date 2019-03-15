@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 04, 2019 at 04:10 AM
+-- Generation Time: Mar 15, 2019 at 02:28 AM
 -- Server version: 5.7.17-log
 -- PHP Version: 5.6.30
 
@@ -37,8 +37,9 @@ CREATE TABLE `tb_contact_type` (
 --
 
 INSERT INTO `tb_contact_type` (`contact_type_id`, `contact_type_name_th`, `contact_type_name_en`) VALUES
-(1, 'หกดหกดหก', 'ดหกดหกดหกด'),
-(2, 'ฟหกฟหกฟหกฟหก', 'ฟหกฟหกฟหกฟหกฟหก');
+(3, 'น้อย', 'medium'),
+(4, 'ด่วน', 'express'),
+(5, 'ไม่ด่วน', 'Not quick');
 
 --
 -- Indexes for dumped tables
@@ -58,7 +59,7 @@ ALTER TABLE `tb_contact_type`
 -- AUTO_INCREMENT for table `tb_contact_type`
 --
 ALTER TABLE `tb_contact_type`
-  MODIFY `contact_type_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `contact_type_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

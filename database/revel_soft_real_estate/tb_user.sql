@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 04, 2019 at 04:11 AM
+-- Generation Time: Mar 15, 2019 at 02:28 AM
 -- Server version: 5.7.17-log
 -- PHP Version: 5.6.30
 
@@ -50,7 +50,7 @@ CREATE TABLE `tb_user` (
 --
 
 INSERT INTO `tb_user` (`user_id`, `user_type_id`, `user_firstname`, `user_lastname`, `user_phone`, `user_email`, `user_facebook`, `user_line`, `user_username`, `user_password`, `user_address`, `user_district`, `user_amphur`, `user_province`, `user_zipcode`, `user_image`) VALUES
-(4, 2, 'ทดลอง', 'ทดลอง', '0859589654', 'test@gmail.com', 'www.facebook.com/test', '085-958-9654', 'admin', '123456', '698', 'ในเมือง', 'เมืองนครราชสีมา', 'นครราชสีมา', '30000', '25012019143620-24012019112916240120191129161102358359.jpg'),
+(4, 2, 'ทดลอง', 'ทดลอง', '0859589654', 'test@gmail.com', 'www.facebook.com/test', '085-958-9654', 'admin', '123456', '698', 'ในเมือง', 'เมืองนครราชสีมา', 'นครราชสีมา', '30000', '05032019145951-default.png'),
 (5, 1, 'asd', 'asdasd', 'asdasd', 'asdas', 'das', 'das', 'root', 'root123456', 'dasdasd', 'dasdasd', 'das', 'dasdas', 'asdasdasd', '27022019104335-48052436_1896837297097519_7126811084484247552_n.jpg');
 
 --

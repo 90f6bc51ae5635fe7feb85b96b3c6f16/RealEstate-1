@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 04, 2019 at 04:11 AM
+-- Generation Time: Mar 15, 2019 at 02:28 AM
 -- Server version: 5.7.17-log
 -- PHP Version: 5.6.30
 
@@ -37,11 +37,11 @@ CREATE TABLE `tb_location` (
 --
 
 INSERT INTO `tb_location` (`location_id`, `location_name_th`, `location_name_en`) VALUES
-(4, 'ก', 'ก'),
-(5, 'ข', 'ข'),
-(6, 'ค', 'ค'),
-(7, 'ง', 'ง'),
-(8, 'ss', 'hyy');
+(1, 'กรุงเทพ', 'Bangkok'),
+(2, 'นครราชสีมา', 'Nakhon Ratchasima'),
+(3, 'ขอนแก่น', 'Khon Kaen'),
+(4, 'เชียงใหม่', 'Chiang Mai'),
+(5, 'กาญจนบุรี', 'Kanchanaburi');
 
 --
 -- Indexes for dumped tables
@@ -61,7 +61,7 @@ ALTER TABLE `tb_location`
 -- AUTO_INCREMENT for table `tb_location`
 --
 ALTER TABLE `tb_location`
-  MODIFY `location_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `location_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

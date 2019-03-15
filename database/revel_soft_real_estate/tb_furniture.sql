@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 04, 2019 at 04:10 AM
+-- Generation Time: Mar 15, 2019 at 02:28 AM
 -- Server version: 5.7.17-log
 -- PHP Version: 5.6.30
 
@@ -37,9 +37,8 @@ CREATE TABLE `tb_furniture` (
 --
 
 INSERT INTO `tb_furniture` (`furniture_id`, `furniture_name_th`, `furniture_name_en`) VALUES
-(5, 'มี', 'YES'),
-(6, 'ไม่มี', 'NO'),
-(7, 'กก', 'กกก');
+(2, 'มี', 'have'),
+(3, 'ไม่มี', 'none');
 
 --
 -- Indexes for dumped tables
@@ -59,7 +58,7 @@ ALTER TABLE `tb_furniture`
 -- AUTO_INCREMENT for table `tb_furniture`
 --
 ALTER TABLE `tb_furniture`
-  MODIFY `furniture_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `furniture_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 05, 2019 at 07:33 AM
+-- Generation Time: Mar 15, 2019 at 02:28 AM
 -- Server version: 5.7.17-log
 -- PHP Version: 5.6.30
 
@@ -70,7 +70,7 @@ ALTER TABLE `tb_page`
 -- AUTO_INCREMENT for table `tb_page`
 --
 ALTER TABLE `tb_page`
-  MODIFY `page_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `page_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

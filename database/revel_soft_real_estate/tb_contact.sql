@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 04, 2019 at 04:10 AM
+-- Generation Time: Mar 15, 2019 at 02:27 AM
 -- Server version: 5.7.17-log
 -- PHP Version: 5.6.30
 
@@ -39,6 +39,14 @@ CREATE TABLE `tb_contact` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
+-- Dumping data for table `tb_contact`
+--
+
+INSERT INTO `tb_contact` (`contact_id`, `contact_title_id`, `contact_firstname`, `contact_lastname`, `contact_email`, `contact_tel`, `contact_country`, `contact_type_id`, `contact_text`) VALUES
+(9, '5', 'zzzz', 'xxxx', 'cccccccc', 'xczxc', 'THA', '4', 'ccccccccccccccccccccccc'),
+(10, '5', 'zzzz', 'xxxx', 'cccccccc', 'xczxc', 'THA', '4', 'ccccccccccccccccccccccc');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -56,7 +64,7 @@ ALTER TABLE `tb_contact`
 -- AUTO_INCREMENT for table `tb_contact`
 --
 ALTER TABLE `tb_contact`
-  MODIFY `contact_id` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `contact_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

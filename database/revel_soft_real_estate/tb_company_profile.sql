@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 04, 2019 at 04:10 AM
+-- Generation Time: Mar 15, 2019 at 02:26 AM
 -- Server version: 5.7.17-log
 -- PHP Version: 5.6.30
 
@@ -48,7 +48,7 @@ CREATE TABLE `tb_company_profile` (
 --
 
 INSERT INTO `tb_company_profile` (`company_profile_id`, `company_profile_title_en`, `company_profile_sub_title_en`, `company_profile_title_th`, `company_profile_sub_title_th`, `company_profile_vision_th`, `company_profile_vision_en`, `company_profile_vision_detail_th`, `company_profile_vision_detail_en`, `company_profile_mission_th`, `company_profile_mission_en`, `company_profile_mission_detail_th`, `company_profile_mission_detail_en`, `company_profile_img`) VALUES
-(0, 'profile', 'safegsdfgsdfgsdfgsdfgsdfgdfgf', '-hv,^][ibKym', 'gsdtfgdfgsdfgsdfgtrsd', '3วิสัยทัศน์', 'Vision ', 'ชื่อย่อยวิสัยทัศน์\r\nd', '4dfsdgadgsdfgsdfgdsfgdfgsdfg', 'หน้าที่', 'Mission ', 'dfasdfsdafsadfasdfsdfas', 'fssdafadfasdfasdfasdf', '26022019162311260220191623111232915682.jpg');
+(0, '', 'If the building is growing in the most important places in Thailand with the lowest risk, there will be more numbers in Thailand, a country with a welcoming and charming style. In Thailand, houses with the lowest pain will be more and more. Thailand is a country that has weapons of hospitality and charm It is fairly easy to rent a property in Thailand. The law protects the owners so they are more likely to rent their homes or apartments without many restrictions or requiring too much documentation Real estate can also be a way to invest in Thailand. This is the mode of investment Thais like the most and foreigners are increasingly likely to make the move to diversify their investments', '', '<pre>\r\nหากอาคารมีการเติบโตในสถานที่ที่สำคัญที่สุดในประเทศไทยที่มีความเสี่ยงต่ำที่สุดจะมีจำนวนมากขึ้นในประเทศไทยซึ่งเป็นประเทศที่มีการต้อนรับและมีเสน่ห์ ในประเทศไทยบ้านที่มีความเจ็บปวดน้อยที่สุดจะมีมากขึ้นเรื่อย ๆ ประเทศไทยเป็นประเทศที่มีอาวุธของการต้อนรับและเสน่ห์มันค่อนข้างง่ายที่จะเช่าอสังหาริมทรัพย์ในประเทศไทย กฎหมายคุ้มครองเจ้าของเพื่อให้พวกเขามีแนวโน้มที่จะเช่าบ้านหรืออพาร์ทเมนต์ของพวกเขาโดยไม่มีข้อ จำกัด มากมายหรือต้องใช้เอกสารมากเกินไปอสังหาริมทรัพย์ก็อาจเป็นวิธีการลงทุนในประเทศไทยได้ นี่เป็นโหมดการลงทุนของคนไทยอย่างคนส่วนใหญ่และชาวต่างชาติที่มีแนวโน้มเพิ่มมากขึ้นที่จะทำให้การลงทุนของพวกเขาเปลี่ยนไป</pre>\r\n\r\n<pre>\r\n\r\n&nbsp;</pre>\r\n', 'วิสัยทัศน์', 'VISION', '\"ศักยภาพในการขยายและการเลื่อนตามมา\"', '\"expansion potential and subsequent shifts\"', 'หน้าที่', 'MISSION', '\"การเลื่อนที่อาจเกิดการขยายตัว\"\r\n', '\"expansion potential shifts\"', '130320191035181303201910351870400806.jpg');
 
 --
 -- Indexes for dumped tables

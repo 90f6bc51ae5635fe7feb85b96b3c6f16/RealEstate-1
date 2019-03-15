@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 04, 2019 at 04:11 AM
+-- Generation Time: Mar 15, 2019 at 02:28 AM
 -- Server version: 5.7.17-log
 -- PHP Version: 5.6.30
 
@@ -39,7 +39,7 @@ CREATE TABLE `tb_product_header` (
 --
 
 INSERT INTO `tb_product_header` (`product_header_id`, `product_header_th`, `product_header_en`, `product_header_detail_th`, `product_header_detail_en`) VALUES
-(1, 'บีบีซี เวิลด์ นิวส์ ', ' Donald J. Trump', 'ช่องรายการถูกส่งสัญญาณโดย Red Bee Media จากสถานีหลัก ณ The Broadcast Centre ซึ่งเป็นส่วนหนึ่งของ BBC Media Village และส่วนหนึ่งของ BBC White City ที่ White City ในลอนดอนตะวันตก โดยมีห้องส่งจาก BBC Television Centre ที่อยู่ในบริเวณเดียวกัน BBC World News มีห้องข่าวแยกออกจากห้องข่าวของ BBC News ห้องข่าวนี้ส่งสัญญาณตั้งแต่เวลา 05.00 น. ถึง 00.30 น. (เวลาสหราชอาณาจักร) ทุกๆ วันจันทร์ถึงศุกร์ และตั้งแต่ 06.00 น. ถึง 00.30 น. ในวันเสาร์และอาทิตย์ ส่วนในเวลา 01.00 น. ถึง 05.00 น. จะส่งสัญญาณจากห้องส่งภายในสหราชอาณาจักร หรือ BBC News', '\nThe channel is broadcast by Red Bee Media from the main station at The Broadcast Center, which is part of the BBC Media Village and part of BBC White City at White City in West London. With a room sent from the BBC Television Center in the same area. BBC World News has a news room separated from the BBC News newsroom. Until Friday and from 06.00 hrs to 00.30 hrs. On Saturdays and Sundays. At 01.00 hrs.\n');
+(1, 'อสังหาริมทรัพย์', 'Real Estate', 'หากอาคารมีการเติบโตในสถานที่ที่สำคัญที่สุดในประเทศไทยที่มีความเสี่ยงต่ำที่สุดจะมีจำนวนมากขึ้นในประเทศไทยซึ่งเป็นประเทศที่มีการต้อนรับและมีเสน่ห์ ในประเทศไทยบ้านที่มีความเจ็บปวดน้อยที่สุดจะมีมากขึ้นเรื่อย ๆ ประเทศไทยเป็นประเทศที่มีอาวุธของการต้อนรับและเสน่ห์มันค่อนข้างง่ายที่จะเช่าอสังหาริมทรัพย์ในประเทศไทย กฎหมายคุ้มครองเจ้าของเพื่อให้พวกเขามีแนวโน้มที่จะเช่าบ้านหรืออพาร์ทเมนต์ของพวกเขาโดยไม่มีข้อ จำกัด มากมายหรือต้องใช้เอกสารมากเกินไปอสังหาริมทรัพย์ก็อาจเป็นวิธีการลงทุนในประเทศไทยได้ นี่เป็นโหมดการลงทุนของคนไทยอย่างคนส่วนใหญ่และชาวต่างชาติที่มีแนวโน้มเพิ่มมากขึ้นที่จะทำให้การลงทุนของพวกเขาเปลี่ยนไป', 'If the building is growing in the most important places in Thailand with the lowest risk, there will be more numbers in Thailand, a country with a welcoming and charming style. In Thailand, houses with the lowest pain will be more and more. Thailand is a country that has weapons of hospitality and charm It is fairly easy to rent a property in Thailand. The law protects the owners so they are more likely to rent their homes or apartments without many restrictions or requiring too much documentation Real estate can also be a way to invest in Thailand. This is the mode of investment Thais like the most and foreigners are increasingly likely to make the move to diversify their investments');
 
 --
 -- Indexes for dumped tables

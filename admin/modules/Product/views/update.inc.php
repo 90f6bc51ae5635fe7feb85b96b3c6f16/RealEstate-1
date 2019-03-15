@@ -161,7 +161,7 @@
                     <div class="row">    
                         <div class="col-lg-12">
                             <div class="form-group">
-                                <label>รายละเอียด</label> 
+                                <label>รายละเอียด TH</label> 
                                 <textarea id="product_detail_th" name="product_detail_th" class="form-control" style="min-height: 200px;"/><?php echo $product['product_detail_th'];?></textarea>
                             </div>
                         </div> 
@@ -169,7 +169,7 @@
                     <div class="row">    
                         <div class="col-lg-12">
                             <div class="form-group">
-                                <label>รายละเอียด</label> 
+                                <label>รายละเอียด EN</label> 
                                 <textarea id="product_detail_en" name="product_detail_en" class="form-control" style="min-height: 200px;"/><?php echo $product['product_detail_en'];?></textarea>
                             </div>
                         </div> 

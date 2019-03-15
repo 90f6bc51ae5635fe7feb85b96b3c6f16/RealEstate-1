@@ -16,7 +16,7 @@ $product_limit = $product_model-> getProductLimitBy();
 $product_limit = $product_limit[0][product_id];
 $product = $product_model-> getProductBy();
 
-print_r(count($product_limit));
+// print_r(count($product_limit));
 $d1 = date("d");
 $d2 = date("m");
 $d3 = date("Y");

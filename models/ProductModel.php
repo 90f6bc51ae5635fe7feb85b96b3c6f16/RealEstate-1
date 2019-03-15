@@ -175,11 +175,21 @@ class ProductModel extends BaseModel{
     }
 
     function getProducImgtBy(){
-        $sql = " SELECT * FROM `tb_product` 
+        $sql = " SELECT * FROM `tb_product`
+        LEFT JOIN tb_location ON tb_product.location_id = tb_location.location_id
+        LEFT JOIN tb_furniture ON tb_product.furniture_id = tb_furniture.furniture_id
         LEFT JOIN tb_product_image ON tb_product.product_id = tb_product_image.product_id 
-        WHERE 1 ORDER BY tb_product.product_id
+        WHERE 1
+        GROUP BY  tb_product.product_id
+        ORDER BY tb_product.product_id
+    ";
 
-        ";
+        // $sql = " SELECT * FROM `tb_product` 
+        // LEFT JOIN tb_product_image ON tb_product.product_id = tb_product_image.product_id 
+        // WHERE 1 
+        // GROUP BY tb_product.product_id
+        // ORDER BY tb_product.product_id
+        // ";
         if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
             $data = [];
             while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)){

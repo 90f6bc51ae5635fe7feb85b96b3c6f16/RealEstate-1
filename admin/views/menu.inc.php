@@ -30,48 +30,48 @@
             </a>
         </li>
 
-        <li>
+        <!-- <li>
             <a href="index.php?content=furniture">
-                <div <? if ($content == "furniture") {
-                            echo "class='menu-active'";
-                        } else {
-                            echo "class='menu'";
-                        } ?> >
+                <div <? //if ($content == "furniture") {
+                        //    echo "class='menu-active'";
+                        //} else {
+                        //   echo "class='menu'";
+                        //} ?> >
                     <span style="padding-top: 5px; font-size: 15px;">
-                        <!-- FURNITURE / --> เฟอร์นิเจอร์
+                        FURNITURE / เฟอร์นิเจอร์
                     </span>
                 </div>
             </a>
-        </li>
+        </li> -->
 
-        <li>
+        <!-- <li>
             <a href="index.php?content=location">
-                <div <? if ($content == "location") {
-                            echo "class='menu-active'";
-                        } else {
-                            echo "class='menu'";
-                        } ?> >
+                <div <? //if ($content == "location") {
+                        //    echo "class='menu-active'";
+                        //} else {
+                        //    echo "class='menu'";
+                        //} ?> >
                     <span style="padding-top: 5px; font-size: 15px;">
-                        <!-- LOCATION /  -->ที่ตั้ง
+                        LOCATION / ที่ตั้ง
                     </span>
                 </div>
             </a>
-        </li>
+        </li> -->
 
 
-        <li>
+        <!-- <li>
             <a href="index.php?content=types">
-                <div <? if ($content == "types") {
-                            echo "class='menu-active '";
-                        } else {
-                            echo "class='menu '";
-                        } ?> >
+                <div <? //if ($content == "types") {
+                        //    echo "class='menu-active '";
+                        //} else {
+                        //    echo "class='menu '";
+                        //} ?> >
                     <span style="padding-top: 5px; font-size: 15px;">
-                       <!--  PROPERTY TPYE /  -->ประเภทอสังหาริมทรัพย์
+                        PROPERTY TPYE / ประเภทอสังหาริมทรัพย์
                     </span>
                 </div>
-            </a>
-        </li>
+            </a> 
+        </li>-->
 
         <li>
             <a href="index.php?content=product">

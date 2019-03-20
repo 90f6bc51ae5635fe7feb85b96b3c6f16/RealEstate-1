@@ -22,7 +22,7 @@
                             <div class="slide-detail-home">
                                 <div class="slide-header-home cut-text-multi-cut-text-multi-product-home">
 
-                                    <?PHP if ($lan == "TH") {
+                                    <?PHP if ($lng == "TH") {
                                         echo $slide[$i]['product_name_th'];
                                     } else {
                                         echo $slide[$i]['product_name_en'];
@@ -31,7 +31,7 @@
                                 </div>
                                 <div class="slide-text-detail cut-text-multi ">
 
-                                    <?PHP if ($lan == "TH") {
+                                    <?PHP if ($lng == "TH") {
                                         echo $slide[$i]['product_detail_th'];
                                     } else {
                                         echo $slide[$i]['product_detail_en'];
@@ -98,7 +98,7 @@
                                 <option value="<?PHP echo $location[$i]['location_id']; ?>" <?PHP if ($_GET['location_id'] == $location[$i]['location_id']) {
                                                                                                 echo 'selected';
                                                                                             } ?>>
-                                    <?PHP if ($lan == 'TH') {
+                                    <?PHP if ($lng == 'TH') {
                                         echo $location[$i]['location_name_th'];
                                     } else {
                                         echo $location[$i]['location_name_en'];
@@ -121,7 +121,7 @@
                                 <option value="<?PHP echo $type[$i]['product_types_id']; ?>" <?PHP if ($_GET['product_types_id'] == $type[$i]['product_types_id']) {
                                                                                                 echo 'selected';
                                                                                             } ?>>
-                                    <?PHP if ($lan == 'TH') {
+                                    <?PHP if ($lng == 'TH') {
                                         echo $type[$i]['product_types_name_th'];
                                     } else {
                                         echo $type[$i]['product_types_name_en'];

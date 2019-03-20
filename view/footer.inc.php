@@ -41,11 +41,11 @@ $news = $news_model->getNewsByDESC();
 
         <div class="row ">
             <div class="col-md-4 footer-panel">
-                <div class="text-header-medium" style="color: #0175A4;">
+                <div class="text-header-medium cut-footer-topic " style="color: #0175A4;">
                     ABOUT US
                 </div>
                 <br>
-                <div class="cut-text-multi-about-footer2" style="font-size: 1rem;">
+                <div class="cut-text-multi-footer-about1" style="font-size: 1rem;">
                     <?PHP if ($lan == "TH") {
                         echo $about['about_us_title_th'];
                     } else {
@@ -53,7 +53,7 @@ $news = $news_model->getNewsByDESC();
                     } ?>
                 </div>
                 <br>
-                <div class="cut-text-multi-about-footer2" style="font-size: 1rem;">
+                <div class="cut-text-multi-footer-about2" style="font-size: 1rem;">
                     <?PHP if ($lan == "TH") {
                         echo $about['about_us_sub_title_th'];
                     } else {
@@ -64,9 +64,10 @@ $news = $news_model->getNewsByDESC();
             <div class="col-md-5 footer-panel">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="text-header-medium">
+                        <div class="text-header-medium cut-footer-topic ">
                             PROPERTY TYPE
                         </div>
+                <br>
                         <div style="font-size: 0.95rem;">
                             <?PHP for ($i = 0; $i < count($type); $i++) {  ?>
                             <i class="fas fa-angle-right "></i>
@@ -84,9 +85,10 @@ $news = $news_model->getNewsByDESC();
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="text-header-medium">
+                        <div class="text-header-medium cut-footer-topic ">
                             LOCATIONS
                         </div>
+                <br>
                         <div style="font-size: 0.95rem;">
                             <?PHP for ($i = 0; $i < count($location); $i++) {  ?>
                             <input type="hidden" id="search_location_<?php echo $i; ?>" name="search_location" value="<?php echo $location[$i]['location_id']; ?>">
@@ -106,9 +108,11 @@ $news = $news_model->getNewsByDESC();
                 </div>
             </div>
             <div class="col-md-3 footer-panel">
-                <div class="text-header-medium">
+                <div class="text-header-medium cut-footer-topic ">
                     FROM THE BLOG
                 </div>
+                
+                <br>
                 <div>
 
                     <div class="col-12 ">
@@ -124,7 +128,7 @@ $news = $news_model->getNewsByDESC();
                                 </a>
                             </div>
                             <div class="col-8">
-                                <a href="news.php?action=read&news_read=<?PHP echo ($news[$i]['news_read']) ?>&id=<?PHP echo ($news[$i]['news_id']) ?>">
+                                <a class="cut-text-multi-footer-FROMTHEBLOG" href="news.php?action=read&news_read=<?PHP echo ($news[$i]['news_read']) ?>&id=<?PHP echo ($news[$i]['news_id']) ?>">
                                     <?PHP if ($lan == 'TH') {
                                         # code...
                                         echo $news[$i]['news_name_th'];
@@ -132,7 +136,7 @@ $news = $news_model->getNewsByDESC();
                                         echo $news[$i]['news_name_en'];
                                     }  ?>
                                 </a>
-                                <br>
+                                
                                 <a href="news.php?action=read&news_read=<?PHP echo ($news[$i]['news_read']) ?>&id=<?PHP echo ($news[$i]['news_id']) ?>">
 
                                     <p class="light "><i class="far fa-clock light"></i>

@@ -7,6 +7,7 @@
 .size-img-product-home{
     width: 100%;
     height: 20vw;
+    object-fit: cover
 }
 .footer-button{
     background-color: #fff;
@@ -112,8 +113,9 @@
 .img-poppular-home3{
     width: 100%;
     height: 18vw;
+    object-fit: cover;
 }
-.text-product-home{;
+.text-product-home{
     font-weight: 600;
     color: #959595;
     margin-bottom: 2vw;
@@ -159,6 +161,7 @@
     padding-left: 3vw;
     padding-right: 3vw;
     color: #959595;
+    height: 5vw;
 }
 .product-product-name {
     display: -webkit-box;

@@ -2,7 +2,7 @@
 <div style="padding: 5% 10%;">
     <div class="text-center margin-product-home">
         <div class="text-product-home-topic">
-        <?PHP if ($lan == 'TH') { ?>
+        <?PHP if ($lng == 'TH') { ?>
            <?PHP  echo ($product_header[0]['product_header_th']) ?>
         <?PHP } else { ?>
            <?PHP  echo ($product_header[0]['product_header_en']) ?>
@@ -10,7 +10,7 @@
         </div>
         <div class="text-product-home cut-text-multi-product-home">
         
-        <?PHP if ($lan == 'TH') { ?>
+        <?PHP if ($lng == 'TH') { ?>
            <?PHP  echo ($product_header[0]['product_header_detail_th']) ?>
         <?PHP } else { ?>
            <?PHP  echo ($product_header[0]['product_header_detail_en']) ?>
@@ -28,7 +28,7 @@
                         <div class="product-product-name">
 
 
-                            <?PHP if ($lan == 'TH') { ?>
+                            <?PHP if ($lng == 'TH') { ?>
                             <?PHP  echo ($product[$i]['product_name_th']) ?>
                             <?PHP } else { ?>
                             <?PHP  echo ($product[$i]['product_name_en']) ?>
@@ -38,7 +38,7 @@
                         </div>
                         <div class="product-product-detail cut-text-multi ">
 
-                            <?PHP if ($lan == 'TH') { ?>
+                            <?PHP if ($lng == 'TH') { ?>
                             <?PHP  echo ($product[$i]['product_detail_th']) ?>
                             <?PHP } else { ?>
                             <?PHP  echo ($product[$i]['product_detail_en']) ?>

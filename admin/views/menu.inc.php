@@ -151,7 +151,7 @@
                             echo "class='menu'";
                         } ?> >
                     <span style="padding-top: 5px; font-size: 15px;">
-                        <!-- ABOUNT US / --> เกี่ยวกับเรา
+                        <!-- ABOUNT US & MISSION / --> เกี่ยวกับเรา & หน้าที่
                     </span>
                 </div>
             </a>
@@ -165,7 +165,7 @@
                             echo "class='menu'";
                         } ?> >
                     <span style="padding-top: 5px; font-size: 15px;">
-                        <!-- VISION & MISSION /  -->วิสัยทํศ & หน้าที่
+                        <!-- VISION  /  -->วิสัยทํศ 
                     </span>
                 </div>
             </a>

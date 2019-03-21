@@ -49,12 +49,12 @@
                 </div>
                 <div class="col-lg-9">
                     <div class="row">
-                        <!-- 
-                        <div class="col-lg-6">
+                                                
+                        <!-- <div class="col-lg-6">
                             <div class="form-group">
                                 <label>Profile Title EN <font color="#F00"><b>*</b></font></label>
                                 <input id="company_profile_title_en" name="company_profile_title_en" class="form-control"
-                                    value="<?PHP echo $company_profile[$id]['company_profile_title_en']; ?>" />
+                                    value="<?PHP //echo $company_profile[$id]['company_profile_title_en']; ?>" />
                             </div>
                         </div>
 
@@ -62,7 +62,7 @@
                             <div class="form-group">
                                 <label>Profile Title TH <font color="#F00"><b>*</b></font></label>
                                 <input id="company_profile_title_th" name="company_profile_title_th" class="form-control"
-                                    value="<?PHP echo $company_profile[$id]['company_profile_title_th']; ?>" />
+                                    value="<?PHP //echo $company_profile[$id]['company_profile_title_th']; ?>" />
                             </div>
                         </div> -->
 
@@ -131,21 +131,6 @@
 
 
 
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="form-group">
-                        <label>Profile Sub Title EN<font color="#F00"><b>*</b></font></label>
-                        <textarea class="form-control " id="company_profile_sub_title_en" name="company_profile_sub_title_en" rows="4"><?PHP echo $company_profile[$id]['company_profile_sub_title_en']; ?></textarea>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="form-group">
-                        <label>Profile Sub Title TH<font color="#F00"><b>*</b></font></label>
-                        <textarea class="form-control " id="company_profile_sub_title_th" name="company_profile_sub_title_th" rows="4"><?PHP echo $company_profile[$id]['company_profile_sub_title_th']; ?></textarea>
-                    </div>
-                </div>
-            </div>
 
 
 

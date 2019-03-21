@@ -1,6 +1,8 @@
 <?php
 date_default_timezone_set("Asia/Bangkok");
 require_once('../models/AboutUsModel.php');
+require_once('../models/CompanyProfileModel.php');
+
 
 $path = "modules/about_us/views/";
 $img_path = "../img_upload/about_us/";
@@ -8,7 +10,21 @@ $target_dir = "../img_upload/about_us/";
 
 $about_us_model = new AboutUsModel;
 $about_us = $about_us_model -> getAbout_us();
+
+$company_profile_model = new CompanyProfileModel;
+$company_profile = $company_profile_model -> getCompanyProfile();
+
 $id =($_GET['id']);
+
+
+// foreach ($_POST as $key => $value) {
+//     echo "<div>";
+//     echo $key;
+//     echo " : ";
+//     echo $value;
+//     echo "</div>";
+// }
+
 
 // echo "<pre>";
 // print_r($about_us);
@@ -33,12 +49,15 @@ $id =($_GET['id']);
     //-----------------------------------------------
 
 $id = 0;
-    if( !isset($_GET['action']) ) {
-        require_once($path.'edit.inc.php');
-    } else if( $_GET['action'] == "edit") {
-        
-    if(isset($_POST['about_us_id'])){
-        $check = true;
+
+if( !isset($_GET['action']) ) {
+    require_once($path.'edit.inc.php');
+} else if( $_GET['action'] == "edit") {
+    // echo "<pre>";
+    // print_r($_POST);
+    // echo "</pre>";
+
+    if(isset($_POST['about_us_id'] ) && isset($_POST['company_profile_id'] )){
         $data = [];
         $data['about_us_id'] = $_POST['about_us_id'];
         $data['about_us_title_en'] = $_POST['about_us_title_en'];
@@ -46,104 +65,66 @@ $id = 0;
         $data['about_us_title_th'] = $_POST['about_us_title_th'];
         $data['about_us_sub_title_th'] = $_POST['about_us_sub_title_th'];
 
-        //------------------ฟังชั่นแก้ไขรูป--------------------
-        if($_FILES['about_us_img']['name'] == ""){
-            $data['about_us_img'] = $_POST['img_about_us_o'];
-        }else {
-            //---------เอาชื่อไฟล์เก่าออกให้เหลือแต่นามสกุล----------
-            $type = strrchr($_FILES['about_us_img']['name'],".");
-            //--------------------------------------------------
-            
-            //-----ตั้งชื่อไฟล์ใหม่โดยเอาเวลาไว้หน้าชื่อไฟล์เดิม---------
-            $newname = $date.$numrand.$type;
-            $path_copy=$path.$newname;
-            $path_link=$target_dir.$newname;
-            //-------------------------------------------------
+        $result = $about_us_model-> editAbout_us($_POST['about_us_id'],$data);
 
-            $target_file = $target_dir .$date.$newname;
-            $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-            // Check if file already exists
-            if (file_exists($target_file)) {
-                $error_msg =  "Sorry, file already exists.";
-                $check = false;
-            }else if ($_FILES["about_us_img"]["size"] > 5000000) {
-                $error_msg = "Sorry, your file is too large.";
-                $check = false;
-            }else if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" ) {
-                $error_msg = "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-                $check = false;
-            }else if (move_uploaded_file($_FILES["about_us_img"]["tmp_name"], $target_file)) {
+        $data = [];
+        $data['company_profile_sub_title_th'] = $_POST['company_profile_sub_title_th'];
+        $data['company_profile_sub_title_en'] = $_POST['company_profile_sub_title_en'];
 
-                //-----------------------------------
-                $data['about_us_img'] = $date.$newname;
-                //-----------------------------------
-
-                $target_file = $target_dir . $_POST["img_about_us_o"];
-                if($_POST["img_about_us_o"] != 'default.png'){
-                    if (file_exists($target_file)) {
-                        unlink($target_file);
-                    }
-                }
-            } else {
-                $error_msg =  "Sorry, there was an error uploading your file.";
-                $check = false;
-            } 
+        $result = $company_profile_model-> editCompanyProfile($_POST['company_profile_id'],$data);
+                                    
+        if($result){ 
+         ?>
+            <script>
+            window.location = "index.php?content=about_us"
+            </script>
+        <?php 
+        }else{ 
+        ?>
+            <script>
+            window.history.back();
+            </script>
+        <?php 
         }
-        //------------------------------------------------------------------------------
-        if($check == false){
-            ?>
-<script>
-alert('<?php echo $error_msg; ?>');
-window.history.back();
-</script>
-<?php
-        }else{
-            if (!$data['about_us_img']){
-                $result = $about_us_model-> editRoom($_POST['about_us_id'],$data);
-            }else{
-                $result = $about_us_model-> editRoomImg($_POST['about_us_id'],$data);
-            }
-
-            if($result){
-                ?>
-<script>
-window.location = "index.php?content=about_us"
-</script>
-<?php
-            }else{
-                ?>
-<script>
-window.history.back();
-</script>
-<?php
-            }
-        }
-    }else{
-        require_once($path . 'edit.inc.php');
+    }else{ 
+    require_once($path . 'edit.inc.php'); 
     }
-    }
-?>
+} ?>
 
 
 
 
 <script>
-CKEDITOR.replace("about_us_sub_title_th", {
-    filebrowserBrowseUrl: '../template/backend/ckfinder/ckfinder.html',
-    filebrowserImageBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Images',
-    filebrowserFlashBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Flash',
-    filebrowserUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
-    filebrowserImageUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
-    filebrowserFlashUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
-});
-
-
-CKEDITOR.replace("about_us_sub_title_en", {
-    filebrowserBrowseUrl: '../template/backend/ckfinder/ckfinder.html',
-    filebrowserImageBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Images',
-    filebrowserFlashBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Flash',
-    filebrowserUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
-    filebrowserImageUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
-    filebrowserFlashUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
-});
+    CKEDITOR.replace("about_us_sub_title_th", {
+        filebrowserBrowseUrl: '../template/backend/ckfinder/ckfinder.html',
+        filebrowserImageBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Images',
+        filebrowserFlashBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Flash',
+        filebrowserUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+        filebrowserImageUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+        filebrowserFlashUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+        });
+    CKEDITOR.replace("about_us_sub_title_en", {
+        filebrowserBrowseUrl: '../template/backend/ckfinder/ckfinder.html',
+        filebrowserImageBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Images',
+        filebrowserFlashBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Flash',
+        filebrowserUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+        filebrowserImageUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+        filebrowserFlashUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+        });
+    CKEDITOR.replace("company_profile_sub_title_th", {
+        filebrowserBrowseUrl: '../template/backend/ckfinder/ckfinder.html',
+        filebrowserImageBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Images',
+        filebrowserFlashBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Flash',
+        filebrowserUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+        filebrowserImageUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+        filebrowserFlashUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+        });
+    CKEDITOR.replace("company_profile_sub_title_en", {
+        filebrowserBrowseUrl: '../template/backend/ckfinder/ckfinder.html',
+        filebrowserImageBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Images',
+        filebrowserFlashBrowseUrl: '../template/backend/ckfinder/ckfinder.html?Type=Flash',
+        filebrowserUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+        filebrowserImageUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+        filebrowserFlashUploadUrl: '../template/backend/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+        });
 </script>

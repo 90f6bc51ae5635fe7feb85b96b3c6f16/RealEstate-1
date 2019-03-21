@@ -26,17 +26,37 @@ class CompanyProfileModel extends BaseModel{
             return $data;
         }
     }
+
+    function editCompanyProfile($company_profile_id,$data = []) {
+        $data['company_profile_id']=mysqli_real_escape_string(static::$db,$data['company_profile_id']);
+        $data['company_profile_sub_title_th'] =mysqli_real_escape_string(static::$db,$data['company_profile_sub_title_th']);
+        $data['company_profile_sub_title_en'] =mysqli_real_escape_string(static::$db,$data['company_profile_sub_title_en']);
+
+        $sql = "UPDATE `tb_company_profile` 
+        SET
+        `company_profile_sub_title_th` = '".$data['company_profile_sub_title_th']."', 
+        `company_profile_sub_title_en` = '".$data['company_profile_sub_title_en']."'
+        WHERE `tb_company_profile`.`company_profile_id` = '$company_profile_id'
+        ";
+
+        // echo "<pre>";
+        // print_r( $sql);
+        // echo "</pre>";
+
+        if (mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
+            return 1;
+        }else {
+            return 0;
+        }
+    }
     
     
 
-    function editRoom($company_profile_id,$data = []) {
+    function editCompany($company_profile_id,$data = []) {
         $data['company_profile_img']=mysqli_real_escape_string(static::$db,$data['company_profile_img']);
         $data['company_profile_id']=mysqli_real_escape_string(static::$db,$data['company_profile_id']);
-        $data['company_profile_title_en']=mysqli_real_escape_string(static::$db,$data['company_profile_title_en']);
-        $data['company_profile_sub_title_en']=mysqli_real_escape_string(static::$db,$data['company_profile_sub_title_en']);
         $data['company_profile_title_th']=mysqli_real_escape_string(static::$db,$data['company_profile_title_th']);
-        $data['company_profile_sub_title_th']=mysqli_real_escape_string(static::$db,$data['company_profile_sub_title_th']);
-
+        $data['company_profile_title_en']=mysqli_real_escape_string(static::$db,$data['company_profile_title_en']);
         $data['company_profile_vision_th'] =mysqli_real_escape_string(static::$db,$data['company_profile_vision_th']);
         $data['company_profile_vision_en'] =mysqli_real_escape_string(static::$db,$data['company_profile_vision_en']);
         $data['company_profile_vision_detail_th'] =mysqli_real_escape_string(static::$db,$data['company_profile_vision_detail_th']);
@@ -49,21 +69,15 @@ class CompanyProfileModel extends BaseModel{
 
 
         $sql = "UPDATE `tb_company_profile` 
-        SET `company_profile_title_en` = '".$data['company_profile_title_en']."', 
-        `company_profile_sub_title_en` = '".$data['company_profile_sub_title_en']."',
+        SET 
         `company_profile_title_th` = '".$data['company_profile_title_th']."', 
-
-
+        `company_profile_title_en` = '".$data['company_profile_title_en']."', 
         `company_profile_vision_th` = '".$data['company_profile_vision_th']."', 
         `company_profile_vision_en` = '".$data['company_profile_vision_en']."', 
         `company_profile_vision_detail_th` = '".$data['company_profile_vision_detail_th']."', 
         `company_profile_vision_detail_en` = '".$data['company_profile_vision_detail_en']."', 
         `company_profile_mission_th` = '".$data['company_profile_mission_th']."', 
         `company_profile_mission_en` = '".$data['company_profile_mission_en']."', 
-        `company_profile_mission_detail_th` = '".$data['company_profile_mission_detail_th']."', 
-        `company_profile_mission_detail_en` = '".$data['company_profile_mission_detail_en']."', 
-
-        `company_profile_sub_title_th` = '".$data['company_profile_sub_title_th']."'
         WHERE `tb_company_profile`.`company_profile_id` = '$company_profile_id'
         ";
         // echo "<pre>";
@@ -77,14 +91,13 @@ class CompanyProfileModel extends BaseModel{
         }
     }
 
-    function editRoomImg($company_profile_id,$data = []) {
+    function editCompanyImg($company_profile_id,$data = []) {
         $data['company_profile_img']=mysqli_real_escape_string(static::$db,$data['company_profile_img']);
         $data['company_profile_id']=mysqli_real_escape_string(static::$db,$data['company_profile_id']);
         $data['company_profile_title_en']=mysqli_real_escape_string(static::$db,$data['company_profile_title_en']);
         $data['company_profile_sub_title_en']=mysqli_real_escape_string(static::$db,$data['company_profile_sub_title_en']);
         $data['company_profile_title_th']=mysqli_real_escape_string(static::$db,$data['company_profile_title_th']);
         $data['company_profile_sub_title_th']=mysqli_real_escape_string(static::$db,$data['company_profile_sub_title_th']);
-
         $data['company_profile_vision_th'] =mysqli_real_escape_string(static::$db,$data['company_profile_vision_th']);
         $data['company_profile_vision_en'] =mysqli_real_escape_string(static::$db,$data['company_profile_vision_en']);
         $data['company_profile_vision_detail_th'] =mysqli_real_escape_string(static::$db,$data['company_profile_vision_detail_th']);
@@ -100,7 +113,6 @@ class CompanyProfileModel extends BaseModel{
         `company_profile_title_en` = '".$data['company_profile_title_en']."', 
         `company_profile_sub_title_en` = '".$data['company_profile_sub_title_en']."',
         `company_profile_title_th` = '".$data['company_profile_title_th']."', 
-
         `company_profile_vision_th` = '".$data['company_profile_vision_th']."', 
         `company_profile_vision_en` = '".$data['company_profile_vision_en']."', 
         `company_profile_vision_detail_th` = '".$data['company_profile_vision_detail_th']."', 
@@ -109,7 +121,6 @@ class CompanyProfileModel extends BaseModel{
         `company_profile_mission_en` = '".$data['company_profile_mission_en']."', 
         `company_profile_mission_detail_th` = '".$data['company_profile_mission_detail_th']."', 
         `company_profile_mission_detail_en` = '".$data['company_profile_mission_detail_en']."', 
-
         `company_profile_sub_title_th` = '".$data['company_profile_sub_title_th']."'
         WHERE `tb_company_profile`.`company_profile_id` = '$company_profile_id'
         ";

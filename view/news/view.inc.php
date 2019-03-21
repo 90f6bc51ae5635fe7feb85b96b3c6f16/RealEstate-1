@@ -35,7 +35,14 @@
                     <div style="padding-top:20px; margin-bottom: 2vw; ">
                         <a href="news.php?action=read&news_read=<?PHP echo ($news[$i]['news_read']) ?>&id=<?PHP echo ($news[$i]['news_id']) ?>"
                             class="btn btn-readmore">
-                            READ MORE
+                            <?PHP
+                    if($lng == "TH"){
+                        echo 'เพิ่มเติม';
+                    }else{
+                        echo 'READ MORE';
+                    } 
+                    ?>
+                            
                         </a>
                     </div>
                 </div>

@@ -46,7 +46,7 @@ $news = $news_model->getNewsByDESC();
                 </div>
                 <br>
                 <div class="cut-text-multi-footer-about1" style="font-size: 1rem;">
-                    <?PHP if ($lan == "TH") {
+                    <?PHP if ($lng == "TH") {
                         echo $about['about_us_title_th'];
                     } else {
                         echo $about['about_us_title_en'];
@@ -54,7 +54,7 @@ $news = $news_model->getNewsByDESC();
                 </div>
                 <br>
                 <div class="cut-text-multi-footer-about2" style="font-size: 1rem;">
-                    <?PHP if ($lan == "TH") {
+                    <?PHP if ($lng == "TH") {
                         echo $about['about_us_sub_title_th'];
                     } else {
                         echo $about['about_us_sub_title_en'];
@@ -73,7 +73,7 @@ $news = $news_model->getNewsByDESC();
                             <i class="fas fa-angle-right "></i>
                             <input type="hidden" id="product_types_ids_<?php echo $i; ?>" name="product_types_ids" value="<?php echo $type[$i]['product_types_id']; ?>">
                             <button class="footer-button" onclick="search_product_types('<?php echo $i; ?>');">
-                                <?PHP if ($lan == "TH") {
+                                <?PHP if ($lng == "TH") {
                                     echo $type[$i]['product_types_name_th'];
                                 } else {
                                     echo $type[$i]['product_types_name_en'];
@@ -94,7 +94,7 @@ $news = $news_model->getNewsByDESC();
                             <input type="hidden" id="search_location_<?php echo $i; ?>" name="search_location" value="<?php echo $location[$i]['location_id']; ?>">
                             <button class="footer-button" onclick="search_location('<?php echo $i; ?>');">
                                 <i class="fas fa-angle-right"></i>
-                                <?PHP if ($lan == "TH") {
+                                <?PHP if ($lng == "TH") {
                                     echo $location[$i]['location_name_th'];
                                 } else {
                                     echo $location[$i]['location_name_en'];
@@ -129,7 +129,7 @@ $news = $news_model->getNewsByDESC();
                             </div>
                             <div class="col-8">
                                 <a class="cut-text-multi-footer-FROMTHEBLOG" href="news.php?action=read&news_read=<?PHP echo ($news[$i]['news_read']) ?>&id=<?PHP echo ($news[$i]['news_id']) ?>">
-                                    <?PHP if ($lan == 'TH') {
+                                    <?PHP if ($lng == 'TH') {
                                         # code...
                                         echo $news[$i]['news_name_th'];
                                     } else {

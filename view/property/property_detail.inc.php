@@ -52,6 +52,7 @@
                 <div>
                     <div class="row p-2 property-de-font p-0 m-0">
                         <div class="col-5 p-0 property-de-font-weight">
+                        
                             Property Type
                         </div>
                         <div class="col-1">

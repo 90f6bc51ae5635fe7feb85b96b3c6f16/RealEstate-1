@@ -1,6 +1,6 @@
 <?PHP
  
-   if($content=="types" || $content=="" ){
+   if($content=="types"){
 
     require_once("modules/types/views/index.inc.php");
    
@@ -12,7 +12,7 @@
    
       require_once("modules/location/views/index.inc.php");
 
-   }else if($content=="product"){
+   }else if($content=="product" || $content=="" ){
    
       require_once("modules/product/views/index.inc.php");
 

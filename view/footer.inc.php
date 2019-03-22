@@ -42,7 +42,14 @@ $news = $news_model->getNewsByDESC();
         <div class="row ">
             <div class="col-md-4 footer-panel">
                 <div class="text-header-medium cut-footer-topic " style="color: #0175A4;">
-                    ABOUT US
+                <?PHP
+                    if($lng == "TH"){
+                        echo 'เกี่ยวกับเรา';
+                    }else{
+                        echo 'ABOUT US';
+                    } 
+                    ?>
+                    
                 </div>
                 <br>
                 <div class="cut-text-multi-footer-about1" style="font-size: 1rem;">
@@ -65,7 +72,14 @@ $news = $news_model->getNewsByDESC();
                 <div class="row">
                     <div class="col-md-6">
                         <div class="text-header-medium cut-footer-topic ">
-                            PROPERTY TYPE
+                        <?PHP
+                            if($lng == "TH"){
+                                echo 'ประเภทอสังหาริมทรัพย์';
+                            }else{
+                                echo 'PROPERTY TYPE';
+                            } 
+                            ?>
+                            
                         </div>
                 <br>
                         <div style="font-size: 0.95rem;">
@@ -86,7 +100,13 @@ $news = $news_model->getNewsByDESC();
                     </div>
                     <div class="col-md-6">
                         <div class="text-header-medium cut-footer-topic ">
-                            LOCATIONS
+                        <?PHP
+                            if($lng == "TH"){
+                                echo 'สถานที่';
+                            }else{
+                                echo 'LOCATIONS';
+                            } 
+                            ?>
                         </div>
                 <br>
                         <div style="font-size: 0.95rem;">
@@ -109,7 +129,13 @@ $news = $news_model->getNewsByDESC();
             </div>
             <div class="col-md-3 footer-panel">
                 <div class="text-header-medium cut-footer-topic ">
-                    FROM THE BLOG
+                <?PHP
+                    if($lng == "TH"){
+                        echo 'จากบล็อก';
+                    }else{
+                        echo 'FROM THE BLOG';
+                    } 
+                    ?>
                 </div>
                 
                 <br>

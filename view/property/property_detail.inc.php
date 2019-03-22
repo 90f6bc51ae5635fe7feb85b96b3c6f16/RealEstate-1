@@ -52,8 +52,13 @@
                 <div>
                     <div class="row p-2 property-de-font p-0 m-0">
                         <div class="col-5 p-0 property-de-font-weight">
-                        
-                            Property Type
+                        <?PHP
+                            if($lng == "TH"){
+                                echo 'ประเภทอสังหาริมทรัพย์';
+                            }else{
+                                echo 'Property Type';
+                            } 
+                            ?>
                         </div>
                         <div class="col-1">
                             :

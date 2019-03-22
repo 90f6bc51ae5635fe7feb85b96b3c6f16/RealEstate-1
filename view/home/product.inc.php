@@ -48,7 +48,15 @@
                         </div>
                     </div>
                     <div class="text-regular" style="padding: 16px 0px; color: #c6c6c6;">
-                    <a href="property.php?action=product&id=<?PHP echo $product[$i]['product_id']; ?>&type_id=<?PHP echo $product[$i]['product_types_id']; ?>" class="btn btn-outline-success" tabindex="0">VIEW DETAIL</a>
+                    <a href="property.php?action=product&id=<?PHP echo $product[$i]['product_id']; ?>&type_id=<?PHP echo $product[$i]['product_types_id']; ?>" class="btn btn-outline-success" tabindex="0">
+                    <?PHP
+                        if($lng == "TH"){
+                            echo 'รายละเอียด';
+                        }else{
+                            echo 'VIEW DETAIL';
+                        } 
+                        ?>
+                    </a>
                         <button class="btn btn-primary"
                             type="submit"><?php echo number_format($product[$i]['product_price'],2); ?></button>
                     </div>

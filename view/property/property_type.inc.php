@@ -2,7 +2,15 @@
     <div class="col-12 p-0">
         <!-- div col-12 -->
         <div class="text-center">
-            <h1 style="color: #5a5a5a; font-weight: 600">PROPERTY TYPES</h1>
+            <h1 style="color: #5a5a5a; font-weight: 600">
+            <?PHP
+                if($lng == "TH"){
+                    echo 'ประเภทอสังหาริมทรัพย์';
+                }else{
+                    echo 'PROPERTY TYPES';
+                } 
+                ?>
+            </h1>
             <hr class="border-contact" style="border-top: 2px solid  #5a5a5a; width: 5%;">
         </div>
         <div class="row m-0">

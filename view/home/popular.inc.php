@@ -1,7 +1,13 @@
 <div class="container" style="margin-bottom: 7vw;">
     <fieldset class="border-poplar-home ">
         <legend class="topic-popular-home">
-            POPPULAR PROPERTIES
+        <?PHP
+            if($lng == "TH"){
+                echo 'อสังหาริมทรัพย์ยอดนิยม';
+            }else{
+                echo 'POPPULAR PROPERTIES';
+            } 
+            ?>
         </legend>
         <div class="row" style="max-width: 1100px;margin: auto;">
             <div class="element-item col-lg-6 col-md-6 col-sm-6 col-6 img-poppular-home-padding">

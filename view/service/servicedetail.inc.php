@@ -1,6 +1,14 @@
 <div class="container">
     <div class="text-center service-detail">
-        <h1 class="topic-service">SERVICE </h1>
+        <h1 class="topic-service">
+        <?PHP
+            if($lng == "TH"){
+                echo 'บริการของเรา';
+            }else{
+                echo 'SERVICE';
+            } 
+            ?>
+         </h1>
         <hr class="border-contact" style="border-top: 2px solid  #5a5a5a; width: 5%;">
     </div>
     <?PHP $i = $_GET['id'] ; ?>

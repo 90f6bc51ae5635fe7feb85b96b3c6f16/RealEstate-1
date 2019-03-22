@@ -1,7 +1,13 @@
 <div class="container">
     <div class="text-center contact-head">
         <h1 style="color: #5a5a5a; font-weight: 600">
-            <?PHP if($lng == "TH"){ echo  $contact_us[0]['contact_us_title_th']; }else{ echo  $contact_us[0]['contact_us_title_en'];} ?>
+        <?PHP
+        if($lng == "TH"){
+            echo 'ติดต่อเรา';
+        }else{
+            echo 'CONTACT REALESTATE';
+        } 
+        ?>
         </h1>
         <hr class="border-contact" style="border-top: 2px solid  #5a5a5a">
         <div class="p-3 mb-2 bg-light contact-box">

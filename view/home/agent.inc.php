@@ -15,7 +15,13 @@ $agent_slide = $agent_slide_model-> getagent();
         <div class="row">
             <div class="col-md-4">
             <div>
-            Our Agent
+            <?PHP
+            if($lng == "TH"){
+                echo 'ทีมงาน';
+            }else{
+                echo 'Our Agent';
+            } 
+            ?>
             </div>
                 <div>
                     <?PHP if($lng == "TH"){ echo $agent_slide[$i]['agent_name_th']; }else { echo $agent_slide[$i]['agent_name_en']; } ?>

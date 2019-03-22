@@ -39,10 +39,24 @@
 
                                 </div>
                                 <div class="btn btn-slide">
-                                    VIEW DETAIL
+                                <?PHP
+                                    if($lng == "TH"){
+                                        echo 'เพิ่มเติม';
+                                    }else{
+                                        echo 'VIEW DETAIL';
+                                    } 
+                                    ?>
+                                    
                                 </div>
                                 <a href="property.php" class="btn btn-slide2">
-                                    SEE ALL PROPERTY
+                                <?PHP
+                                    if($lng == "TH"){
+                                        echo 'ประเภทอสังหาริมทรัพย์ทั้งหมด';
+                                    }else{
+                                        echo 'SEE ALL PROPERTY';
+                                    } 
+                                    ?>
+                                    
                                 </a>
                             </div>
                         </div>
@@ -93,7 +107,15 @@
                     <div class="text-left">
                         <div class="">
                             <select class="form-control  custom-select" id="location_id" name="location_id">
-                                <option value=""> Location</option>
+                                <option value=""> 
+                                <?PHP
+                                    if($lng == "TH"){
+                                        echo 'จังหวัด';
+                                    }else{
+                                        echo 'Location';
+                                    } 
+                                    ?>
+                                </option>
                                 <?PHP for ($i = 0; $i < count($location); $i++) {  ?>
                                 <option value="<?PHP echo $location[$i]['location_id']; ?>" <?PHP if ($_GET['location_id'] == $location[$i]['location_id']) {
                                                                                                 echo 'selected';
@@ -116,7 +138,14 @@
                     <div class="text-left">
                         <div class="">
                             <select class="form-control  custom-select" id="product_types_id" name="product_types_id">
-                                <option value=""> Property type</option>
+                                <option value="">
+                                <?PHP
+                                    if($lng == "TH"){
+                                        echo 'ประเภทอสังหาริมทรัพย์';
+                                    }else{
+                                        echo 'Property type';
+                                    } 
+                                    ?> </option>
                                 <?PHP for ($i = 0; $i < count($type); $i++) {  ?>
                                 <option value="<?PHP echo $type[$i]['product_types_id']; ?>" <?PHP if ($_GET['product_types_id'] == $type[$i]['product_types_id']) {
                                                                                                 echo 'selected';
@@ -147,7 +176,13 @@
                 </div>
                 <div class="col-sm-3">
                     <button onclick="search();" type="submit" class="btn btn-search">
-                        SEARCH
+                    <?PHP
+                        if($lng == "TH"){
+                            echo 'ค้นหา';
+                        }else{
+                            echo 'SEARCH';
+                        } 
+                        ?>
                     </button>
                 </div>
             </div>

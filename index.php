@@ -100,6 +100,8 @@ echo "</pre>";
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title> REAL ESTATE HOME PAGE </title>
+    <link rel="SHORTCUT ICON" href="img_upload/logo.png"/>
+    <link rel="icon" href="img_upload/logo.png" type="image/x-icon"/>
 
     <script src="template/js/jquery-2.2.0.min.js" type="text/javascript"></script>
 

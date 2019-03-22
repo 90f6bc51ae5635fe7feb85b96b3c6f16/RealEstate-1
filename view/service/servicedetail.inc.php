@@ -34,7 +34,13 @@
                     </div>
                     <div class="col-lg-4 col-md-3 col-sm-3 col-3 no-padding">
                         <a href="contact.php#contact" class="btn btn-contact-servicedetail">
-                            CONTACT US
+                        <?PHP
+                            if($lng == "TH"){
+                                echo 'ติดต่อเรา';
+                            }else{
+                                echo 'Contact Us';
+                            } 
+                            ?>
                         </a>
                     </div>
                 </div>

@@ -73,7 +73,13 @@
                     </div>
                     <div class="row p-2 m-0">
                         <div class="col-5 p-0 property-de-font-weight">
-                            Project Name
+                        <?PHP
+                            if($lng == "TH"){
+                                echo 'ชื่ออสังหาริมทรัพย์';
+                            }else{
+                                echo 'Project Name';
+                            } 
+                            ?>
                         </div>
                         <div class="col-1">
                             :
@@ -88,7 +94,13 @@
                     </div>
                     <div class="row p-2 m-0">
                         <div class="col-5 p-0 property-de-font-weight">
-                            Location
+                        <?PHP
+                            if($lng == "TH"){
+                                echo 'จังหวัด';
+                            }else{
+                                echo 'Location';
+                            } 
+                            ?>
                         </div>
                         <div class="col-1">
                             :
@@ -103,7 +115,14 @@
                     </div>
                     <div class="row p-2 m-0">
                         <div class="col-5 p-0 property-de-font-weight">
-                            No. of Bedroom
+                        <?PHP
+                            if($lng == "TH"){
+                                echo 'จำนวนห้องนอน';
+                            }else{
+                                echo 'No. of Bedroom';
+                            } 
+                            ?>
+                            
                         </div>
                         <div class="col-1">
                             :
@@ -118,7 +137,13 @@
                     </div>
                     <div class="row p-2 m-0">
                         <div class="col-5 p-0 property-de-font-weight">
-                            No. of Bathroom
+                        <?PHP
+                            if($lng == "TH"){
+                                echo 'จำนวนห้องน้ำ';
+                            }else{
+                                echo 'No. of Bathroom';
+                            } 
+                            ?>
                         </div>
                         <div class="col-1">
                             :
@@ -133,7 +158,13 @@
                     </div>
                     <div class="row p-2 m-0">
                         <div class="col-5 p-0 property-de-font-weight">
-                            Furniture
+                        <?PHP
+                            if($lng == "TH"){
+                                echo 'เฟอร์นิเจอร์';
+                            }else{
+                                echo 'Furniture';
+                            } 
+                            ?>
                         </div>
                         <div class="col-1">
                             :
@@ -148,7 +179,14 @@
                     </div>
                     <div class="row p-2 m-0">
                         <div class="col-5 p-0 property-de-font-weight">
-                            Price (MB)
+                        <?PHP
+                            if($lng == "TH"){
+                                echo 'ราคา';
+                            }else{
+                                echo 'Price (MB)';
+                            } 
+                            ?>
+                            
                         </div>
                         <div class="col-1">
                             :
@@ -165,7 +203,13 @@
                         <div class="col-6 p-0">
 
                             <a href="contact.php#contact" class="btn property-de-btn property-de-font-weight" tabindex="0">
-                                    CONTACT US
+                            <?PHP
+                            if($lng == "TH"){
+                                echo 'ติดต่อเรา';
+                            }else{
+                                echo 'CONTACT US';
+                            } 
+                            ?>
                                 </a>
 
                         </div>
@@ -176,7 +220,14 @@
                 <div class="row m-0">
                     <div class="col-lg-6 col-md-12 col-sm-12 text-center" style="background-color: #f5f5f5;">
                         <div class="col-12" style="padding: 5% 0% 5% 0%">
-                            HIGHLIGHT
+                        <?PHP
+                            if($lng == "TH"){
+                                echo 'จุดเด่น';
+                            }else{
+                                echo 'HIGHLIGHT';
+                            } 
+                            ?>
+                            
                         </div>
                         <div class="row m-0">
                             <?php for ($j = 0; $j < count($product_hightlight); ++$j) { ?>

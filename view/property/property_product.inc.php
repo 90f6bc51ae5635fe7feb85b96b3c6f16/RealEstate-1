@@ -103,7 +103,13 @@ if ($_GET['search'] == '1') {
                     </div>
                     <div class="col" style="padding: 5% 0% 10% 0%;">
                         <a href="property.php?action=product&id=<?PHP echo $product_by_type[$i]['product_id']; ?>&type_id=<?PHP echo $product_by_type[$i]['product_types_id']; ?>" class="btn property-pro-btn" tabindex="0">
-                            DETAIL >
+                        <?PHP
+                            if($lng == "TH"){
+                                echo 'รายละเอียด >';
+                            }else{
+                                echo 'DETAIL >';
+                            } 
+                            ?>
                         </a>
                     </div>
                 </div>

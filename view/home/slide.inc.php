@@ -71,7 +71,15 @@
                             <p class="price-slide1">
                                 <?PHP echo number_format($slide[$i]['product_price'], 2); ?>
                             </p>
-                            <p class="price-slide2">foe sale</p>
+                            <p class="price-slide2">
+                            <?PHP
+                            if($lng == "TH"){
+                                echo 'ราคาขาย';
+                            }else{
+                                echo 'for sale';
+                            } 
+                            ?>
+                            </p>
                             <!-- <img class="rounded-circle on-img float-right" src="" alt="Los Angles"> -->
                         </div>
                     </div>

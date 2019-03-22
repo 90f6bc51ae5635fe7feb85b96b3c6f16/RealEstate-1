@@ -425,6 +425,9 @@
     .product-product-name {
         font-size: 1.7vw;
     }
+    .product-product-detail {
+        height: 7vw;
+    }
 }
 
 
@@ -545,6 +548,9 @@
     .size-img-product-home {
         height: 30vw;
     }
+    .product-product-detail {
+        height: 9vw;
+    }
 }
 @media only screen and (max-width: 767.5px) {
     .box-search-home-index {
@@ -657,6 +663,9 @@
     .btn-slide2 {
         margin-left: 0vw;
     }
+    .product-product-detail {
+        height: 17vw;
+    }
 }
 @media only screen and (max-width: 400px) {
     .img-poppular-home-padding{
@@ -730,6 +739,9 @@
         margin-top: 45vw;
         font-size: 7vw;
     }
+    .product-product-detail {
+        height: 20vw;
+    }
 
 }
 
@@ -755,6 +767,9 @@
     }
     .size-img-product-home {
         height: 50vw;
+    }
+    .product-product-detail {
+        height: 23vw;
     }
 }
 

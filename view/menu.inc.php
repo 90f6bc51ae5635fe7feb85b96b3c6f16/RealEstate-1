@@ -129,7 +129,7 @@ $contact_us = $contact_us_model->getContact_us();
 
                     </a>
                 </li>
-                <li class="nav-item ">
+                <!-- <li class="nav-item ">
                     <a class="nav-link <?php if ($menu == 'news') {
                                             echo 'active';
                                         } ?>" href="news.php#news">
@@ -144,7 +144,7 @@ $contact_us = $contact_us_model->getContact_us();
                         ?>
 
                     </a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link <?php if ($menu == 'contact') {
                                             echo 'active';

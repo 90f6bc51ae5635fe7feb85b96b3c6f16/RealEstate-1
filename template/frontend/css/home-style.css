@@ -105,6 +105,7 @@
 .img-poppular-home2{
     width: 100%;
     height: 18vw;
+    object-fit: cover;
 }
 .img-poppular-home1{
     width: 100%;

@@ -1,20 +1,16 @@
 <?PHP
- 
-   if($content=="types"){
 
-    require_once("modules/types/views/index.inc.php");
-   
-   }else if($content=="furniture"){
-   
+    if($content=="furniture"){
+      
       require_once("modules/furniture/views/index.inc.php");
-
+      
    }else if($content=="location"){
-   
+      
       require_once("modules/location/views/index.inc.php");
-
-   }else if($content=="product" || $content=="" ){
-   
-      require_once("modules/product/views/index.inc.php");
+      
+   }else if($content=="types"){
+      
+       require_once("modules/types/views/index.inc.php");
 
    }else if($content=="product_highlight"){
    
@@ -67,9 +63,7 @@
       require_once("modules/slide/views/index.inc.php");
    
    }else {
-      
-      require_once("modules/Types/views/index.inc.php");
-
+      require_once("modules/product/views/index.inc.php");
    }
 
 ?>

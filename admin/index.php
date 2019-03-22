@@ -7,7 +7,7 @@
 	}else{
 		$login_user = $_SESSION['administrator_user'];
 		if(!isset($_REQUEST['content'])){
-			$_REQUEST['content'] = "home";
+			$_REQUEST['content'] = "product";
 		}
 		$content = $_REQUEST['content'];
 	}

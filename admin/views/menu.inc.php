@@ -75,7 +75,7 @@
 
         <li>
             <a href="index.php?content=product">
-                <div <? if ($content == "product") {
+                <div <? if ($content == "product" || $content == "types" || $content == "location" || $content == "furniture" ) {
                             echo "class='menu-active'";
                         } else {
                             echo "class='menu'";

@@ -97,7 +97,7 @@
 }
 .slick-initialized .slick-slide
 {
-    padding-right: 25px;
+    padding: 0px 0.5% 0px 0.5%;
     display: block;
 }
 .slick-loading .slick-slide

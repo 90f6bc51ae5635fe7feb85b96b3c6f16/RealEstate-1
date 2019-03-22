@@ -106,9 +106,9 @@ window.history.back();
 <?php
         }else{
             if (!$data['company_profile_img']){
-                $result = $company_profile_model-> editRoom($_POST['company_profile_id'],$data);
+                $result = $company_profile_model-> editCompany($_POST['company_profile_id'],$data);
             }else{
-                $result = $company_profile_model-> editRoomImg($_POST['company_profile_id'],$data);
+                $result = $company_profile_model-> editCompanyImg($_POST['company_profile_id'],$data);
             }
 
             if($result){

@@ -29,7 +29,7 @@ if($_GET['action'] == 'insert'){
 
 }else if ($_GET['action'] == 'delete'){ 
 
-    $furniture = $furniture_model->getfurnitureByID($furniture_id); 
+    $furniture = $furniture_model->getFurnitureByID($furniture_id); 
     if($furniture['furniture_name_en']!=""){
         $target_file = $target_dir .$furniture['furniture_name_en'];
         if (file_exists($target_file)) {

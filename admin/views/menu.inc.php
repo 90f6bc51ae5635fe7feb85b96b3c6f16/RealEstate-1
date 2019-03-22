@@ -87,19 +87,19 @@
             </a>
         </li>
 
-        <li>
+        <!-- <li>
             <a href="index.php?content=news">
-                <div <? if ($content == "news") {
-                            echo "class='menu-active'";
-                        } else {
-                            echo "class='menu'";
-                        } ?> >
+                <div <? //if ($content == "news") {
+                            //echo "class='menu-active'";
+                        //} else {
+                           // echo "class='menu'";
+                        //} ?> >
                     <span style="padding-top: 5px; font-size: 15px;">
-                        <!-- NEWS / --> ข่าวสาร
+                        NEWS / ข่าวสาร
                     </span>
                 </div>
             </a>
-        </li>
+        </li> -->
 
         <li>
             <a href="index.php?content=services">
@@ -165,7 +165,7 @@
                             echo "class='menu'";
                         } ?> >
                     <span style="padding-top: 5px; font-size: 15px;">
-                        <!-- VISION  /  -->วิสัยทํศ 
+                        <!-- VISION  /  -->วิสัยทัศน์ 
                     </span>
                 </div>
             </a>

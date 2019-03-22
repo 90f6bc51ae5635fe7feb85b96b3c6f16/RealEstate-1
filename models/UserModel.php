@@ -2,14 +2,12 @@
 
 require_once("BaseModel.php");
 class UserModel extends BaseModel{
-
     function __construct(){
         if(!static::$db){
             static::$db = mysqli_connect($this->host, $this->username, $this->password, $this->db_name);
             mysqli_set_charset(static::$db,"utf8");
         }
     }
-
     function getLogin($username, $password){
 
         $username = static::$db->real_escape_string($username);
@@ -27,7 +25,6 @@ class UserModel extends BaseModel{
             return $data;
         }
     }
-
     function getUserBy($keyword){
         $sql = "SELECT * 
         FROM tb_user 
@@ -44,7 +41,6 @@ class UserModel extends BaseModel{
             return $data;
         }
     }
-
     function getUserByID($id){
         $sql = " SELECT * 
         FROM tb_user 
@@ -60,7 +56,6 @@ class UserModel extends BaseModel{
             return $data;
         }
     }
-
     function updateUserByID($id,$data = []){
         $data['user_type_id']=mysqli_real_escape_string(static::$db,$data['user_type_id']);
         $data['user_firstname']=mysqli_real_escape_string(static::$db,$data['user_firstname']);
@@ -101,7 +96,6 @@ class UserModel extends BaseModel{
             return 0;
         }
     }
-
     function insertUser($data=[]){
         
         $data['user_type_id']=mysqli_real_escape_string(static::$db,$data['user_type_id']);
@@ -138,22 +132,18 @@ class UserModel extends BaseModel{
                 '".$data['user_province']."', 
                 '".$data['user_zipcode']."',
                 '".$data['user_image']."'
-        )
-            
-        ";
+                )";
 
+// echo "<pre>";
+// print_r($sql);
+// echo "</pre>";
 
-
-echo "<pre>";
-print_r($sql);
-echo "</pre>";
         if (mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
             return mysqli_insert_id(static::$db);
         }else {
             return 0;
         }
     }
-
     function deleteUserByID($id){
         $sql = " DELETE FROM tb_user WHERE user_id = '$id' ";
         if (mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
@@ -162,5 +152,6 @@ echo "</pre>";
             return 0;
         }
     }
+    
 }
 ?>

@@ -1,9 +1,9 @@
 <?php 
-require_once('../models/newsModel.php');  
+require_once('../models/NewsModel.php');  
 
 $path = "modules/news/views/";
  
-$news_model = new newsModel;   
+$news_model = new NewsModel;   
 
 date_default_timezone_set("Asia/Bangkok");
 $d1=date("d");
@@ -23,20 +23,20 @@ if($_GET['action'] == 'insert'){
 
 }else if ($_GET['action'] == 'update'){  
 
-    $news = $news_model->getnewsByID($news_id);  
+    $news = $news_model->getNewsByID($news_id);  
     require_once($path.'update.inc.php');
 
 
 }else if ($_GET['action'] == 'delete'){ 
 
-    $news = $news_model->getnewsByID($news_id); 
+    $news = $news_model->getNewsByID($news_id); 
     if($news['news_img']!=""){
         $target_file = $target_dir .$news['news_img'];
         if (file_exists($target_file)) {
             unlink($target_file);
         } 
     }
-    $news_model->deletenewsByID($news_id); 
+    $news_model->deleteNewsByID($news_id); 
     ?>
     <script>window.location="index.php?content=news"</script>
     <?php
@@ -148,7 +148,7 @@ if($_GET['action'] == 'insert'){
         } 
      
 }else {
-    $news = $news_model->getnewsBy();
+    $news = $news_model->getNewsBy();
     require_once($path.'view.inc.php');
 }
 ?>

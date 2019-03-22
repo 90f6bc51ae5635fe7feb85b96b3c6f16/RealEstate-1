@@ -42,7 +42,7 @@ class ContactUsModel extends BaseModel{
         }
     }
 
-    function deleteContact_us($contact_us_id) {
+    function deleteContact_Us($contact_us_id) {
         $sql = "DELETE 
         FROM `tb_contact_us` 
         WHERE `tb_contact_us`.`contact_us_id` = '$contact_us_id'
@@ -59,7 +59,7 @@ class ContactUsModel extends BaseModel{
         }
     }
     
-    function editContact_us($contact_us_id,$data = []) {
+    function editContact_Us($contact_us_id,$data = []) {
       
         $data['contact_us_title_th'] =mysqli_real_escape_string(static::$db,$data['contact_us_title_th']);
         $data['contact_us_sub_title_th'] =mysqli_real_escape_string(static::$db,$data['contact_us_sub_title_th']);

@@ -29,7 +29,7 @@ class AgentModel extends BaseModel{
         }
     }
 
-    function getagentHead() {
+    function getAgentHead() {
         $sql = " SELECT *
         FROM `tb_agent_head`
         WHERE 1

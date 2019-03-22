@@ -30,7 +30,7 @@ if($_GET['action'] == 'insert'){
 
 }else if ($_GET['action'] == 'delete'){ 
 
-    $location = $location_model->getlocationByID($location_id); 
+    $location = $location_model->getLocationByID($location_id); 
     if($location['location_name_en']!=""){
         $target_file = $target_dir .$location['location_name_en'];
         if (file_exists($target_file)) {

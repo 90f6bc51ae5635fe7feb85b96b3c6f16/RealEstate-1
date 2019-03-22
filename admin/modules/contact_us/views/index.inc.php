@@ -27,7 +27,7 @@ $id =($_GET['id']);
         $id =0;
         require_once($path.'edit.inc.php');
     } else if( $_GET['action'] == "delete") {
-        $result = $contact_us_model-> deleteContact_us($id);
+        $result = $contact_us_model-> deleteContact_Us($id);
         require_once($path.'edit.inc.php');
         ?>
 <script>
@@ -230,7 +230,7 @@ $id =($_GET['id']);
           
         }else{
            
-            $result = $contact_us_model-> editContact_us($_POST['contact_us_id'],$data);
+            $result = $contact_us_model-> editContact_Us($_POST['contact_us_id'],$data);
            
             if($result){
                 ?>

@@ -93,7 +93,7 @@ window.location = "index.php?content=services"
     } 
 
     if($check == false){
-        ?>  <script>  alert('<?php echo $error_msg; ?>'); window.history.back(); </script>  <?php
+        ?>  <script> alert('<?php echo $error_msg; ?>'); window.history.back(); </script>  <?php
     }else{
         $check_result = $services_model->insertServices($data);
         if($check_result!=false){   
@@ -149,7 +149,7 @@ window.location = "index.php?content=services"
         } 
 
         if($check == false){
-            ?>  <script>  alert('<?php echo $error_msg; ?>'); window.history.back(); </script>  <?php
+            ?>  <script> alert('<?php echo $error_msg; ?>'); window.history.back(); </script>  <?php
         }else{
             $check_result = $services_model->updateServicesByID($services_id,$data);
             if($check_result!=false){

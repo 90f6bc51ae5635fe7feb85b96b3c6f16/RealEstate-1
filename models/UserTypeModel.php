@@ -10,7 +10,10 @@ class UserTypeModel extends BaseModel{
     }
 
     function getUserTypeBy($name = ''){
-        $sql = "SELECT * FROM tb_user_type WHERE user_type_name LIKE ('%$name%') 
+        $sql = "SELECT * 
+        FROM tb_user_type 
+        WHERE user_type_name 
+        LIKE ('%$name%') 
         ";
         if ($result = mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
             $data = [];
@@ -51,7 +54,9 @@ class UserTypeModel extends BaseModel{
     }
 
     function deleteUserTypeByID($id){
-        $sql = " DELETE FROM tb_user_type WHERE user_type_id = '$id' ";
+        $sql = " DELETE 
+        FROM tb_user_type 
+        WHERE user_type_id = '$id' ";
         if (mysqli_query(static::$db,$sql, MYSQLI_USE_RESULT)) {
             return 1;
         }else {

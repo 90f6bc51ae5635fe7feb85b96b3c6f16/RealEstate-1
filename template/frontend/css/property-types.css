@@ -40,10 +40,6 @@
     .top{
         padding: 30% 20% 3% 20%;
     }
-    .property-bg {
-        width: 50%;
-        margin-left: 42px;
-    }
 }
 @media only screen and (max-width: 781px) {
     .top{

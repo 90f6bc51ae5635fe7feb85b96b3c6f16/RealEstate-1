@@ -38,7 +38,7 @@
                                     } ?>
 
                                 </div>
-                                <div class="btn btn-slide">
+                                <a href="property.php?action=product&id=<?php echo $product[$i]['product_id']; ?>" class="btn btn-slide">
                                 <?PHP
                                     if($lng == "TH"){
                                         echo 'เพิ่มเติม';
@@ -47,7 +47,7 @@
                                     } 
                                     ?>
                                     
-                                </div>
+                                </a>
                                 <a href="property.php" class="btn btn-slide2">
                                 <?PHP
                                     if($lng == "TH"){

@@ -128,7 +128,7 @@ $news = $news_model->getNewsByDESC();
                 </div>
             </div>
             <div class="col-md-3 footer-panel">
-                <div class="text-header-medium cut-footer-topic ">
+                <!-- <div class="text-header-medium cut-footer-topic ">
                 <?PHP
                     if($lng == "TH"){
                         echo 'จากบล็อก';
@@ -178,7 +178,7 @@ $news = $news_model->getNewsByDESC();
                     } ?>
                     </div>
 
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

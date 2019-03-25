@@ -26,6 +26,7 @@
     background-position-y: top;
     background-position-x: center;
     color: #ffffff;
+    margin: 0% 0% 0% 0%
 }
 .property-detail-bg:after{
     content: "";

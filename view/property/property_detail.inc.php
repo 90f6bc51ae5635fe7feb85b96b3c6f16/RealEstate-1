@@ -232,7 +232,7 @@
                         <div class="row m-0">
                             <?php for ($j = 0; $j < count($product_hightlight); ++$j) { ?>
                             <div class="col-lg-3 col-md-4 col-sm-6 p-2">
-                                <div class="col-12 property-bg p-0"
+                                <div class="col-12 property-detail-bg p-0"
                                     style="background-image: url(img_upload/product_highlight/<?PHP echo ($product_hightlight[$j]['product_highlight_img']); ?>);">
                                 </div>
                                 <div class="col-12 p-0">

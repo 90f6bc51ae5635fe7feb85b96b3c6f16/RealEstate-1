@@ -19,7 +19,26 @@
 .property-de-font-weight{
     font-weight: 800;
 }
+.property-detail-bg{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: top;
+    background-position-x: center;
+    color: #ffffff;
+}
+.property-detail-bg:after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
 
+@media only screen and (max-width: 991px) {
+    .property-detail-bg{
+        width: 50%;
+        margin-left: 42px;
+    }
+}
 @media only screen and (max-width: 767.5px) {
     .property-de-h1{
         font-size: 6vw;
